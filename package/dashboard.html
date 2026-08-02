@@ -409,11 +409,18 @@ $('parseBtn').onclick=function(){
     d.textContent='היעד לא זוהה, הפריט לא ייכנס לבד: «'+l+'» — אפשר לבקש בלוק מתוקן, או להכניס דרך השיחה.'; $('pends').appendChild(d); });
 };
 /* @anchor: sync-apply — insert after the updated-line; lossless on failure */
+/* the note under the pending list must stay true after partial applies: count the cards
+   still carrying a pending object (same filter as Apply-all) and speak to what remains */
+function notePending(){
+  var left=[].slice.call(document.querySelectorAll('#pends .pend')).filter(function(c){return c._pending;}).length;
+  $('syncNote').textContent= left? 'נכתב רק מה שהוחל; מה שכאן עדיין ממתין להחלה.' : '';
+  $('applyAllBtn').hidden=!left;
+}
 async function applyOne(p,card){
   try{
     var tx=files[p.file]||await ensure(p.file); var ls=tx.split('\n');
     if(ls.indexOf(p.entry)>-1){ /* deduplicated (P-46): the same pasted block twice never doubles an entry */
-      card.remove(); toast('כבר ברשומות — לא הוכפל'); return; }
+      card.remove(); notePending(); toast('כבר ברשומות — לא הוכפל'); return; }
     /* the allergy field (P-48): one canonical, always-current line at the top of medications.md —
        an incoming אלרגיות line UPDATES it (never stacks a second field); a previously recorded
        value is kept aloud on an אלרגיות (קודם) line, so nothing is ever deleted */
@@ -423,14 +430,14 @@ async function applyOne(p,card){
         /* a value already in the field's history is a stale block riding again — never regress the field */
         var val=function(l){return l.replace(/^אלרגיות(?:\s*\(קודם\))?\s*[:：]\s*/,'').trim()};
         var known=ls.filter(function(l){return /^אלרגיות(\s*\(קודם\))?\s*[:：]/.test(l.trim())}).map(function(l){return val(l.trim())});
-        if(known.indexOf(val(p.entry))>-1){ card.remove(); toast('כבר ברשומות — לא הוכפל'); return; }
+        if(known.indexOf(val(p.entry))>-1){ card.remove(); notePending(); toast('כבר ברשומות — לא הוכפל'); return; }
         var old=ls[ai].trim(), oldRecorded=!/לא תועד/.test(old);
         ls[ai]=p.entry;
         if(oldRecorded && old!==p.entry) ls.splice(ai+1,0,'אלרגיות (קודם): '+val(old));
         var di=ls.findIndex(function(l){return /^עודכן לאחרונה/.test(l.trim())});
         if(di>-1) ls[di]='עודכן לאחרונה: '+today()+' · מהשיחה';
         await write(p.file, ls.join('\n'), true);
-        card.remove(); toast('שדה האלרגיות עודכן'); render(); return;
+        card.remove(); notePending(); toast('שדה האלרגיות עודכן'); render(); return;
       }
     }
     var idx=ls.findIndex(function(l){return /^עודכן לאחרונה/.test(l.trim())});
@@ -438,7 +445,7 @@ async function applyOne(p,card){
     else ls[idx]='עודכן לאחרונה: '+today()+' · מהשיחה';
     ls.splice(idx+1,0,'',p.entry);
     await write(p.file, ls.join('\n'), true);
-    card.remove(); toast('הוחל אל '+p.label); render();
+    card.remove(); notePending(); toast('הוחל אל '+p.label); render();
   }catch(e){ card.classList.add('err'); card.firstChild.textContent='נכשל — נשאר ממתין: '+p.entry; }
 }
 $('applyAllBtn').onclick=async function(){
@@ -447,7 +454,7 @@ $('applyAllBtn').onclick=async function(){
      with the current DOM by index (a prior manual apply removes a card, shifting the rest). */
   var cards=[].slice.call(document.querySelectorAll('#pends .pend')).filter(function(c){ return c._pending; });
   for(var i=0;i<cards.length;i++){ if(cards[i].isConnected) await applyOne(cards[i]._pending, cards[i]); }
-  this.hidden=true; };
+  notePending(); };
 
 /* @anchor: context-out — the reverse motion */
 $('ctxBtn').onclick=function(){
