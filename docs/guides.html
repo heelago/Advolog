@@ -75,6 +75,10 @@
       <li><span class="he">באזור הקבצים (Project knowledge) מעלים את קובצי <code dir="ltr">package/prompts/skills/</code> ואת שלושת קובצי <code dir="ltr">package/he/</code> — אפשר לגרור את כולם יחד.</span><span class="en">In the project files area (Project knowledge), upload the <code>package/prompts/skills/</code> files and the three <code>package/he/</code> files — drag them all at once.</span></li>
       <li><span class="he">שיחה חדשה בתוך הפרויקט, וכותבים שלום — או פשוט מתחילים לספר. הריאיון יוביל משם, שאלה אחת בכל פעם.</span><span class="en">Open a new chat inside the project and say hello — or just start telling. The interview leads from there, one question at a time.</span></li>
     </ol>
+    <figure class="shot screen detail" style="border-style:solid">
+      <img src="img/claude-create-project.png" alt="דיאלוג יצירת פרויקט ב־claude.ai: שדה שם, שדה תיאור, וכפתור Create project" width="530" loading="lazy">
+      <figcaption class="small"><span class="he">הדיאלוג של פרויקט חדש ב־claude.ai — שם חופשי, והשאר יכול להישאר ריק.</span><span class="en">The new-project dialog on claude.ai — any name, the rest can stay empty.</span></figcaption>
+    </figure>
     <p class="notice"><span class="he"><b>חלופה בלי שום התקנה:</b> שיחה רגילה + הדבקת <a href="index.html#starter">פרומפט הפתיחה</a>. גרסה קלה ושלמה, בלי קבצים.</span>
     <span class="en"><b>The no-install alternative:</b> a regular chat + pasting <a href="index.html#starter">the starter prompt</a>. A light, complete version, no files.</span></p>
     <p><span class="he"><b>איפה הרשומות?</b> קובצי הרשומות נשמרים אצלכם במחשב, בתיקייה אחת שבחרתם, והשיחה מלווה כל שמירה — או שפותחים את <code dir="ltr">dashboard.html</code> מאותה תיקייה והוא מכניס את העדכונים בלחיצה (<a href="#dashboard">מדריך הלוח</a>). בנייד אפשר לנהל את הגרעין בתוך השיחה ולהעביר לקבצים כשמגיעים למחשב.</span>
@@ -118,6 +122,14 @@
     <h3><span class="he">הערה חשובה על «זיכרון» (Memory)</span><span class="en">An important note on Memory</span></h3>
     <p><span class="he">ל־ChatGPT יש זיכרון חוצה־שיחות. לרשומה רפואית עדיף מקור אמת אחד — הקבצים שלכם: בבדיקות שלנו זוהה מקרה שבו ידע כללי «מהזיכרון» התערבב בטענות ממקורות, וההנחיות דורשות שכל מספר וסף יגיעו רק ממקור שנשמר באותה ריצה. <b>ההמלצה שלנו לעבודה רגישה: זיכרון ברמת הפרויקט בלבד (Project-only memory)</b> — אפשרות שבוחרים ברגע יצירת הפרויקט, כך שהתיק הרפואי לא מושך מהזיכרון הכללי ולא מזין אליו. פרויקט שכבר נוצר עם זיכרון רגיל אי־אפשר להעביר למצב הזה — פשוט יוצרים פרויקט חדש עם זיכרון ברמת הפרויקט ומעלים אליו את אותו קובץ יחיד; הרשומות אצלכם בתיקייה, לא בפרויקט, ושום דבר לא הולך לאיבוד. לחלופין אפשר לכבות זיכרון לגמרי (Settings ← Personalization ← Memory). העיקרון — הרשומה גוברת על הזיכרון.</span>
     <span class="en">ChatGPT has cross-conversation memory. A medical record wants one source of truth — your files: our testing caught a case where general "memory" knowledge blended into sourced claims, and the instructions require every number and threshold to come only from a source retained in that run. <b>Our recommendation for sensitive work: project-only memory</b> — an option you choose when creating the project, so the medical project neither draws from nor feeds your general account memory. A project already created with regular memory cannot be switched over — simply create a fresh project with project-only memory and upload the same single file; your records live in your folder, not in the project, and nothing is lost. Or turn Memory off entirely (Settings ← Personalization ← Memory). The principle — the record outranks the memory.</span></p>
+    <figure class="shot screen detail" style="border-style:solid">
+      <img src="img/chatgpt-project-memory.png" alt="דיאלוג יצירת פרויקט ב־ChatGPT עם תפריט הזיכרון פתוח: Default memory מול Project-only memory, ולמטה — This setting can't be changed later" width="540" loading="lazy">
+      <figcaption class="small"><span class="he">בוחרים את סוג הזיכרון ברגע היצירה: Project-only memory. המסך עצמו אומר — אי־אפשר לשנות את זה אחר כך.</span><span class="en">Choose the memory type at creation: Project-only memory. The dialog itself says — this setting can't be changed later.</span></figcaption>
+    </figure>
+    <figure class="shot screen detail" style="border-style:solid">
+      <img src="img/chatgpt-memory-settings.png" alt="אזור Memory בהגדרות ChatGPT: מתג Enable memory וכפתור Manage" width="503" loading="lazy">
+      <figcaption class="small"><span class="he">החלופה המלאה: Settings ← Personalization ← Memory — מכבים את הזיכרון כולו.</span><span class="en">The full-off alternative: Settings ← Personalization ← Memory — turn Memory off entirely.</span></figcaption>
+    </figure>
 
     <h3><span class="he">שיחה חדשה בתוך הפרויקט</span><span class="en">A new chat inside the project</span></h3>
     <p><span class="he">Projects ← הפרויקט שלכם ← <b>New chat</b> בתוכו. מילת פתיחה: «תתעדכני».</span>
@@ -245,6 +257,10 @@
       <li><span class="he"><b>«Improve the model for everyone»:</b> אם ההגדרה מופיעה בחשבון שלכם — מחליטים בה במודע; מי שמעדיף שהשיחות לא ישמשו לאימון, מכבה. לא מוצאים? מחפשים «data» בהגדרות.</span><span class="en"><b>"Improve the model for everyone":</b> if it appears on your account — decide it consciously; prefer not to feed training, turn it off. Not finding it? Search "data" in Settings.</span></li>
       <li><span class="he">שווה להכיר שם גם את ייצוא הנתונים ומחיקת שיחות.</span><span class="en">Worth knowing the data-export and chat-deletion options there too.</span></li>
     </ol>
+    <figure class="shot screen" style="border-style:solid">
+      <img src="img/chatgpt-data-controls.png" alt="חלונית Data controls בהגדרות ChatGPT: Improve the model for everyone למעלה, ולמטה ייצוא ומחיקה" width="681" loading="lazy">
+      <figcaption class="small"><span class="he">Settings ← Data Controls — כאן מחליטים במודע על «Improve the model for everyone», וכאן גם ייצוא הנתונים ומחיקת שיחות.</span><span class="en">Settings ← Data Controls — where "Improve the model for everyone" is decided consciously, and where data export and chat deletion live.</span></figcaption>
+    </figure>
     <p class="muted"><span class="he">ובכל מקרה, בלי קשר להגדרות: הכלי לא מבקש מזהים, וכל ייצוא עובר קודם את רשימת הבדיקה — מה בפנים, מה מסירים, לאן זה הולך.</span>
     <span class="en">And regardless of settings: the tool never asks for identifiers, and every export passes the checklist first — what is inside, what to remove, where it goes.</span></p>
   </section>
