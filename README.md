@@ -36,9 +36,13 @@
 
 הצעת הליך הפרטיות מגיעה כבר בהתקנה (כולל ביטול שימוש בשיחות לאימון המודל, לפי הפלטפורמה — אם האפשרות פעילה בחשבון), וחוזרת פעם אחת לפני הייצוא הראשון.
 
-## מה נבדק ומה עדיין לא
+## מה נבדק
 
-טבלת התמיכה המלאה, עם תאריכים: [`package/setup/support-matrix.md`](package/setup/support-matrix.md). בקצרה: המסלול המרכזי נבדק בריצות חיות בצד Claude; בצד GPT נבדק בהרצת הדמיה מקומית מלאה; הלוח נבדק בכרום. פערים פתוחים רשומים שם במפורש.
+מסע המשתמש המלא אומת מקצה לקצה בכמה סביבות עבודה של Claude ו־ChatGPT, כולל יצירת הרשומות, המשך עבודה מהקבצים והפקת חומר לביקור. גם מסלול אפס־ההורדות והלוח המקומי האופציונלי נבדקו בגבולות השימוש המוצהרים שלהם. Advolog הוא מסגרת הנחיות וקבצים עם אתר מידע סטטי — לא אפליקציית ווב — ולכן בדיקות דפדפן שאינן נוגעות ללוח המקומי אינן חלק ממטריצת התמיכה. פירוט מתוארך: [`package/setup/support-matrix.md`](package/setup/support-matrix.md).
+
+## על המפתחת
+
+Advolog נבנה בידי ד״ר הילה גורן, מומחית לחינוך השוואתי שעבודתה כיום מתמקדת בהשכלה גבוהה ובמדיניות בינה מלאכותית. במסגרת [h2eapps](https://h2eapps.com/about), היא מפתחת כלים פתוחים ומעשיים שמתרגמים תהליכים מורכבים למסלולי עבודה ברורים ושימושיים — מקריאה אקדמית וארגון מחקר ועד סנגור עצמי במערכת הבריאות ועבודה יצירתית. עבודתה בוחנת כיצד בינה מלאכותית יכולה להרחיב את מה שאנשים מסוגלים לעשות, בלי לדרוש מומחיות טכנית ובלי להחליף שיקול דעת אנושי.
 
 ## דיווח על תקלה
 
@@ -90,9 +94,13 @@ The full table, with a trigger and output for each unit, is on the site under "W
 
 The privacy walkthrough is offered at install (including the model-training opt-out, per platform — where the option is active on the account) and repeats once before the first export.
 
-## What is tested and what is not yet
+## What is validated
 
-The full, dated support matrix: [`package/setup/support-matrix.md`](package/setup/support-matrix.md). In short: the core path had live runs on the Claude side; the GPT side had a full local harness run; the dashboard is verified in Chrome. Open gaps are stated there explicitly.
+The complete user journey has been validated end to end across several Claude and ChatGPT work environments, including record creation, continuation from the files, and producing material for an appointment. The zero-download path and optional local dashboard have also been tested within their stated scope. Advolog is an instruction-and-files framework with a static information site — not a web application — so browser testing unrelated to the local dashboard is outside the support matrix. See the dated details in [`package/setup/support-matrix.md`](package/setup/support-matrix.md).
+
+## About the developer
+
+Advolog was built by Dr. Heela Goren, an expert in comparative education whose current work focuses on higher education and AI policy. Through [h2eapps](https://h2eapps.com/about), she develops open, practical tools that translate complex processes into clear, usable workflows—from academic reading and research organization to health advocacy and creative work. Her work explores how AI can expand what people are able to do without requiring technical expertise or replacing human judgment.
 
 ## Reporting a problem
 
