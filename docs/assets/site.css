@@ -30,14 +30,14 @@
   --crisis:#9E3323; --crisis-dark:#E5836B;         /* red = crisis only */
   --hair:rgba(22,20,15,.22); --hair-dark:rgba(241,237,226,.24);
   --maxw:1120px; --pad:104px; --labelcol:260px;
-  --fs-body:16.5px;
+  --fs-body:16.5px; --fs-small:14.5px; --fs-label:14px;
   --display-en:'Fraunces', Georgia, serif;
   --display-he:'Frank Ruhl Libre', serif;  /* FINAL — Heela's ruling, 2026-08-02 */
   --text-en:'Inter', -apple-system, "Segoe UI", Arial, sans-serif;
   --text-he:'Heebo', -apple-system, "Segoe UI", "Arial Hebrew", Arial, sans-serif;
   --mono:ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
 }
-html[data-scale="big"]{ --fs-body:18.5px; }
+html[data-scale="big"]{ --fs-body:18.5px; --fs-small:16px; --fs-label:15.5px; }
 
 *{box-sizing:border-box; border-radius:0 !important;}
 html{scroll-behavior:smooth}
@@ -54,7 +54,7 @@ em.accent{font-style:italic}
 a{color:inherit; text-decoration:underline; text-decoration-color:var(--brass); text-underline-offset:3px;}
 a:hover{text-decoration-thickness:2px}
 p{margin:10px 0}
-.small{font-size:.87em}
+.small{font-size:var(--fs-small)}
 .muted{color:var(--muted)}
 ul,ol{margin:8px 0; padding-inline-start:22px}
 
@@ -62,13 +62,15 @@ ul,ol{margin:8px 0; padding-inline-start:22px}
 .skip:focus{inset-inline-start:8px}
 
 /* ── mono kit ─────────────────────────────────────────── */
-.mono{font-family:var(--mono); font-size:12.5px; letter-spacing:.14em; text-transform:uppercase;}
-/* Hebrew doesn't track: tighten mono-kit spacing when the page runs RTL */
-html[data-lang="he"] .mono, html[data-lang="he"] .tag, html[data-lang="he"] .numlabel{letter-spacing:.03em;}
-.numlabel{font-family:var(--mono); font-size:13px; letter-spacing:.12em; color:var(--brass-text);}
+.mono{font-family:var(--mono); font-size:var(--fs-label); letter-spacing:.1em; text-transform:uppercase;}
+.numlabel{font-family:var(--mono); font-size:var(--fs-label); letter-spacing:.1em; color:var(--brass-text);}
 .dark .numlabel{color:var(--brass)}
-.tag{display:inline-block; border:1px solid var(--hair); padding:2px 10px; font-family:var(--mono); font-size:11.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted);}
+.tag{display:inline-block; border:1px solid var(--hair); padding:2px 10px; font-family:var(--mono); font-size:var(--fs-label); letter-spacing:.1em; text-transform:uppercase; color:var(--muted);}
 .dark .tag{border-color:var(--hair-dark); color:var(--dark-muted)}
+/* Hebrew utility copy stays in the readable text face; mono is for numerals and Latin labels. */
+html[data-lang="he"] .mono, html[data-lang="he"] .tag, html[data-lang="he"] .numlabel{
+  font-family:var(--text-he); letter-spacing:0; text-transform:none;
+}
 
 /* ── page grid ────────────────────────────────────────── */
 .wrap{max-width:var(--maxw); margin:0 auto; padding:0 28px;}
@@ -102,7 +104,8 @@ section{padding:var(--pad) 0}
 .topbar{position:sticky; top:0; z-index:20; background:var(--bone); border-bottom:1px solid var(--hair);}
 .topbar .inner{max-width:var(--maxw); margin:0 auto; padding:12px 28px; display:flex; align-items:center; gap:8px 22px; flex-wrap:wrap;}
 .brand{font-family:var(--display-en); font-weight:600; font-size:19px; text-decoration:none; letter-spacing:.01em;}
-.brand .sub{font-family:var(--mono); font-size:10.5px; letter-spacing:.14em; color:var(--muted); text-transform:uppercase; margin-inline-start:8px;}
+.brand .sub{font-family:var(--mono); font-size:12.5px; letter-spacing:.1em; color:var(--muted); text-transform:uppercase; margin-inline-start:8px;}
+html[data-lang="he"] .brand .sub{font-family:var(--text-he); letter-spacing:0; text-transform:none;}
 .topnav{display:flex; gap:4px 20px; flex-wrap:wrap; margin-inline-start:auto; align-items:center;}
 .topnav a{text-decoration:none; font-size:14.5px; border-bottom:2px solid transparent; padding:2px 0;}
 .topnav a:hover{border-bottom-color:var(--brass)}
@@ -138,29 +141,35 @@ section{padding:var(--pad) 0}
 .loopwrap{position:relative; padding-inline-start:26px; margin-top:0;}
 .loopwrap::before{content:""; position:absolute; inset-inline-start:0; top:12px; bottom:12px; width:12px;
   border:1.5px solid var(--brass); border-inline-end:none;}
-.looplabel{color:var(--brass-text); font-family:var(--mono); font-size:12.5px; letter-spacing:.12em; margin:14px 0 0; padding-inline-start:26px;}
+.looplabel{color:var(--brass-text); font-family:var(--mono); font-size:var(--fs-label); letter-spacing:.1em; margin:14px 0 0; padding-inline-start:26px;}
+html[data-lang="he"] .looplabel{font-family:var(--text-he); letter-spacing:0;}
 
 /* ── demo panels ─────────────────────────────────────── */
 .demo{border:1px solid var(--hair); background:var(--paper); padding:26px 30px; position:relative;}
 .demo .tag{position:absolute; top:-11px; inset-inline-start:24px; background:var(--paper);}
 .demo blockquote{margin:0; padding:0}
 .demo .turn{margin:13px 0; max-width:70ch}
-.demo .who{font-family:var(--mono); font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--brass-text); display:block; margin-bottom:2px;}
+.demo .who{font-family:var(--mono); font-size:var(--fs-label); letter-spacing:.1em; text-transform:uppercase; color:var(--brass-text); display:block; margin-bottom:2px;}
+html[data-lang="he"] .demo .who{font-family:var(--text-he); letter-spacing:0; text-transform:none;}
 .demo .prep h4{font-family:inherit; font-size:16px; margin:14px 0 4px}
 .demo ol{padding-inline-start:20px}
 .demo .why{color:var(--muted); font-size:.9em}
-.democap{color:var(--muted); font-size:14px; margin:12px 4px 34px;}
+.democap{color:var(--muted); font-size:var(--fs-small); margin:12px 4px 34px;}
 
 /* ── starter block ───────────────────────────────────── */
 .starterbox pre{border:1px solid var(--hair); background:var(--paper); padding:22px 24px; max-height:430px; overflow:auto; white-space:pre-wrap; font-family:inherit; font-size:15px; line-height:1.7; margin:0;}
 .copybar{display:flex; gap:14px; align-items:center; margin-top:14px; flex-wrap:wrap;}
+.promptdetails{border:0; padding:0; margin:16px 0 0;}
+.promptdetails summary{width:fit-content; font-size:var(--fs-small); font-weight:500; text-decoration:underline; text-decoration-color:var(--brass); text-underline-offset:3px;}
+.promptdetails summary::before{font-size:var(--fs-label);}
+.promptdetails[open] summary{margin-bottom:12px;}
 
 /* ── paths grid ──────────────────────────────────────── */
 .paths{display:grid; grid-template-columns:repeat(5,1fr); border:1px solid var(--hair); border-inline-end:none;}
 .path{border-inline-end:1px solid var(--hair); padding:22px 20px 26px;}
 .path .glyph{height:30px; margin-bottom:14px; color:var(--brass-text)}
 .path h3{font-size:19px; margin-bottom:2px}
-.path .en-name{font-family:var(--mono); font-size:10.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); display:block; margin-bottom:8px;}
+.path .en-name{font-family:var(--mono); font-size:var(--fs-label); letter-spacing:.1em; text-transform:uppercase; color:var(--muted); display:block; margin-bottom:8px;}
 @media(max-width:1020px){ .paths{grid-template-columns:repeat(2,1fr)} .path:nth-child(-n+4){border-bottom:1px solid var(--hair)} }
 @media(max-width:560px){ .paths{grid-template-columns:1fr} .path{border-bottom:1px solid var(--hair)} .path:last-child{border-bottom:none} }
 
@@ -174,6 +183,8 @@ section{padding:var(--pad) 0}
 .ways{display:grid; grid-template-columns:1fr 1fr; border:1px solid var(--hair); border-inline-end:none;}
 .way{border-inline-end:1px solid var(--hair); padding:30px 30px 34px; background:var(--paper);}
 .way h3{font-size:22px; margin-bottom:10px}
+.more-help-title{font-size:22px; margin:40px 0 14px;}
+.compact-rows .row{padding:18px 0;}
 @media(max-width:860px){ .ways{grid-template-columns:1fr} .way{border-bottom:1px solid var(--hair)} .way:last-child{border-bottom:none} }
 
 /* ── FAQ ─────────────────────────────────────────────── */
@@ -189,7 +200,7 @@ details .crisis-a{color:var(--crisis)}
 .tblwrap{overflow-x:auto; border:1px solid var(--hair);}
 table{border-collapse:collapse; width:100%; font-size:15px; background:var(--paper);}
 th,td{border-bottom:1px solid var(--hair); padding:12px 16px; text-align:start; vertical-align:top;}
-th{font-family:var(--mono); font-size:11.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); background:var(--bone);}
+th{font-family:var(--mono); font-size:var(--fs-label); letter-spacing:.1em; text-transform:uppercase; color:var(--muted); background:var(--bone);}
 tr:last-child td{border-bottom:none}
 
 /* ── forms (form.html) ───────────────────────────────── */
@@ -242,7 +253,16 @@ footer .links{display:flex; gap:4px 18px; flex-wrap:wrap; margin-top:10px;}
 /* crisis-resource links keep the crisis color (never brass) — tap-to-call / open */
 .crisisline a, #wont .crisis a, .crisis-a a{ color:inherit; text-decoration-color:currentColor; text-underline-offset:2px; }
 @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} *{transition:none !important; animation:none !important} }
-@media(max-width:760px){ :root{--pad:64px} .hero .inner{padding:64px 20px 56px} .wrap{padding:0 20px} }
+@media(max-width:760px){
+  :root{--pad:64px}
+  .topbar .inner{padding:10px 20px; gap:7px 14px;}
+  .brand .sub{display:none;}
+  .topnav{width:100%; margin-inline-start:0; gap:6px 12px; justify-content:space-between;}
+  .topnav a{font-size:14px;}
+  .tbtn{padding:4px 10px;}
+  .hero .inner{padding:64px 20px 56px}
+  .wrap{padding:0 20px}
+}
 
 /* ── §04 flow figure + §07 prep figure — figure treatment (design pass) ── */
 .flowfig{margin:44px 0 6px; overflow-x:auto;}

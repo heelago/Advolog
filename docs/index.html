@@ -2,9 +2,10 @@
 <!--
   Advolog — landing (GitHub Pages root).
   ══════════════════════════════════════════════════════════════════
-  COPY: locked, from landing-locked/landing-copy-he.md (default) and
-  landing-copy-v1.md (EN). Line-for-line; the ONLY deviations are the
-  reconcile items Heela authorized, each logged in decisions.md:
+  COPY: based on landing-locked/landing-copy-he.md (default) and
+  landing-copy-v1.md (EN). The original line-for-line lock was superseded
+  by Heela's 2026-08-03 plain-language landing pass, logged in decisions.md.
+  Safety meaning and prominence remain locked. Earlier reconcile items:
     · tier labels → the ruled set («מקורות רשמיים · פרסומים מדעיים ·
       דיווחי מטופלים» / official sources · scientific publications ·
       patient reports) in the demo footnote+tag, the FAQ, and the one
@@ -45,7 +46,7 @@
 <meta name="twitter:description" content="ערכה חינמית ופתוחה שהופכת ניסיון רפואי לחומר ברור ואמין לרופא — שאלות עם נימוק, דף הכנה לתור, ותיעוד ששייך לכם.">
 <meta name="twitter:image" content="https://advolog.h2eapps.com/assets/og-image.png">
 <title data-he="Advolog — אתם חיים עם זה חודשים. לרופא יש חמש דקות." data-en="Advolog — Months of living with it. Five minutes to explain it.">Advolog</title>
-<meta name="description" content="Advolog — ערכה חינמית ופתוחה שהופכת תסמינים, מסמכים וזיכרונות מתורים לחומר ברור ואמין שרופא קורא בשתי דקות. בלי אבחנות, בלי המלצות טיפול, בלי שרת.">
+<meta name="description" content="Advolog — ערכה חינמית ופתוחה שהופכת תסמינים, מסמכים וזיכרונות מתורים לתיעוד ברור לקראת ביקור רפואי. בלי אבחנות, בלי המלצות טיפול, בלי שרת.">
 <link rel="stylesheet" href="assets/site.css">
 <script src="assets/site.js"></script>
 </head>
@@ -56,12 +57,9 @@
   <div class="inner">
     <a class="brand" href="index.html">Advolog<span class="sub"><span class="he">חינמי · פתוח · פרטי</span><span class="en">free · open · private</span></span></a>
     <nav class="topnav" aria-label="ניווט ראשי" data-aria-he="ניווט ראשי" data-aria-en="Main navigation">
-      <a href="#does"><span class="he">מה זה עושה</span><span class="en">What it does</span></a>
-      <a href="#wont"><span class="he">מה זה לא יעשה</span><span class="en">What it won't do</span></a>
-      <a href="#how"><span class="he">איך זה עובד</span><span class="en">How it works</span></a>
+      <a href="#does"><span class="he">איך זה עוזר</span><span class="en">How it helps</span></a>
       <a href="#demo"><span class="he">דוגמה</span><span class="en">See it</span></a>
-      <a href="#faq"><span class="he">שאלות</span><span class="en">Questions</span></a>
-      <a href="#get"><span class="he">להורדה</span><span class="en">Get it</span></a>
+      <a href="#starter"><span class="he">להתחיל</span><span class="en">Start</span></a>
       <button id="langBtn" class="tbtn" type="button">English</button>
       <button id="scaleBtn" class="tbtn" type="button" aria-pressed="false" aria-label="טקסט גדול יותר" data-aria-he="טקסט גדול יותר" data-aria-en="Larger text">Aa</button>
     </nav>
@@ -112,16 +110,16 @@
           <span class="en">Months of living with it. Five minutes to explain it.</span>
         </h1>
         <p class="sub">
-          <span class="he">Advolog היא ערכה חינמית ופתוחה שעוזרת למטופלים ולמלווים להפוך תסמינים, מסמכים מפוזרים וזיכרונות חצי־שלמים מתורים קודמים לחומר ברור ואמין שרופא יכול לקרוא בשתי דקות. היא רצה בתוך חשבון ה־AI שכבר יש לכם. היא לא מאבחנת, לא ממליצה על טיפול, ושום מידע שלכם לא מגיע אלינו.</span>
-          <span class="en">Advolog is a free, open toolkit that helps patients and caregivers turn scattered records, symptoms, and half-remembered appointments into clear, credible material a doctor can read in two minutes. It runs inside an AI account you already have. It never diagnoses, never recommends treatment, and none of your information ever reaches us.</span>
+          <span class="he">Advolog היא ערכה חינמית ופתוחה שעוזרת למטופלים ולמלווים להפוך תסמינים, מסמכים מפוזרים וזיכרונות מתורים קודמים לתיעוד ברור לקראת ביקור רפואי. משתמשים בה מתוך ChatGPT או Claude שכבר יש לכם. היא לא מאבחנת, לא ממליצה על טיפול, ו־Advolog עצמו לא מקבל שום מידע שלכם.</span>
+          <span class="en">Advolog is a free, open toolkit that helps patients and caregivers turn symptoms, scattered records, and memories of earlier appointments into a clear record for a medical visit. You use it from ChatGPT or Claude, whichever you already have. It never diagnoses, never recommends treatment, and Advolog itself receives none of your information.</span>
         </p>
         <div class="ctas">
-          <a class="btn brass" href="#get"><span class="he">להורדת הערכה</span><span class="en">Download the package</span></a>
-          <a class="btn line" href="#starter"><span class="he">להעתקת פרומפט הפתיחה</span><span class="en">Copy the starter prompt — no download needed</span></a>
+          <a class="btn brass" href="#starter"><span class="he">להתחיל בלי התקנה</span><span class="en">Start without installing</span></a>
+          <a class="btn line" href="#package"><span class="he">להוריד את הערכה המלאה</span><span class="en">Download the full package</span></a>
         </div>
         <p class="under muted">
-          <span class="he">בחינם. בלי הרשמה, בלי חשבון, בלי מעקב. לפני שמתחילים, כדאי לקרוא <a href="#wont">מה הכלי יכול לעשות — ומה לא</a> — זה החלק החשוב בעמוד.</span>
-          <span class="en">Free. No signup, no account, no tracking. Before you start, read <a href="#wont">what this can and can't do</a> — it's two minutes, and it's the most important section on this page.</span>
+          <span class="he">בחינם. בלי הרשמה, בלי חשבון Advolog נוסף ובלי מעקב באתר הזה. לפני שמתחילים, כדאי לקרוא <a href="#wont">מה הכלי יכול לעשות — ומה לא</a> — זה החלק החשוב בעמוד.</span>
+          <span class="en">Free. No signup, no separate Advolog account, and no tracking on this site. Before you start, read <a href="#wont">what this can and can't do</a> — it is the most important section on this page.</span>
         </p>
       </div>
     </div>
@@ -132,8 +130,8 @@
     <div class="wrap split">
       <div class="numlabel mono"><span class="he">מה זה בעצם</span><span class="en">What this is</span></div>
       <p style="font-size:clamp(18px,2.2vw,22px); line-height:1.7; max-width:34em; margin:0;">
-        <span class="he">זו תיקייה של קבצים והנחיות, כתובים בשפה פשוטה, שנותנים לעוזר ה־AI לקרוא שאתם כבר משתמשים בו — קלוד או ג׳יפיטי, שניהם עובדים. הוא מראיין אתכם בעדינות, שאלה אחת בכל פעם. מסדר את מה שסיפרתם. ומפיק מסמכים שנבנו בשביל תורים אמיתיים: דף הכנה של עמוד אחד, רשימת שאלות עם הנימוק ליד כל שאלה, ציר זמן של מה שנוסה ומה קרה. זו לא אפליקציה, לא שירות, ולא מקור לתשובות רפואיות. זו מסגרת שעומדת לצדכם בשיחה.</span>
-        <span class="en">This is a folder of instructions and templates, written in plain language, that you load into an AI assistant you already use (Claude or ChatGPT — both work). It interviews you gently, one question at a time. It organizes what you tell it. And it produces documents built for real appointments: a one-page prep sheet, a question list with the reasoning behind each question, a timeline of what has been tried and what happened. It is not an app, not a service, and not a source of medical answers. It is structure, for your side of the conversation.</span>
+        <span class="he">Advolog היא תיקייה של קבצים והנחיות. פותחים אותה ב־Claude, או מעלים קובץ אחד ל־ChatGPT. משם העוזר שואל שאלה אחת בכל פעם, מסדר את מה שסיפרתם ומכין חומר שימושי לתור: דף הכנה קצר, שאלות עם נימוק וציר זמן של מה שנוסה ומה קרה. זו לא אפליקציה, לא שירות ולא מקור לתשובות רפואיות. זו דרך מסודרת להתכונן לשיחה.</span>
+        <span class="en">Advolog is a folder of instructions and templates. Open it with Claude, or upload one combined file to ChatGPT. From there, the assistant asks one question at a time, organizes what you tell it, and prepares useful material for a visit: a short prep sheet, questions with reasons, and a timeline of what was tried and what happened. It is not an app, a service, or a source of medical answers. It is a structured way to prepare for the conversation.</span>
       </p>
     </div>
   </section>
@@ -154,49 +152,32 @@
   <!-- ═══ 02 · What it's meant to do ═══ -->
   <section id="does">
     <div class="wrap">
-      <div class="shead"><span class="numlabel">02 —</span><h2><span class="he">מה הכלי נועד לעשות</span><span class="en">What it's meant to do</span></h2></div>
+      <div class="shead"><span class="numlabel">02 —</span><h2><span class="he">איך Advolog עוזר</span><span class="en">How Advolog helps</span></h2></div>
       <div class="rows">
         <div class="row"><div class="ric"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.4" style="color:var(--brass-text)"><path d="M3 6h6l2 2h10v11H3z"/><path d="M3 6v13"/></svg></div>
           <h3><span class="he">ההיסטוריה שלכם נשארת שלכם.</span><span class="en">Keep your history yours.</span></h3>
-          <p class="muted"><span class="he">התיעוד חי כקבצים פשוטים במחשב שלכם: ציר זמן, תרופות ותגובות, תורים, שאלות פתוחות. כל אדם יכול לקרוא אותם, כל פלטפורמת AI יכולה לעבוד איתם, ואף אחת מהן לא מחזיקה אתכם.</span>
-          <span class="en">Your record lives as plain files on your computer: timeline, medications and reactions, appointments, open questions. Readable by any person, portable to any AI platform, dependent on none of them.</span></p></div>
+          <p class="muted"><span class="he">בגרסה המלאה התיעוד נשמר כקבצים פשוטים במחשב שלכם: ציר זמן, תרופות ותגובות, תורים ושאלות פתוחות. אפשר לפתוח אותם לבד ולעבור איתם בין פלטפורמות.</span>
+          <span class="en">In the full version, your record is kept as plain files on your computer: a timeline, medications and reactions, appointments, and open questions. You can open them yourself and move them between platforms.</span></p></div>
         <div class="row"><div class="ric"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.4" style="color:var(--brass-text)"><path d="M6 2h9l4 4v16H6z"/><path d="M15 2v4h4"/><path d="M9 12h7M9 16h7"/></svg></div>
           <h3><span class="he">הכנה לתורים.</span><span class="en">Prepare you for appointments.</span></h3>
-          <p class="muted"><span class="he">דף הכנה של עמוד אחד מתוך מה שנאסף: מה השתנה מאז הביקור הקודם, מה נלקח, מה אתם צריכים שייענה. עשר דקות לפני תור זה מספיק.</span>
-          <span class="en">A one-page prep sheet from whatever you've captured: what changed since last visit, what's being taken, what you need answered. Ten minutes before a visit is enough.</span></p></div>
+          <p class="muted"><span class="he">דף הכנה של עמוד אחד מתוך מה שנאסף: מה השתנה מאז הביקור הקודם, אילו תרופות נלקחות ומה חשוב לכם שייענה. אפשר להכין אותו גם סמוך לתור.</span>
+          <span class="en">A one-page prep sheet from whatever you have collected: what changed since the last visit, which medications are being taken, and what you need answered. You can prepare it even shortly before a visit.</span></p></div>
         <div class="row"><div class="ric"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.4" style="color:var(--brass-text)"><path d="M12 18v.01"/><path d="M12 14c0-3 4-3 4-6a4 4 0 0 0-8 0"/></svg></div>
           <h3><span class="he">שאלות חדות יותר.</span><span class="en">Help you ask better questions.</span></h3>
-          <p class="muted"><span class="he">לא ״קראתי באינטרנט ש...״ אלא רשימה קצרה של שאלות ממוקדות, לכל אחת נימוק גלוי ומקורות מסומנים לפי רמת ראיות, כך שהרופא יכול לשקול אותן בשניות.</span>
-          <span class="en">Not "I read online that…" but a short list of specific questions, each with its reasoning stated and its sources labeled by evidence tier, so your doctor can weigh them in seconds.</span></p></div>
+          <p class="muted"><span class="he">רשימה קצרה של שאלות ממוקדות, עם הסבר ליד כל שאלה. כשנוסף מידע ממקור חיצוני, סוג המקור מופיע לידו כדי שהרופא יוכל לשקול אותו במהירות.</span>
+          <span class="en">A short list of focused questions, with a reason beside each one. When outside information is included, its source type appears beside it so your doctor can assess it quickly.</span></p></div>
         <div class="row"><div class="ric"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.4" style="color:var(--brass-text)"><path d="M4 14a6 6 0 0 1 11-3h2a4 4 0 0 1 0 7H7a4 4 0 0 1-3-4z"/><path d="M12 18l-2 4M16 18l-2 4"/></svg></div>
-          <h3><span class="he">לתפוס גם את השבועות הקשים.</span><span class="en">Catch the bad weeks.</span></h3>
-          <p class="muted"><span class="he">מצב קליטה לתקופות שבהן אין כוח לסדר כלום: הודעות זרוקות, צילום של מסמך, שורה אחת. הסדר מגיע אחר כך, בשיחת שחזור, כך ששום דבר לא הולך לאיבוד בגלל תקופה קשה.</span>
-          <span class="en">A capture mode for periods when organizing anything is beyond reach: brain-dump entries, photos of paperwork, one-line notes. Structure comes later, in a reconstruction session, so nothing is lost to a rough stretch.</span></p></div>
+          <h3><span class="he">גם כשאין כוח לסדר.</span><span class="en">Help when organizing is too much.</span></h3>
+          <p class="muted"><span class="he">אפשר להשאיר שורה אחת, להדביק הודעה או לצלם מסמך. Advolog שומר את החומר כמו שהוא, ואפשר לסדר אותו יחד אחר כך.</span>
+          <span class="en">Leave one line, paste a message, or photograph a document. Advolog keeps the material as it is, and you can organize it together later.</span></p></div>
         <div class="row"><div class="ric"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.4" style="color:var(--brass-text)"><circle cx="8" cy="7" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3 20a5 5 0 0 1 10 0M13.5 20a4 4 0 0 1 7.5-1.8"/></svg></div>
           <h3><span class="he">תמיכה במי שמלווה.</span><span class="en">Support the people doing the advocating.</span></h3>
-          <p class="muted"><span class="he">מסלול מלווה לניהול הטיפול של אדם קרוב, עם מסגרת ברורה של הסכמה ושל זהירות במידע של מישהו אחר.</span>
-          <span class="en">A caregiver mode for managing someone else's care, with clear framing about consent and whose information is being handled.</span></p></div>
+          <p class="muted"><span class="he">אפשר לתעד עבור אדם קרוב, עם שאלות פשוטות על הסכמה ועם זהירות מיוחדת במידע ששייך למישהו אחר.</span>
+          <span class="en">You can keep a record for someone close to you, with simple consent questions and extra care around information that belongs to another person.</span></p></div>
         <div class="row"><div class="ric"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.4" style="color:var(--brass-text)"><path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg></div>
-          <h3><span class="he">להכיר את המערכת הישראלית.</span><span class="en">Know the Israeli system.</span></h3>
-          <p class="muted"><span class="he">שכבת ידע ייעודית על המכניקה בפועל: ההבדלים בין הקופות, טופס 17, סל הבריאות וועדות חריגים, רשומות שחיות במערכות נפרדות ואיך משיגים עותק של התיק שלכם. בעברית, על המציאות הישראלית.</span>
-          <span class="en">A dedicated layer on the practical mechanics: how the kupot differ, Tofes 17, sal briut and exception committees, records that live in separate systems and how to get copies of your own. Written for the Israeli reality, in Hebrew.</span></p></div>
-      </div>
-
-      <!-- paired band (unnumbered, per the Hebrew file's placement) -->
-      <div class="split" style="margin-top:56px">
-        <div class="numlabel mono"><span class="he">ועוד שניים</span><span class="en">And two more</span></div>
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:32px; max-width:100%;">
-          <div>
-            <h3 style="font-size:19px; margin-bottom:6px"><span class="he">מדבר בשפה שלכם.</span><span class="en">Shaped by how you speak.</span></h3>
-            <p class="muted small"><span class="he">מהריאיון הראשון הכלי מתאים את אופן העבודה אליכם: מילים פשוטות או מדויקות, בקצרה או לעומק, ליווי צמוד או מרחב. הוא שואל פעם אחת כמה הכוונה תרצו, וממשיך להתאים לפי איך שאתם באמת עונים. מי שחי בטרמינל ומי שמעולם לא חילץ קובץ מקבלים את אותו כלי, שפוגש כל אחד אחרת. מה שהוא זוכר עליכם הוא איך נוח לכם לעבוד — וזה נשמר בקובצי הרשומות שאצלכם במחשב.</span>
-            <span class="en">From the first interview onward it calibrates to you: plain words or precise ones, brief or thorough, walked-through or left alone. It asks once how much guidance you want, then keeps adjusting from how you actually answer — someone comfortable in a terminal and someone who has never unzipped a file get the same tool, meeting them differently. The record it keeps of you is <em>how you like to work</em> — kept in the record files on your own machine.</span></p>
-          </div>
-          <div>
-            <h3 style="font-size:19px; margin-bottom:6px"><span class="he">בדיקות תקופתיות, בקצב שלכם.</span><span class="en">Periodic checks, at your pace.</span></h3>
-            <p class="muted small"><span class="he">באישור שלכם ולפי לוח הזמנים שלכם — פעם בשבוע, או בכל תדירות שתבחרו — הערכה יכולה להריץ בדיקות תקופתיות — ידנית או, במקום שהפלטפורמה תומכת בזה, לפי לוח זמנים: לאסוף שיפורים מהמאגר הציבורי, ולרענן את המידע המפורסם הרלוונטי למה שאתם עוקבים אחריו, מדורג וממקור. כל בדיקה נוחתת כהצעה שאתם מאשרים; אין כאן מנגנון שמעדכן את עצמו לבד, ותמיד אפשר לא להפעיל בכלל.</span>
-            <span class="en">With your permission and on your schedule — weekly, or as often as you like — Advolog can run periodic checks — manually, or where your platform supports it on a schedule: pick up improvements to the toolkit from the public repository, and refresh the published information relevant to what you're tracking, tiered and sourced. Each check arrives as a proposal you approve; there is no self-updating mechanism, and you can choose not to enable it at all.</span></p>
-          </div>
-        </div>
+          <h3><span class="he">להתמצא במערכת הבריאות בישראל.</span><span class="en">Navigate the Israeli health system.</span></h3>
+          <p class="muted"><span class="he">הסברים מעשיים בעברית על קופות החולים, טופס 17, סל הבריאות, ועדות חריגים ואיך מבקשים עותק מהרשומה הרפואית.</span>
+          <span class="en">Practical explanations in Hebrew about the health funds, Form 17, the health basket, exception committees, and how to request a copy of your medical record.</span></p></div>
       </div>
     </div>
   </section>
@@ -225,10 +206,10 @@
       <div class="rows he">
         <div class="row"><span class="numlabel">א</span><h3>הוא לא יגיד לכם מה יש לכם.</h3><p class="muted">הוא בנוי להפיק שאלות, לא אבחנות. אבחנה דורשת בדיקה, בירור ורישיון. אם אי פעם נדמה שהוא מאבחן, זה באג — דווחו לנו.</p></div>
         <div class="row"><span class="numlabel">ב</span><h3>הוא לא ימליץ על טיפול.</h3><p class="muted">הוא לעולם לא יציע להתחיל, להפסיק, להחליף או לשנות מינון של שום דבר. ההחלטות האלה שייכות למי שרואה את התמונה המלאה ומוסמך לכך.</p></div>
-        <div class="row"><span class="numlabel">ג</span><h3>הוא לא יכול לאמת אמת רפואית.</h3><p class="muted">מקור מוכיח מאיפה הגיעה טענה, לא שהיא נכונה. כל מקור מסומן באחת משלוש רמות — מקורות רשמיים, פרסומים מדעיים, דיווחי מטופלים — והרמות לעולם לא מתערבבות.</p></div>
+        <div class="row"><span class="numlabel">ג</span><h3>מקור לא הופך טענה לנכונה.</h3><p class="muted">ליד כל טענה ממקור חיצוני מופיע מאיפה היא הגיעה: מקורות רשמיים, פרסומים מדעיים או דיווחי מטופלים. הסוגים אינם מתערבבים, ועדיין צריך לשקול את המידע עם איש מקצוע.</p></div>
         <div class="row"><span class="numlabel">ד</span><h3>הוא לא יכול לגרום לרופא להקשיב.</h3><p class="muted">הוא מעלה את הסיכוי שחמש הדקות שלכם יעברו על הדברים הנכונים. הוא לא יכול להבטיח את התוצאה, והעמוד הזה לא יעמיד פנים אחרת.</p></div>
-        <div class="row"><span class="numlabel">ה</span><h3>הוא לא יעמיד פני מערכת קלינית.</h3><p class="muted">הוא לעולם לא מדמה מה מאגרים מקצועיים ״היו אומרים״. ממצאים של קלינאי אמיתי נרשמים בדיוק ככאלה: שלו, עם שם ותאריך.</p></div>
-        <div class="row"><span class="numlabel">ו</span><h3>הפרטיות היא לא קסם.</h3><p class="muted">אין כאן שרת, חשבון או ניתוח נתונים, והתיעוד נשאר אצלכם. אבל ה־AI שהוא רץ בו כפוף להגדרות המידע של הספק שלכם. הערכה מלווה אתכם בבדיקת ההגדרות האלה, ומריצה רשימת בדיקה לפני כל שיתוף או ייצוא.</p></div>
+        <div class="row"><span class="numlabel">ה</span><h3>הוא לא מעמיד פנים שבדק מערכת מקצועית.</h3><p class="muted">אם נדרשת בדיקה במאגר מקצועי, הכלי אומר זאת ומציע לפנות לאיש מקצוע שיש לו גישה. תשובה של איש מקצוע אמיתי נשמרת עם השם והתאריך.</p></div>
+        <div class="row"><span class="numlabel">ו</span><h3>הפרטיות תלויה גם בחשבון ה־AI שלכם.</h3><p class="muted">ל־Advolog אין שרת או חשבון, אבל השיחות והקבצים נשמרים לפי ההגדרות של ChatGPT או Claude. הערכה עוזרת לבדוק את ההגדרות האלה לפני שמתחילים ולפני שמשתפים משהו.</p></div>
         <div class="row"><span class="numlabel">ז</span><h3>הוא יטעה לפעמים.</h3><p class="muted">עוזרי AI טועים. זו עובדה על הטכנולוגיה וגם עיקרון תכנון כאן: בגלל זה כל פלט הוא שאלות והקשר לצוות המטפל, אף פעם לא מסקנות לפעול לפיהן.</p></div>
         <div class="row crisis"><span class="numlabel" style="color:var(--crisis-dark)">ח</span><h3>הוא לא שירות חירום.</h3><p class="muted">אם אתם או מישהו לידכם בסכנה מיידית, חייגו <strong><a href="tel:101">101</a></strong>. אם אתם צריכים מישהו לדבר איתו עכשיו: <strong>ער״ן — <a href="tel:1201">1201</a></strong>, או <strong><a href="https://sahar.org.il" target="_blank" rel="noopener">סה״ר</a></strong> (אונליין). מצב קליטה יכול לשמור את המידע שלכם גם בתקופה קשה, אבל כלי הוא לא מה שהרגעים האלה צריכים.</p></div>
       </div>
@@ -238,10 +219,10 @@
         <div class="row"><span class="numlabel">A</span><h3>It will not tell you what you have.</h3><p class="muted">It's built to produce questions, not diagnoses. A diagnosis needs an examination, tests, and a license. If it ever seems to be diagnosing, that's a bug — report it and we'll fix it.</p></div>
         <div class="row"><span class="numlabel">B</span><h3>It will not recommend treatment.</h3><p class="muted">It never suggests starting, stopping, switching, or re-dosing anything. Those calls belong to a clinician who can see your whole picture.</p></div>
         <div class="row crisis"><span class="numlabel" style="color:var(--crisis-dark)">C</span><h3>It is not a crisis service.</h3><p class="muted">If you or someone near you is in immediate danger, call <strong><a href="tel:101">101</a></strong>. If you need someone to talk to: <strong>ERAN — <a href="tel:1201">1201</a></strong>, or <strong><a href="https://sahar.org.il" target="_blank" rel="noopener">Sahar</a></strong> (online). Capture mode can hold your information through a bad period, but a tool is not what those moments call for.</p></div>
-        <div class="row"><span class="numlabel">D</span><h3>It cannot verify medical truth.</h3><p class="muted">When it cites a source, that proves where a claim came from, not that the claim is right. Every source is labeled one of three tiers — official sources, scientific publications, or patient reports — and the tiers are never blended or dressed up.</p></div>
+        <div class="row"><span class="numlabel">D</span><h3>A source does not make a claim correct.</h3><p class="muted">Every outside claim shows where it came from: official sources, scientific publications, or patient reports. Those types are never blended, and the information still needs to be considered with a professional.</p></div>
         <div class="row"><span class="numlabel">E</span><h3>It cannot make a doctor listen.</h3><p class="muted">It raises the odds that your five minutes are spent on the right things. It cannot guarantee the outcome, and this page won't pretend otherwise.</p></div>
-        <div class="row"><span class="numlabel">F</span><h3>It will not pretend to be a clinical system.</h3><p class="muted">Professional drug-interaction databases and clinician tools require a license for a reason. This toolkit never simulates what they "would say." If a real clinician checks something for you, their findings are recorded as exactly that — theirs, attributed and dated.</p></div>
-        <div class="row"><span class="numlabel">G</span><h3>It is not private by magic.</h3><p class="muted">There's no server, no account, and no analytics here, and your record stays on your machine. But the AI assistant it runs in is yours, under your provider's data settings — so the package walks you through checking those settings, and runs a checklist before anything is shared or exported. It never asks for ID numbers, full names, or addresses, and tells you why.</p></div>
+        <div class="row"><span class="numlabel">F</span><h3>It will not pretend it checked a professional system.</h3><p class="muted">When a professional database is needed, the toolkit says so and suggests asking someone who has access. A real professional's answer can be recorded with their name and the date.</p></div>
+        <div class="row"><span class="numlabel">G</span><h3>Privacy also depends on your AI account.</h3><p class="muted">Advolog has no server or account, but your conversations and files are kept under ChatGPT's or Claude's settings. The package helps you check those settings before you begin and before you share anything.</p></div>
         <div class="row"><span class="numlabel">H</span><h3>It will make mistakes.</h3><p class="muted">AI assistants get things wrong. That is a fact about the technology and a design constraint here: it's the reason every output is framed as questions and context for your care team, never as conclusions to act on.</p></div>
       </div>
     </div>
@@ -253,13 +234,13 @@
       <div class="shead"><span class="numlabel">04 —</span><h2><span class="he">איך זה עובד</span><span class="en">How it works</span></h2></div>
       <div class="rows">
         <div class="row"><span class="numlabel">1</span>
-          <h3><span class="he">משיגים.</span><span class="en">Get it.</span></h3>
-          <p class="muted"><span class="he">מורידים את הערכה — קובץ zip, או קבצים בודדים מהמאגר — ושמים בתיקייה. את קלוד פותחים ישירות על התיקייה; בג׳יפיטי מעלים קובץ מאוחד אחד — וכך או כך הוא קורא את ההסבר, מתקין את עצמו ומלווה אתכם תוך כדי. ההתקנה היא שיחה, לא הגדרות. (אפשר גם בלי קבצים בכלל: פרומפט הפתיחה למטה מריץ גרסה קלה מהדבקה אחת.)</span>
-          <span class="en">Download the package — a zip, or individual files from the repository — and put it in a folder. Claude opens that folder directly; in ChatGPT you upload the one combined file — either way it reads the explainer and sets itself up, guiding you as it goes. Setup is a conversation, not a configuration. (Or skip files entirely: the starter prompt runs a lightweight version from a single paste.)</span></p></div>
+          <h3><span class="he">בוחרים איך להתחיל.</span><span class="en">Choose how to start.</span></h3>
+          <p class="muted"><span class="he">אפשר להעתיק פרומפט אחד לשיחה חדשה, בלי להוריד דבר. לעבודה מתמשכת מורידים את הערכה המלאה: פותחים את התיקייה ב־Claude, או מעלים קובץ אחד ל־ChatGPT. אין תוכנה להתקין; מדריך קצר מלווה אתכם.</span>
+          <span class="en">You can paste one prompt into a new conversation without downloading anything. For ongoing work, download the full package: open its folder with Claude, or upload one combined file to ChatGPT. There is no software to install; a short guide walks you through it.</span></p></div>
         <div class="row"><span class="numlabel">2</span>
-          <h3><span class="he">ריאיון קצר.</span><span class="en">A short interview.</span></h3>
-          <p class="muted"><span class="he">שאלה אחת בכל פעם: בשביל מי זה, מה קורה, כמה הכוונה תרצו. כך נבחר המסלול — ואפשר להחזיק יותר מאחד.</span>
-          <span class="en">It asks one question at a time: who this is for, what's going on, what you need right now. Every question can be skipped. This picks your path — and you can hold more than one.</span></p></div>
+          <h3><span class="he">מתחילים בשיחה קצרה.</span><span class="en">Begin with a short conversation.</span></h3>
+          <p class="muted"><span class="he">שאלה אחת בכל פעם: בשביל מי התיעוד, מה קורה ומה הכי יעזור עכשיו. אפשר לדלג על כל שאלה.</span>
+          <span class="en">One question at a time: who the record is for, what is happening, and what would help most right now. You can skip any question.</span></p></div>
       </div>
       <div class="loopwrap">
         <div class="rows" style="border-top:none">
@@ -314,8 +295,8 @@
             <path d="M 153 120 L 109 120" stroke="#16140F" stroke-opacity="0.42" stroke-width="1.2"></path>
             <path d="M 153 133 L 129 133" stroke="#16140F" stroke-opacity="0.42" stroke-width="1.2"></path>
             <path d="M 153 80 L 137 80" stroke="#C9A24B" stroke-width="1.4"></path>
-            <text x="943.2" y="335.6" text-anchor="middle" stroke="none"><tspan fill="#7E5D18" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12.5" direction="ltr">1</tspan><tspan fill="#16140F" font-size="17" font-weight="600"> · משיגים</tspan></text>
-            <text x="778" y="312" text-anchor="middle" stroke="none"><tspan fill="#7E5D18" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12.5" direction="ltr">2</tspan><tspan fill="#16140F" font-size="17" font-weight="600"> · ריאיון קצר</tspan></text>
+            <text x="943.2" y="335.6" text-anchor="middle" stroke="none"><tspan fill="#7E5D18" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12.5" direction="ltr">1</tspan><tspan fill="#16140F" font-size="17" font-weight="600"> · בוחרים התחלה</tspan></text>
+            <text x="778" y="312" text-anchor="middle" stroke="none"><tspan fill="#7E5D18" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12.5" direction="ltr">2</tspan><tspan fill="#16140F" font-size="17" font-weight="600"> · שיחה קצרה</tspan></text>
             <text x="472" y="44" text-anchor="middle" stroke="none"><tspan fill="#7E5D18" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12.5" direction="ltr">3</tspan><tspan fill="#16140F" font-size="17" font-weight="600"> · קולטים, איך שנוח</tspan></text>
             <text x="296" y="258" text-anchor="end" stroke="none"><tspan fill="#7E5D18" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12.5" direction="ltr">4</tspan><tspan fill="#16140F" font-size="17" font-weight="600"> · לפני תור</tspan></text>
             <text x="540" y="358" text-anchor="middle" stroke="none"><tspan fill="#7E5D18" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12.5" direction="ltr">5</tspan><tspan fill="#16140F" font-size="17" font-weight="600"> · אחרי, ובין לבין</tspan></text>
@@ -356,8 +337,8 @@
             <path d="M 887 120 L 931 120" stroke="#16140F" stroke-opacity="0.42" stroke-width="1.2"></path>
             <path d="M 887 133 L 911 133" stroke="#16140F" stroke-opacity="0.42" stroke-width="1.2"></path>
             <path d="M 887 80 L 903 80" stroke="#C9A24B" stroke-width="1.4"></path>
-            <text x="96.8" y="335.6" text-anchor="middle" stroke="none"><tspan fill="#7E5D18" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12.5" direction="ltr">1</tspan><tspan fill="#16140F" font-size="16" font-weight="600"> · Get it</tspan></text>
-            <text x="262" y="312" text-anchor="middle" stroke="none"><tspan fill="#7E5D18" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12.5" direction="ltr">2</tspan><tspan fill="#16140F" font-size="16" font-weight="600"> · A short interview</tspan></text>
+            <text x="96.8" y="335.6" text-anchor="middle" stroke="none"><tspan fill="#7E5D18" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12.5" direction="ltr">1</tspan><tspan fill="#16140F" font-size="16" font-weight="600"> · Choose a start</tspan></text>
+            <text x="262" y="312" text-anchor="middle" stroke="none"><tspan fill="#7E5D18" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12.5" direction="ltr">2</tspan><tspan fill="#16140F" font-size="16" font-weight="600"> · Short conversation</tspan></text>
             <text x="568" y="44" text-anchor="middle" stroke="none"><tspan fill="#7E5D18" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12.5" direction="ltr">3</tspan><tspan fill="#16140F" font-size="16" font-weight="600"> · Capture, your way</tspan></text>
             <text x="744" y="258" text-anchor="start" stroke="none"><tspan fill="#7E5D18" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12.5" direction="ltr">4</tspan><tspan fill="#16140F" font-size="16" font-weight="600"> · Before an appointment</tspan></text>
             <text x="500" y="358" text-anchor="middle" stroke="none"><tspan fill="#7E5D18" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12.5" direction="ltr">5</tspan><tspan fill="#16140F" font-size="16" font-weight="600"> · After, and between</tspan></text>
@@ -378,42 +359,37 @@
   <!-- ═══ 05 · Five paths ═══ -->
   <section>
     <div class="wrap">
-      <div class="shead"><span class="numlabel">05 —</span><h2><span class="he">חמישה מסלולים</span><span class="en">The five paths</span></h2></div>
+      <div class="shead"><span class="numlabel">05 —</span><h2><span class="he">חמישה מצבים מוכרים</span><span class="en">Five familiar situations</span></h2></div>
       <div class="paths">
         <div class="path">
           <div class="glyph"><svg viewBox="0 0 28 28" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 24V14c0-6 4-10 10-10h10"/><path d="M4 14h10c6 0 10-4 10-10" opacity=".45"/><path d="M20 8l4-4-4-4" transform="translate(0,4)" opacity="0"/></svg></div>
-          <h3><span class="he">מסע אבחון</span><span class="en">Diagnostic journey</span></h3>
-          <span class="en-name"><span class="he">Diagnostic journey</span><span class="en">מסע אבחון</span></span>
-          <p class="muted small"><span class="he">לבעיה שכל פעם מקבלת את התשובה הרגילה. בונה את ציר הזמן ואת תיעוד ״מה נוסה ומה קרה״ שנותן לרופא סיבה טובה לחשוב שוב.</span>
-          <span class="en">for the problem that keeps getting the default answer. Builds the timeline and the "what's been tried, what happened" record that gives a doctor a credible reason to think again.</span></p>
+          <h3><span class="he">כשהבעיה עדיין לא ברורה</span><span class="en">When the problem is still unclear</span></h3>
+          <p class="muted small"><span class="he">מסדרים ציר זמן ברור של מה קרה, מה כבר נבדק, מה נוסה ומה השתנה — כדי שהרופא יוכל לראות את התמונה במהירות.</span>
+          <span class="en">Build a clear timeline of what happened, what was checked, what was tried, and what changed, so a doctor can see the picture quickly.</span></p>
         </div>
         <div class="path">
           <div class="glyph"><svg viewBox="0 0 28 28" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 18c4 0 4-8 8-8s4 8 8 8 4-8 8-8"/></svg></div>
-          <h3><span class="he">ניהול מתמשך</span><span class="en">Ongoing management</span></h3>
-          <span class="en-name"><span class="he">Ongoing management</span><span class="en">ניהול מתמשך</span></span>
-          <p class="muted small"><span class="he">למצבים כרוניים וארוכי טווח, כולל טיפול פסיכיאטרי. היסטוריה רציפה בבעלותכם, כך שכל מטפל חדש מתחיל מהתיעוד שלכם, לא מאפס.</span>
-          <span class="en">for chronic and long-term care, psychiatric care included. A longitudinal history you own, so each new provider starts from your record, not from zero.</span></p>
+          <h3><span class="he">למעקב לאורך זמן</span><span class="en">For care over time</span></h3>
+          <p class="muted small"><span class="he">שומרים היסטוריה רציפה של שינויים, תרופות, תגובות ותורים, כך שמטפל חדש לא צריך להתחיל את הסיפור מאפס.</span>
+          <span class="en">Keep a continuous history of changes, medications, reactions, and visits, so a new provider does not have to start the story from zero.</span></p>
         </div>
         <div class="path">
           <div class="glyph"><svg viewBox="0 0 28 28" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 4v3M14 2v5M22 4v3" opacity=".6"/><path d="M4 13h20v11H4z"/><path d="M4 13l3-4M24 13l-3-4" opacity="0"/></svg></div>
-          <h3><span class="he">מצב קליטה</span><span class="en">Capture mode</span></h3>
-          <span class="en-name"><span class="he">Capture mode</span><span class="en">מצב קליטה</span></span>
-          <p class="muted small"><span class="he">לתקופות שבהן אי אפשר. כמעט אפס מאמץ ברגע עצמו; שיחת שחזור מאוחרת הופכת את החומר הגולמי לתיעוד מסודר. קווי הסיוע נשארים גלויים כאן, תמיד.</span>
-          <span class="en">for when you can't. Near-zero effort in the moment; a reconstruction session later turns raw capture into an organized record. Crisis resources stay visible in this path, always.</span></p>
+          <h3><span class="he">כשאין כוח לסדר</span><span class="en">When organizing is too much</span></h3>
+          <p class="muted small"><span class="he">שומרים כרגע רק מה שאפשר — אפילו שורה אחת — ומסדרים יחד מאוחר יותר. קווי הסיוע נשארים גלויים כאן, תמיד.</span>
+          <span class="en">Save only what you can manage right now, even one line, and organize it together later. Crisis resources stay visible here, always.</span></p>
         </div>
         <div class="path">
           <div class="glyph"><svg viewBox="0 0 28 28" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="10" cy="8" r="3.4"/><circle cx="20" cy="10" r="2.6"/><path d="M3 24a7 7 0 0 1 14 0M16.5 24a5.5 5.5 0 0 1 9-4.2"/></svg></div>
-          <h3><span class="he">מלווה</span><span class="en">Caregiver</span></h3>
-          <span class="en-name"><span class="he">Caregiver</span><span class="en">מלווה</span></span>
-          <p class="muted small"><span class="he">כשמנהלים את הטיפול של מישהו אחר, עם הסכמה ופרטיות כחלק מהשאלה הראשונה.</span>
-          <span class="en">advocating for someone else, with consent and privacy framing built in from the first question.</span></p>
+          <h3><span class="he">כשעוזרים לאדם קרוב</span><span class="en">When helping someone close to you</span></h3>
+          <p class="muted small"><span class="he">מתעדים עבור מישהו אחר בזהירות, עם הסכמה ועם כמה שפחות פרטים מזהים.</span>
+          <span class="en">Keep a record for someone else with care, consent, and as few identifying details as possible.</span></p>
         </div>
         <div class="path">
           <div class="glyph"><svg viewBox="0 0 28 28" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="14" cy="15" r="10"/><path d="M14 9v6l4 2"/><path d="M11 2h6"/></svg></div>
-          <h3><span class="he">הכנה מהירה</span><span class="en">Express prep</span></h3>
-          <span class="en-name"><span class="he">Express prep</span><span class="en">הכנה מהירה</span></span>
-          <p class="muted small"><span class="he">עשר דקות לפני תור, עמוד אחד שמיש מתוך מה שיש. גם אם זה לא הרבה.</span>
-          <span class="en">ten minutes before an appointment, one usable page from whatever exists. Even if that isn't much.</span></p>
+          <h3><span class="he">כשיש תור בקרוב</span><span class="en">When an appointment is coming up</span></h3>
+          <p class="muted small"><span class="he">מכינים עמוד אחד שימושי מתוך מה שכבר יש, גם אם זה מעט וגם אם נזכרתם ברגע האחרון.</span>
+          <span class="en">Prepare one useful page from whatever you already have, even if it is not much and even if you remembered at the last minute.</span></p>
         </div>
       </div>
     </div>
@@ -502,16 +478,16 @@
     </div>
   </section>
 
-  <!-- ═══ 08 · Two ways in ═══ -->
+  <!-- ═══ 08 · Start ═══ -->
   <section class="onwhite" id="get">
     <div class="wrap">
-      <div class="shead"><span class="numlabel">08 —</span><h2><span class="he">שתי דרכים פנימה</span><span class="en">Two ways in</span></h2></div>
-      <p style="margin:-28px 0 26px"><span class="he">שתיהן חינמיות. אחת היא הערכה המלאה — תיקייה; אחת היא ליבה קלה ובטוחה — פסקה אחת.</span><span class="en">Both free. One is the full kit — a folder; one is a light, safe core — a single paragraph.</span></p>
+      <div class="shead"><span class="numlabel">08 —</span><h2><span class="he">איך מתחילים</span><span class="en">How to start</span></h2></div>
+      <p style="margin:-28px 0 26px"><span class="he">אפשר להתחיל מיד בהדבקה אחת, או להוריד את הערכה המלאה לעבודה מתמשכת. שתי האפשרויות חינמיות.</span><span class="en">Start immediately with one paste, or download the full package for ongoing work. Both options are free.</span></p>
       <div class="ways">
-        <div class="way">
-          <h3><span class="he">הערכה — להוריד, לכוון, לדבר.</span><span class="en">The package — download, point, talk.</span></h3>
-          <p><span class="he">מורידים את ה־zip — או בוחרים קבצים בודדים מהמאגר — ושמים בתיקייה בכל מקום במחשב. את קלוד פותחים על התיקייה עצמה; בג׳יפיטי מעלים ממנה קובץ מאוחד אחד — וכך או כך <b>הוא קורא את קובץ ההסבר ומתקין את עצמו</b>, ומלווה אתכם בשיחה הראשונה. קובצי התיעוד, תבניות הדוחות, שכבת המערכת הישראלית — הכול חי בתיקייה הזאת, שלכם.</span>
-          <span class="en">Download the zip — or pick individual files from the repository — and put them in a folder anywhere on your computer. Open Claude on the folder itself; in ChatGPT, upload the one combined file from it — either way it reads the explainer and sets itself up, walking you through the first conversation. The record files, the report templates, the Israeli system layer — all of it lives in that folder, yours.</span></p>
+        <div class="way" id="package">
+          <h3><span class="he">הגרסה המלאה — לעבודה מתמשכת.</span><span class="en">The full package — for ongoing work.</span></h3>
+          <p><span class="he">מורידים קובץ zip ומחלצים אותו לתיקייה במחשב. ב־Claude פותחים את התיקייה; ב־ChatGPT מעלים ממנה קובץ מאוחד אחד. מדריך קצר מסביר כל צעד. התיעוד, תבניות הדוחות והמידע על המערכת הישראלית נשארים בתיקייה שלכם.</span>
+          <span class="en">Download the zip and extract it to a folder on your computer. In Claude, open the folder; in ChatGPT, upload the one combined file inside it. A short guide explains every step. Your record, report templates, and Israeli-system information remain in your folder.</span></p>
           <p style="margin-top:18px">
             <a class="btn ink" href="advolog-package.zip" download><span class="he">להורדת הערכה (zip)</span><span class="en">Download the package (zip)</span></a>
             <a class="btn line" href="guides.html" style="margin-inline-start:8px"><span class="he">מדריכי ההתקנה</span><span class="en">Setup guides</span></a>
@@ -519,9 +495,11 @@
           <p class="muted small"><span class="he">גרסת חבילה: 2.8.2026 · אחרי ההורדה חשוב לחלץ את ה־zip — המדריך מראה איך.</span><span class="en">Package build: 2.8.2026 · After downloading, extract the zip — the guide shows how.</span></p>
         </div>
         <div class="way" id="starter">
-          <h3><span class="he">פרומפט הפתיחה — הדבקה אחת, בלי קבצים.</span><span class="en">The starter prompt — one paste, no files.</span></h3>
-          <p><span class="he">מעתיקים פרומפט אחד, מדביקים בשיחה חדשה, והריאיון מתחיל — גרסה קלה בלי שום התקנה. אם תרצו אחר כך את הערכה המלאה, הוא יסביר איך לעבור אליה, ושום דבר שהזנתם לא הולך לאיבוד.</span>
-          <span class="en">Copy one prompt, paste it into a new conversation, and the interview begins — a lightweight version with nothing to install. If you later want the full package, it tells you how to graduate to it, and nothing you've entered is lost.</span></p>
+          <h3><span class="he">להתחיל עכשיו — הדבקה אחת, בלי קבצים.</span><span class="en">Start now — one paste, no files.</span></h3>
+          <p><span class="he">מעתיקים את פרומפט הפתיחה, מדביקים אותו בשיחה חדשה ב־ChatGPT או Claude ומספרים מה קורה. אם תרצו לעבור אחר כך לגרסה המלאה, אפשר להוציא מהשיחה סיכום נקי, לשמור אותו ולהמשיך ממנו.</span>
+          <span class="en">Copy the starter prompt, paste it into a new ChatGPT or Claude conversation, and tell it what is happening. If you later move to the full package, you can export a clean summary from the conversation, save it, and continue from there.</span></p>
+          <details class="promptdetails">
+            <summary><span class="he">הצגת פרומפט הפתיחה</span><span class="en">Show the starter prompt</span></summary>
           <div class="he starterbox">
             <pre id="starterHe" dir="rtl" lang="he">את/ה מלווה זהיר/ה לסנגור רפואי עצמי. קרא/י את כל ההנחיות לפני תגובה
 ראשונה, ופעל/י לפיהן לאורך כל השיחה. דבר/י בגוף ראשון נקבה (מדברת,
@@ -685,46 +663,26 @@ keeping things are never gated on that answer.
 
 Begin now, by riding whatever my first message was.</pre>
           </div>
+          </details>
           <div class="copybar">
             <button class="btn ink" type="button" data-copy-lang><span class="he">להעתקת פרומפט הפתיחה</span><span class="en">Copy the starter prompt</span></button>
-            <span class="muted small"><span class="he">ואז: שיחה חדשה ← הדבקה ← מספרים מה קורה. אפשר גם למלא קודם <a href="form.html">טופס פתיחה</a> ולהדביק את שניהם.</span>
-            <span class="en">Then: new chat ← paste ← tell your story. You can also fill the <a href="form.html">onboarding form</a> first and paste both.</span></span>
+            <span class="muted small"><span class="he">אחר כך פותחים שיחה חדשה, מדביקים ומספרים מה קורה. אפשר גם למלא קודם <a href="form.html">טופס פתיחה</a>.</span>
+            <span class="en">Then open a new conversation, paste, and tell it what is happening. You can also fill in the <a href="form.html">starting form</a> first.</span></span>
           </div>
         </div>
       </div>
-      <h3 style="margin-top:34px" id="whats-in"><span class="he">מה יש בערכה המלאה — חמש־עשרה יחידות</span><span class="en">What's in the full package — fifteen units</span></h3>
-      <p class="muted" style="max-width:76ch"><span class="he">כל יחידה נכנסת לפעולה מעצמה ברגע המתאים — לא צריך לזכור שמות. הן מקובצות כאן לפי מה שהן עושות.</span>
-      <span class="en">Each unit steps in on its own at the right moment — no names to remember. Grouped here by what they do.</span></p>
-      <div class="tblwrap"><table>
-        <thead><tr>
-          <th><span class="he">יחידה</span><span class="en">Unit</span></th>
-          <th><span class="he">מתי</span><span class="en">When</span></th>
-          <th><span class="he">מה יוצא</span><span class="en">What you get</span></th>
-        </tr></thead>
-        <tbody>
-          <tr><td colspan="3" class="mono" style="color:var(--brass-text)"><span class="he">להתחיל, לחזור, ולעבוד גם כשאין כוח</span><span class="en">Start, recover, work while overwhelmed</span></td></tr>
-          <tr><td><span class="he">ריאיון</span><span class="en">Interview</span></td><td><span class="he">בהתחלה, או בכל בקשה</span><span class="en">at the start, or on request</span></td><td><span class="he">ניתוב עדין, שאלה אחת בכל פעם, ופרופיל ראשוני</span><span class="en">gentle routing, one question at a time, a first profile</span></td></tr>
-          <tr><td><span class="he">קליטה</span><span class="en">Capture</span></td><td><span class="he">«אין לי כוח», רגע עמוס</span><span class="en">"I can't right now," a heavy moment</span></td><td><span class="he">נקלט בלי שום מבנה, שום דבר לא נופל</span><span class="en">taken in with zero structure, nothing lost</span></td></tr>
-          <tr><td><span class="he">שחזור</span><span class="en">Reconstruction</span></td><td><span class="he">כשחוזר הכוח לסדר</span><span class="en">when there's energy to sort</span></td><td><span class="he">החומר הגולמי הופך לרשומות מסודרות</span><span class="en">raw capture becomes an organized record</span></td></tr>
-          <tr><td><span class="he">התעדכנות</span><span class="en">Catch-up</span></td><td><span class="he">«תתעדכני», חזרה אחרי הפסקה</span><span class="en">"catch up," returning after a gap</span></td><td><span class="he">תמונת מצב קצרה, ממשיכים מאיפה שעצרתם</span><span class="en">a short snapshot; pick up where you left off</span></td></tr>
-          <tr><td colspan="3" class="mono" style="color:var(--brass-text)"><span class="he">לשמור על התיעוד חי</span><span class="en">Keep the record current</span></td></tr>
-          <tr><td><span class="he">צ׳ק־אין</span><span class="en">Check-in</span></td><td><span class="he">«מה נשמע» יומיומי</span><span class="en">a routine "how's it going"</span></td><td><span class="he">רישום מהיר, בלי מחקר</span><span class="en">a fast log entry, no research</span></td></tr>
-          <tr><td><span class="he">רישום אירוע</span><span class="en">Event logger</span></td><td><span class="he">«קרה משהו»</span><span class="en">"something happened"</span></td><td><span class="he">משפט אחד נכנס, שורה מסודרת יוצאת</span><span class="en">one sentence in, one clean entry out</span></td></tr>
-          <tr><td><span class="he">סיכום תקופה</span><span class="en">Interval summary</span></td><td><span class="he">«מה השתנה לאחרונה»</span><span class="en">"what changed lately"</span></td><td><span class="he">סיכום מקובץ לפי תבנית, בלי מחקר</span><span class="en">a pattern-grouped summary, no research</span></td></tr>
-          <tr><td><span class="he">טבלת תרופות</span><span class="en">Regimen chart</span></td><td><span class="he">בבקשה מפורשת בלבד</span><span class="en">on explicit request only</span></td><td><span class="he">פריסת המשטר לאישור הרוקח, בלי להמציא</span><span class="en">the regimen laid out for pharmacist check, nothing invented</span></td></tr>
-          <tr><td colspan="3" class="mono" style="color:var(--brass-text)"><span class="he">להתכונן לביקור ולסגור אותו</span><span class="en">Prepare for and close a visit</span></td></tr>
-          <tr><td><span class="he">שאלות</span><span class="en">Questions</span></td><td><span class="he">בונים סט שאלות</span><span class="en">building a question set</span></td><td><span class="he">שאלות עם נימוק שרופא לוקח ברצינות</span><span class="en">questions with reasoning a doctor takes seriously</span></td></tr>
-          <tr><td><span class="he">דף הכנה</span><span class="en">Prep sheet</span></td><td><span class="he">יש ביקור מתוכנן</span><span class="en">a visit is coming</span></td><td><span class="he">עמוד אחד, השאלות קודם</span><span class="en">one page, questions first</span></td></tr>
-          <tr><td><span class="he">הכנה מהירה</span><span class="en">Express prep</span></td><td><span class="he">תור עוד מעט, עד עשר דקות</span><span class="en">a visit within days, ≤10 min</span></td><td><span class="he">דף שמיש מתוך מה שיש, גם אם מעט</span><span class="en">a usable sheet from whatever exists</span></td></tr>
-          <tr><td><span class="he">תחקיר</span><span class="en">Debrief</span></td><td><span class="he">אחרי ביקור</span><span class="en">after a visit</span></td><td><span class="he">מה נאמר והוחלט נקלט לתיק</span><span class="en">what was said and decided, captured</span></td></tr>
-          <tr><td colspan="3" class="mono" style="color:var(--brass-text)"><span class="he">לברר ולהביא הקשר מקצועי</span><span class="en">Investigate &amp; bring in professional context</span></td></tr>
-          <tr><td><span class="he">מחקר</span><span class="en">Research</span></td><td><span class="he">בבקשה מפורשת בלבד</span><span class="en">on explicit request only</span></td><td><span class="he">ממצאים עם רובדי ראיות מסומנים, בלי אבחנה</span><span class="en">findings with labeled evidence tiers, no diagnosis</span></td></tr>
-          <tr><td><span class="he">ניירת</span><span class="en">Paperwork</span></td><td><span class="he">מסמך לא ברור</span><span class="en">a document you can't parse</span></td><td><span class="he">הסבר שפה ומבנה — לא פרשנות רפואית</span><span class="en">plain-word vocabulary and structure — not a medical reading</span></td></tr>
-          <tr><td><span class="he">גשר</span><span class="en">Bridge</span></td><td><span class="he">איש מקצוע יסתכל, או ענה</span><span class="en">a professional will look, or answered</span></td><td><span class="he">סיכום מזוער החוצה; ממצאים מיוחסים פנימה</span><span class="en">a minimized summary out; attributed findings in</span></td></tr>
-        </tbody>
-      </table></div>
-      <p class="muted small" style="max-width:76ch"><span class="he">חמשת המסלולים (מסע אבחון · ניהול מתמשך · מצב קליטה · מלווה · הכנה מהירה) הם <b>מצבי ניתוב</b>, לא יחידות נפרדות — הם קובעים לאילו יחידות פונים. <b>מלווה</b> הוא מסלול חוצה: הוא עוטף כל אחד מהמסלולים כשמתעדים עבור מישהו אחר, עם מסגור הסכמה ופרטיות.</span>
-      <span class="en">The five paths (diagnostic journey · ongoing management · capture mode · caregiver · express prep) are <b>routing modes</b>, not separate units — they decide which units you reach. <b>Caregiver</b> is cross-cutting: it wraps whichever path fits when you keep the record for someone else, with consent and privacy framing.</span></p>
+      <h3 class="more-help-title"><span class="he">עוד דברים שאפשר לבקש</span><span class="en">Other things you can ask for</span></h3>
+      <div class="rows compact-rows">
+        <div class="row"><span class="numlabel">1</span>
+          <h3><span class="he">להבין מסמך</span><span class="en">Understand a document</span></h3>
+          <p class="muted"><span class="he">לקבל הסבר פשוט למונחים ולמבנה של מסמך — בלי לפרש אותו כאבחנה או כהמלצה רפואית.</span><span class="en">Get a plain explanation of a document's terms and structure, without treating it as a diagnosis or medical recommendation.</span></p></div>
+        <div class="row"><span class="numlabel">2</span>
+          <h3><span class="he">לבדוק שאלה לעומק</span><span class="en">Research a question</span></h3>
+          <p class="muted"><span class="he">לבקש חיפוש מקורות מסודר. ליד כל ממצא יופיע אם הוא ממקור רשמי, מפרסום מדעי או מדיווחי מטופלים — בלי אבחון.</span><span class="en">Ask for a structured source search. Each finding shows whether it came from an official source, a scientific publication, or patient reports, without diagnosing.</span></p></div>
+        <div class="row"><span class="numlabel">3</span>
+          <h3><span class="he">להכין חומר לשיתוף</span><span class="en">Prepare something to share</span></h3>
+          <p class="muted"><span class="he">להכין סיכום קצר עם הפרטים הנחוצים בלבד. תשובה של איש מקצוע אפשר להוסיף אחר כך לתיעוד עם השם והתאריך.</span><span class="en">Prepare a short summary containing only the details that need to be shared. A professional's reply can later be added to the record with their name and the date.</span></p></div>
+      </div>
     </div>
   </section>
 
@@ -733,8 +691,8 @@ Begin now, by riding whatever my first message was.</pre>
     <div class="wrap">
       <div class="shead"><span class="numlabel">09 —</span><h2><span class="he">פרטיות, פשוט</span><span class="en">Privacy, plainly</span></h2></div>
       <div class="split"><div></div><div style="max-width:66ch">
-        <p><span class="he"><b>Advolog עצמו לא מקבל כלום.</b> קובצי הרשומות יושבים בתיקייה במחשב שלכם; לאתר הזה אין חשבונות, אין שרת ואין מדידות. שום דבר שאתם מזינים לא מגיע אלינו — אין ״אלינו״ להגיע אליו.</span>
-        <span class="en"><b>Advolog itself receives nothing.</b> Your record files sit in a folder on your computer; this site has no accounts, no server, and no analytics. Nothing you enter reaches us — there is no "us" to reach.</span></p>
+        <p><span class="he"><b>Advolog עצמו לא מקבל כלום.</b> לאתר הזה אין חשבונות, אין שרת ואין מדידות. בגרסה המלאה קובצי הרשומות נשמרים בתיקייה במחשב שלכם. שום דבר שאתם מזינים לא מגיע אלינו — אין ״אלינו״ להגיע אליו.</span>
+        <span class="en"><b>Advolog itself receives nothing.</b> This site has no accounts, no server, and no analytics. In the full version, your record files are kept in a folder on your computer. Nothing you enter reaches us — there is no "us" to reach.</span></p>
         <p><span class="he"><b>אבל השיחות והקבצים שאתם מעלים חיים בחשבון ה־AI שלכם</b> (Claude או ChatGPT) ונשמרים לפי מדיניות הספק — זה עניין נפרד לגמרי מ־Advolog. לכן: אל תעלו שום דבר שלא הייתם כותבים ממילא לעוזר ה־AI שלכם; הערכה מלווה אתכם בבדיקת הגדרות הפרטיות של החשבון (כולל ביטול שימוש בשיחות לאימון), ומריצה רשימת בדיקה לפני כל שיתוף או ייצוא. והיא לעולם לא מבקשת תעודת זהות, שם מלא או כתובת מדויקת. מדיניות השמירה של הספקים: <a href="https://help.openai.com/en/articles/8983778-chat-and-file-retention-policies-in-chatgpt" target="_blank" rel="noopener">ChatGPT</a> · <a href="https://support.claude.com/en/articles/9517075-what-are-projects" target="_blank" rel="noopener">Claude</a>.</span>
         <span class="en"><b>But the conversations and any files you upload live in your AI account</b> (Claude or ChatGPT) and are retained under that provider's policy — a matter entirely separate from Advolog. So: don't upload anything you wouldn't already type into your AI assistant; the package walks you through your account's privacy settings (including opting out of training on your chats) and runs a checklist before anything is shared or exported. And it never asks for an ID number, full name, or exact address. Provider retention policies: <a href="https://help.openai.com/en/articles/8983778-chat-and-file-retention-policies-in-chatgpt" target="_blank" rel="noopener">ChatGPT</a> · <a href="https://support.claude.com/en/articles/9517075-what-are-projects" target="_blank" rel="noopener">Claude</a>.</span></p>
         <p class="small"><a href="guides.html#privacy"><span class="he">הליכי הפרטיות המלאים, צעד־צעד</span><span class="en">The full privacy walkthroughs, step by step</span></a> · <a href="censor.html"><span class="he">כלי צנזור המסמכים</span><span class="en">the document censor tool</span></a></p>
@@ -754,14 +712,14 @@ Begin now, by riding whatever my first message was.</pre>
           <span class="he">קלוד או ג׳יפיטי, בחשבון שכבר יש לכם. הערכה המלאה עובדת הכי טוב איפה שיש תמיכה בפרויקטים ובגישה לתיקיות; פרומפט הפתיחה עובד כמעט בכל מקום, כולל חשבונות חינמיים. מדריך התקנה לכל פלטפורמה מצורף.</span>
           <span class="en">Claude or ChatGPT, in the account you already have. The full package works best where projects and file uploads are supported; the copy-paste starter prompt works essentially anywhere, including free tiers. (A per-platform setup guide is included.)</span></div></details>
         <details><summary><span class="he">איפה המידע שלי נשמר?</span><span class="en">Where does my information live?</span></summary><div>
-          <span class="he">במחשב שלכם, כקבצים פשוטים שאפשר לפתוח ולקרוא — ובתוך חשבון ה־AI שלכם, לפי הגדרות המידע שלו. בשום מקום אחר. הערכה מלווה אתכם בבדיקת ההגדרות לפני שמתחילים.</span>
-          <span class="en">On your computer, as plain files you can open and read — and inside your own AI account, under its data settings. Nowhere else. The package walks you through checking those settings before you begin.</span></div></details>
+          <span class="he">בגרסה המלאה, הרשומות נשמרות כקבצים פשוטים במחשב שלכם. השיחות והקבצים שמעלים ל־ChatGPT או Claude נשמרים גם בחשבון ה־AI, לפי ההגדרות שלו. Advolog עצמו לא מקבל אותם.</span>
+          <span class="en">In the full version, your records are kept as plain files on your computer. Conversations and files uploaded to ChatGPT or Claude are also kept in your AI account under its settings. Advolog itself does not receive them.</span></div></details>
         <details><summary><span class="he">מה כדאי לי לא להעלות?</span><span class="en">What should I not upload?</span></summary><div>
           <span class="he">כלל אצבע אחד: התייחסו ל־Advolog כמו לכל עוזר AI אחר שאתם כבר משתמשים בו — אל תדביקו שום דבר שלא הייתם ממילא כותבים לקלוד או לג׳יפיטי. השיחה רצה בחשבון ה־AI שלכם ולפי המדיניות שלו; הכלי לא מוסיף שכבת סוד מעל זה. הכלים שמעודדים פרטיות — תיבת הצנזור לתמונות של מסמכים, וניקוי הטקסט לפני שיתוף — עוזרים לצמצם מה שיוצא, אבל הם פיגומים ולא הבטחה: ההגנה האמיתית היא מה שאתם בוחרים להזין מלכתחילה. ככל שפחות פרטים מזהים — עדיף, והכלי לעולם לא צריך תעודת זהות, שם מלא או כתובת מדויקת כדי לעזור.</span>
           <span class="en">One rule of thumb: treat Advolog like any other AI assistant you already use — don't paste anything you wouldn't already type into Claude or ChatGPT. The conversation runs in your own AI account under its policy; the tool adds no layer of secrecy on top of that. The features that encourage privacy — the image censor for document photos, and the text scrub before sharing — help reduce what leaves, but they are scaffolding, not a guarantee: the real protection is what you choose to enter in the first place. Fewer identifying details is always better, and the tool never needs an ID number, full name, or exact address to help.</span></div></details>
         <details><summary><span class="he">צריך להיות טכנולוגיים?</span><span class="en">Do I need to be technical?</span></summary><div>
-          <span class="he">לא. אם אתם יודעים להדביק טקסט בצ׳אט, פרומפט הפתיחה מספיק. הערכה המלאה מבקשת רק שתדעו להוריד קבצים לתיקייה — משם, ה־AI מדריך את ההתקנה של עצמו.</span>
-          <span class="en">No. If you can paste text into a chat, the starter prompt is enough. The package asks only that you can download files into a folder — from there, the AI guides its own setup.</span></div></details>
+          <span class="he">לא. אם אתם יודעים להדביק טקסט בצ׳אט, פרומפט הפתיחה מספיק. לגרסה המלאה צריך להוריד ולחלץ קובץ zip; מדריך קצר מראה בדיוק מה לעשות ב־ChatGPT וב־Claude.</span>
+          <span class="en">No. If you can paste text into a chat, the starter prompt is enough. The full version requires downloading and extracting a zip; a short guide shows exactly what to do in ChatGPT and Claude.</span></div></details>
         <details><summary><span class="he">באמת בחינם? מה העניין?</span><span class="en">Is it really free? What's the catch?</span></summary><div>
           <span class="he">בחינם, בקוד פתוח, ובנוי להישאר כך. אין אותיות קטנות. אם זה עזר ובא לכם להגיד תודה, יש קישור לקפה בתחתית העמוד; הוא לא חוסם כלום ולא מוזכר בשום מקום אחר.</span>
           <span class="en">Free, open source, and built to stay that way. No catch. If it helped you and you want to say thanks, there's a coffee link in the footer; it gates nothing and is mentioned nowhere else.</span></div></details>
