@@ -51,8 +51,8 @@
 <main id="main" class="wrap">
   <h1><span class="he">טופס פתיחה</span><span class="en">Onboarding form</span></h1>
   <p class="lead">
-    <span class="he">מעדיפים למלא במקום להתראיין? ממלאים כאן מה שנוח (הכול לא חובה), מעתיקים בלוק אחד, ומדביקים אותו כהודעה הראשונה בשיחה — יחד עם <a href="index.html#starter">פרומפט הפתיחה</a> או בפרויקט מותקן. השיחה תמשיך משם בלי לשאול שוב את מה שכבר עניתם.</span>
-    <span class="en">Prefer filling a form to being interviewed? Fill what feels comfortable (everything optional), copy one block, and paste it as the first message of the conversation — together with <a href="index.html#starter">the starter prompt</a> or in an installed project. The conversation continues from there without re-asking what you answered.</span>
+    <span class="he">מעדיפים למלא טופס במקום להתראיין? ממלאים רק מה שנוח (שום שדה אינו חובה), מעתיקים את הבלוק שנבנה למטה, ופותחים איתו שיחה חדשה — יחד עם <a href="index.html#starter">פרומפט הפתיחה</a>, או לבד בפרויקט מותקן. השיחה ממשיכה משם בלי לשאול שוב את מה שכבר עניתם — ואפשר תמיד לדלג על הטופס ופשוט לספר.</span>
+    <span class="en">Prefer a form to being interviewed? Fill only what feels comfortable (no field is required), copy the block it builds below, and open a new conversation with it — together with <a href="index.html#starter">the starter prompt</a>, or on its own in an installed project. The conversation continues from there without re-asking what you answered — and you can always skip the form and just tell it.</span>
   </p>
   <p class="notice">
     <span class="he">הטופס רץ כולו בדף הזה. שום דבר לא נשלח לשום מקום — ההעתקה וההדבקה הן הדרך היחידה שמשהו יוצא. עצה קטנה: שם פרטי מספיק; בלי תעודת זהות ובלי כתובת — לא צריך אותן, אף פעם.</span>
@@ -82,9 +82,9 @@
 
     <fieldset>
       <legend><span class="he">מה יעזור הכי הרבה עכשיו?</span><span class="en">What would help most right now?</span></legend>
-      <label class="radio"><input type="radio" name="intent" value="clarity"><span><span class="he">בהירות והכנה לביקור</span><span class="en">Clarity and preparation for a visit</span></span></label>
-      <label class="radio"><input type="radio" name="intent" value="rehearsal"><span><span class="he">חזרה — להגיע עם תשובות מוכנות למה שרופאים שואלים</span><span class="en">Rehearsal — arriving with answers ready for what doctors ask</span></span></label>
-      <label class="radio"><input type="radio" name="intent" value="invest"><span><span class="he">בירור פעיל — לחפש ולנסח שאלות חדשות</span><span class="en">Active investigation — researching and building new questions</span></span></label>
+      <label class="radio"><input type="radio" name="intent" value="clarity"><span><span class="he">להבין את המצב ולהתכונן לתור</span><span class="en">Understand things and get ready for a visit</span></span></label>
+      <label class="radio"><input type="radio" name="intent" value="rehearsal"><span><span class="he">להתאמן על מה שאספר לרופא/ה</span><span class="en">Practice what I'll tell the doctor</span></span></label>
+      <label class="radio"><input type="radio" name="intent" value="invest"><span><span class="he">לחפש מידע ולנסח שאלות חדשות</span><span class="en">Look things up and form new questions</span></span></label>
       <label class="radio"><input type="radio" name="intent" value="" checked><span class="muted"><span class="he">לדלג</span><span class="en">Skip</span></span></label>
     </fieldset>
 
@@ -100,13 +100,6 @@
       <label class="radio"><input type="radio" name="clin" value="yes"><span><span class="he">יש</span><span class="en">Yes</span></span></label>
       <label class="radio"><input type="radio" name="clin" value="no"><span><span class="he">אין</span><span class="en">No</span></span></label>
       <label class="radio"><input type="radio" name="clin" value="" checked><span class="muted"><span class="he">לדלג</span><span class="en">Skip</span></span></label>
-    </fieldset>
-
-    <fieldset>
-      <legend><span class="he">איך ללוות אתכם?</span><span class="en">How should the assistant accompany you?</span></legend>
-      <label class="radio"><input type="radio" name="guide" value="suggest"><span><span class="he">להציע צעד הבא כשמתאים (רוב האנשים מתחילים כך)</span><span class="en">Suggest a next step when fitting (most people start here)</span></span></label>
-      <label class="radio"><input type="radio" name="guide" value="quiet"><span><span class="he">לשמור על שקט אלא אם אבקש</span><span class="en">Stay quiet unless asked</span></span></label>
-      <label class="radio"><input type="radio" name="guide" value="" checked><span class="muted"><span class="he">לדלג</span><span class="en">Skip</span></span></label>
     </fieldset>
 
     <fieldset>
@@ -146,10 +139,9 @@
       who: "עבור מי", who_self: "בשבילי", who_other: "עבור אדם שאני מלווה",
       story: "המצב בקצרה",
       shape: "איפה זה עומד", shape_seeking: "עדיין מחפשים תשובות", shape_managing: "מנהלים מצב מוכר לאורך זמן", shape_cant: "אי אפשר לסדר עכשיו — רק לאסוף",
-      intent: "מה יעזור עכשיו", intent_clarity: "בהירות והכנה לביקור", intent_rehearsal: "חזרה לקראת שיחה עם רופא/ה", intent_invest: "בירור פעיל",
+      intent: "מה יעזור עכשיו", intent_clarity: "להבין את המצב ולהתכונן לתור", intent_rehearsal: "להתאמן על מה שאספר לרופא/ה", intent_invest: "לחפש מידע ולנסח שאלות",
       appt: "תור קרוב", appt_yes: "כן, בימים הקרובים", appt_no: "אין",
       clin: "איש/אשת מקצוע קרובים שאפשר לשאול", clin_yes: "יש", clin_no: "אין",
-      guide: "ליווי", guide_suggest: "להציע צעד הבא כשמתאים", guide_quiet: "שקט אלא אם אבקש",
       lang: "שפה", lang_he: "עברית", lang_en: "English",
       tail: "זה טופס פתיחה מלא. לקרוא אותו כתשובות הריאיון, לשקף בקצרה מה הובן, ולשאול רק על פערים אמיתיים."
     },
@@ -158,10 +150,9 @@
       who: "For whom", who_self: "For myself", who_other: "For someone I care for",
       story: "The situation in short",
       shape: "Where things stand", shape_seeking: "Still looking for answers", shape_managing: "Managing a known long-term situation", shape_cant: "Cannot organize right now — just collect",
-      intent: "What would help now", intent_clarity: "Clarity and visit preparation", intent_rehearsal: "Rehearsal before talking to a doctor", intent_invest: "Active investigation",
+      intent: "What would help now", intent_clarity: "Understand and prepare for a visit", intent_rehearsal: "Practice what I'll tell the doctor", intent_invest: "Look things up and form questions",
       appt: "Appointment soon", appt_yes: "Yes, within days", appt_no: "No",
       clin: "A trusted professional to ask", clin_yes: "Yes", clin_no: "No",
-      guide: "Guidance", guide_suggest: "Suggest next steps when fitting", guide_quiet: "Quiet unless asked",
       lang: "Language", lang_he: "Hebrew", lang_en: "English",
       tail: "This is a completed onboarding form. Read it as the interview's answers, reflect briefly what you understood, and ask only about true gaps."
     }
@@ -179,7 +170,6 @@
     var intent = v("intent"); if (intent) lines.push(t.intent + ": " + t["intent_"+intent]);
     var appt = v("appt"); if (appt) lines.push(t.appt + ": " + (appt==="yes"?t.appt_yes:t.appt_no));
     var clin = v("clin"); if (clin) lines.push(t.clin + ": " + (clin==="yes"?t.clin_yes:t.clin_no));
-    var guide = v("guide"); if (guide) lines.push(t.guide + ": " + (guide==="suggest"?t.guide_suggest:t.guide_quiet));
     lines.push(t.lang + ": " + (lang==="he"?t.lang_he:t.lang_en));
     lines.push("---");
     lines.push(t.tail);

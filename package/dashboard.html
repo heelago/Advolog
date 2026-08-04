@@ -75,6 +75,9 @@
     width:22px; height:22px; font-size:13px; cursor:pointer; line-height:1; padding:0; margin-inline-start:6px; font-weight:600;}
   .phelp{display:none; color:var(--muted); font-size:14.5px; border-inline-start:3px solid var(--accent-soft); padding:4px 10px; margin:6px 0 8px;}
   .phelp.on{display:block}
+  .chk{display:flex; align-items:center; justify-content:space-between; gap:10px; padding:7px 0;}
+  .chk + .chk{border-top:1px solid var(--line);}
+  .chk span{font-size:15px}
   mark.mk{background:var(--amber-bg); color:inherit; border-bottom:2px solid var(--amber); border-radius:3px; padding:0 2px; cursor:pointer;}
   mark.mk.off{background:transparent; border-bottom:2px dotted var(--line); opacity:.65; text-decoration:line-through;}
   #scrubOut{background:var(--ground); border:1px solid var(--line); border-radius:8px; padding:10px 12px; font-size:15px;
@@ -142,6 +145,15 @@
           <div class="phelp" id="h-inbox">כל מה שנקלט ועוד לא סודר — קליטות מרגעים עמוסים, הצעות שמחכות להחלטה. המיון עצמו קורה בשיחה, כשנוח; שום דבר לא נכנס לרשומות בלי אישור.</div>
           <p class="sub">מה שעוד לא סודר. הסידור עצמו נעשה בשיחה, בזמן מיון.</p>
           <div id="p-inbox"></div>
+        </div>
+        <div class="panel" data-anchor="checkups-panel">
+          <h3>בדיקות תקופתיות <button class="ph" data-for="h-chk" aria-label="הסבר">?</button></h3>
+          <div class="phelp" id="h-chk">בדיקות שאפשר להריץ מדי פעם. הלוח לא מריץ אותן בעצמו — אין לו רשת — אז לוחצים «העתקה», מדביקים בשיחה, והעוזרת מריצה. התוצאה תמיד נוחתת בתיבת הקליטה כהצעה, אף פעם לא ישר לרשומות.</div>
+          <p class="sub">להעתיק, להדביק בשיחה — והעוזרת מריצה. התוצאה לתיבת הקליטה.</p>
+          <div class="chk"><span>סריקת מחקר וקהילות</span><button class="ghost" data-chk="בבקשה הריצי את סריקת המחקר והקהילות: דיגסט קצר ועדכני למצב שלי, עם רובדי ראיות מסומנים. «אין חדש» היא תוצאה שלמה. להניח בתיבת הקליטה.">העתקה</button></div>
+          <div class="chk"><span>בדיקת טריות התיקייה</span><button class="ghost" data-chk="בבקשה בדקי אם יש בתיקייה קבצים או פתקים חדשים מאז הפעם שעברה, והציעי איך לשלב אותם — הכול לתיבת הקליטה.">העתקה</button></div>
+          <div class="chk"><span>בדיקת יכולות ועדכוני הכלי</span><button class="ghost" data-chk="בבקשה הריצי בדיקת יכולות ועדכוני הכלי: מה חדש ורלוונטי, ממקורות רשמיים בלבד, מקושר ומתוארך, עד עשר שורות. «אין חדש» היא תשובה שלמה.">העתקה</button></div>
+          <div class="chk"><span>סיכום סשן / מסירה</span><button class="ghost" data-chk="בבקשה הכיני סיכום סשן / מסירה: מה עשינו, מה נשאר פתוח, ומה הצעד הבא — לקראת שיחה חדשה.">העתקה</button></div>
         </div>
       </div>
 
@@ -298,6 +310,12 @@ document.querySelectorAll('.tab').forEach(function(b){ b.onclick=function(){
 document.querySelectorAll('.ph').forEach(function(b){ b.setAttribute('aria-expanded','false');
   b.onclick=function(){ var t=$(b.dataset.for); var on=!t.classList.contains('on');
     t.classList.toggle('on',on); b.setAttribute('aria-expanded',on); };});
+
+/* @anchor: checkups — copy a plain request to paste into chat; the dashboard has no network, the chat runs it, output lands in the inbox */
+document.querySelectorAll('[data-chk]').forEach(function(b){
+  b.onclick=function(){ var t=b.getAttribute('data-chk');
+    navigator.clipboard.writeText(t).then(function(){toast('הועתק — להדביק בשיחה, והעוזרת תריץ')},function(){prompt('העתקה ידנית:',t)}); };
+});
 
 /* @anchor: connect — the guided first step */
 if(!window.showDirectoryPicker){

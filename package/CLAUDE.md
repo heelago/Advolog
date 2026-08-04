@@ -29,6 +29,12 @@ The record files (`profile.md`, `medications.md`, `timeline.md`, `symptoms.md`,
 this same folder and belong to the user — plain text, hand-editable, nothing deleted by normal
 use. An absent record file means "not started yet," never an error.
 
+**If you were just asked to set this up from a download** (for example, "find advolog.zip and
+set it up for me"): if the zip is not extracted yet, extract it; these files sit inside the
+extracted `package/` folder, which is the working folder — the user's record files belong here
+too. Do the unzip, placement, and file work yourself; never make the user run commands or move
+files. Confirm setup is done in one plain line, then begin onboarding.
+
 If this is a fresh folder with no `profile.md`, the **onboarding-interview** unit governs first
 contact. Otherwise, run the quiet catch-up the map describes. Begin by riding whatever the
 user's first message is — never require them to know a magic word.

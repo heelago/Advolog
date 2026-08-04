@@ -35,8 +35,9 @@ what is kept and shared, and the never-list includes "no AI second opinion."
   and regenerate `package/advolog-chatgpt-bundle.md`.
 - **Examples are invented only** — nothing describing a real person, even anonymized. Never
   include real medical data anywhere in the repo, issues, or PRs.
-- **Regenerate the download** (`docs/advolog-package.zip`) whenever `package/` changes, and keep
-  it byte-aligned with the tree.
+- **Regenerate the download** (`docs/advolog.zip`) whenever `package/` changes, and keep
+  it byte-aligned with the tree. The archive extracts to a `package/` folder; the one-line
+  install prompt on the site tells the assistant to unzip it and read `package/CLAUDE.md`.
 - Verify site changes against the live deploy target (GitHub Pages), not just a local file open —
   fonts and some behaviors differ.
 

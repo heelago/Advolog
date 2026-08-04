@@ -19,12 +19,12 @@
 
 כל יחידה נכנסת לפעולה מעצמה ברגע המתאים; אין שמות לזכור. מקובצות לפי מה שהן עושות:
 
-- **להתחיל / לחזור / לעבוד גם כשאין כוח:** ריאיון · קליטה · שחזור · התעדכנות
-- **לשמור על התיעוד חי:** צ׳ק־אין · רישום אירוע · סיכום תקופה · טבלת תרופות (בבקשה מפורשת)
-- **סביב ביקור:** שאלות · דף הכנה · הכנה מהירה · תחקיר
-- **בירור והקשר מקצועי:** מחקר (בבקשה מפורשת) · ניירת · גשר
+- **להתחיל / לחזור / לעבוד גם כשאין כוח:** [ריאיון](package/prompts/skills/interview.md) · [קליטה](package/prompts/skills/capture.md) · [שחזור](package/prompts/skills/reconstruction.md) · [התעדכנות](package/prompts/skills/catch-up.md)
+- **לשמור על התיעוד חי:** [צ׳ק־אין](package/prompts/skills/check-in.md) · [רישום אירוע](package/prompts/skills/event-logger.md) · [סיכום תקופה](package/prompts/skills/interval-summary.md) · [טבלת תרופות](package/prompts/skills/regimen-chart.md) (בבקשה מפורשת)
+- **סביב ביקור:** [שאלות](package/prompts/skills/questions.md) · [דף הכנה](package/prompts/skills/prep-sheet.md) · [הכנה מהירה](package/prompts/skills/express-prep.md) · [תחקיר](package/prompts/skills/debrief.md)
+- **בירור והקשר מקצועי:** [מחקר](package/prompts/skills/research.md) (בבקשה מפורשת) · [ניירת](package/prompts/skills/paperwork.md) · [גשר](package/prompts/skills/bridge.md)
 
-הטבלה המלאה עם טריגר ופלט לכל יחידה נמצאת באתר, במדור «מה בערכה».
+רשימה מלאה בשפה יומיומית, לפי מצב, נמצאת במדריכים באתר — «מה אפשר לבקש».
 
 ## העקרונות שלא מתגמשים
 
@@ -77,12 +77,12 @@ Diagnostic journey · Ongoing management · Capture mode · Caregiver · Express
 
 Each unit steps in on its own at the right moment; there are no names to remember. Grouped by what they do:
 
-- **Start / recover / work while overwhelmed:** interview · capture · reconstruction · catch-up
-- **Keep the record current:** check-in · event-logger · interval-summary · regimen-chart (explicit request)
-- **Around a visit:** questions · prep-sheet · express-prep · debrief
-- **Investigate & professional context:** research (explicit request) · paperwork · bridge
+- **Start / recover / work while overwhelmed:** [interview](package/prompts/skills/interview.md) · [capture](package/prompts/skills/capture.md) · [reconstruction](package/prompts/skills/reconstruction.md) · [catch-up](package/prompts/skills/catch-up.md)
+- **Keep the record current:** [check-in](package/prompts/skills/check-in.md) · [event-logger](package/prompts/skills/event-logger.md) · [interval-summary](package/prompts/skills/interval-summary.md) · [regimen-chart](package/prompts/skills/regimen-chart.md) (explicit request)
+- **Around a visit:** [questions](package/prompts/skills/questions.md) · [prep-sheet](package/prompts/skills/prep-sheet.md) · [express-prep](package/prompts/skills/express-prep.md) · [debrief](package/prompts/skills/debrief.md)
+- **Investigate & professional context:** [research](package/prompts/skills/research.md) (explicit request) · [paperwork](package/prompts/skills/paperwork.md) · [bridge](package/prompts/skills/bridge.md)
 
-The full table, with a trigger and output for each unit, is on the site under "What's included."
+A full plain-language list, grouped by situation, is on the site's setup guides — "What you can ask it to do."
 
 ## The principles that do not bend
 

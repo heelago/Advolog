@@ -486,13 +486,21 @@
       <div class="ways">
         <div class="way" id="package">
           <h3><span class="he">הגרסה המלאה — לעבודה מתמשכת.</span><span class="en">The full package — for ongoing work.</span></h3>
-          <p><span class="he">מורידים קובץ zip ומחלצים אותו לתיקייה במחשב. ב־Claude פותחים את התיקייה; ב־ChatGPT מעלים ממנה קובץ מאוחד אחד. מדריך קצר מסביר כל צעד. התיעוד, תבניות הדוחות והמידע על המערכת הישראלית נשארים בתיקייה שלכם.</span>
-          <span class="en">Download the zip and extract it to a folder on your computer. In Claude, open the folder; in ChatGPT, upload the one combined file inside it. A short guide explains every step. Your record, report templates, and Israeli-system information remain in your folder.</span></p>
+          <p><span class="he">מורידים קובץ zip אחד. אם אתם עובדים באפליקציה שיכולה לפתוח תיקייה במחשב — Claude Code, Cowork, Codex, או אפליקציית ChatGPT למחשב — מדביקים את השורה הזאת בשיחה, והעוזר מחלץ את הקובץ, מקים הכול ומתחיל ללוות אתכם בריאיון, שאלה אחת בכל פעם. בלי לחלץ ידנית, בלי להעביר קבצים.</span>
+          <span class="en">Download one zip. If you work in an app that can open a folder on your computer — Claude Code, Cowork, Codex, or the ChatGPT desktop app — paste this one line into a conversation, and the assistant unzips it, sets everything up, and starts walking you through onboarding, one question at a time. No extracting by hand, no moving files.</span></p>
+          <div class="starterbox">
+            <pre id="installHe" class="he" dir="rtl" lang="he">מצא/י את הקובץ advolog.zip בתיקיית ההורדות, חלץ/י אותו לתיקייה חדשה, ואז קרא/י את הקובץ CLAUDE.md (או AGENTS.md) שבתוכה ופעל/י לפיו — הקם/י לי את הכלי ולווה/י אותי צעד־צעד בריאיון הפתיחה.</pre>
+            <pre id="installEn" class="en" dir="ltr" lang="en">Find advolog.zip in my Downloads folder, unzip it into a new project folder, then read the CLAUDE.md (or AGENTS.md) file inside and follow it — set it up for me and walk me through onboarding, one step at a time.</pre>
+            <div class="copybar">
+              <button class="btn ink" type="button" data-copy-lang="installHe|installEn"><span class="he">להעתקת שורת ההתקנה</span><span class="en">Copy the install line</span></button>
+              <span class="muted small"><span class="he">ואז: מורידים את ה־zip, פותחים שיחה חדשה ומדביקים.</span><span class="en">Then: download the zip, open a new conversation, and paste.</span></span>
+            </div>
+          </div>
           <p style="margin-top:18px">
-            <a class="btn ink" href="advolog-package.zip" download><span class="he">להורדת הערכה (zip)</span><span class="en">Download the package (zip)</span></a>
+            <a class="btn ink" href="advolog.zip" download><span class="he">להורדת הערכה (zip)</span><span class="en">Download the package (zip)</span></a>
             <a class="btn line" href="guides.html" style="margin-inline-start:8px"><span class="he">מדריכי ההתקנה</span><span class="en">Setup guides</span></a>
           </p>
-          <p class="muted small"><span class="he">גרסת חבילה: 2.8.2026 · אחרי ההורדה חשוב לחלץ את ה־zip — המדריך מראה איך.</span><span class="en">Package build: 2.8.2026 · After downloading, extract the zip — the guide shows how.</span></p>
+          <p class="muted small"><span class="he">גרסת חבילה: 4.8.2026 · מעדיפים את Claude או ChatGPT באתר, או להתקין ידנית? מדריכי ההתקנה מראים כל דרך, צעד־צעד.</span><span class="en">Package build: 4.8.2026 · Prefer the claude.ai or ChatGPT web apps, or a manual install? The setup guides show every way, step by step.</span></p>
         </div>
         <div class="way" id="starter">
           <h3><span class="he">להתחיל עכשיו — הדבקה אחת, בלי קבצים.</span><span class="en">Start now — one paste, no files.</span></h3>
@@ -671,18 +679,23 @@ Begin now, by riding whatever my first message was.</pre>
           </div>
         </div>
       </div>
-      <h3 class="more-help-title"><span class="he">עוד דברים שאפשר לבקש</span><span class="en">Other things you can ask for</span></h3>
+      <h3 class="more-help-title"><span class="he">מה אפשר לבקש ממנו</span><span class="en">What you can ask it to do</span></h3>
       <div class="rows compact-rows">
         <div class="row"><span class="numlabel">1</span>
-          <h3><span class="he">להבין מסמך</span><span class="en">Understand a document</span></h3>
-          <p class="muted"><span class="he">לקבל הסבר פשוט למונחים ולמבנה של מסמך — בלי לפרש אותו כאבחנה או כהמלצה רפואית.</span><span class="en">Get a plain explanation of a document's terms and structure, without treating it as a diagnosis or medical recommendation.</span></p></div>
+          <h3><span class="he">כשמתחילים, או כשאין כוח</span><span class="en">Getting started, or when it's too much</span></h3>
+          <p class="muted"><span class="he">ריאיון פתיחה עדין, איסוף בלי מבנה כשקשה, וסידור מאוחר יותר של מה שנאסף.</span><span class="en">A gentle interview, no-structure capture when it's hard, and organizing what you collected later.</span></p></div>
         <div class="row"><span class="numlabel">2</span>
-          <h3><span class="he">לבדוק שאלה לעומק</span><span class="en">Research a question</span></h3>
-          <p class="muted"><span class="he">לבקש חיפוש מקורות מסודר. ליד כל ממצא יופיע אם הוא ממקור רשמי, מפרסום מדעי או מדיווחי מטופלים — בלי אבחון.</span><span class="en">Ask for a structured source search. Each finding shows whether it came from an official source, a scientific publication, or patient reports, without diagnosing.</span></p></div>
+          <h3><span class="he">לשמור על התיעוד חי</span><span class="en">Keeping the record current</span></h3>
+          <p class="muted"><span class="he">צ׳ק־אין קצר, רישום אירוע או תסמין בשורה, סיכום תקופה, וטבלת תרופות.</span><span class="en">A short check-in, logging an event or symptom in a line, summarizing a stretch, and a medications chart.</span></p></div>
         <div class="row"><span class="numlabel">3</span>
-          <h3><span class="he">להכין חומר לשיתוף</span><span class="en">Prepare something to share</span></h3>
-          <p class="muted"><span class="he">להכין סיכום קצר עם הפרטים הנחוצים בלבד. תשובה של איש מקצוע אפשר להוסיף אחר כך לתיעוד עם השם והתאריך.</span><span class="en">Prepare a short summary containing only the details that need to be shared. A professional's reply can later be added to the record with their name and the date.</span></p></div>
+          <h3><span class="he">סביב ביקור</span><span class="en">Around a visit</span></h3>
+          <p class="muted"><span class="he">שאלות עם נימוק, דף הכנה של עמוד, הכנה מהירה לרגע האחרון, ותחקיר אחרי.</span><span class="en">Questions with reasoning, a one-page prep sheet, last-minute fast prep, and a debrief after.</span></p></div>
+        <div class="row"><span class="numlabel">4</span>
+          <h3><span class="he">בירור והקשר מקצועי</span><span class="en">Digging deeper</span></h3>
+          <p class="muted"><span class="he">להבין מסמך, לחקור שאלה עם מקורות מסומנים, ולהכין משהו להביא לרופא/ה.</span><span class="en">Understand a document, research a question with labeled sources, and prepare something to bring to a doctor.</span></p></div>
       </div>
+      <p class="muted small" style="margin-top:14px"><span class="he">אף אחת מהיכולות לא דורשת ידע מוקדם — פשוט מספרים מה קורה. <a href="guides.html#can">הרשימה המלאה במדריכים ←</a></span>
+      <span class="en">None of these needs any prior knowledge — just tell it what's going on. <a href="guides.html#can">See the full list in the guides ←</a></span></p>
     </div>
   </section>
 
@@ -795,14 +808,16 @@ Begin now, by riding whatever my first message was.</pre>
 
 <div id="toast" role="status" aria-live="polite"></div>
 <script>
-/* one copy button serving the visible language's starter block */
+/* copy buttons that serve the visible language's block. Each button names its
+   source element ids as "heId|enId"; empty defaults to the starter block. */
 (function(){
-  var b=document.querySelector('[data-copy-lang]');
-  if(!b) return;
-  b.addEventListener('click', function(){
-    var he = document.documentElement.getAttribute('data-lang')==='he';
-    var src = document.getElementById(he?'starterHe':'starterEn');
-    window.advCopy(src.textContent, b);
+  document.querySelectorAll('[data-copy-lang]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var he = document.documentElement.getAttribute('data-lang')==='he';
+      var ids = (b.getAttribute('data-copy-lang') || 'starterHe|starterEn').split('|');
+      var src = document.getElementById(he ? ids[0] : ids[1]);
+      if (src) window.advCopy(src.textContent, b);
+    });
   });
 })();
 </script>
