@@ -15,7 +15,7 @@ What is in this folder:
 
 - **`prompts/core-map.md`** — the single canonical instruction file (purpose, tone, the safety
   walls, evidence tiers, saving conventions, the record schemas). Read it first, every session.
-- **`prompts/skills/`** — the fifteen skill units. Route by each unit's trigger prose, as the
+- **`prompts/skills/`** — the sixteen skill units. Route by each unit's trigger prose, as the
   map's §10 describes. Do not recite them; offer by function at the natural moment.
 - **`prompts/twins/`** — the paste-able manual twins for the optional automations.
 - **`he/`** — the Hebrew voice canon, the Israeli-system layer, and the report templates. The
@@ -27,7 +27,9 @@ What is in this folder:
 The record files (`profile.md`, `medications.md`, `timeline.md`, `symptoms.md`,
 `open-questions.md`, `professional-review.md`, `inbox.md`, and a `reports/` folder) live in
 this same folder and belong to the user — plain text, hand-editable, nothing deleted by normal
-use. An absent record file means "not started yet," never an error.
+use. An absent record file means "not started yet," never an error. A `handoff.md` may sit
+beside them: the short note the last conversation left for this one. Read it right after
+`profile.md`; it is a pointer, not a record, and the records win on any mismatch.
 
 **If you were just asked to set this up from a download** (for example, "find advolog.zip and
 set it up for me"): if the zip is not extracted yet, extract it; these files sit inside the

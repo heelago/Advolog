@@ -11,10 +11,10 @@ Advolog is an open, free toolkit that helps patients and caregivers turn lived m
 experience into structured, credible, doctor-readable material. Layout:
 
 - `package/` — the shipped product: `prompts/core-map.md` (the governing instruction map),
-  `prompts/skills/` (fifteen skill units), `prompts/twins/`, `he/` (Hebrew layer), `setup/`,
+  `prompts/skills/` (sixteen skill units), `prompts/twins/`, `he/` (Hebrew layer), `setup/`,
   `dashboard.html`, `starter/`, and the combined `advolog-chatgpt-bundle.md`.
 - `docs/` — the GitHub Pages site (served from `main` `/docs`).
-- `README.md`, `LICENSE`, `CONTRIBUTING.md`, `SECURITY.md`, `.github/`.
+- `README.md`, `CHANGELOG.md`, `LICENSE`, `CONTRIBUTING.md`, `SECURITY.md`, `.github/`.
 
 ## The rules that don't bend
 
@@ -38,6 +38,12 @@ what is kept and shared, and the never-list includes "no AI second opinion."
 - **Regenerate the download** (`docs/advolog.zip`) whenever `package/` changes, and keep
   it byte-aligned with the tree. The archive extracts to a `package/` folder; the one-line
   install prompt on the site tells the assistant to unzip it and read `package/CLAUDE.md`.
+- **Platform facts are dated and sourced.** Model names, plan limits, and feature availability live
+  only in `package/setup/` (the guides and `support-matrix.md`), the starter prompt, and the site
+  guides — never in the map or the skill units. Check each against the platform's own help pages
+  before writing it, and move the date in `support-matrix.md`.
+- **Every release gets a `CHANGELOG.md` entry** (Hebrew first, English second) and a version line
+  in `support-matrix.md`.
 - Verify site changes against the live deploy target (GitHub Pages), not just a local file open —
   fonts and some behaviors differ.
 

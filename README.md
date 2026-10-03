@@ -6,8 +6,8 @@
 
 ## שתי דרכים להתחיל
 
-1. **החבילה המלאה** — תיקיית `package/`: מפת הנחיות אחת, חמש־עשרה יחידות מיומנות, שכבה עברית־ישראלית, ולוח מקומי (`dashboard.html`) שמציג את הרשומות ומכניס עדכונים רק באישור. מתאימה לפרויקט ב־Claude או ב־ChatGPT.
-2. **מסלול אפס־הורדות** — פרומפט פתיחה אחד, מוכן להעתקה, שמריץ את הריאיון ומקים גרסה קלה בלי אף קובץ: `package/starter/starter-prompt.md`. מי שלא רוצה להוריד כלום — ליבה קלה, בטוחה ושלמה בפני עצמה (ריאיון, קליטה, הכנה מהירה), לא הערכה המלאה על חמש־עשרה היחידות.
+1. **החבילה המלאה** — תיקיית `package/`: מפת הנחיות אחת, שש־עשרה יחידות מיומנות, שכבה עברית־ישראלית, ולוח מקומי (`dashboard.html`) שמציג את הרשומות ומכניס עדכונים רק באישור. מתאימה לפרויקט ב־Claude או ב־ChatGPT.
+2. **מסלול אפס־הורדות** — פרומפט פתיחה אחד, מוכן להעתקה, שמריץ את הריאיון ומקים גרסה קלה בלי אף קובץ: `package/starter/starter-prompt.md`. מי שלא רוצה להוריד כלום — ליבה קלה, בטוחה ושלמה בפני עצמה (ריאיון, קליטה, הכנה מהירה), לא הערכה המלאה על שש־עשרה היחידות.
 
 מדריכי התקנה לכל פלטפורמה, כולל הליכי הפרטיות, באתר וב־`package/setup/`.
 
@@ -15,11 +15,11 @@
 
 מסע אבחון · ניהול מתמשך · מצב קליטה · מלווה · הכנה מהירה. אלו **מצבי ניתוב**, לא יחידות נפרדות: הריאיון מנתב בעדינות, שאלה אחת בכל פעם, ואפשר להחזיק יותר ממסלול אחד. **מלווה** הוא מסלול חוצה — עוטף כל אחד מהאחרים כשמתעדים עבור מישהו אחר, עם מסגור הסכמה ופרטיות.
 
-## חמש־עשרה היחידות
+## שש־עשרה היחידות
 
 כל יחידה נכנסת לפעולה מעצמה ברגע המתאים; אין שמות לזכור. מקובצות לפי מה שהן עושות:
 
-- **להתחיל / לחזור / לעבוד גם כשאין כוח:** [ריאיון](package/prompts/skills/interview.md) · [קליטה](package/prompts/skills/capture.md) · [שחזור](package/prompts/skills/reconstruction.md) · [התעדכנות](package/prompts/skills/catch-up.md)
+- **להתחיל / לחזור / לעבוד גם כשאין כוח:** [ריאיון](package/prompts/skills/interview.md) · [קליטה](package/prompts/skills/capture.md) · [שחזור](package/prompts/skills/reconstruction.md) · [התעדכנות](package/prompts/skills/catch-up.md) · [מסירה לשיחה חדשה](package/prompts/skills/handoff.md)
 - **לשמור על התיעוד חי:** [צ׳ק־אין](package/prompts/skills/check-in.md) · [רישום אירוע](package/prompts/skills/event-logger.md) · [סיכום תקופה](package/prompts/skills/interval-summary.md) · [טבלת תרופות](package/prompts/skills/regimen-chart.md) (בבקשה מפורשת)
 - **סביב ביקור:** [שאלות](package/prompts/skills/questions.md) · [דף הכנה](package/prompts/skills/prep-sheet.md) · [הכנה מהירה](package/prompts/skills/express-prep.md) · [תחקיר](package/prompts/skills/debrief.md)
 - **בירור והקשר מקצועי:** [מחקר](package/prompts/skills/research.md) (בבקשה מפורשת) · [ניירת](package/prompts/skills/paperwork.md) · [גשר](package/prompts/skills/bridge.md)
@@ -39,6 +39,8 @@
 ## מה נבדק
 
 מסע המשתמש המלא אומת מקצה לקצה בכמה סביבות עבודה של Claude ו־ChatGPT, כולל יצירת הרשומות, המשך עבודה מהקבצים והפקת חומר לביקור. גם מסלול אפס־ההורדות והלוח המקומי האופציונלי נבדקו בגבולות השימוש המוצהרים שלהם. Advolog הוא מסגרת הנחיות וקבצים עם אתר מידע סטטי — לא אפליקציית ווב — ולכן בדיקות דפדפן שאינן נוגעות ללוח המקומי אינן חלק ממטריצת התמיכה. פירוט מתוארך: [`package/setup/support-matrix.md`](package/setup/support-matrix.md).
+
+**גרסה 1.1.0 (1.10.2026):** יחידת מסירה לשיחה חדשה, שורת מודל ומאמץ לכל סוג עבודה, דף הכנה כקובץ Word/PDF ב־Claude Docs, הנחיות זיכרון והעלאה מעודכנות. החדש בגרסה הזאת נבדק מול דפי העזרה הרשמיים ועוד לא הורץ בריצה חיה מלאה. הפירוט: [`CHANGELOG.md`](CHANGELOG.md).
 
 ## על המפתחת
 
@@ -64,8 +66,8 @@ An open, free package that helps patients and caregivers advocate for themselves
 
 ## Two ways to start
 
-1. **The full package** — the `package/` folder: one instruction map, fifteen skill units, a Hebrew-Israeli layer, and a local dashboard (`dashboard.html`) that shows the records and applies updates only on approval. Fits a Claude or ChatGPT project.
-2. **The zero-download path** — a single copy-paste starter prompt that runs the interview and bootstraps a light version with no files at all: `package/starter/starter-prompt.md`. A light, safe, self-contained core (interview, capture, express prep) — not the full fifteen-unit kit.
+1. **The full package** — the `package/` folder: one instruction map, sixteen skill units, a Hebrew-Israeli layer, and a local dashboard (`dashboard.html`) that shows the records and applies updates only on approval. Fits a Claude or ChatGPT project.
+2. **The zero-download path** — a single copy-paste starter prompt that runs the interview and bootstraps a light version with no files at all: `package/starter/starter-prompt.md`. A light, safe, self-contained core (interview, capture, express prep) — not the full sixteen-unit kit.
 
 Per-platform setup guides, including the privacy walkthroughs, live on the site and in `package/setup/`.
 
@@ -73,11 +75,11 @@ Per-platform setup guides, including the privacy walkthroughs, live on the site 
 
 Diagnostic journey · Ongoing management · Capture mode · Caregiver · Express prep. These are **routing modes**, not separate units: the onboarding interview routes gently, one question at a time, and more than one path can be active. **Caregiver** is cross-cutting — it wraps whichever path fits when you keep the record for someone else, with consent and privacy framing.
 
-## The fifteen units
+## The sixteen units
 
 Each unit steps in on its own at the right moment; there are no names to remember. Grouped by what they do:
 
-- **Start / recover / work while overwhelmed:** [interview](package/prompts/skills/interview.md) · [capture](package/prompts/skills/capture.md) · [reconstruction](package/prompts/skills/reconstruction.md) · [catch-up](package/prompts/skills/catch-up.md)
+- **Start / recover / work while overwhelmed:** [interview](package/prompts/skills/interview.md) · [capture](package/prompts/skills/capture.md) · [reconstruction](package/prompts/skills/reconstruction.md) · [catch-up](package/prompts/skills/catch-up.md) · [handoff](package/prompts/skills/handoff.md)
 - **Keep the record current:** [check-in](package/prompts/skills/check-in.md) · [event-logger](package/prompts/skills/event-logger.md) · [interval-summary](package/prompts/skills/interval-summary.md) · [regimen-chart](package/prompts/skills/regimen-chart.md) (explicit request)
 - **Around a visit:** [questions](package/prompts/skills/questions.md) · [prep-sheet](package/prompts/skills/prep-sheet.md) · [express-prep](package/prompts/skills/express-prep.md) · [debrief](package/prompts/skills/debrief.md)
 - **Investigate & professional context:** [research](package/prompts/skills/research.md) (explicit request) · [paperwork](package/prompts/skills/paperwork.md) · [bridge](package/prompts/skills/bridge.md)
@@ -97,6 +99,8 @@ The privacy walkthrough is offered at install (including the model-training opt-
 ## What is validated
 
 The complete user journey has been validated end to end across several Claude and ChatGPT work environments, including record creation, continuation from the files, and producing material for an appointment. The zero-download path and optional local dashboard have also been tested within their stated scope. Advolog is an instruction-and-files framework with a static information site — not a web application — so browser testing unrelated to the local dashboard is outside the support matrix. See the dated details in [`package/setup/support-matrix.md`](package/setup/support-matrix.md).
+
+**Version 1.1.0 (1.10.2026):** a handoff unit for starting a new chat, a model-and-effort line per kind of work, the prep sheet as a Word/PDF file through Claude Docs, and updated memory and upload guidance. What is new in this version was checked against the official help pages and has not yet had a full live run. Details: [`CHANGELOG.md`](CHANGELOG.md).
 
 ## About the developer
 

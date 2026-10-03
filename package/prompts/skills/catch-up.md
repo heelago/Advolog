@@ -6,7 +6,7 @@
 
 **Principles:** One Small Move in reporting (≤5 lines back); Substance First about the record's actual state.
 
-**Setup:** read this map, `profile.md`, then every record present.
+**Setup:** read this map, `profile.md`, `handoff.md` if present (or a handoff note pasted as the opening message), then every record present. The note says where the last conversation stopped; the records say what is true — on a mismatch the records win, and a note older than the records is stale.
 
 **Workflow, the checklist:**
 1. Re-read records; note `Last updated` drift and anything inconsistent (tidy quietly where mechanical, mention where meaningful).

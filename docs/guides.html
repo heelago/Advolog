@@ -67,8 +67,8 @@
     <p><span class="he">כל יכולת נכנסת לפעולה מעצמה ברגע המתאים — אין שמות לזכור ואין תפריט לנווט. זו התמונה המלאה, לפי מצב:</span>
     <span class="en">Each ability steps in on its own at the right moment — no names to remember, no menu to navigate. Here is the full picture, grouped by situation:</span></p>
     <ul>
-      <li><span class="he"><b>כשמתחילים, או כשאין כוח לסדר:</b> <a data-repo="/blob/main/package/prompts/skills/interview.md" href="#">ריאיון פתיחה עדין</a> · <a data-repo="/blob/main/package/prompts/skills/capture.md" href="#">לאסוף דברים בלי שום מבנה</a> (מילים, תמונות, חצאי משפטים) · <a data-repo="/blob/main/package/prompts/skills/reconstruction.md" href="#">להפוך ערימת רשימות לתיעוד מסודר, אחר כך</a> · <a data-repo="/blob/main/package/prompts/skills/catch-up.md" href="#">לעדכן שיחה חדשה על מה שהיה</a>.</span>
-      <span class="en"><b>Getting started, or when organizing is too much:</b> <a data-repo="/blob/main/package/prompts/skills/interview.md" href="#">a gentle opening interview</a> · <a data-repo="/blob/main/package/prompts/skills/capture.md" href="#">just collect things with no structure</a> (words, photos, half-sentences) · <a data-repo="/blob/main/package/prompts/skills/reconstruction.md" href="#">turn a pile of notes into an organized record, later</a> · <a data-repo="/blob/main/package/prompts/skills/catch-up.md" href="#">catch a new conversation up on where things stood</a>.</span></li>
+      <li><span class="he"><b>כשמתחילים, או כשאין כוח לסדר:</b> <a data-repo="/blob/main/package/prompts/skills/interview.md" href="#">ריאיון פתיחה עדין</a> · <a data-repo="/blob/main/package/prompts/skills/capture.md" href="#">לאסוף דברים בלי שום מבנה</a> (מילים, תמונות, חצאי משפטים) · <a data-repo="/blob/main/package/prompts/skills/reconstruction.md" href="#">להפוך ערימת רשימות לתיעוד מסודר, אחר כך</a> · <a data-repo="/blob/main/package/prompts/skills/catch-up.md" href="#">לעדכן שיחה חדשה על מה שהיה</a> · <a data-repo="/blob/main/package/prompts/skills/handoff.md" href="#">לסגור שיחה ולהמשיך בחדשה, בלי לאבד כלום</a>.</span>
+      <span class="en"><b>Getting started, or when organizing is too much:</b> <a data-repo="/blob/main/package/prompts/skills/interview.md" href="#">a gentle opening interview</a> · <a data-repo="/blob/main/package/prompts/skills/capture.md" href="#">just collect things with no structure</a> (words, photos, half-sentences) · <a data-repo="/blob/main/package/prompts/skills/reconstruction.md" href="#">turn a pile of notes into an organized record, later</a> · <a data-repo="/blob/main/package/prompts/skills/catch-up.md" href="#">catch a new conversation up on where things stood</a> · <a data-repo="/blob/main/package/prompts/skills/handoff.md" href="#">close a chat and carry on in a new one, with nothing lost</a>.</span></li>
       <li><span class="he"><b>לשמור על התיעוד חי:</b> <a data-repo="/blob/main/package/prompts/skills/check-in.md" href="#">צ׳ק־אין קצר על איך שלומכם</a> · <a data-repo="/blob/main/package/prompts/skills/event-logger.md" href="#">לרשום אירוע או תסמין בשורה</a> · <a data-repo="/blob/main/package/prompts/skills/interval-summary.md" href="#">לסכם תקופה — מה השתנה מאז</a> · <a data-repo="/blob/main/package/prompts/skills/regimen-chart.md" href="#">טבלת תרופות ברורה</a>.</span>
       <span class="en"><b>Keeping your record current:</b> <a data-repo="/blob/main/package/prompts/skills/check-in.md" href="#">a short check-in on how you are doing</a> · <a data-repo="/blob/main/package/prompts/skills/event-logger.md" href="#">log an event or symptom in a line</a> · <a data-repo="/blob/main/package/prompts/skills/interval-summary.md" href="#">sum up a stretch of time — what changed</a> · <a data-repo="/blob/main/package/prompts/skills/regimen-chart.md" href="#">a clear medications chart</a>.</span></li>
       <li><span class="he"><b>סביב ביקור:</b> <a data-repo="/blob/main/package/prompts/skills/questions.md" href="#">לבנות שאלות, כל אחת עם הנימוק שלה</a> · <a data-repo="/blob/main/package/prompts/skills/prep-sheet.md" href="#">דף הכנה של עמוד אחד</a> · <a data-repo="/blob/main/package/prompts/skills/express-prep.md" href="#">הכנה מהירה כשהתור בעוד יום־יומיים</a> · <a data-repo="/blob/main/package/prompts/skills/debrief.md" href="#">תחקיר קצר מיד אחרי הביקור</a>.</span>
@@ -127,9 +127,51 @@
     <p class="notice"><span class="he"><b>יחידות מיומנות (בהתקנה במחשב):</b> בהתקנה במחשב (Claude Code / Cowork) אפשר גם «להתקין» יחידות כך שיופעלו אוטומטית. אין צורך מראש: כשיחידה תהיה רלוונטית, העוזרת תציע ותלווה את ההתקנה צעד־צעד.</span>
     <span class="en"><b>Skill units (in a computer install):</b> in a computer install (Claude Code / Cowork), you can also "install" units so they trigger on their own. Nothing to do up front: when a unit becomes relevant, the assistant offers it and walks the install step by step.</span></p>
 
+    <h3><span class="he">איזה מודל, ובאיזה מאמץ</span><span class="en">Which model, at what effort</span></h3>
+    <ul>
+      <li><span class="he"><b>רישום יומיומי</b> (צ׳ק־אין, רישום אירוע, קליטה): <b>Sonnet · Medium</b>. Medium היא ברירת המחדל באפליקציה — לא צריך לגעת בכלום.</span>
+      <span class="en"><b>Everyday logging</b> (check-in, logging an event, capture): <b>Sonnet · Medium</b>. Medium is the default in the app — nothing to touch.</span></li>
+      <li><span class="he"><b>הכנה לביקור וסיכומים</b> (דף הכנה, טבלת תרופות, סיכום תקופה): <b>Sonnet · High</b>. בתוכנית בתשלום אפשר גם Opus.</span>
+      <span class="en"><b>Visit prep and summaries</b> (prep sheet, medications chart, interval summary): <b>Sonnet · High</b>. On a paid plan, Opus works too.</span></li>
+    </ul>
+    <p class="muted small"><span class="he">איך משנים: לוחצים על שם המודל ליד כפתור השליחה ← <b>Effort</b> ← בוחרים רמה. אם האפשרות לא מופיעה אצלכם, ממשיכים עם מה שיש — הכול עובד גם כך. שמות המודלים והרמות מתחלפים; נבדק מול דפי העזרה של Claude ב־1.10.2026.</span>
+    <span class="en">To change it: click the model name next to the send button ← <b>Effort</b> ← pick a level. If you do not see the option, carry on with what you have — everything still works. Model and level names change; checked against Claude's help pages on 1.10.2026.</span></p>
+
+    <h3><span class="he">העלאת מסמכים וצילומים</span><span class="en">Uploading documents and photos</span></h3>
+    <ul>
+      <li><span class="he"><b>לפני כל העלאה: חותכים או מכסים את מספר תעודת הזהות.</b> הכי פשוט — <a href="censor.html">הצנזור החזותי</a>, או פס נייר על המספר לפני שמצלמים. הכלי ממילא לא צריך את המספר.</span>
+      <span class="en"><b>Before any upload: crop or cover the ID number (teudat zehut).</b> The simplest way is the <a href="censor.html">visual censor</a>, or a strip of paper over the number before you photograph. The tool never needs it.</span></li>
+      <li><span class="he"><b>PDF סרוק נקרא במלואו עד 100 עמודים.</b> בקובץ עד 100 עמודים Claude קורא גם את הטקסט וגם את מה שמופיע כתמונה — ולכן גם מכתב שחרור סרוק. בקובץ ארוך יותר (עד 1,000 עמודים) נקרא הטקסט בלבד; מסמך סרוק ארוך כדאי לפצל.</span>
+      <span class="en"><b>A scanned PDF is read in full up to 100 pages.</b> In a file of up to 100 pages Claude reads the text and whatever appears as an image — so a scanned discharge letter too. In a longer file (up to 1,000 pages) only the text is read; split a long scanned document.</span></li>
+    </ul>
+
+    <h3><span class="he">קובץ להגיש לרופא/ה — Claude Docs</span><span class="en">A file to hand the doctor — Claude Docs</span></h3>
+    <p><span class="he">בתוכניות Pro ו־Max (התכונה בבטא, ואינה כלולה בתוכנית החינמית), דף ההכנה לביקור וטבלת התרופות נוצרים כ־<b>Doc</b>: מסמך שנפתח לצד השיחה, וממנו מייצאים קובץ: בכפתור <b>Export</b> בוחרים Word או PDF. כך מגישים לרופא/ה קובץ, לא צילום מסך של שיחה.</span>
+    <span class="en">On Pro and Max plans (the feature is in beta and not part of the Free plan), the visit prep sheet and the medications chart are produced as a <b>Doc</b>: a document that opens beside the chat, from which you export a file: press <b>Export</b> and choose Word or PDF. You hand the doctor a file, not a screenshot of a chat.</span></p>
+    <p class="notice"><span class="he"><b>ה־Doc פרטי עד שמשתפים אותו — וקישור שיתוף נמצא במרחק לחיצה אחת.</b> מי שמחזיק בקישור ומחובר לחשבון Claude יכול לפתוח את המסמך. לרופא/ה פשוט ובטוח יותר לייצא קובץ ולהגיש אותו; ולפני כל שיתוף — רשימת הבדיקה.</span>
+    <span class="en"><b>A Doc is private until you share it — and a shared link is one tap away.</b> Anyone who holds the link and is signed in to a Claude account can open the document. For the doctor, exporting a file and handing it over is simpler and safer; and before any sharing — the checklist.</span></p>
+    <p class="muted small"><span class="he">בנייד אפשר לצפות ב־Doc, אבל לא לערוך אותו ולא לשנות את הגדרות השיתוף. בתוכנית החינמית הדף נמסר כמו עד היום: קובץ מלא אחד, לשמירה בתיקיית <code dir="ltr">reports</code> ולהדפסה.</span>
+    <span class="en">On mobile you can view a Doc, but not edit it or change its sharing settings. On the Free plan the sheet arrives as before: one complete file to save in the <code>reports</code> folder and print.</span></p>
+
     <h3><span class="he">שיחה חדשה בתוך הפרויקט</span><span class="en">A new chat inside the project</span></h3>
-    <p><span class="he">שיחות ארוכות נעשות כבדות, ומדי פעם העוזרת תציע דף נקי. באתר: נכנסים לפרויקט ← <b>New chat</b> בתוכו. במחשב: שיחה חדשה על אותה תיקייה. בשני המקרים מילה אחת מספיקה: «תתעדכני» — והיא תספר איפה עמדנו.</span>
-    <span class="en">Long conversations get heavy, and now and then the assistant will suggest a clean page. On the web: open the project ← <b>New chat</b> inside it. On the desktop: a new chat on the same folder. Either way one word is enough: "catch up" — and she will say where things stood.</span></p>
+    <p><span class="he">אחרי רישום, או אחרי שתיים־שלוש משימות, העוזרת תציע לפתוח שיחה חדשה. הסיבה, בשורה אחת: שיחות ארוכות נעשות כבדות — בשלב מסוים Claude מסכם מעצמו את החלקים המוקדמים, או שהשיחה מגיעה למגבלת האורך שלה, וכך או כך פרטים מתחילים להישמט. <b>שום דבר לא הולך לאיבוד: הרשומות שלכם בקבצים, לא בשיחה.</b> לפני המעבר העוזרת כותבת פתק מסירה קצר, והשיחה הבאה קוראת אותו ראשון.</span>
+    <span class="en">After a log entry, or after two or three tasks, the assistant will suggest starting a new chat. The reason, in one line: long chats get heavy — at some point Claude summarizes the early parts on its own, or the chat reaches its length limit, and either way details start to slip. <b>Nothing is lost: your records are in your files, not in the chat.</b> Before you move, the assistant writes a short handoff note, and the next chat reads it first.</span></p>
+    <p><span class="he">באתר: נכנסים לפרויקט ← <b>New chat</b> בתוכו, ומדביקים את פתק המסירה כהודעה הראשונה. במחשב: שיחה חדשה על אותה תיקייה — הפתק נשמר שם כקובץ <code dir="ltr">handoff.md</code>, והעוזרת קוראת אותו לבד. בשני המקרים מילה אחת מספיקה: «תתעדכני» — והיא תספר איפה עמדנו.</span>
+    <span class="en">On the web: open the project ← <b>New chat</b> inside it, and paste the handoff note as the first message. On the desktop: a new chat on the same folder — the note is saved there as <code>handoff.md</code>, and the assistant reads it on her own. Either way one word is enough: "catch up" — and she will say where things stood.</span></p>
+
+    <h3><span class="he">הערה חשובה על «זיכרון» (Memory)</span><span class="en">An important note on Memory</span></h3>
+    <p><span class="he">גם ל־Claude יש זיכרון חוצה־שיחות, והוא <b>פועל כברירת מחדל</b> — גם בתוכנית החינמית. לרשומה רפואית עדיף מקור אמת אחד: הקבצים שלכם.</span>
+    <span class="en">Claude has cross-conversation memory too, and it is <b>on by default</b> — on the Free plan as well. A medical record wants one source of truth: your files.</span></p>
+    <ul>
+      <li><span class="he"><b>לכל פרויקט זיכרון נפרד.</b> מה שנאמר בפרויקט של התיק הרפואי נשמר בזיכרון של אותו פרויקט, בנפרד מפרויקטים אחרים ומשיחות שמחוץ לפרויקטים.</span>
+      <span class="en"><b>Each project has its own memory.</b> What is said in the medical project is kept in that project's memory, separate from other projects and from chats outside projects.</span></li>
+      <li><span class="he"><b>בריאות, ונושאים רגישים אחרים, לא נכנסים לזיכרון כברירת מחדל.</b> ב־Settings ← Memory יש מתג בשם <b>«Include sensitive topics in memory»</b>. ההמלצה שלנו: <b>להשאיר אותו כבוי.</b> הקבצים שלכם הם הרשומה.</span>
+      <span class="en"><b>Health, and other sensitive topics, stay out of memory by default.</b> Settings ← Memory has a switch called <b>"Include sensitive topics in memory"</b>. Our recommendation: <b>leave it off.</b> Your files are the record.</span></li>
+      <li><span class="he"><b>למלווים, במילים פשוטות:</b> מי שמדליק את המתג הזה מאפשר ל־Claude לשמור בזיכרון את האבחנה והתרופות של קרוב המשפחה. בשיחות רגילות, מחוץ לפרויקט, הזיכרון הזה מלווה כל שיחה בחשבון — גם שיחות שאין להן שום קשר לתיק. זה מידע של אדם אחר; עדיף שיישאר בקבצים.</span>
+      <span class="en"><b>For caregivers, plainly:</b> turning that switch on lets Claude keep your relative's diagnosis and medications in memory. In regular chats, outside a project, that memory comes along to every chat on the account — including chats that have nothing to do with the record. It is another person's information; better that it stays in the files.</span></li>
+      <li><span class="he"><b>שיחות אינקוגניטו (Incognito) אינן זמינות בתוך פרויקטים</b> — רק בשיחות שמחוץ לפרויקט. רוצים שיחה אחת בלי זיכרון? בשיחה חדשה, לפני ההודעה הראשונה: «+» ← מכבים <b>Memory</b>. ואפשר להשהות את הזיכרון כולו ב־Settings ← Memory.</span>
+      <span class="en"><b>Incognito chats are not available inside projects</b> — only in chats outside a project. Want one chat with no memory? In a new chat, before the first message: "+" ← turn <b>Memory</b> off. You can also pause memory entirely in Settings ← Memory.</span></li>
+    </ul>
   </section>
 
   <!-- ════════════════ CHATGPT ════════════════ -->
@@ -157,8 +199,8 @@
     <ol>
       <li><span class="he">נכנסים ל־chatgpt.com ומתחברים.</span><span class="en">Go to chatgpt.com and sign in.</span></li>
       <li><span class="he">בתפריט הצד: <b>Projects</b> ← פרויקט חדש. שם חופשי.</span><span class="en">Side menu: <b>Projects</b> ← new project. Any name.</span></li>
-      <li><span class="he">מעלים לקובצי הפרויקט <b>קובץ אחד</b> בלבד: <code dir="ltr">package/advolog-chatgpt-bundle.md</code> — קובץ יחיד שמאגד את כל החבילה (המפה, השכבה העברית, חמש־עשרה היחידות ופרומפטי המשימות), כדי לעקוף את מגבלת מספר הקבצים (ChatGPT Free מתיר מעט קבצים לפרויקט).</span>
-      <span class="en">Upload <b>one file</b> to the project: <code>package/advolog-chatgpt-bundle.md</code> — a single file combining the whole package (the map, the Hebrew layer, all fifteen abilities, and the task prompts), so you never hit the file-count limit (ChatGPT Free allows only a few files per project).</span></li>
+      <li><span class="he">מעלים לקובצי הפרויקט <b>קובץ אחד</b> בלבד: <code dir="ltr">package/advolog-chatgpt-bundle.md</code> — קובץ יחיד שמאגד את כל החבילה (המפה, השכבה העברית, שש־עשרה היחידות ופרומפטי המשימות), כדי לעקוף את מגבלת מספר הקבצים (ChatGPT Free מתיר מעט קבצים לפרויקט).</span>
+      <span class="en">Upload <b>one file</b> to the project: <code>package/advolog-chatgpt-bundle.md</code> — a single file combining the whole package (the map, the Hebrew layer, all sixteen abilities, and the task prompts), so you never hit the file-count limit (ChatGPT Free allows only a few files per project).</span></li>
       <li><span class="he">בשדה ההנחיות (Instructions) כותבים שורה אחת: «קראי את הקובץ advolog-chatgpt-bundle.md במלואו לפני כל תגובה ופעלי לפיו; החלק הראשון, המפה, קובע על כל סתירה».</span>
       <span class="en">In the Instructions field write one line: "Read advolog-chatgpt-bundle.md in full before any reply and follow it; the first section, the map, wins on any conflict."</span></li>
       <li><span class="he">שיחה חדשה בתוך הפרויקט — ומתחילים לדבר. אין נוסח פתיחה נכון.</span><span class="en">A new chat inside the project — and start talking. There is no correct opening line.</span></li>
@@ -166,21 +208,42 @@
     <p class="notice"><span class="he"><b>חלופה בלי שום התקנה:</b> שיחה רגילה + <a href="index.html#starter">פרומפט הפתיחה</a>.</span>
     <span class="en"><b>The no-install alternative:</b> a regular chat + <a href="index.html#starter">the starter prompt</a>.</span></p>
 
+    <h3><span class="he">איזה מודל, ובאיזה מצב חשיבה</span><span class="en">Which model, in which thinking mode</span></h3>
+    <ul>
+      <li><span class="he"><b>רישום יומיומי</b> (צ׳ק־אין, רישום אירוע, קליטה): <b>Instant</b> — ברירת המחדל. לא צריך לגעת בכלום.</span>
+      <span class="en"><b>Everyday logging</b> (check-in, logging an event, capture): <b>Instant</b> — the default. Nothing to touch.</span></li>
+      <li><span class="he"><b>הכנה לביקור וסיכומים</b> (דף הכנה, טבלת תרופות, סיכום תקופה): בתוכנית החינמית וב־Go — לוחצים <b>Think</b> לפני ששולחים את הבקשה. ב־Plus וב־Pro — בוחרים <b>High</b> בבורר החשיבה.</span>
+      <span class="en"><b>Visit prep and summaries</b> (prep sheet, medications chart, interval summary): on Free and Go — press <b>Think</b> before sending the request. On Plus and Pro — choose <b>High</b> in the thinking picker.</span></li>
+    </ul>
+    <p class="muted small"><span class="he">חשוב למי שב־Plus או ב־Pro: Instant כבר לא עובר לבד למצב חשיבה כשהבקשה מורכבת. מי שרוצה יותר חשיבה בוחר בה ידנית, בכל פעם. שמות המודלים והמצבים מתחלפים; נבדק מול דפי העזרה של OpenAI ב־1.10.2026.</span>
+    <span class="en">If you are on Plus or Pro: Instant no longer switches to thinking on its own when a request is complex. If you want more thinking, choose it by hand, each time. Model and mode names change; checked against OpenAI's help pages on 1.10.2026.</span></p>
+
+    <h3><span class="he">העלאת מסמכים וצילומים</span><span class="en">Uploading documents and photos</span></h3>
+    <ul>
+      <li><span class="he"><b>לפני כל העלאה: חותכים או מכסים את מספר תעודת הזהות.</b> הכי פשוט — <a href="censor.html">הצנזור החזותי</a>, או פס נייר על המספר לפני שמצלמים.</span>
+      <span class="en"><b>Before any upload: crop or cover the ID number (teudat zehut).</b> The simplest way is the <a href="censor.html">visual censor</a>, or a strip of paper over the number before you photograph.</span></li>
+      <li><span class="he"><b>מכתב סרוק מעלים כתמונה, לא כ־PDF.</b> מקובץ PDF, ChatGPT קורא רק את הטקסט הדיגיטלי ומתעלם מהתמונות שבתוכו (בכל התוכניות חוץ מ־Enterprise). מכתב שחרור סרוק הוא בעצם תמונה בתוך PDF — ולכן, כשמעלים אותו כ־PDF, הוא פשוט בלתי נראה. מצלמים את העמוד או שומרים אותו כתמונה (JPG / PNG), ומעלים את התמונה.</span>
+      <span class="en"><b>Upload a scanned letter as a photo, not as a PDF.</b> From a PDF, ChatGPT reads only the digital text and discards the images inside it (on every plan except Enterprise). A scanned discharge letter is really an image inside a PDF — so uploaded as a PDF it is simply invisible. Photograph the page or save it as an image (JPG / PNG), and upload the image.</span></li>
+      <li><span class="he"><b>בתוכנית החינמית: 3 העלאות קבצים ביום.</b> כדאי לבחור מראש מה מעלים; מה שלא נכנס היום יחכה למחר, ואפשר גם פשוט להקליד את השורות החשובות.</span>
+      <span class="en"><b>On the Free plan: 3 file uploads a day.</b> Choose in advance what to upload; what does not fit today can wait for tomorrow, or simply type in the lines that matter.</span></li>
+    </ul>
+    <p class="notice"><span class="he"><b>הלוח נשאר קובץ במחשב — לא ChatGPT Site.</b> אל תהפכו את הלוח ל־Site: Site אפשר לפרסם לכל מי שברשת, ושיחות שבהן יוצרים או עורכים Site עשויות לשמש לאימון המודל כשההגדרה «Improve the model for everyone» דלוקה. גם דף ההכנה לביקור נשאר כמו עד היום: קובץ מלא אחד, לשמירה ולהדפסה.</span>
+    <span class="en"><b>The dashboard stays a file on your computer — not a ChatGPT Site.</b> Do not turn the dashboard into a Site: a Site can be published to anyone on the internet, and chats in which you create or edit a Site may be used for model training when "Improve the model for everyone" is on. The visit prep sheet also stays as it was: one complete file, to save and print.</span></p>
+
     <h3><span class="he">הערה חשובה על «זיכרון» (Memory)</span><span class="en">An important note on Memory</span></h3>
-    <p><span class="he">ל־ChatGPT יש זיכרון חוצה־שיחות. לרשומה רפואית עדיף מקור אמת אחד — הקבצים שלכם: בבדיקות שלנו זוהה מקרה שבו ידע כללי «מהזיכרון» התערבב בטענות ממקורות, וההנחיות דורשות שכל מספר וסף יגיעו רק ממקור שנשמר באותה ריצה. <b>ההמלצה שלנו לעבודה רגישה: זיכרון ברמת הפרויקט בלבד (Project-only memory)</b> — אפשרות שבוחרים ברגע יצירת הפרויקט, כך שהתיק הרפואי לא מושך מהזיכרון הכללי ולא מזין אליו. פרויקט שכבר נוצר עם זיכרון רגיל אי־אפשר להעביר למצב הזה — פשוט יוצרים פרויקט חדש עם זיכרון ברמת הפרויקט ומעלים אליו את אותו קובץ יחיד; הרשומות אצלכם בתיקייה, לא בפרויקט, ושום דבר לא הולך לאיבוד. לחלופין אפשר לכבות זיכרון לגמרי (Settings ← Personalization ← Memory). העיקרון — הרשומה גוברת על הזיכרון.</span>
-    <span class="en">ChatGPT has cross-conversation memory. A medical record wants one source of truth — your files: our testing caught a case where general "memory" knowledge blended into sourced claims, and the instructions require every number and threshold to come only from a source retained in that run. <b>Our recommendation for sensitive work: project-only memory</b> — an option you choose when creating the project, so the medical project neither draws from nor feeds your general account memory. A project already created with regular memory cannot be switched over — simply create a fresh project with project-only memory and upload the same single file; your records live in your folder, not in the project, and nothing is lost. Or turn Memory off entirely (Settings ← Personalization ← Memory). The principle — the record outranks the memory.</span></p>
-    <figure class="shot screen detail" style="border-style:solid">
-      <img src="img/chatgpt-project-memory.png" alt="דיאלוג יצירת פרויקט ב־ChatGPT עם תפריט הזיכרון פתוח: Default memory מול Project-only memory, ולמטה — This setting can't be changed later" width="540" loading="lazy">
-      <figcaption class="small"><span class="he">בוחרים את סוג הזיכרון ברגע היצירה: Project-only memory. המסך עצמו אומר — אי־אפשר לשנות את זה אחר כך.</span><span class="en">Choose the memory type at creation: Project-only memory. The dialog itself says — this setting can't be changed later.</span></figcaption>
-    </figure>
+    <p><span class="he">ל־ChatGPT יש זיכרון חוצה־שיחות. לרשומה רפואית עדיף מקור אמת אחד — הקבצים שלכם: בבדיקות שלנו זוהה מקרה שבו ידע כללי «מהזיכרון» התערבב בטענות ממקורות, וההנחיות דורשות שכל מספר וסף יגיעו רק ממקור שנשמר באותה ריצה. <b>ההמלצה שלנו לעבודה רגישה: זיכרון ברמת הפרויקט בלבד (Project-only memory)</b> — כך התיק הרפואי לא מושך מהזיכרון הכללי ולא מזין אליו. אפשר לבחור בו ברגע יצירת הפרויקט, וגם לשנות אחר כך בפרויקט קיים שלא שותף עם אחרים: פותחים את הפרויקט ← תפריט שלוש הנקודות (•••) ← <b>Project settings</b> ← תחת <b>Memory</b> בוחרים <b>Project-only memory</b> ← <b>Save</b>. השינוי עשוי להיכנס לתוקף רק אחרי כמה שעות; אין צורך ליצור פרויקט חדש. לחלופין אפשר לכבות זיכרון לגמרי (Settings ← Personalization ← Memory). העיקרון — הרשומה גוברת על הזיכרון.</span>
+    <span class="en">ChatGPT has cross-conversation memory. A medical record wants one source of truth — your files: our testing caught a case where general "memory" knowledge blended into sourced claims, and the instructions require every number and threshold to come only from a source retained in that run. <b>Our recommendation for sensitive work: project-only memory</b> — so the medical project neither draws from nor feeds your general account memory. You can choose it when creating the project, and also change it later on an existing project that is not shared: open the project ← the three-dot menu (•••) ← <b>Project settings</b> ← under <b>Memory</b> choose <b>Project-only memory</b> ← <b>Save</b>. The change may take a few hours to take effect; there is no need to create a new project. Or turn Memory off entirely (Settings ← Personalization ← Memory). The principle — the record outranks the memory.</span></p>
+    <!-- screenshot slot: project memory setting in Project settings (to be retaken; the old creation-dialog shot said the setting could not be changed later, which is no longer true) -->
     <figure class="shot screen detail" style="border-style:solid">
       <img src="img/chatgpt-memory-settings.png" alt="אזור Memory בהגדרות ChatGPT: מתג Enable memory וכפתור Manage" width="503" loading="lazy">
       <figcaption class="small"><span class="he">החלופה המלאה: Settings ← Personalization ← Memory — מכבים את הזיכרון כולו.</span><span class="en">The full-off alternative: Settings ← Personalization ← Memory — turn Memory off entirely.</span></figcaption>
     </figure>
 
     <h3><span class="he">שיחה חדשה בתוך הפרויקט</span><span class="en">A new chat inside the project</span></h3>
-    <p><span class="he">Projects ← הפרויקט שלכם ← <b>New chat</b> בתוכו. מילת פתיחה: «תתעדכני».</span>
-    <span class="en">Projects ← your project ← <b>New chat</b> inside it. Opening word: "catch up."</span></p>
+    <p><span class="he">אחרי רישום, או אחרי שתיים־שלוש משימות, העוזרת תציע לפתוח שיחה חדשה. הסיבה, בשורה אחת: שיחות ארוכות נעשות כבדות, ופרטים מוקדמים מתחילים להישמט. <b>שום דבר לא הולך לאיבוד: הרשומות שלכם בקבצים, לא בשיחה.</b> לפני המעבר העוזרת כותבת פתק מסירה קצר.</span>
+    <span class="en">After a log entry, or after two or three tasks, the assistant will suggest starting a new chat. The reason, in one line: long chats get heavy, and early details start to slip. <b>Nothing is lost: your records are in your files, not in the chat.</b> Before you move, the assistant writes a short handoff note.</span></p>
+    <p><span class="he">Projects ← הפרויקט שלכם ← <b>New chat</b> בתוכו, ומדביקים את פתק המסירה כהודעה הראשונה. מילת פתיחה: «תתעדכני».</span>
+    <span class="en">Projects ← your project ← <b>New chat</b> inside it, and paste the handoff note as the first message. Opening word: "catch up."</span></p>
   </section>
 
   <!-- ════════════════ DASHBOARD (mounted from package/setup/dashboard-guide.md) ════════════════ -->
@@ -283,6 +346,8 @@
     </ul>
     <p class="notice"><span class="he"><b>מה הלוח לא עושה:</b> לא ניגש לרשת. לא שולח כלום לאף אחד. לא מוחק דבר לבד. לא מחליט במקומך. לא דורש ממך כלום כדי שהרשומות ימשיכו להיות שלכם — הן קבצים פשוטים בתיקייה שלכם, עם הלוח ובלעדיו.</span>
     <span class="en"><b>What the dashboard never does:</b> touch the network. Send anything to anyone. Delete anything on its own. Decide for you. Require anything for the records to stay yours — they are plain files in your folder, dashboard or not.</span></p>
+    <p class="notice"><span class="he"><b>ואל תהפכו את הלוח ל־ChatGPT Site.</b> Site אפשר לפרסם לכל מי שברשת, ושיחות שבהן יוצרים או עורכים Site עשויות לשמש לאימון המודל כשההגדרה «Improve the model for everyone» דלוקה. הלוח נבנה לרוץ כקובץ מקומי אחד, בלי רשת — וזה מה ששומר את המידע הרפואי אצלכם.</span>
+    <span class="en"><b>And do not turn the dashboard into a ChatGPT Site.</b> A Site can be published to anyone on the internet, and chats in which you create or edit a Site may be used for model training when "Improve the model for everyone" is on. The dashboard is built to run as one local file, with no network — which is what keeps the medical information with you.</span></p>
   </section>
 
   <!-- ════════════════ PRIVACY WALKTHROUGHS ════════════════ -->
@@ -308,6 +373,15 @@
       <img src="img/chatgpt-data-controls.png" alt="חלונית Data controls בהגדרות ChatGPT: Improve the model for everyone למעלה, ולמטה ייצוא ומחיקה" width="681" loading="lazy">
       <figcaption class="small"><span class="he">Settings ← Data Controls — כאן מחליטים במודע על «Improve the model for everyone», וכאן גם ייצוא הנתונים ומחיקת שיחות.</span><span class="en">Settings ← Data Controls — where "Improve the model for everyone" is decided consciously, and where data export and chat deletion live.</span></figcaption>
     </figure>
+    <h3><span class="he">עוד שלושה דברים, בשורה אחת</span><span class="en">Three more things, one line each</span></h3>
+    <ul>
+      <li><span class="he"><b>חיבורי נתוני בריאות</b> — ב־Claude וב־ChatGPT (Health) — זמינים כרגע רק בארצות הברית, ולכן אינם רלוונטיים בישראל. Advolog לא נשען עליהם: הרשומה היא הקבצים שלכם.</span>
+      <span class="en"><b>Health-data integrations</b> — in Claude and in ChatGPT (Health) — are currently available in the United States only, so they do not apply in Israel. Advolog does not rely on them: the record is your files.</span></li>
+      <li><span class="he"><b>הכתבה קולית:</b> איננו מבטיחים הכתבה בעברית — עברית אינה ברשימת שפות ההכתבה ש־Claude מפרסם, וב־ChatGPT לא בדקנו. אם היא לא מדייקת אצלכם — מקלידים, והכול עובד.</span>
+      <span class="en"><b>Voice dictation:</b> we do not promise Hebrew dictation — Hebrew is not on Claude's published list of dictation languages, and we have not tested it in ChatGPT. If it is not accurate for you — type, and everything works.</span></li>
+      <li><span class="he"><b>Custom GPTs יוצאים משימוש</b> (OpenAI מתכננת להפסיק אותם ב־11.12.2026). Advolog בנוי על Projects, לא על GPTs — שום דבר לא משתנה אצלכם.</span>
+      <span class="en"><b>Custom GPTs are being retired</b> (OpenAI plans to end them on 11.12.2026). Advolog is built on Projects, not GPTs — nothing changes for you.</span></li>
+    </ul>
     <p class="muted"><span class="he">ובכל מקרה, בלי קשר להגדרות: הכלי לא מבקש מזהים, וכל ייצוא עובר קודם את רשימת הבדיקה — מה בפנים, מה מסירים, לאן זה הולך.</span>
     <span class="en">And regardless of settings: the tool never asks for identifiers, and every export passes the checklist first — what is inside, what to remove, where it goes.</span></p>
   </section>
@@ -343,7 +417,7 @@
         </tr>
         <tr>
           <td><span class="he">סיכום סשן / מסירה</span><span class="en">Session wrap-up / handoff</span></td>
-          <td><code dir="ltr">package/prompts/twins/wrapup-twin.md</code><br><span class="small muted"><span class="he">מופעל ידנית בסוף ישיבה ארוכה, או כשהעוזרת מציעה.</span><span class="en">Run manually at the end of a long sitting, or when the assistant offers.</span></span></td>
+          <td><code dir="ltr">package/prompts/twins/wrapup-twin.md</code><br><span class="small muted"><span class="he">מופעל ידנית בסוף ישיבה, בכל רגע שרוצים. העוזרת מציעה את אותו הדבר מעצמה אחרי רישום או אחרי כמה משימות.</span><span class="en">Run manually at the end of a sitting, whenever you like. The assistant offers the same thing on her own after a log entry or a few tasks.</span></span></td>
           <td><span class="he">לא מתוזמן — התנהגות שיחה.</span><span class="en">Not scheduled — conversational behavior.</span></td>
         </tr>
       </tbody>

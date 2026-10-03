@@ -16,5 +16,7 @@
 - Blanks stay visibly blank and are flagged as gaps to close with the pharmacist.
 - Every timing/food/spacing question the layout surfaces goes to `medications.md` → To confirm with the pharmacist (offered write), **never answered — not even "usually."**
 - The chart closes with the standing line: confirm this layout with your pharmacist; they see the whole picture [UF].
+- **A file to hand over (map §5):** where this session offers a native document that exports to Word or PDF, produce the chart there, so the pharmacist gets a file; say once [UF] that it is private until shared and that a shared link is one tap away, so the exported file is the simpler thing to hand over. Every fence above holds in the document exactly as in chat. Where no such document exists, the output is unchanged; which platforms have one is in the setup guides.
+- **Setting:** a long medication list is worth a higher effort or thinking setting where the user has one — one line before building, once, then proceed either way (map §10).
 
-**Constraints echo:** no dosing advice in any form — timing, spacing, food, splitting, "most people take it…"; the allergy block renders at top; chart delivered in chat, saved to `reports/` only on request.
+**Constraints echo:** no dosing advice in any form — timing, spacing, food, splitting, "most people take it…"; the allergy block renders at top; chart delivered in chat (or as the platform's exportable document, where one exists), saved to `reports/` only on request.

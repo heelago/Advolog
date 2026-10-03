@@ -1,6 +1,6 @@
 # Advolog — the package
 
-חבילה פתוחה וחינמית שעוזרת למטופלים ולמלווים להפוך ניסיון רפואי חי לחומר מסודר ואמין לרופא: שאלות עם נימוק, דף הכנה לתור, תיעוד ששייך לכם. הכול רץ בתוך חשבון ה־AI שכבר יש לכם. **זו לא אפליקציה ולא שירות** — זו תיקיית קבצים והנחיות.
+חבילה פתוחה וחינמית שעוזרת למטופלים ולמלווים להפוך ניסיון רפואי חי לחומר מסודר ואמין לרופא: שאלות עם נימוק, דף הכנה לתור, תיעוד ששייך לכם. הכול רץ בתוך חשבון ה־AI שכבר יש לכם. **זו לא אפליקציה ולא שירות** — זו תיקיית קבצים והנחיות. גרסה 1.1.0 · 1.10.2026.
 
 **הצעד הראשון, לפי הפלטפורמה:**
 
@@ -9,7 +9,7 @@
 - **ChatGPT:** מעלים את הקובץ המשולב `advolog-chatgpt-bundle.md` (קובץ אחד) לפרויקט, או מדביקים את `prompts/core-map.md` בהנחיות. המדריך: `setup/setup-chatgpt.md`.
 - **בלי להוריד כלום:** מעתיקים את `starter/starter-prompt.md` לשיחה חדשה — גרסה קלה ובטוחה (ריאיון, קליטה, הכנה מהירה).
 
-**מה בתיקייה:** `prompts/core-map.md` (המפה הקובעת) · `prompts/skills/` (חמש־עשרה יחידות) · `prompts/twins/` (תאומים ידניים לאוטומציות) · `he/` (קול עברי, מערכת ישראלית, תבניות דוחות) · `setup/` (מדריכים, כולל הליכי פרטיות ומדריך הלוח) · `dashboard.html` (לוח מקומי אופציונלי) · `starter/` · `LICENSE`.
+**מה בתיקייה:** `prompts/core-map.md` (המפה הקובעת) · `prompts/skills/` (שש־עשרה יחידות) · `prompts/twins/` (תאומים ידניים לאוטומציות) · `he/` (קול עברי, מערכת ישראלית, תבניות דוחות) · `setup/` (מדריכים, כולל הליכי פרטיות ומדריך הלוח) · `dashboard.html` (לוח מקומי אופציונלי) · `starter/` · `LICENSE`.
 
 **פרטיות, ביושר:** Advolog עצמו לא מקבל שום דבר — אין שרת, אין חשבון, אין מדידה. אבל השיחות והקבצים שאתם מעלים חיים בחשבון ה־AI שלכם (Claude/ChatGPT) ונשמרים לפי מדיניות הספק. אל תעלו שום דבר שלא הייתם כותבים ממילא לעוזר ה־AI שלכם. המדריכים מראים איך לבדוק את הגדרות הפרטיות ולבטל שימוש בשיחות לאימון המודל, לפי הפלטפורמה.
 
@@ -24,7 +24,7 @@
 An open, free toolkit that helps patients and caregivers turn lived medical experience into
 organized, credible, doctor-readable material: questions with stated reasoning, an appointment
 prep sheet, a record you own. Everything runs inside the AI account you already have. **Not an
-app, not a service** — a folder of files and instructions.
+app, not a service** — a folder of files and instructions. Version 1.1.0 · 1.10.2026.
 
 **Your first step, by platform:**
 
@@ -37,7 +37,7 @@ app, not a service** — a folder of files and instructions.
 - **Zero download:** copy `starter/starter-prompt.md` into a new conversation — a light, safe
   core (interview, capture, express prep).
 
-**What's in the folder:** `prompts/core-map.md` (the governing map) · `prompts/skills/` (fifteen
+**What's in the folder:** `prompts/core-map.md` (the governing map) · `prompts/skills/` (sixteen
 units) · `prompts/twins/` (manual twins for the automations) · `he/` (Hebrew voice, Israeli
 system, report templates) · `setup/` (guides, including privacy walkthroughs and the dashboard
 guide) · `dashboard.html` (optional local dashboard) · `starter/` · `LICENSE`.
