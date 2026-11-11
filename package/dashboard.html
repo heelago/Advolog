@@ -94,7 +94,7 @@
     <h1>Advolog · הלוח</h1>
     <div class="hbtns">
       <button class="ghost" id="themeBtn">מצב כהה</button>
-      <button class="ghost" id="exportBtn" disabled>גיבוי — הורדת הכול</button>
+      <button class="ghost" id="exportBtn" disabled>גיבוי, הורדת הכול</button>
     </div>
   </header>
 
@@ -108,17 +108,17 @@
   <!-- @anchor: gate — connect / unsupported -->
   <div id="gate" class="gate">
     <h2>חיבור לתיקייה</h2>
-    <p>הלוח קורא וכותב ישירות בקובצי הרשומות שלך — באותה תיקייה שבה יושב הקובץ הזה. שום דבר לא נשלח לשום מקום: אין רשת, אין חשבון, אין שרת.</p>
+    <p>הלוח קורא וכותב ישירות בקובצי הרשומות שלך, באותה תיקייה שבה יושב הקובץ הזה. שום דבר לא נשלח לשום מקום: אין רשת, אין חשבון, אין שרת.</p>
     <p id="gateMsg"></p>
     <button class="btn" id="connectBtn">בחירת התיקייה</button>
-    <p class="note" id="dropHint">אפשר גם פשוט לגרור את התיקייה לתוך החלון הזה — זה אותו חיבור.</p>
+    <p class="note" id="dropHint">אפשר גם פשוט לגרור את התיקייה לתוך החלון הזה, זה אותו חיבור.</p>
     <p class="note">אם הדפדפן לא מציע גישה לתיקיות, ממשיכים במסלול המלא דרך השיחה או פותחים את הלוח בדפדפן מחשב שתומך בגישה לתיקיות. שני כלי הפרטיות עובדים גם בלי חיבור.</p>
   </div>
 
   <!-- ================= BOARD VIEW ================= -->
   <section class="view" id="v-board" data-anchor="board">
     <div class="banner" id="allergyBanner" data-anchor="allergy-banner">
-      <span id="allergyTx"><b>אלרגיות: לא תועד.</b> זה הפרט הבטיחותי הכי חשוב לרישום — אפשר להוסיף דרך השיחה בכל רגע.</span>
+      <span id="allergyTx"><b>אלרגיות: לא תועד.</b> זה הפרט הבטיחותי הכי חשוב לרישום, אפשר להוסיף דרך השיחה בכל רגע.</span>
       <span class="sp"></span>
     </div>
 
@@ -126,8 +126,8 @@
       <div class="col">
         <div class="panel" data-anchor="sync-panel">
           <h3>הדבקה מהשיחה <button class="ph" data-for="h-sync" aria-label="הסבר">?</button></h3>
-          <div class="phelp" id="h-sync">בסוף שיחה (או כשמבקשים) השיחה נותנת «בלוק עדכון» — טקסט אחד עם כל מה שחדש. מעתיקים, מדביקים כאן, ולוחצים «בדיקת הבלוק»: כל פריט מוצג לאישור. עד שלוחצים «החלה» — שום דבר לא נכתב לקבצים.</div>
-          <p class="sub">בלוק אחד לשיחה. מודבק כאן, נבדק, מוחל — פריט־פריט או הכול. שום דבר לא נכנס לרשומות בלי החלה.</p>
+          <div class="phelp" id="h-sync">בסוף שיחה (או כשמבקשים) השיחה נותנת «בלוק עדכון», טקסט אחד עם כל מה שחדש. מעתיקים, מדביקים כאן, ולוחצים «בדיקת הבלוק»: כל פריט מוצג לאישור. עד שלוחצים «החלה», שום דבר לא נכתב לקבצים.</div>
+          <p class="sub">בלוק אחד לשיחה. מודבק כאן, נבדק, מוחל, פריט־פריט או הכול. שום דבר לא נכנס לרשומות בלי החלה.</p>
           <textarea id="syncIn" placeholder="◇ עדכון מהשיחה · 31.7.2026&#10;תסמינים + · 31.7 · ...&#10;ציר הזמן + · 31.7 · ...&#10;שאלות + · ק-05 · ..."></textarea>
           <div style="margin-top:8px"><button class="btn" id="parseBtn">בדיקת הבלוק</button>
             <button class="ghost" id="applyAllBtn" hidden>החלת הכול</button></div>
@@ -136,48 +136,48 @@
         </div>
         <div class="panel" data-anchor="context-panel">
           <h3>הקשר חזרה לשיחה <button class="ph" data-for="h-ctx" aria-label="הסבר">?</button></h3>
-          <div class="phelp" id="h-ctx">התנועה ההפוכה: לוחצים, ומקבלים בלוק קצר להדבקה בהודעה הראשונה של שיחה חדשה — כך השיחה יודעת מיד איפה הדברים עומדים, בלי לספר הכול מחדש.</div>
+          <div class="phelp" id="h-ctx">התנועה ההפוכה: לוחצים, ומקבלים בלוק קצר להדבקה בהודעה הראשונה של שיחה חדשה, כך השיחה יודעת מיד איפה הדברים עומדים, בלי לספר הכול מחדש.</div>
           <p class="sub">בלוק פתיחה לשיחה הבאה, מעודכן ממה שבאמת בקבצים.</p>
           <button class="ghost" id="ctxBtn">העתקת בלוק ההקשר</button>
         </div>
         <div class="panel" data-anchor="inbox-panel">
           <h3>תיבת קליטה <span class="chip" id="c-inbox">0</span> <button class="ph" data-for="h-inbox" aria-label="הסבר">?</button></h3>
-          <div class="phelp" id="h-inbox">כל מה שנקלט ועוד לא סודר — קליטות מרגעים עמוסים, הצעות שמחכות להחלטה. המיון עצמו קורה בשיחה, כשנוח; שום דבר לא נכנס לרשומות בלי אישור.</div>
+          <div class="phelp" id="h-inbox">כל מה שנקלט ועוד לא סודר, קליטות מרגעים עמוסים, הצעות שמחכות להחלטה. המיון עצמו קורה בשיחה, כשנוח; שום דבר לא נכנס לרשומות בלי אישור.</div>
           <p class="sub">מה שעוד לא סודר. הסידור עצמו נעשה בשיחה, בזמן מיון.</p>
           <div id="p-inbox"></div>
         </div>
         <div class="panel" data-anchor="checkups-panel">
           <h3>בדיקות תקופתיות <button class="ph" data-for="h-chk" aria-label="הסבר">?</button></h3>
-          <div class="phelp" id="h-chk">בדיקות שאפשר להריץ מדי פעם. הלוח לא מריץ אותן בעצמו — אין לו רשת — אז לוחצים «העתקה», מדביקים בשיחה, והעוזרת מריצה. התוצאה תמיד נוחתת בתיבת הקליטה כהצעה, אף פעם לא ישר לרשומות.</div>
-          <p class="sub">להעתיק, להדביק בשיחה — והעוזרת מריצה. התוצאה לתיבת הקליטה.</p>
+          <div class="phelp" id="h-chk">בדיקות שאפשר להריץ מדי פעם. הלוח לא מריץ אותן בעצמו, אין לו רשת, אז לוחצים «העתקה», מדביקים בשיחה, והעוזרת מריצה. התוצאה תמיד נוחתת בתיבת הקליטה כהצעה, אף פעם לא ישר לרשומות.</div>
+          <p class="sub">להעתיק, להדביק בשיחה, והעוזרת מריצה. התוצאה לתיבת הקליטה.</p>
           <div class="chk"><span>סריקת מחקר וקהילות</span><button class="ghost" data-chk="בבקשה הריצי את סריקת המחקר והקהילות: דיגסט קצר ועדכני למצב שלי, עם רובדי ראיות מסומנים. «אין חדש» היא תוצאה שלמה. להניח בתיבת הקליטה.">העתקה</button></div>
-          <div class="chk"><span>בדיקת טריות התיקייה</span><button class="ghost" data-chk="בבקשה בדקי אם יש בתיקייה קבצים או פתקים חדשים מאז הפעם שעברה, והציעי איך לשלב אותם — הכול לתיבת הקליטה.">העתקה</button></div>
+          <div class="chk"><span>בדיקת טריות התיקייה</span><button class="ghost" data-chk="בבקשה בדקי אם יש בתיקייה קבצים או פתקים חדשים מאז הפעם שעברה, והציעי איך לשלב אותם, הכול לתיבת הקליטה.">העתקה</button></div>
           <div class="chk"><span>בדיקת יכולות ועדכוני הכלי</span><button class="ghost" data-chk="בבקשה הריצי בדיקת יכולות ועדכוני הכלי: מה חדש ורלוונטי, ממקורות רשמיים בלבד, מקושר ומתוארך, עד עשר שורות. «אין חדש» היא תשובה שלמה.">העתקה</button></div>
-          <div class="chk"><span>סיכום סשן / מסירה</span><button class="ghost" data-chk="בבקשה הכיני סיכום סשן / מסירה: מה עשינו, מה נשאר פתוח, ומה הצעד הבא — לקראת שיחה חדשה.">העתקה</button></div>
+          <div class="chk"><span>סיכום סשן / מסירה</span><button class="ghost" data-chk="בבקשה הכיני סיכום סשן / מסירה: מה עשינו, מה נשאר פתוח, ומה הצעד הבא, לקראת שיחה חדשה.">העתקה</button></div>
         </div>
       </div>
 
       <div class="col">
         <div class="panel" data-anchor="questions-panel">
           <h3>שאלות פתוחות <span class="chip" id="c-q">0</span> <button class="ph" data-for="h-q" aria-label="הסבר">?</button></h3>
-          <div class="phelp" id="h-q">הרשימה שממתינה לצוות המטפל. כל שאלה נולדת בשיחה עם הנימוק שלה — למה שווה לשאול — ועם מי כדאי לדבר עליה. אחרי ביקור, השיחה מעדכנת מה נשאל ומה נענה.</div>
+          <div class="phelp" id="h-q">הרשימה שממתינה לצוות המטפל. כל שאלה נולדת בשיחה עם הנימוק שלה, למה שווה לשאול, ועם מי כדאי לדבר עליה. אחרי ביקור, השיחה מעדכנת מה נשאל ומה נענה.</div>
           <p class="sub">מרכז הכובד: מה שממתין לצוות המטפל.</p>
           <div id="p-q"></div>
         </div>
         <div class="two">
           <div class="panel" data-anchor="meds-panel"><h3>תרופות <button class="ph" data-for="h-meds" aria-label="הסבר">?</button></h3>
-            <div class="phelp" id="h-meds">הקובץ נפתח באלרגיות — תמיד, כי זה הפרט שחשוב בכל מסמך. בהמשך: מה נלקח היום, ומה הופסק ולמה. דבר לא נמחק; גם תרופה שהופסקה היא מידע.</div>
+            <div class="phelp" id="h-meds">הקובץ נפתח באלרגיות, תמיד, כי זה הפרט שחשוב בכל מסמך. בהמשך: מה נלקח היום, ומה הופסק ולמה. דבר לא נמחק; גם תרופה שהופסקה היא מידע.</div>
             <p class="sub">אלרגיות תמיד למעלה; דבר לא נמחק.</p><div id="p-meds"></div></div>
           <div class="panel" data-anchor="symptoms-panel"><h3>יומן תסמינים <span class="chip" id="c-sy">0</span> <button class="ph" data-for="h-sy" aria-label="הסבר">?</button></h3>
-            <div class="phelp" id="h-sy">שורה ליום: מה הורגש, כמה חזק (קל · בינוני · קשה), ומה היה מסביב. ימים חסרים זה נורמלי לגמרי — רופאים מחפשים תבנית, לא יומן מושלם.</div>
+            <div class="phelp" id="h-sy">שורה ליום: מה הורגש, כמה חזק (קל · בינוני · קשה), ומה היה מסביב. ימים חסרים זה נורמלי לגמרי, רופאים מחפשים תבנית, לא יומן מושלם.</div>
             <p class="sub">תבנית חשובה משלמות.</p><div id="p-sy"></div></div>
         </div>
         <div class="two">
           <div class="panel" data-anchor="timeline-panel"><h3>ציר הזמן <span class="chip" id="c-tl">0</span> <button class="ph" data-for="h-tl" aria-label="הסבר">?</button></h3>
-            <div class="phelp" id="h-tl">מה קרה ומתי — ביקור, ניסיון טיפול ומה יצא ממנו, שינוי, מסמך שהתקבל. שורה לאירוע, החדש למעלה. מכאן נבנים ציר הזמן שבדוחות ו«מה נוסה».</div>
+            <div class="phelp" id="h-tl">מה קרה ומתי, ביקור, ניסיון טיפול ומה יצא ממנו, שינוי, מסמך שהתקבל. שורה לאירוע, החדש למעלה. מכאן נבנים ציר הזמן שבדוחות ו«מה נוסה».</div>
             <div id="p-tl"></div></div>
           <div class="panel" data-anchor="reports-panel"><h3>דוחות <button class="ph" data-for="h-rep" aria-label="הסבר">?</button></h3>
-            <div class="phelp" id="h-rep">דפי הכנה, סיכומים ושאר מסמכים שהשיחה מכינה נשמרים בתיקיית reports ומופיעים כאן. פותחים אותם כמו כל קובץ; הדפסה — מתוך הקובץ.</div>
+            <div class="phelp" id="h-rep">דפי הכנה, סיכומים ושאר מסמכים שהשיחה מכינה נשמרים בתיקיית reports ומופיעים כאן. פותחים אותם כמו כל קובץ; הדפסה, מתוך הקובץ.</div>
             <div id="p-rep"></div></div>
         </div>
       </div>
@@ -189,65 +189,66 @@
   <section class="view" id="v-scrub" data-anchor="scrub">
     <div class="panel man">
       <h3>ניקוי טקסט לפני שיתוף</h3>
-      <p class="sub">מדביקים טקסט שעומד לצאת החוצה — סיכום לשיתוף, שאלה לפורום, ציטוט ממסמך. הכלי מסמן לבדיקה את המזהים של מי שהרשומה עליו: תעודת זהות (נבדקת בספרת ביקורת), שם, כתובת מדויקת, מספרי תיק, טלפון ודוא״ל. שום דבר לא נמחק לבד — לחיצה על סימון מבטלת אותו, וכפתור אחד מכין עותק נקי.</p>
+      <p class="sub">מדביקים טקסט שעומד לצאת החוצה, סיכום לשיתוף, שאלה לפורום, ציטוט ממסמך. הכלי מסמן לבדיקה את המזהים של מי שהרשומה עליו: תעודת זהות (נבדקת בספרת ביקורת), שם, כתובת מדויקת, מספרי תיק, טלפון ודוא״ל. שום דבר לא נמחק לבד, לחיצה על סימון מבטלת אותו, וכפתור אחד מכין עותק נקי.</p>
       <p class="sub"><b>נשארים בכוונה: שמות רופאים ומוסדות.</b> מקור הטיפול הוא לא זהות המטופל או המטופלת.</p>
       <div style="display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-bottom:8px">
         <label for="scrubNames" style="font-size:14.5px">שמות לסימון:</label>
         <input type="text" id="scrubNames" style="max-width:340px" placeholder="שם פרטי ומשפחה, מופרדים בפסיק">
       </div>
       <p class="note" id="scrubWho"></p>
-      <textarea id="scrubIn" placeholder="הטקסט שעומד לצאת — מדביקים כאן."></textarea>
+      <textarea id="scrubIn" placeholder="הטקסט שעומד לצאת, מדביקים כאן."></textarea>
       <div style="margin-top:8px; display:flex; gap:8px; flex-wrap:wrap; align-items:center">
         <button class="btn" id="scrubBtn">סימון מזהים</button>
         <button class="ghost" id="scrubCopyBtn" hidden>העתקת העותק הנקי</button>
       </div>
       <div class="leg" id="scrubLeg" hidden></div>
       <div id="scrubOut" hidden></div>
-      <p class="note" id="scrubNote" hidden>רגע לפני: מה באמת יש בטקסט הזה, ולאן הוא הולך? סימון שנראה מיותר — לוחצים עליו והוא מבוטל. בעותק הנקי כל סימון פעיל מוחלף בסוגריים, למשל [שם] או [טלפון]. הבדיקה שלך היא הקובעת — הכלי עוזר לעיניים, לא מחליף אותן.</p>
+      <p class="note" id="scrubNote" hidden>רגע לפני: מה באמת יש בטקסט הזה, ולאן הוא הולך? סימון שנראה מיותר, לוחצים עליו והוא מבוטל. בעותק הנקי כל סימון פעיל מוחלף בסוגריים, למשל [שם] או [טלפון]. הבדיקה שלך היא הקובעת, הכלי עוזר לעיניים, לא מחליף אותן.</p>
     </div>
   </section>
 
   <!-- ================= HELP VIEW ================= -->
   <section class="view" id="v-help" data-anchor="manual">
     <div class="panel man">
-      <h3>המדריך — איך הלוח עובד</h3>
-      <p class="sub">הכול כאן קורה אצלך במחשב. אין רשת, אין חשבון, אין שרת — אף פעם.</p>
+      <h3>המדריך, איך הלוח עובד</h3>
+      <p class="sub">הכול כאן קורה אצלך במחשב. אין רשת, אין חשבון, אין שרת, אף פעם.</p>
 
       <h4>מה זה הלוח</h4>
-      <p>הרשומות הרפואיות שלך הן קבצי טקסט פשוטים, בתיקייה שלך. השיחה עם העוזר היא המוח — שם מספרים, שואלים, מכינים דוחות. הלוח הזה הוא החלון והידיים: הוא מראה מה יש בקבצים, ומכניס לתוכם את מה שהשיחה הציעה — רק אחרי שאישרת. אפשר לפתוח כל קובץ גם בלי הלוח, בכל עורך טקסט; הכול שלך, קריא לבני אדם, ועובד גם בלי שום בינה מלאכותית.</p>
+      <p>הרשומות הרפואיות שלך הן קבצי טקסט פשוטים, בתיקייה שלך. השיחה עם העוזר היא המוח, שם מספרים, שואלים, מכינים דוחות. הלוח הזה הוא החלון והידיים: הוא מראה מה יש בקבצים, ומכניס לתוכם את מה שהשיחה הציעה, רק אחרי שאישרת. אפשר לפתוח כל קובץ גם בלי הלוח, בכל עורך טקסט; הכול שלך, קריא לבני אדם, ועובד גם בלי שום בינה מלאכותית.</p>
 
       <h4>החיבור הראשון</h4>
       <ul>
         <li>שומרים את הקובץ הזה בתיקייה שתהיה תיקיית הרשומות (למשל תיקייה חדשה בשם «הרשומות שלי»).</li>
-        <li>פותחים אותו בדפדפן שתומך בגישה לתיקיות (כרום למשל) — פשוט לחיצה כפולה על הקובץ.</li>
-        <li>לוחצים «בחירת התיקייה» ובוחרים את אותה תיקייה. הדפדפן יבקש אישור — זו הרשות היחידה שהלוח צריך.</li>
-        <li>שבעת קובצי הרשומות נוצרים אם אינם, ונקראים אם ישנם. זהו — מחוברים.</li>
+        <li>פותחים אותו בדפדפן שתומך בגישה לתיקיות (כרום למשל), פשוט לחיצה כפולה על הקובץ.</li>
+        <li>לוחצים «בחירת התיקייה» ובוחרים את אותה תיקייה. הדפדפן יבקש אישור, זו הרשות היחידה שהלוח צריך.</li>
+        <li>שבעת קובצי הרשומות נוצרים אם אינם, ונקראים אם ישנם. זהו, מחוברים.</li>
       </ul>
 
       <h4>מעגל העבודה</h4>
-      <p>שיחה ← בלוק עדכון ← הדבקה בלוח ← החלה ← הקבצים מתעדכנים. ובחזרה: «העתקת בלוק ההקשר» נותנת לשיחה הבאה את נקודת הפתיחה. זה כל הסיפור — תנועה אחת פנימה, תנועה אחת החוצה.</p>
+      <p>שיחה ← בלוק עדכון ← הדבקה בלוח ← החלה ← הקבצים מתעדכנים. ובחזרה: «העתקת בלוק ההקשר» נותנת לשיחה הבאה את נקודת הפתיחה. זה כל הסיפור, תנועה אחת פנימה, תנועה אחת החוצה.</p>
 
       <h4>הקבצים עצמם</h4>
       <ul>
-        <li><b>profile.md</b> — מי כאן, והעדפות.</li>
-        <li><b>medications.md</b> — תרופות; אלרגיות תמיד בראש הקובץ.</li>
-        <li><b>timeline.md</b> — מה קרה ומתי, שורה לאירוע.</li>
-        <li><b>symptoms.md</b> — יומן תסמינים מהיר.</li>
-        <li><b>open-questions.md</b> — השאלות שממתינות לצוות המטפל.</li>
-        <li><b>professional-review.md</b> — רק מה שאנשי מקצוע אמיתיים אמרו, כלשונם.</li>
-        <li><b>inbox.md</b> — מה שעוד לא סודר.</li>
-        <li><b>reports/</b> — הדוחות שהשיחה הכינה, מתוארכים.</li>
+        <li><b>profile.md</b>, מי כאן, והעדפות.</li>
+        <li><b>medications.md</b>, תרופות; אלרגיות תמיד בראש הקובץ.</li>
+        <li><b>timeline.md</b>, מה קרה ומתי, שורה לאירוע.</li>
+        <li><b>symptoms.md</b>, יומן תסמינים מהיר.</li>
+        <li><b>open-questions.md</b>, השאלות שממתינות לצוות המטפל.</li>
+        <li><b>professional-review.md</b>, רק מה שאנשי מקצוע אמיתיים אמרו, כלשונם.</li>
+        <li><b>inbox.md</b>, מה שעוד לא סודר.</li>
+        <li><b>my-record.md</b>, קובץ אחד עם אותם שבעה חלקים. אם הוא לבד בתיקייה, הלוח קורא אותו. אם יש גם שבעה קבצים, הם מוצגים, והקובץ האחד לא מתמזג לבד.</li>
+        <li><b>reports/</b>, הדוחות שהשיחה הכינה, מתוארכים.</li>
       </ul>
 
       <h4>גיבוי ושחזור</h4>
-      <p>«גיבוי — הורדת הכול» מוריד קובץ אחד מתוארך עם כל הרשומות; שומרים אותו במקום נוסף (ענן, דיסק, מייל לעצמך). שחזור: נותנים את קובץ הגיבוי לשיחה, והיא בונה את הקבצים מחדש. תמונות ודוחות מגובים בהעתקת התיקייה עצמה.</p>
+      <p>«גיבוי, הורדת הכול» מוריד קובץ אחד מתוארך עם כל הרשומות; שומרים אותו במקום נוסף (ענן, דיסק, מייל לעצמך). שחזור: נותנים את קובץ הגיבוי לשיחה, והיא בונה את הקבצים מחדש. תמונות ודוחות מגובים בהעתקת התיקייה עצמה.</p>
 
       <h4>שני כלי הפרטיות</h4>
-      <p><b>צנזור חזותי</b> — לתמונות של מסמכים, לפני שמעלים אותן לשיחה: משחירים, משנים שם, מורידים עותק נקי. <b>ניקוי טקסט</b> — לטקסט שיוצא החוצה: מסמן את המזהים לבדיקה ומכין עותק נקי. שניהם עובדים כולם אצלך במחשב, בכל דפדפן, גם בלי חיבור לתיקייה.</p>
+      <p><b>צנזור חזותי</b>, לתמונות של מסמכים, לפני שמעלים אותן לשיחה: משחירים, משנים שם, מורידים עותק נקי. <b>ניקוי טקסט</b>, לטקסט שיוצא החוצה: מסמן את המזהים לבדיקה ומכין עותק נקי. שניהם עובדים כולם אצלך במחשב, בכל דפדפן, גם בלי חיבור לתיקייה.</p>
 
       <h4>שאלות נפוצות</h4>
       <ul>
-        <li><b>הדפדפן לא תומך בגישה לתיקיות?</b> לא נורא: הכול ממשיך לעבוד דרך השיחה בלבד — היא מלווה שמירה של קובץ אחד בכל פעם. שני כלי הפרטיות עובדים כאן בכל מקרה.</li>
+        <li><b>הדפדפן לא תומך בגישה לתיקיות?</b> לא נורא: הכול ממשיך לעבוד דרך השיחה בלבד, היא מלווה שמירה של קובץ אחד בכל פעם. שני כלי הפרטיות עובדים כאן בכל מקרה.</li>
         <li><b>החלה נכשלה?</b> הפריט נשאר ממתין ולא הולך לאיבוד. אפשר לנסות שוב, או לבקש מהשיחה בלוק חדש.</li>
         <li><b>משהו נשלח לאינטרנט?</b> לא. שום דבר, אף פעם. הקובץ הזה לא ניגש לרשת בכלל.</li>
         <li><b>אפשר לערוך קבצים ביד?</b> כן. הם שלך. הלוח יקרא את מה שכתבת בפעם הבאה שנפתח.</li>
@@ -259,12 +260,12 @@
   <!-- ================= CENSOR VIEW ================= -->
   <section class="view" id="v-censor" data-anchor="censor">
     <div class="panel">
-      <h3>צנזור חזותי — לפני שמישהו רואה</h3>
-      <p class="sub">טוענים צילום של מסמך, משחירים את מה שלא צריך לצאת, משנים שם לקובץ — ומורידים עותק נקי. הכול קורה כאן, במחשב שלך; הקובץ המקורי לא משתנה, ושום דבר לא נשלח לשום מקום. את העותק הנקי מעלים לשיחה — לא את המקור.</p>
-      <p class="sub">עובד עם תמונות (צילום או צילום מסך). קובצי PDF — לא בגרסה הזאת: אפשר לצלם את העמוד או לעשות צילום מסך, וזה עובד מצוין.</p>
+      <h3>צנזור חזותי, לפני שמישהו רואה</h3>
+      <p class="sub">טוענים צילום של מסמך, משחירים את מה שלא צריך לצאת, משנים שם לקובץ, ומורידים עותק נקי. הכול קורה כאן, במחשב שלך; הקובץ המקורי לא משתנה, ושום דבר לא נשלח לשום מקום. את העותק הנקי מעלים לשיחה, לא את המקור.</p>
+      <p class="sub">עובד עם תמונות (צילום או צילום מסך). קובצי PDF, לא בגרסה הזאת: אפשר לצלם את העמוד או לעשות צילום מסך, וזה עובד מצוין.</p>
       <input type="file" id="cfile" accept="image/*">
       <div id="carea" hidden>
-        <p class="note">גוררים מלבן על כל אזור להשחרה. ההשחרה נצרבת בעותק — אי אפשר להסיר אותה מהקובץ שיורד.</p>
+        <p class="note">גוררים מלבן על כל אזור להשחרה. ההשחרה נצרבת בעותק, אי אפשר להסיר אותה מהקובץ שיורד.</p>
         <div id="cwrap"><canvas id="cv"></canvas></div>
         <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:10px; align-items:center">
           <button class="ghost" id="undoBtn">ביטול המלבן האחרון</button>
@@ -281,13 +282,13 @@
 /* @anchor: state */
 var dir=null, files={}, RECORDS=['profile.md','medications.md','timeline.md','symptoms.md','open-questions.md','professional-review.md','inbox.md'];
 var TEMPLATES={
- 'profile.md':'# הפרופיל שלי\nמי אנחנו כאן, והעדפות. הקובץ שלך — לספר לי, או לערוך בעצמך.\nעודכן לאחרונה: — · חדש\n',
- 'medications.md':'# תרופות\nאלרגיות למעלה, תמיד. מה שנלקח היום, מה שהופסק ולמה — כלום לא נמחק.\nאלרגיות: לא תועד\nעודכן לאחרונה: — · חדש\n',
- 'timeline.md':'# ציר הזמן\nמה קרה ומתי, שורה לאירוע, החדש למעלה.\nעודכן לאחרונה: — · חדש\n',
- 'symptoms.md':'# יומן תסמינים\nתבנית חשובה משלמות — ימים חסרים זה נורמלי.\nעודכן לאחרונה: — · חדש\n',
- 'open-questions.md':'# שאלות פתוחות\nכל מה שמחכה לצוות המטפל, כולל מה שנשקל והונח בצד — עם הסיבה, במילים שלהם.\nעודכן לאחרונה: — · חדש\n',
- 'professional-review.md':'# ממצאים מאנשי מקצוע\nרק מה שאנשי מקצוע אמיתיים אמרו, כלשונו. ריק כאן — מידע אמיתי, לא כישלון.\nעודכן לאחרונה: — · חדש\n',
- 'inbox.md':'# תיבת קליטה\nכל מה שעוד לא סודר: קליטות, הצעות, דברים לאחר כך. שום דבר לא נכנס לרשומות בלי אישור.\nעודכן לאחרונה: — · חדש\n'};
+ 'profile.md':'# הפרופיל שלי\nמי אנחנו כאן, והעדפות. הקובץ שלך, לספר לי, או לערוך בעצמך.\nעודכן לאחרונה: (עדיין לא) · חדש\n',
+ 'medications.md':'# תרופות\nאלרגיות למעלה, תמיד. מה שנלקח היום, מה שהופסק ולמה, כלום לא נמחק.\nאלרגיות: לא תועד\nעודכן לאחרונה: (עדיין לא) · חדש\n',
+ 'timeline.md':'# ציר הזמן\nמה קרה ומתי, שורה לאירוע, החדש למעלה.\nעודכן לאחרונה: (עדיין לא) · חדש\n',
+ 'symptoms.md':'# יומן תסמינים\nתבנית חשובה משלמות, ימים חסרים זה נורמלי.\nעודכן לאחרונה: (עדיין לא) · חדש\n',
+ 'open-questions.md':'# שאלות פתוחות\nכל מה שמחכה לצוות המטפל, כולל מה שנשקל והונח בצד, עם הסיבה, במילים שלהם.\nעודכן לאחרונה: (עדיין לא) · חדש\n',
+ 'professional-review.md':'# ממצאים מאנשי מקצוע\nרק מה שאנשי מקצוע אמיתיים אמרו, כלשונו. ריק כאן, מידע אמיתי, לא כישלון.\nעודכן לאחרונה: (עדיין לא) · חדש\n',
+ 'inbox.md':'# תיבת קליטה\nכל מה שעוד לא סודר: קליטות, הצעות, דברים לאחר כך. שום דבר לא נכנס לרשומות בלי אישור.\nעודכן לאחרונה: (עדיין לא) · חדש\n'};
 function $(id){return document.getElementById(id)}
 var t; function toast(m){var e=$('toast'); e.textContent=m; e.style.opacity=1; clearTimeout(t); t=setTimeout(function(){e.style.opacity=0},2000);}
 function today(){var d=new Date(); return d.getDate()+'.'+(d.getMonth()+1)+'.'+d.getFullYear();}
@@ -301,26 +302,26 @@ document.querySelectorAll('.tab').forEach(function(b){ b.onclick=function(){
   document.querySelectorAll('.tab').forEach(function(x){x.setAttribute('aria-selected', x===b)});
   document.querySelectorAll('.view').forEach(function(v){v.classList.remove('on')});
   $('v-'+b.dataset.v).classList.add('on');
-  if(b.dataset.v==='board' && !dir){ $('gate').hidden=false; $('v-board').classList.remove('on'); } /* unconnected: gate only — empty panels would mislead */
+  if(b.dataset.v==='board' && !dir){ $('gate').hidden=false; $('v-board').classList.remove('on'); } /* unconnected: gate only, empty panels would mislead */
   else $('gate').hidden=true;
   if(b.dataset.v==='scrub') scrubWho();
 };});
 
-/* @anchor: panel-help — the ? buttons (P-47: help lives where the confusion happens) */
+/* @anchor: panel-help, the ? buttons (P-47: help lives where the confusion happens) */
 document.querySelectorAll('.ph').forEach(function(b){ b.setAttribute('aria-expanded','false');
   b.onclick=function(){ var t=$(b.dataset.for); var on=!t.classList.contains('on');
     t.classList.toggle('on',on); b.setAttribute('aria-expanded',on); };});
 
-/* @anchor: checkups — copy a plain request to paste into chat; the dashboard has no network, the chat runs it, output lands in the inbox */
+/* @anchor: checkups, copy a plain request to paste into chat; the dashboard has no network, the chat runs it, output lands in the inbox */
 document.querySelectorAll('[data-chk]').forEach(function(b){
   b.onclick=function(){ var t=b.getAttribute('data-chk');
-    navigator.clipboard.writeText(t).then(function(){toast('הועתק — להדביק בשיחה, והעוזרת תריץ')},function(){prompt('העתקה ידנית:',t)}); };
+    navigator.clipboard.writeText(t).then(function(){toast('הועתק, להדביק בשיחה, והעוזרת תריץ')},function(){prompt('העתקה ידנית:',t)}); };
 });
 
-/* @anchor: connect — the guided first step */
+/* @anchor: connect, the guided first step */
 if(!window.showDirectoryPicker){
   $('connectBtn').disabled=true;
-  $('gateMsg').innerHTML='<b>הדפדפן הזה לא תומך בגישה לתיקיות.</b> אפשר להמשיך לעבוד דרך השיחה בלבד — או לפתוח את הקובץ הזה בכרום או באדג׳.';
+  $('gateMsg').innerHTML='<b>הדפדפן הזה לא תומך בגישה לתיקיות.</b> אפשר להמשיך לעבוד דרך השיחה בלבד, או לפתוח את הקובץ הזה בכרום או באדג׳.';
 }
 async function connectWith(handle){
   dir=handle;
@@ -340,25 +341,68 @@ document.addEventListener('drop',async function(ev){
   var it=null; for(var i=0;i<ev.dataTransfer.items.length;i++){ if(ev.dataTransfer.items[i].kind==='file'){ it=ev.dataTransfer.items[i]; break; } }
   if(!it || !it.getAsFileSystemHandle) return;
   var h=await it.getAsFileSystemHandle();
-  if(!h || h.kind!=='directory'){ toast('זו לא תיקייה — גוררים את תיקיית הרשומות עצמה.'); return; }
+  if(!h || h.kind!=='directory'){ toast('זו לא תיקייה, גוררים את תיקיית הרשומות עצמה.'); return; }
   if(h.queryPermission && await h.queryPermission({mode:'readwrite'})!=='granted'
      && h.requestPermission && await h.requestPermission({mode:'readwrite'})!=='granted'){
-    toast('אין הרשאת כתיבה לתיקייה — אפשר לנסות דרך «בחירת התיקייה».'); return; }
+    toast('אין הרשאת כתיבה לתיקייה, אפשר לנסות דרך «בחירת התיקייה».'); return; }
   await connectWith(h);
 });
-async function ensure(name){ var h=await dir.getFileHandle(name,{create:true});
+async function ensure(name){ if(singleFile){ if(files[name]==null) files[name]=TEMPLATES[name]||('# '+name+'\n'); return files[name]; } var h=await dir.getFileHandle(name,{create:true});
   var f=await h.getFile(); var tx=await f.text();
   if(!tx.trim()){ tx=TEMPLATES[name]||('# '+name+'\n'); await write(name,tx,true); }
   files[name]=tx; return tx; }
-async function write(name,text,silent){ var h=await dir.getFileHandle(name,{create:true});
-  var w=await h.createWritable(); await w.write(text); await w.close(); files[name]=text;
+var singleFile=false;
+var SECTION_TO_FILE={'הפרופיל שלי':'profile.md','הפרופיל':'profile.md','תרופות':'medications.md','ציר הזמן':'timeline.md','יומן תסמינים':'symptoms.md','שאלות פתוחות':'open-questions.md','ממצאים מאנשי מקצוע':'professional-review.md','ממצאים':'professional-review.md','תיבת קליטה':'inbox.md'};
+var FILE_TO_SECTION={'profile.md':'הפרופיל שלי','medications.md':'תרופות','timeline.md':'ציר הזמן','symptoms.md':'יומן תסמינים','open-questions.md':'שאלות פתוחות','professional-review.md':'ממצאים מאנשי מקצוע','inbox.md':'תיבת קליטה'};
+function parseSingle(text){
+  files={};
+  var lines=text.split('\n'), current=null, buf=[];
+  function flush(){ if(!current) return; var file=SECTION_TO_FILE[current]; if(file) files[file]=buf.join('\n').replace(/^\n+/,''); }
+  for(var i=0;i<lines.length;i++){
+    var m=lines[i].match(/^##\s+(.+?)\s*$/);
+    if(m && SECTION_TO_FILE[m[1].trim()]){ flush(); current=m[1].trim(); buf=[]; }
+    else if(current) buf.push(lines[i]);
+  }
+  flush();
+}
+async function flushSingle(){
+  var parts=['# הרשומה שלי','עודכן לאחרונה: '+today()+' · קובץ',''];
+  for(var i=0;i<RECORDS.length;i++){
+    var name=RECORDS[i];
+    if(files[name]==null) continue;
+    parts.push('## '+FILE_TO_SECTION[name]);
+    parts.push(String(files[name]).replace(/\s+$/,''));
+    parts.push('');
+  }
+  var h=await dir.getFileHandle('my-record.md',{create:true});
+  var w=await h.createWritable(); await w.write(parts.join('\n')); await w.close();
+}
+async function fileExists(name){ try{ await dir.getFileHandle(name); return true; }catch(e){ return false; } }
+async function write(name,text,silent){
+  files[name]=text;
+  if(singleFile){ await flushSingle(); if(!silent) toast('נשמר: my-record.md'); return; }
+  var h=await dir.getFileHandle(name,{create:true});
+  var w=await h.createWritable(); await w.write(text); await w.close();
   if(!silent) toast('נשמר: '+name); }
-async function loadAll(){ for(var i=0;i<RECORDS.length;i++){ await ensure(RECORDS[i]); } render(); }
+async function loadAll(){
+  singleFile=false;
+  var hasSingle=await fileExists('my-record.md');
+  var hasSeven=false;
+  for(var i=0;i<RECORDS.length;i++){ if(await fileExists(RECORDS[i])){ hasSeven=true; break; } }
+  if(hasSingle && !hasSeven){
+    singleFile=true;
+    var h=await dir.getFileHandle('my-record.md');
+    parseSingle(await (await h.getFile()).text());
+  } else {
+    if(hasSingle && hasSeven) toast('נמצאו גם שבעה קבצים וגם my-record.md. מוצגים שבעת הקבצים.');
+    for(var j=0;j<RECORDS.length;j++){ await ensure(RECORDS[j]); }
+  }
+  render(); }
 
-/* @anchor: render — simple honest views: entry-looking lines from each file */
+/* @anchor: render, simple honest views: entry-looking lines from each file */
 /* record files are plain text; each opens with the shared envelope (architecture §3.2):
    title, one line saying what the file is, one line saying both ways to fill it, then the
-   `עודכן לאחרונה` line — entries follow. Key off that structure instead of matching the
+   `עודכן לאחרונה` line, entries follow. Key off that structure instead of matching the
    inline template constant (which is abbreviated and drifts from the canonical envelope):
    real entries are the lines AFTER `עודכן לאחרונה`. stripMd handles any **bold** the
    canonical strings carry so nothing ever renders as literal asterisks. */
@@ -368,19 +412,19 @@ function entryLines(name){ var lines=(files[name]||'').split('\n');
   var body = u>=0 ? lines.slice(u+1) : lines;
   return body.filter(function(l){ l=l.trim();
     if(!l||l[0]==='#') return false;              // blank lines and section headers
-    if(/^[-–—\s]*$/.test(l)) return false;        // empty-section placeholders («—»)
+    if(/^[-–—\s]*$/.test(l)) return false;        // emdash-keep: matches dash placeholders already in people's files
     return true; }); }
-/* teaching empty states — each panel says what will appear here and how it arrives (P-47) */
+/* teaching empty states, each panel says what will appear here and how it arrives (P-47) */
 var EMPTIES={
- 'open-questions.md':'עדיין אין שאלות. הן ייוולדו בשיחה — כשמשהו שווה לשאול, הוא נכנס לכאן עם הנימוק שלו.',
- 'symptoms.md':'היומן ריק, וזה בסדר. רישום ראשון הוא משפט אחד בשיחה — «תרשמי שכאב לי הראש מהצהריים».',
- 'timeline.md':'ציר הזמן יתמלא מהשיחה — ביקור, ניסיון, מסמך. שורה לאירוע, החדש למעלה.',
- 'medications.md':'עוד לא תועדו תרופות. גם «לא לוקחת כלום» שווה שורה — והאלרגיות למעלה חשובות מכולן.',
- 'inbox.md':'ריק — הכול מסודר. מה שייקלט בדרך יחכה כאן עד המיון, ולא ילך לאיבוד.'};
+ 'open-questions.md':'עדיין אין שאלות. הן ייוולדו בשיחה, כשמשהו שווה לשאול, הוא נכנס לכאן עם הנימוק שלו.',
+ 'symptoms.md':'היומן ריק, וזה בסדר. רישום ראשון הוא משפט אחד בשיחה, «תרשמי שכאב לי הראש מהצהריים».',
+ 'timeline.md':'ציר הזמן יתמלא מהשיחה, ביקור, ניסיון, מסמך. שורה לאירוע, החדש למעלה.',
+ 'medications.md':'עוד לא תועדו תרופות. גם «לא לוקחת כלום» שווה שורה, והאלרגיות למעלה חשובות מכולן.',
+ 'inbox.md':'ריק, הכול מסודר. מה שייקלט בדרך יחכה כאן עד המיון, ולא ילך לאיבוד.'};
 function fill(panelId, chipId, name, max){ var ls=entryLines(name), p=$(panelId); p.innerHTML='';
   if(chipId) $(chipId).textContent=ls.length;
   if(!ls.length){ var e=document.createElement('div'); e.className='empty';
-    e.textContent=EMPTIES[name]||'עדיין ריק — וזה בסדר גמור.'; p.appendChild(e); return; }
+    e.textContent=EMPTIES[name]||'עדיין ריק, וזה בסדר גמור.'; p.appendChild(e); return; }
   ls.slice(0,max||6).forEach(function(l){ var d=document.createElement('div'); d.className='item'; d.textContent=stripMd(l); p.appendChild(d); }); }
 async function render(){
   fill('p-q','c-q','open-questions.md',5);
@@ -395,15 +439,15 @@ async function render(){
   var b=$('allergyBanner'); b.classList.toggle('rec', recorded && !noneKnown);
   var safe=document.createElement('span'); safe.textContent=al;
   $('allergyTx').innerHTML= recorded? '<b>'+safe.innerHTML+'</b> · מוצג תמיד, בכל מסמך יוצא.' :
-    '<b>אלרגיות: לא תועד.</b> זה הפרט הבטיחותי הכי חשוב לרישום — אפשר להוסיף דרך השיחה בכל רגע.';
+    '<b>אלרגיות: לא תועד.</b> זה הפרט הבטיחותי הכי חשוב לרישום, אפשר להוסיף דרך השיחה בכל רגע.';
   var rep=$('p-rep'); rep.innerHTML='';
   try{ var rd=await dir.getDirectoryHandle('reports',{create:false}); var any=false;
     for await (var e of rd.values()){ if(e.kind==='file'){ any=true; var d=document.createElement('div'); d.className='item'; d.textContent=e.name; rep.appendChild(d);} }
-    if(!any) rep.innerHTML='<div class="empty">אין עדיין דוחות. כשהשיחה תכין דף הכנה או סיכום — הוא יישמר בתיקיית reports ויופיע כאן.</div>';
-  }catch(e){ rep.innerHTML='<div class="empty">אין עדיין דוחות. כשהשיחה תכין דף הכנה או סיכום — הוא יישמר בתיקיית reports ויופיע כאן.</div>'; }
+    if(!any) rep.innerHTML='<div class="empty">אין עדיין דוחות. כשהשיחה תכין דף הכנה או סיכום, הוא יישמר בתיקיית reports ויופיע כאן.</div>';
+  }catch(e){ rep.innerHTML='<div class="empty">אין עדיין דוחות. כשהשיחה תכין דף הכנה או סיכום, הוא יישמר בתיקיית reports ויופיע כאן.</div>'; }
 }
 
-/* @anchor: sync-parse — the one friendly motion in */
+/* @anchor: sync-parse, the one friendly motion in */
 var TARGETS={'תסמינים':'symptoms.md','ציר הזמן':'timeline.md','תרופות':'medications.md','שאלות':'open-questions.md','תיבת קליטה':'inbox.md','פרופיל':'profile.md','ממצאים':'professional-review.md','ממצאים מאנשי מקצוע':'professional-review.md'};
 var pending=[];
 $('parseBtn').onclick=function(){
@@ -411,11 +455,11 @@ $('parseBtn').onclick=function(){
   lines.forEach(function(l){ var m=l.match(/^\s*(\S[^+]*?)\s*\+\s*·\s*(.+)$/);
     if(m && TARGETS[m[1].trim()]) pending.push({file:TARGETS[m[1].trim()], label:m[1].trim(), entry:m[2].trim()});
     else if(m) orphans.push(l.trim()); });
-  if(!pending.length && !orphans.length){ $('syncNote').textContent='לא זוהו שורות עדכון בבלוק. הצורה: «תסמינים + · ...» — אפשר גם לבקש מהשיחה בלוק חדש.'; return; }
-  $('syncNote').textContent= pending.length? 'שום דבר עוד לא נכתב — כל פריט מחכה להחלה.' : '';
+  if(!pending.length && !orphans.length){ $('syncNote').textContent='לא זוהו שורות עדכון בבלוק. הצורה: «תסמינים + · ...», אפשר גם לבקש מהשיחה בלוק חדש.'; return; }
+  $('syncNote').textContent= pending.length? 'שום דבר עוד לא נכתב, כל פריט מחכה להחלה.' : '';
   $('applyAllBtn').hidden=!pending.length;
   pending.forEach(function(p,i){ var d=document.createElement('div'); d.className='pend';
-    /* SECURITY: p.label/p.entry are AI-produced, user-pasted text — render as text, never
+    /* SECURITY: p.label/p.entry are AI-produced, user-pasted text, render as text, never
        as markup (textContent, not innerHTML), so a crafted delta line cannot inject active
        HTML into a page that holds read/write handles to the record folder. */
     var sp=document.createElement('span'); sp.textContent=p.label+': '+p.entry; d.appendChild(sp);
@@ -424,9 +468,9 @@ $('parseBtn').onclick=function(){
     b.className='btn sm'; b.textContent='החלה'; b.onclick=function(){ applyOne(p,d); }; d.appendChild(b); $('pends').appendChild(d); });
   /* lossless, said aloud: delta-looking lines with an unrecognized target never vanish silently */
   orphans.forEach(function(l){ var d=document.createElement('div'); d.className='pend err';
-    d.textContent='היעד לא זוהה, הפריט לא ייכנס לבד: «'+l+'» — אפשר לבקש בלוק מתוקן, או להכניס דרך השיחה.'; $('pends').appendChild(d); });
+    d.textContent='היעד לא זוהה, הפריט לא ייכנס לבד: «'+l+'», אפשר לבקש בלוק מתוקן, או להכניס דרך השיחה.'; $('pends').appendChild(d); });
 };
-/* @anchor: sync-apply — insert after the updated-line; lossless on failure */
+/* @anchor: sync-apply, insert after the updated-line; lossless on failure */
 /* the note under the pending list must stay true after partial applies: count the cards
    still carrying a pending object (same filter as Apply-all) and speak to what remains */
 function notePending(){
@@ -438,17 +482,17 @@ async function applyOne(p,card){
   try{
     var tx=files[p.file]||await ensure(p.file); var ls=tx.split('\n');
     if(ls.indexOf(p.entry)>-1){ /* deduplicated (P-46): the same pasted block twice never doubles an entry */
-      card.remove(); notePending(); toast('כבר ברשומות — לא הוכפל'); return; }
-    /* the allergy field (P-48): one canonical, always-current line at the top of medications.md —
+      card.remove(); notePending(); toast('כבר ברשומות, לא הוכפל'); return; }
+    /* the allergy field (P-48): one canonical, always-current line at the top of medications.md , 
        an incoming אלרגיות line UPDATES it (never stacks a second field); a previously recorded
        value is kept aloud on an אלרגיות (קודם) line, so nothing is ever deleted */
     if(p.file==='medications.md' && /^אלרגיות\s*[:：]/.test(p.entry)){
       var ai=ls.findIndex(function(l){return /^אלרגיות\s*[:：]/.test(l.trim())});
       if(ai>-1){
-        /* a value already in the field's history is a stale block riding again — never regress the field */
+        /* a value already in the field's history is a stale block riding again, never regress the field */
         var val=function(l){return l.replace(/^אלרגיות(?:\s*\(קודם\))?\s*[:：]\s*/,'').trim()};
         var known=ls.filter(function(l){return /^אלרגיות(\s*\(קודם\))?\s*[:：]/.test(l.trim())}).map(function(l){return val(l.trim())});
-        if(known.indexOf(val(p.entry))>-1){ card.remove(); notePending(); toast('כבר ברשומות — לא הוכפל'); return; }
+        if(known.indexOf(val(p.entry))>-1){ card.remove(); notePending(); toast('כבר ברשומות, לא הוכפל'); return; }
         var old=ls[ai].trim(), oldRecorded=!/לא תועד/.test(old);
         ls[ai]=p.entry;
         if(oldRecorded && old!==p.entry) ls.splice(ai+1,0,'אלרגיות (קודם): '+val(old));
@@ -464,26 +508,26 @@ async function applyOne(p,card){
     ls.splice(idx+1,0,'',p.entry);
     await write(p.file, ls.join('\n'), true);
     card.remove(); notePending(); toast('הוחל אל '+p.label); render();
-  }catch(e){ card.classList.add('err'); card.firstChild.textContent='נכשל — נשאר ממתין: '+p.entry; }
+  }catch(e){ card.classList.add('err'); card.firstChild.textContent='נכשל, נשאר ממתין: '+p.entry; }
 }
 $('applyAllBtn').onclick=async function(){
   /* iterate the cards themselves, each carrying its own bound pending object (_pending), and
-     only those still connected and not yet applied — never pair the original pending[] array
+     only those still connected and not yet applied, never pair the original pending[] array
      with the current DOM by index (a prior manual apply removes a card, shifting the rest). */
   var cards=[].slice.call(document.querySelectorAll('#pends .pend')).filter(function(c){ return c._pending; });
   for(var i=0;i<cards.length;i++){ if(cards[i].isConnected) await applyOne(cards[i]._pending, cards[i]); }
   notePending(); };
 
-/* @anchor: context-out — the reverse motion */
+/* @anchor: context-out, the reverse motion */
 $('ctxBtn').onclick=function(){
   var sit=(entryLines('profile.md')[0]||'').slice(0,80);
   var blk='הקשר לשיחה · '+today()+'\n'+(sit?('מצב: '+sit+'\n'):'')+
     'שאלות פתוחות: '+$('c-q').textContent+' · תסמינים ביומן: '+$('c-sy').textContent+' · ציר: '+$('c-tl').textContent+'\n'+
-    'לקרוא קודם: profile.md, ואז לפי העניין.';
-  navigator.clipboard.writeText(blk).then(function(){toast('הועתק — להדביק בפתיחת השיחה הבאה')},function(){prompt('העתקה ידנית:',blk)});
+    'לקרוא קודם: '+(singleFile?'my-record.md':'profile.md')+', ואז לפי העניין.';
+  navigator.clipboard.writeText(blk).then(function(){toast('הועתק, להדביק בפתיחת השיחה הבאה')},function(){prompt('העתקה ידנית:',blk)});
 };
 
-/* @anchor: export — P-44 one-click bundle; restore is a chat task */
+/* @anchor: export, P-44 one-click bundle; restore is a chat task */
 $('exportBtn').onclick=async function(){
   var out={_note:'גיבוי Advolog · '+today()+' · כל קובצי הרשומות. שחזור: נותנים את הקובץ הזה לשיחה והיא בונה מחדש את הקבצים. דוחות ותמונות מגובים בהעתקת התיקייה עצמה.', files:{}};
   for(var i=0;i<RECORDS.length;i++){ out.files[RECORDS[i]]=files[RECORDS[i]]||''; }
@@ -492,7 +536,7 @@ $('exportBtn').onclick=async function(){
   a.download='advolog-backup-'+today().replace(/\./g,'-')+'.json'; a.click(); toast('הגיבוי ירד. לשמור אותו במקום נוסף.');
 };
 
-/* @anchor: scrub — the text scrub (architecture §3.8): highlights the RECORD SUBJECT's identifiers
+/* @anchor: scrub, the text scrub (architecture §3.8): highlights the RECORD SUBJECT's identifiers
    for human review. Amendment I: subject names come from profile's about / whose-record lines, so in
    caregiver mode the patient's name is flagged, not (only) the account holder's. Review-first:
    click a mark to un-flag it; the cleaned copy replaces active marks with bracketed placeholders.
@@ -502,21 +546,21 @@ var scrubRanges=[], scrubText='';
 function validIsraeliID(s){ s=s.replace(/\D/g,''); if(s.length<5||s.length>9) return false;
   s=('000000000'+s).slice(-9); var sum=0;
   for(var i=0;i<9;i++){ var n=(+s[i])*((i%2)+1); if(n>9)n-=9; sum+=n; } return sum%10===0; }
-/* subject names: labeled lines in profile.md — about / whose-record-this-is / maintained-by */
+/* subject names: labeled lines in profile.md, about / whose-record-this-is / maintained-by */
 function subjectNames(){
   var tx=files['profile.md']||'', out=[];
   tx.split('\n').forEach(function(l){
     var m=l.match(/^\s*[-*]?\s*(?:שם(?:\s*(?:מלא|תצוגה|להצגה))?|מי כאן|עבור מי(?:\s*הרשומה)?|הרשומה של|של מי הרשומה|מתוחזק(?:ת)?\s*בידי|about|name|maintained[- ]?by)\s*[:：]\s*(.+)$/i);
     if(m){ m[1].split(/[,·]/).forEach(function(n){ n=n.trim().replace(/["«»]/g,'');
-      if(n && n!=='—' && !/לא תועד|טרם/.test(n)) out.push(n); }); }});
+      if(n && n!==', ' && !/לא תועד|טרם/.test(n)) out.push(n); }); }});
   return out;
 }
 function scrubWho(){
   var ns=subjectNames();
   if(ns.length){ if(!$('scrubNames').value.trim()) $('scrubNames').value=ns.join(', ');
-    $('scrubWho').textContent='מהרשומות: המזהים המסומנים הם של '+ns.join(' ו־')+' — מי שהרשומה עליו. אפשר לתקן את השמות למעלה.';
-  } else { $('scrubWho').textContent= dir? 'לא זוהה שם ברשומות — אפשר לכתוב את השמות לסימון בשדה למעלה.'
-    : 'בלי חיבור לתיקייה הכלי לא מכיר את השמות — כותבים אותם בשדה למעלה, והשאר מזוהה לבד.'; }
+    $('scrubWho').textContent='מהרשומות: המזהים המסומנים הם של '+ns.join(' ו־')+', מי שהרשומה עליו. אפשר לתקן את השמות למעלה.';
+  } else { $('scrubWho').textContent= dir? 'לא זוהה שם ברשומות, אפשר לכתוב את השמות לסימון בשדה למעלה.'
+    : 'בלי חיבור לתיקייה הכלי לא מכיר את השמות, כותבים אותם בשדה למעלה, והשאר מזוהה לבד.'; }
 }
 /* detection: ranges [start, end, type] over the raw text */
 function scrubDetect(tx){
@@ -524,7 +568,7 @@ function scrubDetect(tx){
   function push(s,e,t){ R.push({s:s,e:e,t:t,on:true}); }
   function scanRe(re,t,check){ var m; while((m=re.exec(tx))!==null){
     if(!check||check(m[0])) push(m.index, m.index+m[0].length, t); if(m.index===re.lastIndex) re.lastIndex++; } }
-  /* record/file numbers first (labeled — wins over bare digit runs) */
+  /* record/file numbers first (labeled, wins over bare digit runs) */
   scanRe(/(?:מס(?:פר|׳|')?\s*(?:תיק|מטופל(?:ת)?|אשפוז|דו"?ח|ביקור|הפניה)|תיק\s*(?:רפואי\s*)?(?:מס(?:פר|׳|')?)?)\s*[:：]?\s*[A-Za-z0-9][A-Za-z0-9א-ת\/–-]{2,}/g,'rec');
   /* ID numbers before phones: a checksum-valid 9-digit run is a ת״ז even when it also looks like a solid landline */
   scanRe(/\d{5,9}/g,'id',function(v){return validIsraeliID(v)});
@@ -556,14 +600,14 @@ function scrubRender(){
   var html='', pos=0, counts={};
   scrubRanges.forEach(function(r,i){
     html+=esc(scrubText.slice(pos,r.s));
-    html+='<mark class="mk'+(r.on?'':' off')+'" data-i="'+i+'" title="'+SCRUB_LABELS[r.t]+' — לחיצה מבטלת/מחזירה" dir="auto">'+esc(scrubText.slice(r.s,r.e))+'</mark>';
+    html+='<mark class="mk'+(r.on?'':' off')+'" data-i="'+i+'" title="'+SCRUB_LABELS[r.t]+', לחיצה מבטלת/מחזירה" dir="auto">'+esc(scrubText.slice(r.s,r.e))+'</mark>';
     pos=r.e; if(r.on) counts[r.t]=(counts[r.t]||0)+1; });
   html+=esc(scrubText.slice(pos));
   $('scrubOut').innerHTML=html; $('scrubOut').hidden=false;
   var leg=$('scrubLeg'); leg.innerHTML=''; leg.hidden=false;
   var total=0; Object.keys(SCRUB_LABELS).forEach(function(t){ if(counts[t]){ total+=counts[t];
     var s=document.createElement('span'); s.textContent=SCRUB_LABELS[t]+' · '+counts[t]; leg.appendChild(s); }});
-  if(!total){ var s=document.createElement('span'); s.textContent='לא נמצאו מזהים לסימון — עדיין שווה מבט אנושי אחד.'; leg.appendChild(s); }
+  if(!total){ var s=document.createElement('span'); s.textContent='לא נמצאו מזהים לסימון, עדיין שווה מבט אנושי אחד.'; leg.appendChild(s); }
   $('scrubOut').querySelectorAll('mark').forEach(function(mk){ mk.onclick=function(){
     var r=scrubRanges[+mk.dataset.i]; r.on=!r.on; scrubRender(); };});
   $('scrubCopyBtn').hidden=false; $('scrubNote').hidden=false;
@@ -577,11 +621,11 @@ $('scrubCopyBtn').onclick=function(){
   scrubRanges.forEach(function(r){ out+=scrubText.slice(pos,r.s);
     out+= r.on? '['+SCRUB_LABELS[r.t]+']' : scrubText.slice(r.s,r.e); pos=r.e; });
   out+=scrubText.slice(pos);
-  navigator.clipboard.writeText(out).then(function(){toast('העותק הנקי הועתק — המקור לא השתנה')},
+  navigator.clipboard.writeText(out).then(function(){toast('העותק הנקי הועתק, המקור לא השתנה')},
     function(){prompt('העתקה ידנית:',out)});
 };
 
-/* @anchor: censor — client-side visual redaction + rename; independent of folder access */
+/* @anchor: censor, client-side visual redaction + rename; independent of folder access */
 var cv=$('cv'), cx=cv.getContext('2d'), img=null, rects=[], drag=null, base=null;
 $('cfile').onchange=function(){ var f=this.files[0]; if(!f) return;
   var u=URL.createObjectURL(f); img=new Image();
@@ -613,7 +657,7 @@ $('dlBtn').onclick=function(){ if(!base) return;
   var name=($('rename').value||'censored.png').replace(/[\\/:*?"<>|]/g,'-');
   if(!/\.png$/i.test(name)) name+='.png';
   var a=document.createElement('a'); a.href=cv.toDataURL('image/png'); a.download=name; a.click();
-  toast('העותק הנקי ירד. את המקור לא נגענו — ואותו לא מעלים.');
+  toast('העותק הנקי ירד. את המקור לא נגענו, ואותו לא מעלים.');
 };
 </script>
 </body>
