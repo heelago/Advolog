@@ -6,8 +6,11 @@
 Fails on em dashes in patient-facing copy, a Hebrew/English span mismatch,
 a drifted fixed string, a model name outside platform-facts.md, a dead
 internal link, a 1.1 unit with no coverage row, or a generated file that
-does not match tools/build.py. A statistic on docs/why.html must have a
-row in marketing/sources.md. why.html is optional until the graphics exist.
+does not match tools/build.py. The Instructions paste must stay within
+Heela's 7,000-character cap. A statistic on docs/why.html must have a
+row in marketing/sources.md. A graphic that uses D33 or D34 must say
+on its face that the wait is for the doctor the patient chose.
+why.html is optional until the graphics exist.
 """
 
 from __future__ import annotations
@@ -220,16 +223,48 @@ def check_coverage(errors: list[str]) -> None:
             errors.append(f"coverage row missing: {item}")
 
 
+CHOSEN_DOCTOR_HE = "זמן המתנה לרופא לפי בחירת המטופל"
+CHOSEN_DOCTOR_EN = "the doctor the patient chose"
+
+
+def _wait_graphic_files() -> list[Path]:
+    found: list[Path] = []
+    why = ROOT / "docs" / "why.html"
+    if why.exists():
+        found.append(why)
+    graphics = ROOT / "marketing" / "graphics"
+    if graphics.exists():
+        for path in graphics.rglob("*"):
+            if path.is_file() and path.suffix.lower() in {".html", ".svg", ".md"}:
+                found.append(path)
+    return found
+
+
 def check_why(errors: list[str]) -> None:
     page = ROOT / "docs" / "why.html"
-    if not page.exists():
-        return
-    text = page.read_text(encoding="utf-8")
-    ids = re.findall(r'data-stat="(D\d+)"', text)
     sources = (ROOT / "marketing" / "sources.md").read_text(encoding="utf-8")
-    for sid in ids:
-        if sid not in sources:
-            errors.append(f"docs/why.html cites {sid} with no row in marketing/sources.md")
+    if page.exists():
+        text = page.read_text(encoding="utf-8")
+        ids = re.findall(r'data-stat="(D\d+)"', text)
+        for sid in ids:
+            if sid not in sources:
+                errors.append(f"docs/why.html cites {sid} with no row in marketing/sources.md")
+    for path in _wait_graphic_files():
+        text = path.read_text(encoding="utf-8")
+        if not re.search(r"\bD33\b|\bD34\b", text):
+            continue
+        name = path.name.lower()
+        he_only = ("-he" in name or "_he" in name) and "-en" not in name and "_en" not in name
+        en_only = ("-en" in name or "_en" in name) and "-he" not in name and "_he" not in name
+        rel = path.relative_to(ROOT)
+        if not en_only and CHOSEN_DOCTOR_HE not in text:
+            errors.append(
+                f"{rel} uses D33 or D34 but does not say {CHOSEN_DOCTOR_HE} on its face"
+            )
+        if not he_only and CHOSEN_DOCTOR_EN not in text:
+            errors.append(
+                f"{rel} uses D33 or D34 but does not say {CHOSEN_DOCTOR_EN!r} on its face"
+            )
 
 
 def _link_target(path: Path, href: str) -> Path | None:
@@ -298,17 +333,18 @@ def check_generated(errors: list[str]) -> None:
 
 
 def check_paste_limits(errors: list[str]) -> None:
-    """Proposed caps, pending Heela's live test T1. Not a published platform limit."""
+    """7,000 is Heela's cap for the Instructions paste. T1 still confirms the live field holds it.
+    OpenAI publishes no official limit. 10,000 is the verified chat-paste attachment threshold."""
     core = (ROOT / "package" / "core.md").read_text(encoding="utf-8")
     if len(core) > 7000:
         errors.append(
-            f"constitution is {len(core)} characters; proposed Instructions cap is 7000"
+            f"constitution is {len(core)} characters; the Instructions cap is 7000"
         )
     instructions = ROOT / "package" / "web" / "instructions.md"
     if instructions.exists():
         n = len(instructions.read_text(encoding="utf-8"))
         if n > 7000:
-            errors.append(f"instructions paste is {n} characters; proposed cap is 7000")
+            errors.append(f"instructions paste is {n} characters; the cap is 7000")
     starter_path = ROOT / "package" / "starter" / "starter-prompt.md"
     starter = starter_path.read_text(encoding="utf-8")
     if len(starter) > 10000:

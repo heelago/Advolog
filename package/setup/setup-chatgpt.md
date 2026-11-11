@@ -6,7 +6,7 @@
 
 ## באתר
 
-שש פעולות, לפי התכנון. הספירה על ריצה חיה ממתינה. תקרת שדה ההנחיות לא פורסמה. הצעה, עד בדיקה חיה: ההנחיות נשארות מתחת ל־7,000 תווים. הדבקה מעל 10,000 תווים בצ'אט הופכת לקובץ מצורף. לא מדביקים את טקסט ההתחלה ואת ההנחיות בהודעה אחת. אם הופיע קובץ מצורף, «Show in text field», או מדביקים את ההנחיות בשדה של הפרויקט.
+שש פעולות, לפי התכנון. הספירה על ריצה חיה ממתינה. תקרת ההנחיות היא 7,000 תווים, כולל עברית. זו ההחלטה. OpenAI לא פרסמה מספר, ובדיקה חיה T1 עוד תאשר שהשדה מחזיק את כולם. הדבקה מעל 10,000 תווים בצ'אט הופכת לקובץ מצורף. לא מדביקים את טקסט ההתחלה ואת ההנחיות בהודעה אחת. אם הופיע קובץ מצורף, «Show in text field», או מדביקים את ההנחיות בשדה של הפרויקט.
 
 1. נכנסים ל־chatgpt.com ומתחברים.
 2. Projects, פרויקט חדש. שם חופשי.
@@ -57,7 +57,7 @@ Do not keep the record in a shared project or a shared folder. Do not publish th
 
 ## On the web
 
-Six actions, as designed. A live count is pending. OpenAI publishes no Instructions-field limit. Until a live test, the instructions stay under 7,000 characters. A chat paste over 10,000 characters becomes an attachment. Do not paste the starting text and the instructions as one message. If an attachment appears, use "Show in text field", or paste the instructions into the project field.
+Six actions, as designed. A live count is pending. The instructions stay at or under 7,000 characters, Hebrew included. That cap is the rule. OpenAI publishes no number, and live test T1 still confirms the field holds it. A chat paste over 10,000 characters becomes an attachment. Do not paste the starting text and the instructions as one message. If an attachment appears, use "Show in text field", or paste the instructions into the project field.
 
 1. Sign in at chatgpt.com.
 2. New project.

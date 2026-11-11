@@ -6,4 +6,4 @@ Ready, from the plan, is not met. Still pending: a live 1.2 run with a dated mat
 
 Channel order, when she decides to start: rights organizations and Kol Zchut first, then an X thread she posts herself, then communities, then Israeli tech groups, then international notes and Show HN. An agent does not send any of it.
 
-Statistics for any later graphic are in `sources.md`, checked 2026-11-11. Graphics are not designed in this version. D33 still needs a browser check of which wait the dashboard measures.
+Statistics for any later graphic are in `sources.md`, checked 2026-11-11. Graphics are not designed in this version. D33 and D34 are the wait for the doctor the patient chose (זמן המתנה לרופא לפי בחירת המטופל). Any graphic that uses them says that on its face.

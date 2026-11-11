@@ -181,7 +181,8 @@ def bundle_document() -> str:
 
 def instructions_document() -> str:
     # Exact copy of the constitution. A generated banner would push the paste
-    # over the proposed 7,000-character Instructions cap (pending live test T1).
+    # over Heela's 7,000-character Instructions cap. Live test T1 still confirms
+    # the field holds it. OpenAI publishes no official limit.
     return read(PKG / "core.md")
 
 

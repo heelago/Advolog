@@ -35,7 +35,7 @@ Record the date and the result in `package/setup/support-matrix.md`. Do not past
 
 From `package/setup/platform-facts.md`. These need Heela's own accounts. None of them sends anything.
 
-- T1. ChatGPT Instructions size, 7,000, 8,000, and 9,000 characters. The 7,000 cap in this repo is a proposal until T1.
+- T1. ChatGPT Instructions size, 7,000, 8,000, and 9,000 characters. The 7,000 cap is the rule. T1 confirms the live field holds it. OpenAI publishes no official limit.
 - T2. Whether ChatGPT project files are loaded or searched.
 - T3. Whether Claude project knowledge shows a search indicator on our modules file.
 - T4. Whether one zip with two skill folders uploads. The documented path remains one skill folder.

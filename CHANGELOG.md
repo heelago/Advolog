@@ -10,7 +10,7 @@
 
 ההנחיות הקצרות תמיד נטענות. שש־עשרה היחידות הפכו לשתים־עשרה יכולות שנקראות לפי הרגע. אותו מקור מייצר את קובצי האתר, את קובץ הגיבוי, ואת קובצי ה־zip. הרשומות הקיימות לא נכתבות מחדש. כותרת ישנה, גם עם מקף ארוך, נשארת תקינה. נוסף קובץ רשומה אחד, `my-record.md`, שקול לשבעה הקבצים, למי שעובד באתר או בטלפון.
 
-באתר: מעתיקים את ההנחיות ומעלים קובץ אחד. בתוכנית החינמית של ChatGPT זו הדרך, כי יש 3 העלאות ביום. ההנחיות נשמרות מתחת ל־7,000 תווים. זו הצעה עד בדיקה בחשבון אמיתי, לא מספר שפורסם. הדבקה מעל 10,000 תווים בצ'אט הופכת לקובץ מצורף, ולכן טקסט ההתחלה הוא בלוק אחד, לא יחד עם ההנחיות.
+באתר: מעתיקים את ההנחיות ומעלים קובץ אחד. בתוכנית החינמית של ChatGPT זו הדרך, כי יש 3 העלאות ביום. ההנחיות נשמרות עד 7,000 תווים, כולל עברית. הילה אישרה את התקרה. OpenAI לא פרסמה מספר, ובדיקה חיה T1 עוד תאשר שהשדה מחזיק את כולם. הדבקה מעל 10,000 תווים בצ'אט הופכת לקובץ מצורף, ולכן טקסט ההתחלה הוא בלוק אחד, לא יחד עם ההנחיות.
 
 שמות מודלים רק ב־`package/setup/platform-facts.md`. העובדות שם נבדקו ב־11.11.2026. שורות שדורשות ריצה בחשבון נשארו ממתינות. עמודי הבטיחות לא נחלשו. הריצה החיה של התרחישים ממתינה.
 
@@ -18,7 +18,7 @@
 
 The short instructions are always loaded. Sixteen units became twelve skills, read when the moment fits. One source generates the web files, the fallback file, and the zips. Existing records are not rewritten. An old header, including one with an em dash, stays valid. A single record file, `my-record.md`, is equivalent to the seven files, for the web and the phone.
 
-On the web: paste the instructions and upload one file. On ChatGPT Free that is the path, because there are 3 uploads a day. The instructions stay under 7,000 characters. That cap is a proposal until a test in a real account, not a published number. A chat paste over 10,000 characters becomes an attachment, so the starting text is one block, not the instructions as well.
+On the web: paste the instructions and upload one file. On ChatGPT Free that is the path, because there are 3 uploads a day. The instructions stay at or under 7,000 characters, Hebrew included. Heela approved that cap. OpenAI publishes no number, and live test T1 still confirms the field holds it. A chat paste over 10,000 characters becomes an attachment, so the starting text is one block, not the instructions as well.
 
 Model names live only in `package/setup/platform-facts.md`. Those facts were checked on 11.11.2026. Rows that need a run in an account stay pending. The safety walls were not weakened. A live run of the scripts is pending.
 
