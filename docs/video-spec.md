@@ -1,7 +1,9 @@
 # מפרט סרטוני ההדרכה — Advolog
 
-<!-- Phase 4 site build carries the slots; production trails (this spec is the contract).
-     The site's #videos section holds three slot cards matching the three clips below. -->
+<!-- The site does not have a #videos section yet. It returns when videos exist.
+     The old second video (zip, a long paste, sixteen files) is retired. Version 1.2
+     no longer uses that setup. The rest of this spec, including burned-in captions,
+     is unchanged until the later video revision. -->
 
 **עקרון־על:** הסרטונים מרגיעים, לא משווקים. קצב איטי, בלי מוזיקת מתח, בלי «וואו». מי שצופה בהם כנראה עייף/ה — כל סרטון עושה דבר אחד, לאט, פעמיים אם צריך.
 

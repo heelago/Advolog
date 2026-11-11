@@ -9,7 +9,7 @@ labels: israel-system
      כל־זכות, נוסח חוק. בלי מקור רשמי — העדכון לא נכנס.
      Official sources only (kupot, MoH, Kol Zchut, statute text). -->
 
-**הטענה שדורשת עדכון** (ציטוט השורה מ־`package/he/israel-system.md`):
+**הטענה שדורשת עדכון** (ציטוט השורה מ־`package/references/israel-system.md`):
 
 **מה נכון היום, לפי המקור:**
 
