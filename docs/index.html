@@ -239,8 +239,8 @@
       <div class="rows">
         <div class="row"><span class="numlabel">1</span>
           <h3><span class="he">בוחרים איך להתחיל.</span><span class="en">Choose how to start.</span></h3>
-          <p class="muted"><span class="he">אפשר להעתיק פרומפט אחד לשיחה חדשה, בלי להוריד דבר. לעבודה מתמשכת מורידים את הערכה המלאה: פותחים את התיקייה ב־Claude, או מעלים קובץ אחד ל־ChatGPT. אין תוכנה להתקין; מדריך קצר מלווה אתכם.</span>
-          <span class="en">You can paste one prompt into a new conversation without downloading anything. For ongoing work, download the full package: open its folder with Claude, or upload one combined file to ChatGPT. There is no software to install; a short guide walks you through it.</span></p></div>
+          <p class="muted"><span class="he">מדביקים הנחיה אחת. העוזרת קוראת את המאגר, מסבירה, ושואלת אם להוריד. אם אין לה אינטרנט או יצירת קבצים, מדביקים את ההנחיות ומעלים קובץ אחד. אין תוכנה להתקין ביד.</span>
+          <span class="en">Paste one instruction. The assistant reads the repository, explains, and asks whether to download. If it has no web access or no file creation, paste the instructions and upload one file. There is no software to install by hand.</span></p></div>
         <div class="row"><span class="numlabel">2</span>
           <h3><span class="he">מתחילים בשיחה קצרה.</span><span class="en">Begin with a short conversation.</span></h3>
           <p class="muted"><span class="he">שאלה אחת בכל פעם: בשביל מי התיעוד, מה קורה ומה הכי יעזור עכשיו. אפשר לדלג על כל שאלה.</span>
@@ -486,27 +486,50 @@
   <section class="onwhite" id="get">
     <div class="wrap">
       <div class="shead"><span class="numlabel">08 , </span><h2><span class="he">איך מתחילים</span><span class="en">How to start</span></h2></div>
-      <p style="margin:-28px 0 26px"><span class="he">אפשר להתחיל מיד בהדבקה אחת, או להוריד את הערכה המלאה לעבודה מתמשכת. שתי האפשרויות חינמיות.</span><span class="en">Start immediately with one paste, or download the full package for ongoing work. Both options are free.</span></p>
+      <p style="margin:-28px 0 26px"><span class="he">קודם בודקים כמה הגדרות. אחר כך מדביקים הנחיה אחת, והעוזרת קוראת את המאגר, מסבירה, ושואלת אם להוריד. לא מורידים zip ביד.</span><span class="en">First check a few settings. Then paste one instruction. The assistant reads the repository, explains, and asks whether to download. You do not download a zip by hand.</span></p>
       <div class="ways">
         <div class="way" id="package">
-          <h3><span class="he">הגרסה המלאה, לעבודה מתמשכת.</span><span class="en">The full package, for ongoing work.</span></h3>
-          <p><span class="he">מורידים קובץ zip אחד. אם אתם עובדים באפליקציה שיכולה לפתוח תיקייה במחשב, Claude Code, Cowork, Codex, או אפליקציית ChatGPT למחשב, מדביקים את השורה הזאת בשיחה, והעוזר מחלץ את הקובץ, מקים הכול ומתחיל ללוות אתכם בריאיון, שאלה אחת בכל פעם. בלי לחלץ ידנית, בלי להעביר קבצים.</span>
-          <span class="en">Download one zip. If you work in an app that can open a folder on your computer, Claude Code, Cowork, Codex, or the ChatGPT desktop app, paste this one line into a conversation, and the assistant unzips it, sets everything up, and starts walking you through onboarding, one question at a time. No extracting by hand, no moving files.</span></p>
+          <h3><span class="he">הדרך הראשית. Claude קודם.</span><span class="en">The primary path. Claude first.</span></h3>
+          <p><span class="he">לפני ההדבקה: מבטלים שימוש בשיחות לאימון אם המתג קיים, משאירים פרטי בריאות מחוץ לזיכרון, ומוודאים שגישה לאינטרנט ויצירת קבצים דלוקות. אם אחת מהן כבויה, עוברים למסלול הגיבוי למטה. שום דבר לא נשלח. ההורדה רק אחרי שאומרים כן.</span>
+          <span class="en">Before pasting: turn off training on chats if the switch exists, keep health details out of memory, and make sure web access and file creation are on. If either is off, use the fallback below. Nothing is sent. The download waits until you say yes.</span></p>
           <div class="starterbox">
-            <pre id="installHe" class="he" dir="rtl" lang="he">מצא/י את הקובץ advolog.zip בתיקיית ההורדות, חלץ/י אותו לתיקייה חדשה, ואז קרא/י את הקובץ CLAUDE.md (או AGENTS.md) שבתוכה ופעל/י לפיו, הקם/י לי את הכלי ולווה/י אותי צעד־צעד בריאיון הפתיחה.</pre>
-            <pre id="installEn" class="en" dir="ltr" lang="en">Find advolog.zip in my Downloads folder, unzip it into a new project folder, then read the CLAUDE.md (or AGENTS.md) file inside and follow it, set it up for me and walk me through onboarding, one step at a time.</pre>
+            <pre id="installHe" class="he" dir="rtl" lang="he"><!-- embed:setup-he -->
+את מקימה את Advolog רק אחרי שאאשר. אל תשלחי, תפרסמי או תעבירי שום דבר לאף אחד. אל תורידי קבצים לפני שאענה כן.
+
+אם אין לך גישה לאינטרנט, או שאין לך אפשרות ליצור קבצים, עצרי בשורה אחת ואמרי את זה. אז לא מורידים. ההקמה היא הדבקת ההנחיות והעלאת קובץ אחד, כמו שכתוב באתר Advolog.
+
+אם יש גישה:
+1. פתחי את https://github.com/heelago/Advolog וקראי את README.md. אם הדף לא נפתח, אמרי את זה. אל תמציאי מה כתוב בו.
+2. הסבירי לי בעברית פשוטה מה Advolog, מה היא תעשה, ומה היא לא תעשה: לא מאבחנת, לא ממליצה על טיפול, לא שירות חירום, ולא שולחת דבר בשבילי.
+3. שאלי אם להוריד את הקבצים ולהקים אותם אצלי. רק תשובה של כן ממשיכה.
+4. אחרי כן הורידי את החבילה למקום שאני יכולה לשמור, אמרי בשורה אחת איפה היא יושבת, קראי את package/core.md במלואו לפני כל תשובה נוספת, ופעלי לפיו. הוא קובע על כל סתירה. אל תשני את עמודי הבטיחות שבו.
+<!-- /embed:setup-he --></pre>
+            <pre id="installEn" class="en" dir="ltr" lang="en"><!-- embed:setup-en -->
+Set up Advolog only after I agree. Do not send, post, or forward anything to anyone. Do not download any files before I say yes.
+
+If you cannot open the web, or you cannot create files, stop in one line and say so. Then do not download. Setup is pasting the instructions and uploading one file, as the Advolog site describes.
+
+If you can:
+1. Open https://github.com/heelago/Advolog and read README.md. If the page does not open, say so. Do not invent what it says.
+2. Explain in plain language what Advolog is, what it will do, and what it will not do: it does not diagnose, recommend treatment, handle emergencies, or send anything for me.
+3. Ask whether to download the files and set them up for me. Only a yes continues.
+4. After that, download the package to a place I can keep, say in one line where it sits, read package/core.md in full before any further reply, and follow it. It wins on any conflict. Do not change the safety walls in it.
+<!-- /embed:setup-en --></pre>
             <div class="copybar">
-              <button class="btn ink" type="button" data-copy-lang="installHe|installEn"><span class="he">להעתקת שורת ההתקנה</span><span class="en">Copy the install line</span></button>
-              <span class="muted small"><span class="he">ואז: מורידים את ה־zip, פותחים שיחה חדשה ומדביקים.</span><span class="en">Then: download the zip, open a new conversation, and paste.</span></span>
+              <button class="btn ink" type="button" data-copy-lang="installHe|installHe"><span class="he">העתקת ההנחיה בעברית</span><span class="en">Copy the Hebrew instruction</span></button>
+              <button class="btn line" type="button" data-copy-lang="installEn|installEn"><span class="he">העתקה באנגלית</span><span class="en">Copy the English version</span></button>
             </div>
           </div>
+          <h3><span class="he">מסלול גיבוי, בלי אינטרנט או בלי יצירת קבצים.</span><span class="en">Fallback, with no web access or no file creation.</span></h3>
+          <p><span class="he">אומרים את זה במפורש. מדביקים את ההנחיות (עד 7,000 תווים) ומעלים קובץ אחד. ה־zip נשאר רק למי שכבר מוריד תיקייה ביד.</span>
+          <span class="en">Say so plainly. Paste the instructions (at most 7,000 characters) and upload one file. The zip stays only for someone who already downloads a folder by hand.</span></p>
           <p style="margin-top:18px">
             <button class="btn ink" type="button" data-copy-lang="instructionsSrc|instructionsSrc"><span class="he">העתקת ההנחיות</span><span class="en">Copy the instructions</span></button>
             <a class="btn line" href="download/advolog-modules.md" download><span class="he">קובץ אחד לאתר</span><span class="en">One file for the web</span></a>
             <a class="btn ink" href="advolog.zip" download><span class="he">הערכה לתיקייה (zip)</span><span class="en">Folder package (zip)</span></a>
             <a class="btn line" href="guides.html" style="margin-inline-start:8px"><span class="he">מדריכי ההתקנה</span><span class="en">Setup guides</span></a>
           </p>
-          <p class="muted small"><span class="he">גרסה 1.2.0 · 11.11.2026. באתר: מעתיקים את ההנחיות, מעלים קובץ אחד, ואומרים שלום. תיקייה במחשב: ה־zip. <a href="start.html">עשר הדקות הראשונות</a>.</span><span class="en">Version 1.2.0 · 11.11.2026. On the web: copy the instructions, upload one file, say hello. A folder on your computer: the zip. <a href="start.html">The first ten minutes</a>.</span></p>
+          <p class="muted small"><span class="he">גרסה 1.2.0 · 11.11.2026. הדרך הראשית היא ההנחיה למעלה. <a href="start.html">עשר הדקות הראשונות</a>.</span><span class="en">Version 1.2.0 · 11.11.2026. The primary path is the instruction above. <a href="start.html">The first ten minutes</a>.</span></p>
           <pre id="instructionsSrc" hidden><!-- embed:instructions -->
 # Advolog constitution
 
@@ -851,8 +874,8 @@ Begin now, by riding whatever my first message was.
           <span class="he">אותו כלל שחל על כל צ'אט AI: אל תדביקו מה שלא הייתם כותבים לו ממילא. הכלי לא צריך תעודת זהות, שם מלא או כתובת מדויקת, ולעולם לא יבקש אותם. לפני העלאת מסמך, חותכים את מספר הזהות. לפני שיתוף, עוברים על הדף. הכלים לצנזור ולניקוי עוזרים לעיניים, אבל ההגנה האמיתית היא מה שבוחרים להזין מלכתחילה.</span>
           <span class="en">The same rule as any AI chat: do not paste what you would not type into it anyway. The tool never needs your ID number, full name or exact address, and never asks for them. Crop the ID number before uploading a document. Read the page before sharing it. The censor and scrub tools help your eyes. The real protection is what you choose to enter in the first place.</span></div></details>
         <details><summary><span class="he">צריך להיות טכנולוגיים?</span><span class="en">Do I need to be technical?</span></summary><div>
-          <span class="he">לא. אם אתם יודעים להדביק טקסט בצ׳אט, פרומפט הפתיחה מספיק. לגרסה המלאה צריך להוריד ולחלץ קובץ zip; מדריך קצר מראה בדיוק מה לעשות ב־ChatGPT וב־Claude.</span>
-          <span class="en">No. If you can paste text into a chat, the starter prompt is enough. The full version requires downloading and extracting a zip; a short guide shows exactly what to do in ChatGPT and Claude.</span></div></details>
+          <span class="he">לא. מדביקים את הנחיית ההקמה. העוזרת מורידה רק אחרי שאומרים כן. אם אין לה אינטרנט או יצירת קבצים, יש מסלול גיבוי של הדבקה והעלאת קובץ אחד.</span>
+          <span class="en">No. Paste the setup instruction. The assistant downloads only after you say yes. If it has no web access or no file creation, the fallback is a paste and one uploaded file.</span></div></details>
         <details><summary><span class="he">באמת בחינם? מה העניין?</span><span class="en">Is it really free? What's the catch?</span></summary><div>
           <span class="he">בחינם, בקוד פתוח, ובנוי להישאר כך. אין אותיות קטנות. אם זה עזר ובא לכם להגיד תודה, יש קישור לקפה בתחתית העמוד; הוא לא חוסם כלום ולא מוזכר בשום מקום אחר.</span>
           <span class="en">Free, open source, and built to stay that way. No catch. If it helped you and you want to say thanks, there's a coffee link in the footer; it gates nothing and is mentioned nowhere else.</span></div></details>

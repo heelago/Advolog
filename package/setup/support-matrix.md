@@ -25,7 +25,9 @@
 ## גבולות התמיכה
 
 - המסלול הנתמך בריצה חיה, כשתתבצע, הוא Claude באתר ובמחשב, ו־ChatGPT באתר. התאריך ייכתב בטבלה למעלה אחרי הריצה.
-- שלוש דרגות: **אומת בריצה חיה** (Claude באתר ובמחשב, ChatGPT באתר, בתאריך שרשום בטבלה) · **עובד לפי התיעוד הרשמי, לא הורץ אצלנו** (Codex, Dots, Duet) · **לא נבדק** (כל השאר). עוזר שקורא תיקייה ומבין את מבנה התיקייה אמור לעבוד. מה שמופיע אצלכם הוא הקובע.
+- Claude הוא המשטח הראשי. ChatGPT נתמך כשיש חשבון שם.
+- עוזרים אישיים שמותר להזכיר: Dot ו־Grok Bot. עוד לא הורצו כאן. Duet עדיין לא זמין בישראל, ואינו מסלול נתמך.
+- שלוש דרגות: **אומת בריצה חיה** (Claude באתר ובמחשב, ChatGPT באתר, בתאריך שרשום בטבלה) · **עובד לפי התיעוד הרשמי, לא הורץ אצלנו** (Codex, Dot, Grok Bot) · **לא נבדק** (כל השאר, כולל Duet). מה שמופיע אצלכם הוא הקובע.
 - האתר הוא דף נחיתה ותיעוד סטטיים. הוא אינו סביבת ההרצה.
 - הלוח הוא נוחות בלבד. אם הדפדפן לא מציע גישה לתיקיות, ממשיכים דרך השיחה. בנייד משתמשים בשיחה, או בקובץ רשומה אחד (`my-record.md`).
 - לא משתמשים בפרויקט משותף או בתיקייה משותפת לרשומות.
@@ -36,6 +38,10 @@
 
 **As of 11.11.2026, version 1.2.0.** The 1.0 live runs stand. Version 1.2 was built and checked locally. A live run on real Claude and ChatGPT accounts is pending. The scripts are in `tests/README.md`.
 
-Three tiers: **validated on a live run** (Claude on the web and on a computer, ChatGPT on the web, on the date in the table) · **works per the official docs, not run here** (Codex, Dots, Duet) · **not tested** (everything else). An assistant that can read a folder should be able to work. What you see on your screen is what counts.
+Claude is the primary surface. ChatGPT is supported when that is the account you have.
+
+Personal agents this project will name: Dot and Grok Bot. Not run here yet. Duet is not yet available in Israel, and is not a supported path.
+
+Three tiers: **validated on a live run** (Claude on the web and on a computer, ChatGPT on the web, on the date in the table) · **works per the official docs, not run here** (Codex, Dot, Grok Bot) · **not tested** (everything else, including Duet). What you see on your screen is what counts.
 
 Do not keep the record in a shared project or a shared folder.

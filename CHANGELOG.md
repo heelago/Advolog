@@ -12,13 +12,17 @@
 
 באתר: מעתיקים את ההנחיות ומעלים קובץ אחד. בתוכנית החינמית של ChatGPT זו הדרך, כי יש 3 העלאות ביום. ההנחיות נשמרות עד 7,000 תווים, כולל עברית. הילה אישרה את התקרה. OpenAI לא פרסמה מספר, ובדיקה חיה T1 עוד תאשר שהשדה מחזיק את כולם. הדבקה מעל 10,000 תווים בצ'אט הופכת לקובץ מצורף, ולכן טקסט ההתחלה הוא בלוק אחד, לא יחד עם ההנחיות.
 
+הדרך הראשית להקמה היא הנחיה אחת: העוזרת קוראת את המאגר, מסבירה, ושואלת אם להוריד. לא מורידים zip ביד. בלי אינטרנט או בלי יצירת קבצים נשארים עם הדבקת ההנחיות וקובץ אחד. Claude הוא המשטח הראשי. העוזרים האישיים שמוזכרים הם Dot ו־Grok Bot. Duet עדיין לא זמין בישראל. ברירת המחדל המומלצת, איפה שהתוכנית מציעה אותה, היא מאמץ בינוני. המודל החזק יותר מוצע פעם אחת, לא מופעל לבד. השם רק בקובץ העובדות.
+
 שמות מודלים רק ב־`package/setup/platform-facts.md`. העובדות שם נבדקו ב־11.11.2026. שורות שדורשות ריצה בחשבון נשארו ממתינות. עמודי הבטיחות לא נחלשו. הריצה החיה של התרחישים ממתינה.
 
 ### English
 
 The short instructions are always loaded. Sixteen units became twelve skills, read when the moment fits. One source generates the web files, the fallback file, and the zips. Existing records are not rewritten. An old header, including one with an em dash, stays valid. A single record file, `my-record.md`, is equivalent to the seven files, for the web and the phone.
 
-On the web: paste the instructions and upload one file. On ChatGPT Free that is the path, because there are 3 uploads a day. The instructions stay at or under 7,000 characters, Hebrew included. Heela approved that cap. OpenAI publishes no number, and live test T1 still confirms the field holds it. A chat paste over 10,000 characters becomes an attachment, so the starting text is one block, not the instructions as well.
+The primary setup is one instruction: the assistant reads the repository, explains, and asks before downloading. A zip by hand is not the primary path. Without web access or file creation, paste the instructions and upload one file. Claude is the primary surface. The personal agents named are Dot and Grok Bot. Duet is not yet available in Israel. The recommended default, where the plan offers it, is medium effort. The stronger model is offered once and is not switched on by itself. Its name stays in the facts file.
+
+On the web fallback: paste the instructions and upload one file. On ChatGPT Free that is the path, because there are 3 uploads a day. The instructions stay at or under 7,000 characters, Hebrew included. Heela approved that cap. OpenAI publishes no number, and live test T1 still confirms the field holds it. A chat paste over 10,000 characters becomes an attachment, so the starting text is one block, not the instructions as well.
 
 Model names live only in `package/setup/platform-facts.md`. Those facts were checked on 11.11.2026. Rows that need a run in an account stay pending. The safety walls were not weakened. A live run of the scripts is pending.
 

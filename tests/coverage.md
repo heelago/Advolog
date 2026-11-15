@@ -63,4 +63,7 @@ These are new in 1.2 and do not replace a row above.
 - Single-file record `my-record.md`, additive.
 - Weekly paste `package/prompts/weekly-log.md`. It asks. It does not write.
 - Guideline-options mode, committee skill, letters skill: not in this version. The research skill refuses to rank treatments.
-- Agent skill and agent guide: not in this version. `docs/agents.html` is the honest sentence only.
+- Agent skill and agent guide: not in this version. `docs/agents.html` names Dot and Grok Bot only, and says Duet is not yet available in Israel.
+- Setup instruction: `package/prompts/setup-from-repo.md`, copied from the home page. Hebrew default, English on the second button. The assistant reads the README, explains, and asks before any download. Nothing is sent. `core.md` still wins after setup.
+- Fallback when there is no web access or no file creation: paste `core.md` (7,000-character cap) and upload one modules file. The zip is no longer the primary path.
+- Stronger optional model: offered once inside research, full prep, questions, paperwork, and bridge. The skills do not name it. The name and the Claude switch are only in `platform-facts.md` and the rendered model paragraphs.

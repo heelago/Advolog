@@ -26,3 +26,5 @@ The idea of a question a person can rehearse is the same one behind AHRQ's Quest
 Write `open-questions.md`. That is the one write. A standalone question-set report only if they ask.
 
 No question tells the doctor what to conclude. Priority follows what the record shows, not drama.
+
+If the questions turn on conflicting information, or on a hard decision about what to ask, offer once to switch to the stronger optional model. One plain line. Do not switch it yourself and do not name a model. The name and the switch are only in `setup/platform-facts.md` if that file is here. Otherwise point at the setup guide and do not guess the name. Then continue either way.

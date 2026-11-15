@@ -10,7 +10,13 @@
 
 **Pending, because they need a live test:** G5 (Instructions field size; no official number), G8 (whether project files are read in full or searched), C4's confirmation that our modules do not trigger project RAG (T3), C2's multi-folder zip (T4), and T5, T6, T7. Steps are at the end of this file.
 
-**Instructions cap, approved by Heela (11.11.2026):** the constitution paste is at most 7,000 characters, Hebrew included. This is the repo rule. OpenAI publishes no official limit. Live test T1 still confirms that the field holds a 7,000-character paste. Do not raise the cap before that. A ChatGPT chat paste over 10,000 characters becomes an attachment on every plan (G7, verified). The starter is one language block, not the constitution plus the starter.
+**Instructions cap, approved by Heela (11.11.2026):** the constitution paste is at most 7,000 characters, Hebrew included. This is the repo rule. OpenAI publishes no official limit. Live test T1 still confirms that the field holds a 7,000-character paste. Do not raise the cap before that. A ChatGPT chat paste over 10,000 characters becomes an attachment on every plan (G7, verified). The setup instruction is one block, not the constitution plus the setup text.
+
+**Models, Heela 15.11.2026:** the recommended all-round default, where the plan offers it, is Opus 5.5 at medium effort (C9: default effort medium, do not turn thinking off). Fable is an optional step the assistant may offer once, never switch by itself, for a hard decision, conflicting information, or complex bureaucracy. Fable is on paid plans, not Free (C8). The facts file does not say whether Free includes Opus 5.5.
+
+**Agents, Heela 15.11.2026:** the personal agents to name are Dot and Grok Bot. Duet is not yet available in Israel (C10, US only) and is not a supported path. This file has no product row for Dot or Dots. An earlier matrix said Dots.
+
+**Anthropic surface:** Claude is primary. This file has no product named "Claude Work". ChatGPT Work is a different company's product (G2, G10).
 
 Decision 19 stands: Claude web uses project knowledge, not an account-level skill. Decision 20 stands: the upload is one skill folder. The twelve-skill zip is the repo tree and a folder install, not the documented upload.
 

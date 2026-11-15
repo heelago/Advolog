@@ -83,16 +83,16 @@
   <!-- ════════════════ CLAUDE ════════════════ -->
   <section class="guide" id="claude">
     <h2><span class="he">התקנה ב־Claude</span><span class="en">Setup in Claude</span></h2>
-    <p><span class="he">יש שתי דרכים טובות, ולא צריך לבחור מראש נכון: אפשר להתחיל בקלה ולעבור אחר כך, הרשומות עוברות איתכם.</span>
-    <span class="en">There are two good ways in, and no need to choose right the first time: start light and move later, the records move with you.</span></p>
+    <p><span class="he">Claude הוא המשטח הראשי. לא מורידים zip ביד. קודם בודקים אימון, זיכרון, גישה לאינטרנט ויצירת קבצים. אחר כך מדביקים את הנחיית ההקמה מדף הבית. העוזרת קוראת את המאגר, מסבירה, ושואלת אם להוריד. רק כן ממשיך. אם אין אינטרנט או אין יצירת קבצים, אומרים את זה ועוברים לגיבוי.</span>
+    <span class="en">Claude is the primary surface. You do not download a zip by hand. First check training, memory, web access, and file creation. Then paste the setup instruction from the home page. The assistant reads the repository, explains, and asks whether to download. Only a yes continues. If there is no web access or no file creation, say so and use the fallback.</span></p>
 
-    <h3><span class="he">דרך א, שהעוזר יקים בשבילכם (Claude Code / Cowork)</span><span class="en">Way one, let the assistant set it up (Claude Code / Cowork)</span></h3>
-    <p><span class="he">הדרך הפשוטה. מורידים את קובץ ה־zip ומדביקים שורה אחת, והעוזר עושה את השאר: מחלץ, מקים, ומתחיל את הריאיון. אין מה לחלץ ידנית ואין מה להעביר.</span>
-    <span class="en">The simplest path. Download the zip and paste one line, the assistant does the rest: extract, set up, and start the interview. Nothing to unzip by hand, nothing to move.</span></p>
+    <h3><span class="he">מסלול גיבוי בתיקייה</span><span class="en">Folder fallback</span></h3>
+    <p><span class="he">רק אם אי אפשר לקרוא את המאגר או ליצור קבצים. אז מורידים את ה־zip ונותנים לעוזרת לחלץ. זו לא הדרך הראשית.</span>
+    <span class="en">Only when the repository cannot be read or files cannot be created. Then download the zip and let the assistant extract it. This is not the primary path.</span></p>
     <ol>
       <li><span class="he">מתקינים את אפליקציית Claude למחשב (או Claude Code) ומתחברים.</span><span class="en">Install the Claude desktop app (or Claude Code) and sign in.</span></li>
       <li><span class="he">מורידים את חבילת ה־zip מדף הבית, ומשאירים אותה בתיקיית ההורדות, אין צורך לחלץ בעצמכם.</span><span class="en">Download the package zip from the home page and leave it in your Downloads, no need to extract it yourself.</span></li>
-      <li><span class="he">פותחים שיחה ב־Claude Code או ב־Cowork ומדביקים את השורה הזאת:</span><span class="en">Open a conversation in Claude Code or Cowork and paste this line:</span></li>
+      <li><span class="he">פותחים שיחה ב־Claude Code, או באפליקציה שיכולה לפתוח תיקייה, ומדביקים את השורה הזאת:</span><span class="en">Open a conversation in Claude Code, or in an app that can open a folder, and paste this line:</span></li>
     </ol>
     <div class="starterbox">
       <pre id="gInstallHe" class="he" dir="rtl" lang="he">מצא/י את הקובץ advolog.zip בתיקיית ההורדות, חלץ/י אותו לתיקייה חדשה, ואז קרא/י את הקובץ CLAUDE.md שבתוכה ופעל/י לפיו, הקם/י לי את הכלי ולווה/י אותי צעד־צעד בריאיון הפתיחה.</pre>
@@ -106,7 +106,7 @@
     <p class="notice"><span class="he"><b>מעדיפים ידנית?</b> מורידים, מחלצים (לחיצה ימנית ← «חלץ הכול» בווינדוס, לחיצה כפולה במק), ופותחים ב־Claude את התיקייה שחולצה. העוזר קורא את המפה משם בעצמו.</span>
     <span class="en"><b>Prefer to do it by hand?</b> Download, extract (right-click ← "Extract All" on Windows, double-click on Mac), and open the extracted folder in Claude. The assistant reads the map itself from there.</span></p>
 
-    <h3><span class="he">דרך ב, פרויקט באתר (claude.ai)</span><span class="en">Way two, a project on claude.ai (web)</span></h3>
+    <h3><span class="he">מסלול גיבוי באתר, בלי יצירת קבצים</span><span class="en">Web fallback, with no file creation</span></h3>
     <ol>
       <li><span class="he">נכנסים ל־claude.ai ומתחברים לחשבון (חינמי מספיק להתחלה).</span><span class="en">Go to claude.ai and sign in (the free tier is fine to start).</span></li>
       <li><span class="he">בתפריט הצד: <b>Projects</b> ← <b>New project</b>. שם חופשי, למשל «התיק הרפואי שלי».</span><span class="en">In the side menu: <b>Projects</b> ← <b>New project</b>. Any name, "My medical file," for example.</span></li>
@@ -124,12 +124,16 @@
     <p><span class="he"><b>איפה הרשומות?</b> קובצי הרשומות נשמרים אצלכם במחשב, בתיקייה אחת שבחרתם, והשיחה מלווה כל שמירה, או שפותחים את <code dir="ltr">dashboard.html</code> מאותה תיקייה והוא מכניס את העדכונים בלחיצה (<a href="#dashboard">מדריך הלוח</a>). בנייד אפשר לנהל את הגרעין בתוך השיחה ולהעביר לקבצים כשמגיעים למחשב.</span>
     <span class="en"><b>Where are the records?</b> The record files live on your machine, in one folder you choose, and the conversation walks every save with you, or open <code>dashboard.html</code> from that folder and it applies updates on a click (<a href="#dashboard">dashboard guide</a>). On mobile, keep the seed in the conversation and move it to files at a computer.</span></p>
 
-    <p class="notice"><span class="he"><b>יחידות מיומנות (בהתקנה במחשב):</b> בהתקנה במחשב (Claude Code / Cowork) אפשר גם «להתקין» יחידות כך שיופעלו אוטומטית. אין צורך מראש: כשיחידה תהיה רלוונטית, העוזרת תציע ותלווה את ההתקנה צעד־צעד.</span>
-    <span class="en"><b>Skill units (in a computer install):</b> in a computer install (Claude Code / Cowork), you can also "install" units so they trigger on their own. Nothing to do up front: when a unit becomes relevant, the assistant offers it and walks the install step by step.</span></p>
+    <p class="notice"><span class="he"><b>בהתקנה במחשב:</b> אפשר גם להעלות יכולת אחת מוכנה, אם כבר משתמשים בזה. אין צורך מראש. הדרך הראשית נשארת ההנחיה מדף הבית.</span>
+    <span class="en"><b>On a computer install:</b> you can also upload one prepared skill, if you already use that. Nothing to do up front. The primary path stays the instruction on the home page.</span></p>
 
     <h3><span class="he">מאמץ</span><span class="en">Effort</span></h3>
-    <p><span class="he">לרישום יומיומי מספיקה ההגדרה המהירה. להכנה לביקור ולסיכום שווה הגדרת החשיבה העמוקה יותר, אם יש. השם המדויק בקובץ העובדות, וכל שורה שם ממתינה לאימות. אם המסך שונה, המסך קובע.</span>
-    <span class="en">Everyday logging needs the faster setting. Visit prep and summaries are worth the deeper thinking setting if you have one. The exact name is in the facts file, and every row there is pending verification. If your screen differs, your screen wins.</span></p>
+    <p><span class="he"><!-- facts:models-he -->
+ברירת המחדל המומלצת, איפה שהתוכנית מציעה אותו: Opus 5.5 במאמץ בינוני. לא מכבים חשיבה. Fable הוא צעד רשות בתוכנית בתשלום, לא בחינם, ורק להחלטה קשה, למידע סותר, או לביורוקרטיה מסובכת. העוזרת מציעה את זה פעם אחת ולא מחליפה לבד. ב־Claude פותחים את בורר המודל ובוחרים Fable. נבדק מול דף הגישה לתוכניות ב־11.11.2026. המסך קובע.
+<!-- /facts:models-he --></span>
+    <span class="en"><!-- facts:models-en -->
+The recommended default, where the plan offers it: Opus 5.5 at medium effort. Do not turn thinking off. Fable is an optional step on a paid plan, not on Free, and only for a hard decision, conflicting information, or complex bureaucracy. The assistant offers it once and does not switch it itself. In Claude, open the model picker and choose Fable. Checked against the plan-access page on 11.11.2026. Your screen wins.
+<!-- /facts:models-en --></span></p>
 
     <h3><span class="he">העלאת מסמכים וצילומים</span><span class="en">Uploading documents and photos</span></h3>
     <ul>
@@ -169,12 +173,12 @@
   <!-- ════════════════ CHATGPT ════════════════ -->
   <section class="guide" id="chatgpt">
     <h2><span class="he">התקנה ב־ChatGPT</span><span class="en">Setup in ChatGPT</span></h2>
-    <p><span class="he">אותה חבילה, אותם קבצים, אותם כללים, הכלי נבנה מודל־אגנוסטי. שתי דרכים, בדיוק כמו ב־Claude.</span>
-    <span class="en">Same package, same files, same rules, the tool is built model-agnostic. Two ways in, same as Claude.</span></p>
+    <p><span class="he">Claude הוא המשטח הראשי. כאן המסלול כשהשיחה היא ChatGPT. אם יש גישה לאינטרנט ויצירת קבצים, מדביקים את אותה הנחיית הקמה מדף הבית. ההורדה רק אחרי כן. ה־zip ביד הוא גיבוי, לא הדרך הראשית.</span>
+    <span class="en">Claude is the primary surface. This is the path when the chat is ChatGPT. If it can open the web and create files, paste the same setup instruction from the home page. The download waits for a yes. A zip by hand is the fallback, not the primary path.</span></p>
 
-    <h3><span class="he">דרך א, שהעוזר יקים בשבילכם (אפליקציית ChatGPT עם גישה לתיקייה, או Codex)</span><span class="en">Way one, let the assistant set it up (ChatGPT app with folder access, or Codex)</span></h3>
-    <p><span class="he">אם ה־ChatGPT שלכם יודע לעבוד עם תיקייה במחשב (אפליקציית המחשב), או שאתם עובדים ב־Codex, זו אותה שורה כמו ב־Claude, והעוזר מחלץ, מקים ומתחיל את הריאיון. הוא קורא את הקובץ <code dir="ltr">AGENTS.md</code> שבחבילה (תוכן זהה לנקודת הכניסה של Claude).</span>
-    <span class="en">If your ChatGPT can work with a folder on your computer (the desktop app), or you use Codex, it's the same one line as Claude, and the assistant unzips, sets up, and starts the interview. It reads the package's <code>AGENTS.md</code> (identical content to the Claude entrypoint).</span></p>
+    <h3><span class="he">גיבוי, תיקייה או Codex</span><span class="en">Fallback, a folder or Codex</span></h3>
+    <p><span class="he">רק אם אי אפשר לקרוא את המאגר. Codex רשום כעובד לפי התיעוד, לא הורץ אצלנו, והוא קורא את <code dir="ltr">AGENTS.md</code>.</span>
+    <span class="en">Only when the repository cannot be read. Codex is documented as working per the official docs, not run here, and it reads <code>AGENTS.md</code>.</span></p>
     <ol>
       <li><span class="he">מורידים את חבילת ה־zip מדף הבית, ומשאירים אותה בתיקיית ההורדות.</span><span class="en">Download the package zip from the home page and leave it in your Downloads.</span></li>
       <li><span class="he">פותחים שיחה באפליקציית ChatGPT שיכולה לפתוח תיקייה (או ב־Codex) ומדביקים:</span><span class="en">Open a conversation in a folder-capable ChatGPT app (or in Codex) and paste:</span></li>
@@ -205,8 +209,8 @@
     <span class="en"><b>The no-install alternative:</b> a regular chat + <a href="index.html#starter">the starter prompt</a>.</span></p>
 
     <h3><span class="he">מאמץ</span><span class="en">Effort</span></h3>
-    <p><span class="he">לרישום יומיומי מספיקה ההגדרה המהירה, לרוב כבר ברירת המחדל. להכנה לביקור ולסיכום מפעילים את הגדרת החשיבה העמוקה יותר, אם יש, לפני השליחה. השם המדויק ממתין לאימות. אם המסך שונה, המסך קובע.</span>
-    <span class="en">Everyday logging needs the faster setting, usually already the default. For visit prep and summaries, turn on the deeper thinking setting if you have one, before you send. The exact name is pending verification. If your screen differs, your screen wins.</span></p>
+    <p><span class="he">לכל העבודה מספיקה ברירת המחדל. לא מעלים מאמץ רק כי זו הכנה לביקור. המודל החזק יותר, ואיך מחליפים אליו, כתובים במדריך של Claude.</span>
+    <span class="en">The ordinary default is enough for all of this work. Do not raise effort only because this is visit prep. The stronger optional model, and how to switch to it, is in the Claude guide.</span></p>
 
     <h3><span class="he">העלאת מסמכים וצילומים</span><span class="en">Uploading documents and photos</span></h3>
     <ul>

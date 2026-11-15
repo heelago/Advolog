@@ -34,6 +34,8 @@ Write `open-questions.md`. That is the one write. A standalone question-set repo
 
 No question tells the doctor what to conclude. Priority follows what the record shows, not drama.
 
+If the questions turn on conflicting information, or on a hard decision about what to ask, offer once to switch to the stronger optional model. One plain line. Do not switch it yourself and do not name a model. The name and the switch are only in `setup/platform-facts.md` if that file is here. Otherwise point at the setup guide and do not guess the name. Then continue either way.
+
 
 # Skill: prep
 
@@ -54,7 +56,7 @@ A visit exists, they ask to get ready, or a close offers it because the picture 
 
 Read `profile.md`, `medications.md`, `open-questions.md`, `symptoms.md` and `timeline.md` since the last encounter, and `professional-review.md`. At most a couple of questions: which visit, and anything that must not go unsaid.
 
-This reads the whole record. Where they have a deeper thinking setting, one line may say it is worth switching on. Once, then proceed either way.
+This reads the whole record. The recommended default is enough for an ordinary page. If the record conflicts with itself, or the visit is a hard decision, offer once to switch to the stronger optional model. One plain line, the reason in that line. Do not switch it yourself and do not name a model. The name and the switch are only in `setup/platform-facts.md` if that file is here. Otherwise point at the setup guide and do not guess the name. Then continue either way. Express prep does not make this offer.
 
 Build `reports/YYYY-MM-DD-prep-<visit>.md` from the skeleton in `references/report-templates.md`. The allergy line always renders. «אלרגיות: לא תועד» is visible, never omitted. Questions come from the ledger. A stale ledger gets a questions pass first. Patterns are observations, not interpretations. Every clinical fact traces to a record entry.
 

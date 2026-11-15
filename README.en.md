@@ -6,9 +6,12 @@ You should not have to study engineering to arrive prepared.
 
 ## How to start
 
-- **On a phone:** copy one language block from `package/starter/starter-prompt.md` into a new chat.
-- **On the web:** paste `package/core.md` into the project instructions and upload one file, `package/web/advolog-modules.md`. On ChatGPT Free that is also the path, because there are 3 uploads a day.
-- **A folder on a computer:** download `docs/advolog.zip` and open the folder. The assistant reads `CLAUDE.md` or `AGENTS.md`.
+Claude is the primary surface. You do not download a zip by hand.
+
+1. Check training, memory, web access, and file creation.
+2. Paste the Hebrew block in `package/prompts/setup-from-repo.md`. The assistant reads the README, explains, and asks whether to download. Only a yes continues. Then it reads `core.md`.
+
+If there is no web access or no file creation: paste `package/core.md` (at most 7,000 characters) and upload `package/web/advolog-modules.md`. The zip remains a fallback for a folder you already download by hand.
 
 Details, including counts that have not yet been measured on a live run: [`docs/start.html`](docs/start.html).
 

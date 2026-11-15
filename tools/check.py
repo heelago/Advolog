@@ -207,7 +207,7 @@ def check_model_names(errors: list[str]) -> None:
     for path in iter_scan_files():
         if path.resolve() == allowed.resolve():
             continue
-        text = strip_fact_regions(strip_html_comments(path.read_text(encoding="utf-8")))
+        text = strip_html_comments(strip_fact_regions(path.read_text(encoding="utf-8")))
         if MODEL_RE.search(text):
             errors.append(f"model name outside platform-facts.md: {path.relative_to(ROOT)}")
 
@@ -351,6 +351,27 @@ def check_paste_limits(errors: list[str]) -> None:
         errors.append(
             f"starter file is {len(starter)} characters; a ChatGPT paste over 10000 becomes an attachment"
         )
+    setup_path = ROOT / "package" / "prompts" / "setup-from-repo.md"
+    setup = setup_path.read_text(encoding="utf-8")
+    setup_blocks = [p for i, p in enumerate(setup.split("```")) if i % 2 == 1]
+    if len(setup_blocks) < 2:
+        errors.append("setup-from-repo.md needs a Hebrew block and an English block")
+    for i, block in enumerate(setup_blocks):
+        n = len(block.strip("\n"))
+        if n > 10000:
+            errors.append(f"setup prompt block {i} is {n} characters; cap is 10000")
+    joined = "\n".join(setup_blocks)
+    for needle in (
+        "https://github.com/heelago/Advolog",
+        "README.md",
+        "core.md",
+        "yes",
+        "כן",
+    ):
+        if needle not in joined and needle not in setup:
+            errors.append(f"setup prompt is missing {needle}")
+    if "Do not send" not in setup or "אל תשלחי" not in setup:
+        errors.append("setup prompt must say nothing is sent")
     blocks = [p for i, p in enumerate(starter.split("```")) if i % 2 == 1]
     for i, block in enumerate(blocks):
         n = len(block.strip("\n"))

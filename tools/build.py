@@ -85,9 +85,26 @@ FACT_BLOCKS = {
         "אם המסך אצלך שונה, המסך קובע."
     ),
     "effort": (
-        "לרישום יומיומי מספיקה ההגדרה המהירה. להכנה לביקור, לסיכום ולמחקר שווה "
-        "הגדרת החשיבה העמוקה יותר, אם יש. שם המודל והכפתור המדויק בקובץ העובדות, "
-        "וכל שורה שם ממתינה לאימות. אם המסך שונה, המסך קובע."
+        "לכל העבודה מספיקה ברירת המחדל, איפה שהתוכנית מציעה אותה. "
+        "לא מעלים מאמץ רק כי זו הכנה לביקור. "
+        "המודל החזק יותר מוצע פעם אחת, להחלטה קשה, למידע סותר, או לביורוקרטיה מסובכת, "
+        "והעוזרת לא מחליפה אותו לבד. השם והבורר בפסקת המודל. אם המסך שונה, המסך קובע."
+    ),
+    "models-he": (
+        "ברירת המחדל המומלצת, איפה שהתוכנית מציעה אותו: Opus 5.5 במאמץ בינוני. "
+        "לא מכבים חשיבה. Fable הוא צעד רשות בתוכנית בתשלום, לא בחינם, "
+        "ורק להחלטה קשה, למידע סותר, או לביורוקרטיה מסובכת. "
+        "העוזרת מציעה את זה פעם אחת ולא מחליפה לבד. "
+        "ב־Claude פותחים את בורר המודל ובוחרים Fable. "
+        "נבדק מול דף הגישה לתוכניות ב־11.11.2026. המסך קובע."
+    ),
+    "models-en": (
+        "The recommended default, where the plan offers it: Opus 5.5 at medium effort. "
+        "Do not turn thinking off. Fable is an optional step on a paid plan, not on Free, "
+        "and only for a hard decision, conflicting information, or complex bureaucracy. "
+        "The assistant offers it once and does not switch it itself. "
+        "In Claude, open the model picker and choose Fable. "
+        "Checked against the plan-access page on 11.11.2026. Your screen wins."
     ),
     "uploads-claude": (
         "נבדק 11.11.2026: מסמך לייצוא קיים בכל התוכניות, כולל החינמית, ופתוח כברירת מחדל. "
@@ -218,6 +235,11 @@ def apply_fact_blocks(text: str) -> str:
     return text
 
 
+def setup_prompt_blocks() -> tuple[str, str]:
+    text = read(PKG / "prompts" / "setup-from-repo.md")
+    return fenced_block(text, 0), fenced_block(text, 1)
+
+
 def fenced_block(markdown: str, which: int) -> str:
     """Return the Nth fenced code block (0-based), without the fences."""
     parts = markdown.split("```")
@@ -241,12 +263,15 @@ def html_escape(text: str) -> str:
 
 def apply_embeds(text: str) -> str:
     starter = read(PKG / "starter" / "starter-prompt.md")
+    setup_he, setup_en = setup_prompt_blocks()
     he = html_escape(fenced_block(starter, 0))
     en = html_escape(fenced_block(starter, 1))
     core = html_escape(read(PKG / "core.md").rstrip() + "\n")
     replacements = {
         "starter-he": he,
         "starter-en": en,
+        "setup-he": html_escape(setup_he),
+        "setup-en": html_escape(setup_en),
         "instructions": core,
     }
     for name, body in replacements.items():

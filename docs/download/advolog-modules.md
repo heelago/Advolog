@@ -193,6 +193,8 @@ Write `open-questions.md`. That is the one write. A standalone question-set repo
 
 No question tells the doctor what to conclude. Priority follows what the record shows, not drama.
 
+If the questions turn on conflicting information, or on a hard decision about what to ask, offer once to switch to the stronger optional model. One plain line. Do not switch it yourself and do not name a model. The name and the switch are only in `setup/platform-facts.md` if that file is here. Otherwise point at the setup guide and do not guess the name. Then continue either way.
+
 
 # Skill: prep
 
@@ -213,7 +215,7 @@ A visit exists, they ask to get ready, or a close offers it because the picture 
 
 Read `profile.md`, `medications.md`, `open-questions.md`, `symptoms.md` and `timeline.md` since the last encounter, and `professional-review.md`. At most a couple of questions: which visit, and anything that must not go unsaid.
 
-This reads the whole record. Where they have a deeper thinking setting, one line may say it is worth switching on. Once, then proceed either way.
+This reads the whole record. The recommended default is enough for an ordinary page. If the record conflicts with itself, or the visit is a hard decision, offer once to switch to the stronger optional model. One plain line, the reason in that line. Do not switch it yourself and do not name a model. The name and the switch are only in `setup/platform-facts.md` if that file is here. Otherwise point at the setup guide and do not guess the name. Then continue either way. Express prep does not make this offer.
 
 Build `reports/YYYY-MM-DD-prep-<visit>.md` from the skeleton in `references/report-templates.md`. The allergy line always renders. «אלרגיות: לא תועד» is visible, never omitted. Questions come from the ledger. A stale ledger gets a questions pass first. Patterns are observations, not interpretations. Every clinical fact traces to a record entry.
 
@@ -285,7 +287,7 @@ Act only when the Advolog core is present. Otherwise do nothing special. Never s
 
 Read `profile.md` (situation, research context, anecdote toggle; if the toggle was never set, ask once, plainly, and log it), the allergy line, the relevant symptom and timeline entries, and `open-questions.md`. An unrecorded allergy line gets one plain line in the report.
 
-Where they have a deeper thinking setting, one line may say this is worth it. Once, then proceed either way.
+If the sources conflict, or the question is a hard decision, offer once to switch to the stronger optional model. One plain line, the reason in that line. Do not switch it yourself and do not name a model. The name and the switch are only in `setup/platform-facts.md` if that file is here. Otherwise point at the setup guide and do not guess the name. Then continue either way.
 
 1. Confirm the question in one reflected line.
 2. Search in English. Report in their language. Authoritative sources first, then published studies with the study type named. Patient reports only if the toggle is on, labeled, and marked isolated or recurring. A consumer checker is a lead: trace it to the primary source or drop the claim and say so. Per finding: URL, capture date, the fixed source line. Numbers, thresholds, and category words only from sources retained this run, including no remembered age bands and no "guidelines use this word" aside. A blocked source contributes nothing. A credential-gated source is named as a gap, and the bridge is offered.
@@ -328,6 +330,8 @@ Offer one timeline line: a described reference, located, never copied. The Israe
 
 If the document itself flags urgent-class content, one calm line from the core. The document said it.
 
+If the document is complex bureaucracy (a fund decision, Form 17 against what was done, an exceptions path), offer once to switch to the stronger optional model. One plain line. Do not switch it yourself and do not name a model. The name and the switch are only in `setup/platform-facts.md` if that file is here. Otherwise point at the setup guide and do not guess the name. Then continue either way. This skill still does not write a complaint or a committee letter.
+
 Identifiers in the document are never repeated into any output.
 
 
@@ -366,6 +370,8 @@ Record in `professional-review.md` exactly what was said: who (role, name option
 
 No generated findings. No simulated professional output. Nobody is asked to break an institutional rule.
 
+If two professional reports conflict, offer once to switch to the stronger optional model before you draft. One plain line. Do not switch it yourself and do not name a model. The name and the switch are only in `setup/platform-facts.md` if that file is here. Otherwise point at the setup guide and do not guess the name. Then continue either way. Nothing is sent.
+
 
 # Skill: regimen-chart
 
@@ -380,7 +386,7 @@ A schedule is the easiest place to slip into dosing advice. The fences below are
 
 Act only when the Advolog core is present. Otherwise do nothing special. Never offer this unless they asked for the chart.
 
-Read `medications.md` in full, including To confirm. A long list is worth a deeper thinking setting where they have one. One line, once, then proceed either way.
+Read `medications.md` in full, including To confirm. The recommended default is enough. Do not suggest a model switch for a chart.
 
 As recorded, nothing invented:
 

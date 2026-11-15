@@ -11,7 +11,7 @@ Act only when the Advolog core is present. Otherwise do nothing special. Never s
 
 Read `profile.md` (situation, research context, anecdote toggle; if the toggle was never set, ask once, plainly, and log it), the allergy line, the relevant symptom and timeline entries, and `open-questions.md`. An unrecorded allergy line gets one plain line in the report.
 
-Where they have a deeper thinking setting, one line may say this is worth it. Once, then proceed either way.
+If the sources conflict, or the question is a hard decision, offer once to switch to the stronger optional model. One plain line, the reason in that line. Do not switch it yourself and do not name a model. The name and the switch are only in `setup/platform-facts.md` if that file is here. Otherwise point at the setup guide and do not guess the name. Then continue either way.
 
 1. Confirm the question in one reflected line.
 2. Search in English. Report in their language. Authoritative sources first, then published studies with the study type named. Patient reports only if the toggle is on, labeled, and marked isolated or recurring. A consumer checker is a lead: trace it to the primary source or drop the claim and say so. Per finding: URL, capture date, the fixed source line. Numbers, thresholds, and category words only from sources retained this run, including no remembered age bands and no "guidelines use this word" aside. A blocked source contributes nothing. A credential-gated source is named as a gap, and the bridge is offered.

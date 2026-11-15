@@ -1,12 +1,16 @@
 # התקנה ב־ChatGPT
 
-עברית קודם. העוזרת עונה בשפה שכותבים בה. אין כאן שמות של מודלים. השמות בקובץ `platform-facts.md`, וכל שורה שם ממתינה לאימות. אם המסך שונה, המסך קובע.
+המשטח הראשי של Anthropic הוא Claude. כאן המסלול כשיש ChatGPT. שמות מודלים רק בקובץ העובדות. אם המסך שונה, המסך קובע.
 
-לא שומרים את הרשומה בפרויקט משותף או בתיקייה משותפת. לא הופכים את הלוח לאתר שאפשר לפרסם.
+לא שומרים את הרשומה בפרויקט משותף. לא הופכים את הלוח לאתר שאפשר לפרסם. לא שולחים דבר.
 
-## באתר
+## הדרך הראשית
 
-שש פעולות, לפי התכנון. הספירה על ריצה חיה ממתינה. תקרת ההנחיות היא 7,000 תווים, כולל עברית. זו ההחלטה. OpenAI לא פרסמה מספר, ובדיקה חיה T1 עוד תאשר שהשדה מחזיק את כולם. הדבקה מעל 10,000 תווים בצ'אט הופכת לקובץ מצורף. לא מדביקים את טקסט ההתחלה ואת ההנחיות בהודעה אחת. אם הופיע קובץ מצורף, «Show in text field», או מדביקים את ההנחיות בשדה של הפרויקט.
+אותה כמו ב־Claude, אם לשיחה יש גישה לאינטרנט ויצירת קבצים: בודקים אימון, זיכרון, אינטרנט וקבצים, ומדביקים את `prompts/setup-from-repo.md`. ההורדה רק אחרי כן.
+
+## מסלול גיבוי, בלי אינטרנט או בלי יצירת קבצים
+
+אומרים את זה במפורש. תקרת ההנחיות היא 7,000 תווים, כולל עברית. OpenAI לא פרסמה מספר, ובדיקה חיה T1 עוד תאשר שהשדה מחזיק את כולם. הדבקה מעל 10,000 תווים בצ'אט הופכת לקובץ מצורף. לא מדביקים את טקסט ההקמה ואת ההנחיות בהודעה אחת. אם הופיע קובץ מצורף, «Show in text field», או מדביקים את ההנחיות בשדה של הפרויקט.
 
 1. נכנסים ל־chatgpt.com ומתחברים.
 2. Projects, פרויקט חדש. שם חופשי.
@@ -19,12 +23,12 @@
 
 ## תיקייה במחשב, או Codex
 
-אם האפליקציה יודעת לפתוח תיקייה, אותה שורת zip כמו ב־Claude, והקובץ שהיא קוראת הוא `AGENTS.md` (זהה ל־`CLAUDE.md`). Codex רשום כ«עובד לפי התיעוד הרשמי, לא הורץ אצלנו».
+אם השיחה יכולה לקרוא את המאגר וליצור קבצים, משתמשים בהנחיית ההקמה, לא בהורדת zip ביד. Codex רשום כ«עובד לפי התיעוד הרשמי, לא הורץ אצלנו». הוא קורא את `AGENTS.md`.
 
 ## מאמץ
 
 <!-- facts:effort -->
-לרישום יומיומי מספיקה ההגדרה המהירה. להכנה לביקור, לסיכום ולמחקר שווה הגדרת החשיבה העמוקה יותר, אם יש. שם המודל והכפתור המדויק בקובץ העובדות, וכל שורה שם ממתינה לאימות. אם המסך שונה, המסך קובע.
+לכל העבודה מספיקה ברירת המחדל, איפה שהתוכנית מציעה אותה. לא מעלים מאמץ רק כי זו הכנה לביקור. המודל החזק יותר מוצע פעם אחת, להחלטה קשה, למידע סותר, או לביורוקרטיה מסובכת, והעוזרת לא מחליפה אותו לבד. השם והבורר בפסקת המודל. אם המסך שונה, המסך קובע.
 <!-- /facts:effort -->
 
 ## העלאות
@@ -51,13 +55,17 @@ Projects, הפרויקט, New chat, ומדביקים את פתק המסירה ר
 
 # Setup in ChatGPT
 
-Hebrew first. No model names in this guide. Names are in `platform-facts.md`, every row pending verification. Your screen wins.
+Claude is the primary Anthropic surface. This is the path when the chat is ChatGPT. Model names stay in the facts file. Your screen wins.
 
-Do not keep the record in a shared project or a shared folder. Do not publish the dashboard as a site.
+Do not keep the record in a shared project. Do not publish the dashboard as a site. Nothing is sent.
 
-## On the web
+## The primary path
 
-Six actions, as designed. A live count is pending. The instructions stay at or under 7,000 characters, Hebrew included. That cap is the rule. OpenAI publishes no number, and live test T1 still confirms the field holds it. A chat paste over 10,000 characters becomes an attachment. Do not paste the starting text and the instructions as one message. If an attachment appears, use "Show in text field", or paste the instructions into the project field.
+The same as Claude, when the chat can open the web and create files: check training, memory, web access, and file creation, then paste `prompts/setup-from-repo.md`. The download waits for a yes.
+
+## Fallback, when there is no web access or no file creation
+
+Say so plainly. The instructions stay at or under 7,000 characters, Hebrew included. That cap is the rule. OpenAI publishes no number, and live test T1 still confirms the field holds it. A chat paste over 10,000 characters becomes an attachment. Do not paste the setup text and the instructions as one message. If an attachment appears, use "Show in text field", or paste the instructions into the project field.
 
 1. Sign in at chatgpt.com.
 2. New project.
@@ -70,15 +78,15 @@ On the phone and on the web, save one file at the end of a session: `my-record.m
 
 ## A folder, or Codex
 
-If the app can open a folder, use the same zip line as Claude. It reads `AGENTS.md`. Codex is "works per the official docs, not run here".
+If the chat can read the repository and create files, use the setup text, not a zip downloaded by hand. Codex is "works per the official docs, not run here". It reads `AGENTS.md`.
 
 ## Effort
 
-Everyday logging needs the faster setting. For visit prep and summaries, turn on the deeper thinking setting if you have one, before you send. The exact mode name is pending verification.
+The ordinary default is enough for all of this work. Do not raise effort only because this is visit prep. The optional stronger model, and how to switch to it, is a Claude step. It is named in `platform-facts.md`.
 
 ## Uploads
 
-Crop or cover the ID number. A scanned letter uploaded as a PDF may arrive empty. Ask for a photo of the page. The daily upload cap is pending verification.
+Crop or cover the ID number. A scanned letter uploaded as a PDF may arrive empty. Ask for a photo of the page. On the Free plan: 3 uploads a day (checked 11.11.2026).
 
 The prep sheet is one complete file to save and print, unless the session really offers another document. Do not promise a format you cannot see.
 

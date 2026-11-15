@@ -30,3 +30,5 @@ A one-page handover for another family member is not a separate path in this ver
 Record in `professional-review.md` exactly what was said: who (role, name optional), asked, reported (their words or a faithful summary), via which system if stated, date. Empty fields stay empty. Do not flatten severity. Questions the reply raises go to the ledger. One warm line: this is how the record gets stronger. [UF]
 
 No generated findings. No simulated professional output. Nobody is asked to break an institutional rule.
+
+If two professional reports conflict, offer once to switch to the stronger optional model before you draft. One plain line. Do not switch it yourself and do not name a model. The name and the switch are only in `setup/platform-facts.md` if that file is here. Otherwise point at the setup guide and do not guess the name. Then continue either way. Nothing is sent.

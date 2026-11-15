@@ -1,38 +1,39 @@
 # התקנה ב־Claude
 
-עברית קודם. העוזרת עונה בשפה שכותבים בה. אין כאן שמות של מודלים. השמות, והתוכניות, בקובץ `platform-facts.md`, וכל שורה שם ממתינה לאימות. אם המסך אצלך שונה, המסך קובע.
+Claude הוא המשטח הראשי. העוזרת עונה בשפה שכותבים בה. שמות המודלים רק ב־`platform-facts.md` ובפסקאות שהוא מרנדר. אם המסך שונה, המסך קובע.
 
-לא שומרים את הרשומה בפרויקט משותף או בתיקייה משותפת.
+לא שומרים את הרשומה בפרויקט משותף או בתיקייה משותפת. לא שולחים דבר. ההורדה רק אחרי כן.
 
-## באתר, claude.ai
+## הדרך הראשית
 
-חמש פעולות, לפי התכנון. הספירה על ריצה חיה עדיין ממתינה.
+לפני ההדבקה, בודקים ארבעה דברים בחשבון:
 
-1. נכנסים ל־claude.ai ומתחברים. תוכנית חינמית מספיקה להתחלה.
-2. Projects, פרויקט חדש. שם חופשי, למשל «התיק הרפואי שלי».
-3. בשדה ההנחיות מדביקים את `web/instructions.md` (אותו טקסט כמו `core.md`). באתר יש כפתור «העתקת ההנחיות».
-4. ב־Project knowledge מעלים קובץ אחד: `web/advolog-modules.md`. לא קובץ מכווץ.
-5. שיחה חדשה בתוך הפרויקט, וכותבים שלום, או פשוט מתחילים לספר.
+1. ביטול שימוש בשיחות לאימון, אם המתג קיים. הניסוח המדויק לא נקרא מחדש בדפדפן. המסך קובע.
+2. פרטי בריאות מחוץ לזיכרון.
+3. גישה לאינטרנט דלוקה, כדי שהעוזרת תוכל לקרוא את המאגר. אם היא כבויה, עוברים למסלול הגיבוי.
+4. יצירת קבצים דלוקה, כדי שהיא תוכל להוריד ולהקים. אם היא כבויה, עוברים למסלול הגיבוי.
 
-אם הקובץ האחד לא נקרא, או ששדה ההנחיות קטן מדי, עוברים לקובץ המשולב `advolog-chatgpt-bundle.md` כגיבוי, ואומרים זאת בשורה אחת. לא מנחשים שההנחיות נטענו.
+ואז מעתיקים את הבלוק העברי מ־`prompts/setup-from-repo.md` לשיחה חדשה. הבלוק האנגלי הוא הכפתור השני באתר. העוזרת קוראת את README, מסבירה מה Advolog ומה היא תעשה, ושואלת אם להוריד. רק כן ממשיך. אחר כך היא קוראת את `core.md` ופועלת לפיו.
 
-איפה הרשומה באתר ובטלפון: קובץ אחד, `my-record.md`, שמירה אחת בסוף השיחה. שבעת הקבצים נשארים שווי ערך, למי שכבר עובד איתם. לא ממירים בלי בקשה.
+## מסלול גיבוי, בלי אינטרנט או בלי יצירת קבצים
 
-## תיקייה במחשב
+אומרים את זה במפורש. מדביקים את `core.md` בשדה ההנחיות (עד 7,000 תווים), ומעלים קובץ אחד: `web/advolog-modules.md`. בתוכנית החינמית של ChatGPT זו גם תקרת ההעלאות. אם הקובץ לא נקרא, `advolog-chatgpt-bundle.md`.
 
-מורידים את `advolog.zip`, משאירים אותו בתיקיית ההורדות, ומדביקים בשיחה שיודעת לפתוח תיקייה:
+ה־zip נשאר למי שכבר מוריד תיקייה ביד. זו לא הדרך הראשית.
 
-«מצא/י את הקובץ advolog.zip בתיקיית ההורדות, חלץ/י אותו לתיקייה חדשה, ואז קרא/י את הקובץ CLAUDE.md שבתוכה ופעל/י לפיו. הקם/י לי את הכלי ולווה/י אותי צעד־צעד בריאיון הפתיחה.»
+העלאת יכולת אחת, למי שכבר משתמש בזה: `advolog-skill.zip`. לפני כן מדליקים יצירת קבצים. `advolog-skills.zip` אינו נתיב ההעלאה.
 
-אפשר גם לחלץ ידנית ולפתוח את התיקייה. העוזרת קוראת את `CLAUDE.md` ואז את `core.md`.
+איפה הרשומה באתר ובטלפון: `my-record.md`, שמירה אחת בסוף. שבעת הקבצים נשארים שווי ערך. לא ממירים בלי בקשה.
 
-העלאת יכולת אחת, למי שכבר משתמש בזה: `advolog-skill.zip` (תיקייה אחת). לפני כן מדליקים «Code execution and file creation». האתר לא צריך את זה. קובץ zip עם כמה תיקיות אינו מתועד, והבדיקה החיה ממתינה. `advolog-skills.zip` הוא עותק של עץ התיקייה, לא נתיב ההעלאה.
-
-## מאמץ
+## מאמץ ומודל
 
 <!-- facts:effort -->
-לרישום יומיומי מספיקה ההגדרה המהירה. להכנה לביקור, לסיכום ולמחקר שווה הגדרת החשיבה העמוקה יותר, אם יש. שם המודל והכפתור המדויק בקובץ העובדות, וכל שורה שם ממתינה לאימות. אם המסך שונה, המסך קובע.
+לכל העבודה מספיקה ברירת המחדל, איפה שהתוכנית מציעה אותה. לא מעלים מאמץ רק כי זו הכנה לביקור. המודל החזק יותר מוצע פעם אחת, להחלטה קשה, למידע סותר, או לביורוקרטיה מסובכת, והעוזרת לא מחליפה אותו לבד. השם והבורר בפסקת המודל. אם המסך שונה, המסך קובע.
 <!-- /facts:effort -->
+
+<!-- facts:models-he -->
+ברירת המחדל המומלצת, איפה שהתוכנית מציעה אותו: Opus 5.5 במאמץ בינוני. לא מכבים חשיבה. Fable הוא צעד רשות בתוכנית בתשלום, לא בחינם, ורק להחלטה קשה, למידע סותר, או לביורוקרטיה מסובכת. העוזרת מציעה את זה פעם אחת ולא מחליפה לבד. ב־Claude פותחים את בורר המודל ובוחרים Fable. נבדק מול דף הגישה לתוכניות ב־11.11.2026. המסך קובע.
+<!-- /facts:models-he -->
 
 ## העלאות, וקובץ לרופא או לרופאה
 
@@ -62,43 +63,44 @@
 
 # Setup in Claude
 
-Hebrew first. The assistant answers in the language you write. This guide does not name a model. Names and plans are in `platform-facts.md`, and every row there is pending verification. If your screen differs, your screen wins.
+Claude is the primary surface. The assistant answers in the language you write. Model names appear only in `platform-facts.md` and in the paragraphs it renders. If your screen differs, your screen wins.
 
-Do not keep the record in a shared project or a shared folder.
+Do not keep the record in a shared project or a shared folder. Nothing is sent. A download waits for a yes.
 
-## On the web
+## The primary path
 
-Five actions, as designed. A live count is still pending.
+Before pasting, check four things:
 
-1. Sign in at claude.ai. A free plan is enough to start.
-2. New project. Any name.
-3. Paste `web/instructions.md` (the same text as `core.md`) into the project instructions. The site has a button, "copy the instructions".
-4. Upload one file to project knowledge: `web/advolog-modules.md`. Not a zip.
-5. A new chat in the project. Say hello, or just start.
+1. Turn off training on chats if the switch exists. The exact wording was not re-read in a browser. Your screen wins.
+2. Keep health details out of memory.
+3. Web access on, so the assistant can read the repository. If it is off, use the fallback.
+4. File creation on, so it can download and set up. If it is off, use the fallback.
 
-If that one file is not being read, or the instructions field refuses the paste, use `advolog-chatgpt-bundle.md` as the fallback and say so in one line.
+Then paste the Hebrew block from `prompts/setup-from-repo.md` into a new chat. The English block is the second button on the site. The assistant reads the README, explains what Advolog is and what it will do, and asks whether to download. Only a yes continues. Then it reads `core.md` and follows it.
 
-On the web and on a phone, the record is one file, `my-record.md`, one save at the end of a session. The seven files remain equivalent. Do not convert unless asked.
+## Fallback, when there is no web access or no file creation
 
-## A folder on your computer
+Say so plainly. Paste `core.md` into the instructions (at most 7,000 characters) and upload one file, `web/advolog-modules.md`. On ChatGPT Free that is also the upload cap. If that file is not read, use `advolog-chatgpt-bundle.md`.
 
-Download `advolog.zip`, leave it in Downloads, and paste:
+The zip remains for someone who already downloads a folder by hand. It is not the primary path.
 
-"Find advolog.zip in my Downloads folder, unzip it into a new folder, then read CLAUDE.md inside and follow it. Set it up for me and walk me through the opening, one step at a time."
+One skill upload, for people who already use that: `advolog-skill.zip`, with file creation on. `advolog-skills.zip` is not the upload path.
 
-You can also unzip and open the folder yourself.
+On the web and on a phone, the record is one file, `my-record.md`, one save at the end. The seven files stay equivalent. Do not convert unless asked.
 
-`advolog-skill.zip` (one skill) and `advolog-skills.zip` (twelve) are for people who already use that upload. They are not the web path. Whether a multi-skill upload is accepted, and whether code execution must be on, is pending in `platform-facts.md`.
+## Effort and model
 
-## Effort
+The recommended default is medium effort where the plan offers it. Do not raise effort only because this is visit prep.
 
-Everyday logging needs the faster setting. Visit prep, summaries, and research are worth the deeper thinking setting if you have one. The exact name is pending verification. Your screen wins.
+<!-- facts:models-en -->
+The recommended default, where the plan offers it: Opus 5.5 at medium effort. Do not turn thinking off. Fable is an optional step on a paid plan, not on Free, and only for a hard decision, conflicting information, or complex bureaucracy. The assistant offers it once and does not switch it itself. In Claude, open the model picker and choose Fable. Checked against the plan-access page on 11.11.2026. Your screen wins.
+<!-- /facts:models-en -->
 
 ## Uploads, and a file for the doctor
 
 Crop or cover the ID number before every upload. If a file arrives empty, say so and ask for a photo. Do not guess.
 
-How many pages are read, and which plans can export a document, is pending verification. If this session has no such document, the page is one complete file to save and print. A document beside the chat stays private until shared. For the doctor, export a file. The checklist comes first.
+Checked 11.11.2026: an exportable document exists on every plan, including Free, and is on by default. On Free, sharing is by link, not by invitation. The document stays private until shared. For the doctor, export a file. The checklist comes first. If this session has no such document, the page is one complete file to save and print.
 
 ## A new chat
 

@@ -9,7 +9,7 @@ A schedule is the easiest place to slip into dosing advice. The fences below are
 
 Act only when the Advolog core is present. Otherwise do nothing special. Never offer this unless they asked for the chart.
 
-Read `medications.md` in full, including To confirm. A long list is worth a deeper thinking setting where they have one. One line, once, then proceed either way.
+Read `medications.md` in full, including To confirm. The recommended default is enough. Do not suggest a model switch for a chart.
 
 As recorded, nothing invented:
 
