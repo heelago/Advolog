@@ -207,6 +207,7 @@ def planned_outputs() -> dict[str, str]:
     """Relative path (from repo root, posix) -> file text."""
     out: dict[str, str] = {}
     out["package/web/instructions.md"] = instructions_document()
+    out["package/web/setup-from-repo.md"] = setup_prompt_document()
     out["package/web/advolog-modules.md"] = modules_document(
         "Advolog modules", SKILL_ORDER, include_references=True
     )
@@ -235,9 +236,35 @@ def apply_fact_blocks(text: str) -> str:
     return text
 
 
+RELEASE_REF = "v1.2.0"
+RELEASE_PLACEHOLDER = "{{ADVOLOG_RELEASE_REF}}"
+
+
+def resolve_release(text: str) -> str:
+    return text.replace(RELEASE_PLACEHOLDER, RELEASE_REF)
+
+
 def setup_prompt_blocks() -> tuple[str, str]:
     text = read(PKG / "prompts" / "setup-from-repo.md")
-    return fenced_block(text, 0), fenced_block(text, 1)
+    return (
+        resolve_release(fenced_block(text, 0)),
+        resolve_release(fenced_block(text, 1)),
+    )
+
+
+def setup_prompt_document() -> str:
+    he, en = setup_prompt_blocks()
+    return (
+        GENERATED_BANNER
+        + "Resolved release ref: "
+        + RELEASE_REF
+        + ". Create that git tag at release. Do not create it before.\n\n"
+        + "# עברית\n\n```\n"
+        + he
+        + "\n```\n\n# English\n\n```\n"
+        + en
+        + "\n```\n"
+    )
 
 
 def fenced_block(markdown: str, which: int) -> str:

@@ -22,9 +22,11 @@ The record files (`profile.md`, `medications.md`, `timeline.md`, `symptoms.md`, 
 
 A single `my-record.md` with the same seven sections is equivalent. If both layouts are present, the seven files win. Do not convert one into the other unless they ask. Do not rewrite a header they already have.
 
-**If you were just asked to set this up from the GitHub repository:** read `README.md` first, explain what Advolog is and what it will do, and ask before any download. Only a yes continues. Do not send, post, or forward anything. After a yes, download into a place the user can keep, say where it sits, then read `core.md` and follow it. Do not change the walls.
+**If you were just asked to set this up from the GitHub repository:** read `README.md` first, explain what Advolog is and what it will do, and ask before any download. Only a yes continues, and that yes fetches the public package only. Do not send, post, or forward anything. After a yes, say where the files actually landed. If they are not in a real local folder, give a downloadable copy. Do not change the walls.
 
-**If you were just asked to set this up from a download** (for example, "find advolog.zip and set it up for me"): if the zip is not extracted yet, extract it. These files sit inside the extracted `package/` folder, which is the working folder. The record files belong here too. Do the unzip, placement, and file work yourself. Never make the user run commands or move files. Confirm setup is done in one plain line, then begin onboarding.
+**Before onboarding, the instructions have to stay for the next chat.** On the web: a private project, paste `web/instructions.md` into Instructions, upload `web/advolog-modules.md`, attach `my-record.md` if it exists, then a new chat inside that project. For a folder install: have the user close and reopen `package/` so this file (`CLAUDE.md` or `AGENTS.md`) is in scope. Do not begin onboarding in a chat that will not keep those instructions.
+
+**If you were just asked to set this up from a download** (for example, "find advolog.zip and set it up for me"): if the zip is not extracted yet, extract it. These files sit inside the extracted `package/` folder, which is the working folder. The record files belong here too. Do the unzip, placement, and file work yourself. Never make the user run commands or move files. Confirm setup is done in one plain line, then have them reopen `package/` before onboarding.
 
 If there is no `profile.md` and no `my-record.md`, onboarding governs first contact. Otherwise run the quiet catch-up the core describes. Ride the first message. Never require a magic word.
 

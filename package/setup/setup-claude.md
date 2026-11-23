@@ -13,11 +13,13 @@ Claude הוא המשטח הראשי. העוזרת עונה בשפה שכותבי
 3. גישה לאינטרנט דלוקה, כדי שהעוזרת תוכל לקרוא את המאגר. אם היא כבויה, עוברים למסלול הגיבוי.
 4. יצירת קבצים דלוקה, כדי שהיא תוכל להוריד ולהקים. אם היא כבויה, עוברים למסלול הגיבוי.
 
-ואז מעתיקים את הבלוק העברי מ־`prompts/setup-from-repo.md` לשיחה חדשה. הבלוק האנגלי הוא הכפתור השני באתר. העוזרת קוראת את README, מסבירה מה Advolog ומה היא תעשה, ושואלת אם להוריד. רק כן ממשיך. אחר כך היא קוראת את `core.md` ופועלת לפיו.
+ואז מעתיקים את הבלוק העברי מ־`prompts/setup-from-repo.md` לשיחה חדשה. הבלוק האנגלי הוא הכפתור השני באתר. העוזרת קוראת את README, מסבירה מה Advolog ומה היא תעשה, ושואלת אם להוריד את החבילה הציבורית בלבד. רק כן ממשיך. כן הזה אינו הסכמה לשום דבר אחר.
+
+הצעד האחרון, לפני הריאיון, גם אחרי ההורדה וגם במסלול הגיבוי: פרויקט פרטי. מדביקים את `web/instructions.md` בשדה ההנחיות (עד 7,000 תווים. הכפתור באתר נותן את הטקסט). מעלים את `web/advolog-modules.md`. מצרפים את `my-record.md` אם כבר יש. רק אז שיחה חדשה בתוך הפרויקט. בתיקייה במחשב: סוגרים ופותחים מחדש את `package/` כדי ש־`CLAUDE.md` ייטען. בלי הצעד הזה ההנחיות לא נשארות לשיחה הבאה.
 
 ## מסלול גיבוי, בלי אינטרנט או בלי יצירת קבצים
 
-אומרים את זה במפורש. מדביקים את `core.md` בשדה ההנחיות (עד 7,000 תווים), ומעלים קובץ אחד: `web/advolog-modules.md`. בתוכנית החינמית של ChatGPT זו גם תקרת ההעלאות. אם הקובץ לא נקרא, `advolog-chatgpt-bundle.md`.
+אומרים את זה במפורש, ועושים את אותו צעד אחרון בלי ההורדה מהמאגר. מדביקים את `web/instructions.md` ומעלים קובץ אחד: `web/advolog-modules.md`. אם הקובץ לא נקרא, `advolog-chatgpt-bundle.md`.
 
 ה־zip נשאר למי שכבר מוריד תיקייה ביד. זו לא הדרך הראשית.
 
@@ -45,7 +47,7 @@ Claude הוא המשטח הראשי. העוזרת עונה בשפה שכותבי
 
 ## שיחה חדשה
 
-אחרי רישום, או אחרי שתיים־שלוש משימות, מוצעת שיחה חדשה, פעם אחת. שום דבר לא הולך לאיבוד, כי הרשומות בקבצים. באתר: New chat בתוך הפרויקט, ומדביקים את פתק המסירה כהודעה ראשונה. במחשב הפתק נשמר כ־`handoff.md`. מילת פתיחה: «תתעדכני».
+אחרי רישום, או אחרי שתיים־שלוש משימות, מוצעת שיחה חדשה, פעם אחת. שום דבר לא הולך לאיבוד רק אם בודקים שהשיחה הבאה באמת פותחת את אותו `my-record.md` (או את שבעת הקבצים), ושההנחיות הקבועות כבר בשדה של הפרויקט. אם הקובץ נשאר רק בארגז כלים זמני, מורידים עותק לפני המעבר. באתר: New chat בתוך הפרויקט, מצרפים את הקובץ, ומדביקים את פתק המסירה. פתק לבדו אינו מספיק. במחשב הפתק נשמר כ־`handoff.md` ליד הקבצים. מילת פתיחה: «תתעדכני». לפני טיוטה עבור אדם אחר, בודקים שהפרופיל נקרא. אם אין הסכמה, או שהיא לא נקראת, לא כותבים את הטיוטה, ואומרים למה. הרישום הפרטי נשאר.
 
 ## זיכרון
 
@@ -76,11 +78,13 @@ Before pasting, check four things:
 3. Web access on, so the assistant can read the repository. If it is off, use the fallback.
 4. File creation on, so it can download and set up. If it is off, use the fallback.
 
-Then paste the Hebrew block from `prompts/setup-from-repo.md` into a new chat. The English block is the second button on the site. The assistant reads the README, explains what Advolog is and what it will do, and asks whether to download. Only a yes continues. Then it reads `core.md` and follows it.
+Then paste the Hebrew block from `prompts/setup-from-repo.md` into a new chat. The English block is the second button on the site. The assistant reads the README, explains what Advolog is and what it will do, and asks whether to download the public package only. Only a yes continues. That yes is not consent for anything else.
+
+The last step, before onboarding, on the web route and on the fallback: a private project. Paste `web/instructions.md` into Instructions (at most 7,000 characters; the site button gives that text). Upload `web/advolog-modules.md`. Attach `my-record.md` if it already exists. Only then open a new chat inside the project. For a folder install, close and reopen `package/` so `CLAUDE.md` or `AGENTS.md` is in scope. Without that step the instructions do not stay for the next chat.
 
 ## Fallback, when there is no web access or no file creation
 
-Say so plainly. Paste `core.md` into the instructions (at most 7,000 characters) and upload one file, `web/advolog-modules.md`. On ChatGPT Free that is also the upload cap. If that file is not read, use `advolog-chatgpt-bundle.md`.
+Say so plainly, and do that same last step without fetching the repository. Paste `web/instructions.md` and upload one file, `web/advolog-modules.md`. On ChatGPT Free that is also the upload cap. If that file is not read, use `advolog-chatgpt-bundle.md`.
 
 The zip remains for someone who already downloads a folder by hand. It is not the primary path.
 
@@ -104,7 +108,7 @@ Checked 11.11.2026: an exportable document exists on every plan, including Free,
 
 ## A new chat
 
-After a log, or after two or three tasks, a new chat is offered once. Nothing is lost. The records are in the files. On the web: New chat inside the project, and paste the handoff note first. On a computer the note is `handoff.md`. Opening word: "catch up".
+After a log, or after two or three tasks, a new chat is offered once. Nothing is lost only if you check that the next chat actually reopens the same `my-record.md` (or the seven files), and that the project Instructions already hold `web/instructions.md`. If the file is only in a temporary sandbox, download a copy before you move. On the web: New chat inside the project, attach that file, and paste the handoff note. The note alone is not enough. On a computer the note is `handoff.md` beside the files. Opening word: "catch up". Before a draft for someone else, check that the profile can be read. If consent is missing, unreadable, or declined, do not write the draft, and say why. Private logging stays.
 
 ## Memory
 

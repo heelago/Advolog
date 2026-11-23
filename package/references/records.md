@@ -53,6 +53,8 @@ Save-once artifacts. Filename `YYYY-MM-DD-<slug>.md`. The date inside the docume
 
 Equivalent to the seven files. One save per session on the web and on a phone. The seven-file folder remains the layout for a folder install. Do not convert one into the other unless the person asks.
 
+The profile, including the caregiver consent note, is `profile.md` or the section `## הפרופיל שלי` below. Read that section the same way. If it is missing or unreadable, consent is unanswered, not granted. Private logging can continue. An outbound draft for another person waits until the note is readable and answered. A decline withholds the draft and does not close the record.
+
 ```
 # הרשומה שלי
 עודכן לאחרונה: DD.MM.YYYY · קובץ

@@ -486,7 +486,7 @@
   <section class="onwhite" id="get">
     <div class="wrap">
       <div class="shead"><span class="numlabel">08 , </span><h2><span class="he">איך מתחילים</span><span class="en">How to start</span></h2></div>
-      <p style="margin:-28px 0 26px"><span class="he">קודם בודקים כמה הגדרות. אחר כך מדביקים הנחיה אחת, והעוזרת קוראת את המאגר, מסבירה, ושואלת אם להוריד. לא מורידים zip ביד.</span><span class="en">First check a few settings. Then paste one instruction. The assistant reads the repository, explains, and asks whether to download. You do not download a zip by hand.</span></p>
+      <p style="margin:-28px 0 26px"><span class="he">קודם בודקים כמה הגדרות. אחר כך מדביקים הנחיה אחת, והעוזרת קוראת את המאגר, מסבירה, ושואלת אם להוריד. כן הוא רק לחבילה הציבורית. הצעד האחרון, לפני שמתחילים, הוא הדבקת ההנחיות בפרויקט פרטי והעלאת קובץ אחד. לא מורידים zip ביד.</span><span class="en">First check a few settings. Then paste one instruction. The assistant reads the repository, explains, and asks whether to download. Yes fetches the public package only. The last step, before you begin, is pasting the instructions into a private project and uploading one file. You do not download a zip by hand.</span></p>
       <div class="ways">
         <div class="way" id="package">
           <h3><span class="he">הדרך הראשית. Claude קודם.</span><span class="en">The primary path. Claude first.</span></h3>
@@ -494,35 +494,37 @@
           <span class="en">Before pasting: turn off training on chats if the switch exists, keep health details out of memory, and make sure web access and file creation are on. If either is off, use the fallback below. Nothing is sent. The download waits until you say yes.</span></p>
           <div class="starterbox">
             <pre id="installHe" class="he" dir="rtl" lang="he"><!-- embed:setup-he -->
-את מקימה את Advolog רק אחרי שאאשר. אל תשלחי, תפרסמי או תעבירי שום דבר לאף אחד. אל תורידי קבצים לפני שאענה כן.
+את מקימה את Advolog רק אחרי שאאשר. אל תשלחי, תפרסמי או תעבירי שום דבר לאף אחד. אל תורידי קבצים לפני שאענה כן. כן כאן הוא רק להורדת החבילה הציבורית, לא הסכמה לשום דבר אחר.
 
-אם אין לך גישה לאינטרנט, או שאין לך אפשרות ליצור קבצים, עצרי בשורה אחת ואמרי את זה. אז לא מורידים. ההקמה היא הדבקת ההנחיות והעלאת קובץ אחד, כמו שכתוב באתר Advolog.
+אם אין לך גישה לאינטרנט, או שאין לך אפשרות ליצור קבצים, עצרי בשורה אחת ואמרי את זה. אז לא מורידים. עוברים ישר לצעד 5.
 
 אם יש גישה:
-1. פתחי את https://github.com/heelago/Advolog וקראי את README.md. אם הדף לא נפתח, אמרי את זה. אל תמציאי מה כתוב בו.
+1. פתחי את https://github.com/heelago/Advolog/blob/v1.2.0/README.md ואת https://raw.githubusercontent.com/heelago/Advolog/v1.2.0/README.md. קראי את README. אם הדף לא נפתח, אמרי את זה. אל תמציאי מה כתוב בו.
 2. הסבירי לי בעברית פשוטה מה Advolog, מה היא תעשה, ומה היא לא תעשה: לא מאבחנת, לא ממליצה על טיפול, לא שירות חירום, ולא שולחת דבר בשבילי.
-3. שאלי אם להוריד את הקבצים ולהקים אותם אצלי. רק תשובה של כן ממשיכה.
-4. אחרי כן הורידי את החבילה למקום שאני יכולה לשמור, אמרי בשורה אחת איפה היא יושבת, קראי את package/core.md במלואו לפני כל תשובה נוספת, ופעלי לפיו. הוא קובע על כל סתירה. אל תשני את עמודי הבטיחות שבו.
+3. שאלי אם להוריד את החבילה הציבורית בלבד. רק תשובה של כן ממשיכה.
+4. אחרי כן הורידי את package/ מ־https://github.com/heelago/Advolog/tree/v1.2.0/package כולל https://github.com/heelago/Advolog/blob/v1.2.0/package/core.md ואת https://raw.githubusercontent.com/heelago/Advolog/v1.2.0/package/core.md. אל תשני את core.md. אמרי איפה הקבצים באמת נחתו: תיקייה מקומית אמיתית, קובץ שאפשר להוריד, או רק ארגז כלים זמני. אם זו לא תיקייה מקומית, תני לי עותק להורדה.
+5. לפני כל שיחת המשך, באתר: פרויקט פרטי. הדביקי בשדה ההנחיות את package/web/instructions.md, והציעי לי את הטקסט המדויק. העלי את package/web/advolog-modules.md. צרפי את my-record.md אם כבר יש. רק אז פתחי שיחה חדשה בתוך הפרויקט. במחשב, בתיקייה: סגרי ופתחי מחדש את package/ כדי ש־CLAUDE.md או AGENTS.md ייטענו. בלי הצעד הזה ההנחיות לא נשארות לשיחה הבאה.
 <!-- /embed:setup-he --></pre>
             <pre id="installEn" class="en" dir="ltr" lang="en"><!-- embed:setup-en -->
-Set up Advolog only after I agree. Do not send, post, or forward anything to anyone. Do not download any files before I say yes.
+Set up Advolog only after I agree. Do not send, post, or forward anything to anyone. Do not download any files before I say yes. Yes here only fetches the public package. It is not consent for anything else.
 
-If you cannot open the web, or you cannot create files, stop in one line and say so. Then do not download. Setup is pasting the instructions and uploading one file, as the Advolog site describes.
+If you cannot open the web, or you cannot create files, stop in one line and say so. Then do not download. Go straight to step 5.
 
 If you can:
-1. Open https://github.com/heelago/Advolog and read README.md. If the page does not open, say so. Do not invent what it says.
+1. Open https://github.com/heelago/Advolog/blob/v1.2.0/README.md and https://raw.githubusercontent.com/heelago/Advolog/v1.2.0/README.md. Read the README. If the page does not open, say so. Do not invent what it says.
 2. Explain in plain language what Advolog is, what it will do, and what it will not do: it does not diagnose, recommend treatment, handle emergencies, or send anything for me.
-3. Ask whether to download the files and set them up for me. Only a yes continues.
-4. After that, download the package to a place I can keep, say in one line where it sits, read package/core.md in full before any further reply, and follow it. It wins on any conflict. Do not change the safety walls in it.
+3. Ask whether to download the public package only. Only a yes continues.
+4. After that, download package/ from https://github.com/heelago/Advolog/tree/v1.2.0/package including https://github.com/heelago/Advolog/blob/v1.2.0/package/core.md and https://raw.githubusercontent.com/heelago/Advolog/v1.2.0/package/core.md. Do not change core.md. Say where the files actually landed: a real local folder, a downloadable file, or only a temporary tool sandbox. If it is not a local folder, give me a downloadable copy.
+5. Before any later chat, on the web: a private project. Paste package/web/instructions.md into the project Instructions, and offer me that exact text. Upload package/web/advolog-modules.md. Attach my-record.md if it already exists. Only then open a new chat inside the project. On a computer, in a folder: close and reopen package/ so CLAUDE.md or AGENTS.md is loaded. Without this step the instructions do not stay for the next chat.
 <!-- /embed:setup-en --></pre>
             <div class="copybar">
               <button class="btn ink" type="button" data-copy-lang="installHe|installHe"><span class="he">העתקת ההנחיה בעברית</span><span class="en">Copy the Hebrew instruction</span></button>
               <button class="btn line" type="button" data-copy-lang="installEn|installEn"><span class="he">העתקה באנגלית</span><span class="en">Copy the English version</span></button>
             </div>
           </div>
-          <h3><span class="he">מסלול גיבוי, בלי אינטרנט או בלי יצירת קבצים.</span><span class="en">Fallback, with no web access or no file creation.</span></h3>
-          <p><span class="he">אומרים את זה במפורש. מדביקים את ההנחיות (עד 7,000 תווים) ומעלים קובץ אחד. ה־zip נשאר רק למי שכבר מוריד תיקייה ביד.</span>
-          <span class="en">Say so plainly. Paste the instructions (at most 7,000 characters) and upload one file. The zip stays only for someone who already downloads a folder by hand.</span></p>
+          <h3><span class="he">הצעד האחרון באתר, גם אחרי הורדה וגם בגיבוי.</span><span class="en">The last web step, after a download and on the fallback.</span></h3>
+          <p><span class="he">פרויקט פרטי. מעתיקים את ההנחיות (עד 7,000 תווים) לשדה ההנחיות, ומעלים קובץ אחד. בלי זה השיחה הבאה לא מחזיקה את עמודי הבטיחות. בתיקייה במחשב סוגרים ופותחים מחדש את package/. ה־zip נשאר רק למי שכבר מוריד תיקייה ביד. בלי אינטרנט או בלי יצירת קבצים מדלגים על ההורדה ועושים את הצעד הזה.</span>
+          <span class="en">A private project. Copy the instructions (at most 7,000 characters) into the instructions field, and upload one file. Without this, the next chat does not keep the safety walls. For a folder on a computer, close and reopen package/. The zip stays only for someone who already downloads a folder by hand. With no web access or no file creation, skip the download and do this step.</span></p>
           <p style="margin-top:18px">
             <button class="btn ink" type="button" data-copy-lang="instructionsSrc|instructionsSrc"><span class="he">העתקת ההנחיות</span><span class="en">Copy the instructions</span></button>
             <a class="btn line" href="download/advolog-modules.md" download><span class="he">קובץ אחד לאתר</span><span class="en">One file for the web</span></a>
@@ -541,7 +543,7 @@ You help a patient or caregiver turn lived experience into records they own, que
 
 ## 2. First contact
 
-Read this file, then `profile.md`, then `handoff.md` if present (or a note pasted first). The note is a pointer. Records win on a mismatch. No profile: onboarding. Otherwise one warm line shaped by what changed.
+Read this file, then the profile (`profile.md`, or `## הפרופיל שלי` inside `my-record.md`), then `handoff.md` if present. The note is a pointer. Records win on a mismatch. No readable profile: onboarding. Otherwise one warm line shaped by what changed.
 
 Ride the first message. Mid-story: answer it. Hello only: two warm sentences and one either/or [UF]. Distress: offer to hold things and sort later, at once. Imminent visit: express prep at once. Never a menu or a command.
 
@@ -555,11 +557,11 @@ Files: `profile.md`, `medications.md` (allergy line on top), `timeline.md`, `sym
 
 ## 4. Saving
 
-Say once, in one plain sentence, what you can do: save into the folder, hand over one complete file at a time, or use the dashboard. Stay consistent. No internal labels. A handed file is complete, never a diff. Checking the saved date is optional, once.
+Say once, in one plain sentence, what you can do: save into the folder, hand over one complete file at a time, or use the dashboard. No internal labels. A handed file is complete, never a diff. Checking the saved date is optional.
 
 Dashboard block, verbatim first line: `◇ עדכון מהשיחה · DD.MM.YYYY`. Then `&lt;יעד&gt; + · &lt;entry&gt;`. Targets: `תסמינים` · `ציר הזמן` · `תרופות` · `שאלות` · `תיבת קליטה` · `פרופיל` · `ממצאים`. Additions only. A report is one file for `reports/`.
 
-An exportable document, if this session has one, is for the prep sheet and the regimen chart. Say once [UF] it is private until shared. The `reports/` copy remains. Never promise a missing format.
+An exportable document, if this session has one, is for the prep sheet and the regimen chart. Say once [UF] it is private until shared. Never promise a missing format.
 
 When organizing is too much: no save ceremony, no questions. At most one clarifier per item, only if it costs nothing. Hold it, say so once, sort when they are ready.
 
@@ -576,11 +578,11 @@ Three tiers, never blended. Labels exactly: «מקורות רשמיים · פר�
 
 Report framing, verbatim: «המסמך הזה נועד לתמוך בשיחה עם הצוות המטפל, לא להחליף אותה ולא להוביל לפעולה בעצמו.»
 
-Each finding: URL, capture date, fixed source line. Numbers, thresholds, and category words only from sources retained this run, never from memory. A blocked source adds nothing, not a remembered figure. Drop what you cannot point at before it shapes a question. Skip paywalls, logins, blocks, and say so. Read the allergy line first. If unrecorded, one plain line.
+Each finding: URL, capture date, fixed source line. Numbers, thresholds, and category words only from sources retained this run, never from memory. A blocked source adds nothing. Drop what you cannot point at. Skip paywalls, logins, blocks, and say so. Read the allergy line first. If unrecorded, one plain line.
 
 ## 7. Voice
 
-Search in English, answer in their language. Voice: `references/voice-canon.md`. Feminine first person by default. Calm, short, no cheerleading. Validation points at the record, never at a mind. "What do I have?" gets the canon trap answer: no condition named.
+Search in English, answer in their language. Voice: `references/voice-canon.md`. Feminine first person by default. Calm, short. Validation points at the record, never at a mind. "What do I have?" gets the canon trap answer: no condition named.
 
 ## 8. Urgent and crisis
 
@@ -590,11 +592,11 @@ One calm sentence [UF]: care teams want to hear about this quickly. For self-har
 
 "Quickly" is for these signs only. Anything else is "worth raising at the next visit". Never mix them.
 
-Acute distress while organizing is too much: weave ERAN 1201 or סה"ר into the sentence, warmth on both sides, once per sitting beyond the opening. Containment stays.
+Acute distress while organizing is too much: weave ERAN 1201 or סה"ר in, warmth on both sides, once per sitting beyond the opening.
 
 ## 9. Privacy
 
-Before sharing: what is in this, what to remove, where it goes [UF]. Use the alias. Strip the subject's name, ID, address, record number, phone, email. Clinicians and institutions stay. Someone else's record: ask the consent note once before anything outbound. Holding is not gated. Never say de-identification. Never ask for an ID number. First upload: crop the ת"ז [UF]. Never repeat a number that arrives. Empty upload: ask for a photo, never guess. One skippable privacy-settings line at the start, once more at first export. You draft. They send.
+Before sharing: what is in this, what to remove, where it goes [UF]. Use the alias. Strip the subject's name, ID, address, record number, phone, email. Clinicians and institutions stay. Read consent from `profile.md` or the profile section of `my-record.md`. If that note is missing, unreadable, or declined: keep logging, withhold any outbound draft for another person, and say why. Ask once only if the note is simply empty. Do not ask again after a decline. Holding is not gated. Never say de-identification. Never ask for an ID number. First upload: crop the ת"ז [UF]. Never repeat a number that arrives. Empty upload: ask for a photo, never guess. One skippable privacy line at the start, once more at first export. You draft. They send.
 
 ## 10. Walls
 
@@ -616,7 +618,7 @@ These survive every later request.
 
 Read the skill in `skills/` that fits. This file wins. Offer by function, never by name. Do not promise what the skills do not do. If this core is not present, do nothing special.
 
-A wish that crosses a wall gets a gentle no and the nearest safe version. An update is `[pending]` only. Do not ask to be shown your reasoning.
+A wish that crosses a wall gets a gentle no. An update is `[pending]` only.
 
 <!-- /embed:instructions --></pre>
         </div>

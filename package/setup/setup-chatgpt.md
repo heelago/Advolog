@@ -6,18 +6,20 @@
 
 ## הדרך הראשית
 
-אותה כמו ב־Claude, אם לשיחה יש גישה לאינטרנט ויצירת קבצים: בודקים אימון, זיכרון, אינטרנט וקבצים, ומדביקים את `prompts/setup-from-repo.md`. ההורדה רק אחרי כן.
+אם לשיחה יש גישה לאינטרנט ויצירת קבצים: בודקים אימון, זיכרון, אינטרנט וקבצים, ומדביקים את `prompts/setup-from-repo.md`. ההורדה רק אחרי כן, ורק של החבילה הציבורית.
+
+הצעד האחרון, לפני הריאיון, גם כאן וגם בגיבוי:
+
+1. נכנסים ל־chatgpt.com ומתחברים.
+2. Projects, פרויקט פרטי חדש. שם חופשי. לא פרויקט משותף.
+3. בשדה ההנחיות מדביקים את `web/instructions.md`. באתר יש כפתור «העתקת ההנחיות». זה החלק שחל בכל שיחה חדשה בפרויקט. תקרת 7,000 תווים. T1 עוד תאשר שהשדה מחזיק אותם.
+4. בתוכנית החינמית מעלים קובץ אחד: `web/advolog-modules.md` (3 העלאות ביום, 5 קבצים לפרויקט, נבדק 11.11.2026). אם יש יותר העלאות, אפשר את `modules-1` עד `modules-4`. אם הקובץ לא נקרא, `advolog-chatgpt-bundle.md`.
+5. מצרפים את `my-record.md` אם כבר יש. זיכרון ברמת הפרויקט, אם האפשרות מופיעה. זה מונע מ־ChatGPT Work לעבוד בתוך הפרויקט (נבדק 11.11.2026). הרשומה היא הקבצים, לא הזיכרון.
+6. רק אז שיחה חדשה בתוך הפרויקט, ומתחילים לדבר.
 
 ## מסלול גיבוי, בלי אינטרנט או בלי יצירת קבצים
 
-אומרים את זה במפורש. תקרת ההנחיות היא 7,000 תווים, כולל עברית. OpenAI לא פרסמה מספר, ובדיקה חיה T1 עוד תאשר שהשדה מחזיק את כולם. הדבקה מעל 10,000 תווים בצ'אט הופכת לקובץ מצורף. לא מדביקים את טקסט ההקמה ואת ההנחיות בהודעה אחת. אם הופיע קובץ מצורף, «Show in text field», או מדביקים את ההנחיות בשדה של הפרויקט.
-
-1. נכנסים ל־chatgpt.com ומתחברים.
-2. Projects, פרויקט חדש. שם חופשי.
-3. בשדה ההנחיות מדביקים את `web/instructions.md`. באתר יש כפתור «העתקת ההנחיות». זה החלק שחל תמיד, גם אם קובץ אחר לא נשלף באותו תור.
-4. בתוכנית שמאפשרת כמה העלאות ביום, מעלים את ארבעת הקבצים `web/modules-1-start.md` עד `web/modules-4-deeper.md`. בתוכנית החינמית יש 3 העלאות ביום ו־5 קבצים לפרויקט (נבדק 11.11.2026), אז מעלים קובץ אחד: `web/advolog-modules.md`. אם גם זה לא נכנס, `advolog-chatgpt-bundle.md`.
-5. זיכרון ברמת הפרויקט, אם האפשרות מופיעה. זה מונע מ־ChatGPT Work לעבוד בתוך הפרויקט (נבדק 11.11.2026). לרשומה רפואית זה חילוף הוגן: הרשומה היא הקבצים, לא הזיכרון.
-6. שיחה חדשה, ומתחילים לדבר.
+אומרים את זה במפורש, ומדלגים על ההורדה. עושים את הצעד האחרון למעלה. הדבקה מעל 10,000 תווים בצ'אט הופכת לקובץ מצורף. לא מדביקים את טקסט ההקמה ואת ההנחיות בהודעה אחת. אם הופיע קובץ מצורף, «Show in text field».
 
 בטלפון ובאתר שומרים בסוף השיחה קובץ אחד, `my-record.md`. שבעת הקבצים נשארים שווי ערך למי שכבר עובד איתם.
 
@@ -39,7 +41,7 @@
 
 ## שיחה חדשה
 
-Projects, הפרויקט, New chat, ומדביקים את פתק המסירה ראשון. «תתעדכני».
+Projects, הפרויקט, New chat. מצרפים את `my-record.md` (או את שבעת הקבצים), ואז מדביקים את פתק המסירה. פתק לבדו אינו מספיק. אם הקובץ היה רק בארגז כלים זמני, מורידים עותק קודם. «תתעדכני». לפני טיוטה עבור אדם אחר, בודקים שפרופיל נקרא. בלי הסכמה קריאה, או אחרי סירוב, אין טיוטה. הרישום הפרטי נשאר.
 
 ## זיכרון
 
@@ -61,18 +63,20 @@ Do not keep the record in a shared project. Do not publish the dashboard as a si
 
 ## The primary path
 
-The same as Claude, when the chat can open the web and create files: check training, memory, web access, and file creation, then paste `prompts/setup-from-repo.md`. The download waits for a yes.
+When the chat can open the web and create files: check training, memory, web access, and file creation, then paste `prompts/setup-from-repo.md`. The download waits for a yes, and that yes fetches the public package only.
+
+The last step, before onboarding, on this route and on the fallback:
+
+1. Sign in at chatgpt.com.
+2. A new private project. Not a shared one.
+3. Paste `web/instructions.md` into Instructions. The site button says "copy the instructions". This part applies on every later chat in the project. The cap is 7,000 characters. T1 still confirms the field holds it.
+4. On Free, upload one file: `web/advolog-modules.md` (3 uploads a day, 5 files per project, checked 11.11.2026). Where more uploads are allowed, `modules-1` through `modules-4` are fine. If the file is not read, use `advolog-chatgpt-bundle.md`.
+5. Attach `my-record.md` if it already exists. Project-only memory, if you see it. That turns ChatGPT Work off inside the project (checked 11.11.2026). The files are the record, not the memory.
+6. Only then start a new chat inside the project.
 
 ## Fallback, when there is no web access or no file creation
 
-Say so plainly. The instructions stay at or under 7,000 characters, Hebrew included. That cap is the rule. OpenAI publishes no number, and live test T1 still confirms the field holds it. A chat paste over 10,000 characters becomes an attachment. Do not paste the setup text and the instructions as one message. If an attachment appears, use "Show in text field", or paste the instructions into the project field.
-
-1. Sign in at chatgpt.com.
-2. New project.
-3. Paste `web/instructions.md` into Instructions. The site button says "copy the instructions". This part applies on every turn, even if another file is not retrieved.
-4. Where the plan allows several uploads a day, upload `web/modules-1-start.md` through `web/modules-4-deeper.md`. On the Free plan there are 3 uploads a day and 5 files per project (checked 11.11.2026), so upload one file: `web/advolog-modules.md`. If that does not fit, use `advolog-chatgpt-bundle.md`.
-5. Project-only memory, if you see the option. Where it sits is pending verification. The files are the record, not the memory.
-6. A new chat. Start talking.
+Say so plainly, and skip the download. Do the last step above. A chat paste over 10,000 characters becomes an attachment. Do not paste the setup text and the instructions as one message. If an attachment appears, use "Show in text field".
 
 On the phone and on the web, save one file at the end of a session: `my-record.md`.
 
@@ -92,7 +96,7 @@ The prep sheet is one complete file to save and print, unless the session really
 
 ## A new chat
 
-New chat inside the project. Paste the handoff note first. "Catch up."
+New chat inside the project. Attach `my-record.md` (or the seven files), then paste the handoff note. The note alone is not enough. If the file was only in a temporary sandbox, download a copy first. "Catch up." Before a draft for someone else, check that the profile can be read. Without a readable consent note, or after a decline, there is no draft. Private logging stays.
 
 ## Memory
 

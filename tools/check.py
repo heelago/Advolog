@@ -372,6 +372,52 @@ def check_paste_limits(errors: list[str]) -> None:
             errors.append(f"setup prompt is missing {needle}")
     if "Do not send" not in setup or "אל תשלחי" not in setup:
         errors.append("setup prompt must say nothing is sent")
+    if "{{ADVOLOG_RELEASE_REF}}" not in setup:
+        errors.append("setup prompt must keep the {{ADVOLOG_RELEASE_REF}} placeholder")
+    for needle in (
+        "web/instructions.md",
+        "my-record.md",
+        "החבילה הציבורית",
+        "public package",
+    ):
+        if needle not in setup:
+            errors.append(f"setup prompt is missing {needle}")
+    resolved = ROOT / "package" / "web" / "setup-from-repo.md"
+    if not resolved.exists():
+        errors.append("package/web/setup-from-repo.md was not generated")
+    else:
+        body = resolved.read_text(encoding="utf-8")
+        if "{{ADVOLOG_RELEASE_REF}}" in body:
+            errors.append("generated setup prompt still has the placeholder")
+        for needle in (
+            "blob/v1.2.0/README.md",
+            "blob/v1.2.0/package/core.md",
+            "raw.githubusercontent.com/heelago/Advolog/v1.2.0/README.md",
+            "raw.githubusercontent.com/heelago/Advolog/v1.2.0/package/core.md",
+        ):
+            if needle not in body:
+                errors.append(f"generated setup prompt is missing {needle}")
+    index = (ROOT / "docs" / "index.html").read_text(encoding="utf-8")
+    if "{{ADVOLOG_RELEASE_REF}}" in index:
+        errors.append("docs/index.html still has the release placeholder")
+    if "blob/v1.2.0/package/core.md" not in index:
+        errors.append("docs/index.html does not pin the release tag")
+    draft = ROOT / "tests" / "setup-prompt-draft.md"
+    if not draft.exists():
+        errors.append("tests/setup-prompt-draft.md is missing")
+    else:
+        draft_text = draft.read_text(encoding="utf-8")
+        for needle in ("בדיקה בלבד", "test only", "tree/"):
+            if needle not in draft_text:
+                errors.append(f"draft test prompt is missing {needle}")
+    walk = ROOT / "tests" / "two-chat-caregiver.md"
+    if not walk.exists():
+        errors.append("tests/two-chat-caregiver.md is missing")
+    else:
+        walk_text = walk.read_text(encoding="utf-8")
+        for needle in ("דנה", "Dana", "ChatGPT", "Claude", "כן", "my-record.md"):
+            if needle not in walk_text:
+                errors.append(f"two-chat test is missing {needle}")
     blocks = [p for i, p in enumerate(starter.split("```")) if i % 2 == 1]
     for i, block in enumerate(blocks):
         n = len(block.strip("\n"))

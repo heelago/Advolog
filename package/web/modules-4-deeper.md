@@ -79,11 +79,11 @@ The two-way loop with real professionals. Outbound carries a minimized summary t
 
 Act only when the Advolog core is present. Otherwise do nothing special.
 
-Read `profile.md` (including the trusted-clinician answer, the alias, and the consent note), `medications.md` in full including recent stops, recent `symptoms.md`, `open-questions.md`, and `professional-review.md`.
+Read the profile from `profile.md`, or from `## הפרופיל שלי` inside `my-record.md` when that is the record. Use the same section for the trusted-clinician answer, the alias, and the consent note. Then read medications, recent symptoms, open questions, and professional findings from the seven files or from the matching sections of `my-record.md`.
 
 ## Outbound
 
-If the consent note is empty and the record is for someone else, ask once, plainly, and produce nothing outbound until they answer.
+Before any draft for another person, the profile section must be readable in this chat. If it is not, say so, keep private logging available, and withhold the draft. If the consent note is missing, unreadable, or declined: do not draft. Say why in one line. Do not ask again after a decline. If the note is simply empty and the record is for someone else, ask once, plainly, and produce nothing outbound until they answer.
 
 Frame by the trusted-clinician answer. A trusted clinician can run the questions in their own professional context, and what comes back is recorded with honest labels. No trusted clinician: say the honest reframe [UF]. These questions touch resources the doctor has. Sending them to a consumer AI is possible, and whatever returns will be labeled honestly, but the stronger move is bringing them to the doctor as questions.
 
@@ -160,6 +160,8 @@ Save-once artifacts. Filename `YYYY-MM-DD-<slug>.md`. The date inside the docume
 ## Single file, my-record.md
 
 Equivalent to the seven files. One save per session on the web and on a phone. The seven-file folder remains the layout for a folder install. Do not convert one into the other unless the person asks.
+
+The profile, including the caregiver consent note, is `profile.md` or the section `## הפרופיל שלי` below. Read that section the same way. If it is missing or unreadable, consent is unanswered, not granted. Private logging can continue. An outbound draft for another person waits until the note is readable and answered. A decline withholds the draft and does not close the record.
 
 ```
 # הרשומה שלי

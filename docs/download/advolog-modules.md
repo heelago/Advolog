@@ -348,11 +348,11 @@ The two-way loop with real professionals. Outbound carries a minimized summary t
 
 Act only when the Advolog core is present. Otherwise do nothing special.
 
-Read `profile.md` (including the trusted-clinician answer, the alias, and the consent note), `medications.md` in full including recent stops, recent `symptoms.md`, `open-questions.md`, and `professional-review.md`.
+Read the profile from `profile.md`, or from `## הפרופיל שלי` inside `my-record.md` when that is the record. Use the same section for the trusted-clinician answer, the alias, and the consent note. Then read medications, recent symptoms, open questions, and professional findings from the seven files or from the matching sections of `my-record.md`.
 
 ## Outbound
 
-If the consent note is empty and the record is for someone else, ask once, plainly, and produce nothing outbound until they answer.
+Before any draft for another person, the profile section must be readable in this chat. If it is not, say so, keep private logging available, and withhold the draft. If the consent note is missing, unreadable, or declined: do not draft. Say why in one line. Do not ask again after a decline. If the note is simply empty and the record is for someone else, ask once, plainly, and produce nothing outbound until they answer.
 
 Frame by the trusted-clinician answer. A trusted clinician can run the questions in their own professional context, and what comes back is recorded with honest labels. No trusted clinician: say the honest reframe [UF]. These questions touch resources the doctor has. Sending them to a consumer AI is possible, and whatever returns will be labeled honestly, but the stronger move is bringing them to the doctor as questions.
 
@@ -415,7 +415,7 @@ description: Use at the start of a session when a record already exists, when th
 
 # Continuity
 
-Two moments of the same job. At the start, repair anything that drifted. At a good close, leave a note the next chat reads first. Nothing is lost, because the records live in the files, or, if there are no files yet, in the note itself.
+Two moments of the same job. At the start, repair anything that drifted. At a good close, leave a note the next chat reads first. Nothing is lost only when the next chat reopens the same record file. The note alone is not the record.
 
 Act only when the Advolog core is present. Otherwise do nothing special.
 
@@ -444,17 +444,17 @@ After a log entry has landed, after a couple of finished tasks, when a debrief o
 
 One suggestion per conversation, unless they ask. Not mid-task, and not while something is unsaved. In capture, only once, at a natural pause. A decline is silence for the rest of the session. "Stop suggesting new sessions" is logged and honored until they reverse it.
 
-Say the fixed why-line from `references/report-templates.md`, in their language. It is practical, not a warning, and it never claims what a specific platform does to a long chat. Where the records are not in files yet, the reassurance changes to the truth: the note itself carries what was kept, so the note is what must be saved.
+Say where the record actually is before any reassurance: a real local folder, a downloadable file, or only this chat's temporary sandbox. If it is a sandbox or a hosted file tool, give them a downloadable copy of `my-record.md` (or of the seven files) before the new chat. The fixed why-line from `references/report-templates.md` is for when the next chat can open that same file. If it cannot, do not say nothing is lost. Say the note is not enough by itself.
 
 Save anything unsaved first, by the saving behavior already established. An unsorted pile or a half-finished task gets one calm line in the note. Do not apply anything they have not already accepted.
 
-Write the note, ten lines at most, skeleton verbatim. It points at the records and repeats none of their clinical content. Display name only.
+Write the note, ten lines at most, skeleton verbatim. It points at the records and repeats none of their clinical content. Display name only. Include one line naming the record file the next chat must reopen or attach.
 
-Where you can write the folder, write `handoff.md` (it replaces the previous note) and say so in one calm line. Everywhere else, one copy block, and: «זה הפתק. בשיחה החדשה מדביקים אותו כהודעה ראשונה, וזה הכול.» Saving it as `handoff.md` is welcome and not required.
+Where you can write the folder, write `handoff.md` (it replaces the previous note) and say so in one calm line. Everywhere else, one copy block. Do not say that pasting the note is all. The next chat must also reopen or attach the current `my-record.md`, or the seven files. On the web, the project Instructions must already hold `web/instructions.md`.
 
-Next steps, one at a time, from the setup guide's new-chat section, ending with the opening word «תתעדכני».
+Next steps, one at a time: confirm the file location, attach or reopen that file, then the opening word «תתעדכני».
 
-On the other side, the next conversation reads the note right after `profile.md`, checks it against the records, and greets with one warm line. The note is not an outbound artifact. If they want to send it to anyone, the privacy gates apply first.
+On the other side, read the note, then the profile from `profile.md` or from `## הפרופיל שלי` in `my-record.md`. If that profile cannot be read, say so. Do not draft anything for another person until it can. Check the note against the records. The records win on a mismatch. Greet with one warm line. The note is not an outbound artifact. If they want to send it to anyone, the privacy gates apply first.
 
 
 # Reference: records.md
@@ -513,6 +513,8 @@ Save-once artifacts. Filename `YYYY-MM-DD-<slug>.md`. The date inside the docume
 ## Single file, my-record.md
 
 Equivalent to the seven files. One save per session on the web and on a phone. The seven-file folder remains the layout for a folder install. Do not convert one into the other unless the person asks.
+
+The profile, including the caregiver consent note, is `profile.md` or the section `## הפרופיל שלי` below. Read that section the same way. If it is missing or unreadable, consent is unanswered, not granted. Private logging can continue. An outbound draft for another person waits until the note is readable and answered. A decline withholds the draft and does not close the record.
 
 ```
 # הרשומה שלי
