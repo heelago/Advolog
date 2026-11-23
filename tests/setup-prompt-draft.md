@@ -4,7 +4,7 @@
 
 Test only. This file is test only, not the release instruction. This prompt points at one draft commit, not at `main` and not at a tag. After release, use the button on the site, which points at tag `v1.2.0`. Create that tag only at release.
 
-Pinned commit: COMMIT_SHA
+Pinned commit: aec5f067b8fdf463e0e1bbf52e5e1c03b2ef877c
 
 ## עברית
 
@@ -14,10 +14,10 @@ Pinned commit: COMMIT_SHA
 אם אין לך גישה לאינטרנט, או שאין לך אפשרות ליצור קבצים, עצרי בשורה אחת ואמרי את זה. אז לא מורידים. עוברים ישר לצעד 5.
 
 אם יש גישה:
-1. פתחי את https://github.com/heelago/Advolog/blob/COMMIT_SHA/README.md ואת https://raw.githubusercontent.com/heelago/Advolog/COMMIT_SHA/README.md. קראי את README. אם הדף לא נפתח, אמרי את זה. אל תמציאי מה כתוב בו.
+1. פתחי את https://github.com/heelago/Advolog/blob/aec5f067b8fdf463e0e1bbf52e5e1c03b2ef877c/README.md ואת https://raw.githubusercontent.com/heelago/Advolog/aec5f067b8fdf463e0e1bbf52e5e1c03b2ef877c/README.md. קראי את README. אם הדף לא נפתח, אמרי את זה. אל תמציאי מה כתוב בו.
 2. הסבירי לי בעברית פשוטה מה Advolog, מה היא תעשה, ומה היא לא תעשה: לא מאבחנת, לא ממליצה על טיפול, לא שירות חירום, ולא שולחת דבר בשבילי.
 3. שאלי אם להוריד את החבילה הציבורית בלבד. רק תשובה של כן ממשיכה.
-4. אחרי כן הורידי את package/ מ־https://github.com/heelago/Advolog/tree/COMMIT_SHA/package כולל https://github.com/heelago/Advolog/blob/COMMIT_SHA/package/core.md ואת https://raw.githubusercontent.com/heelago/Advolog/COMMIT_SHA/package/core.md. אל תשני את core.md. אמרי איפה הקבצים באמת נחתו: תיקייה מקומית אמיתית, קובץ שאפשר להוריד, או רק ארגז כלים זמני. אם זו לא תיקייה מקומית, תני לי עותק להורדה.
+4. אחרי כן הורידי את package/ מ־https://github.com/heelago/Advolog/tree/aec5f067b8fdf463e0e1bbf52e5e1c03b2ef877c/package כולל https://github.com/heelago/Advolog/blob/aec5f067b8fdf463e0e1bbf52e5e1c03b2ef877c/package/core.md ואת https://raw.githubusercontent.com/heelago/Advolog/aec5f067b8fdf463e0e1bbf52e5e1c03b2ef877c/package/core.md. אל תשני את core.md. אמרי איפה הקבצים באמת נחתו: תיקייה מקומית אמיתית, קובץ שאפשר להוריד, או רק ארגז כלים זמני. אם זו לא תיקייה מקומית, תני לי עותק להורדה.
 5. לפני כל שיחת המשך, באתר: פרויקט פרטי. הדביקי בשדה ההנחיות את package/web/instructions.md, והציעי לי את הטקסט המדויק. העלי את package/web/advolog-modules.md. צרפי את my-record.md אם כבר יש. רק אז פתחי שיחה חדשה בתוך הפרויקט. במחשב, בתיקייה: סגרי ופתחי מחדש את package/ כדי ש־CLAUDE.md או AGENTS.md ייטענו. בלי הצעד הזה ההנחיות לא נשארות לשיחה הבאה.
 ```
 
@@ -29,9 +29,9 @@ Test only. Set up Advolog only after I agree. Do not send, post, or forward anyt
 If you cannot open the web, or you cannot create files, stop in one line and say so. Then do not download. Go straight to step 5.
 
 If you can:
-1. Open https://github.com/heelago/Advolog/blob/COMMIT_SHA/README.md and https://raw.githubusercontent.com/heelago/Advolog/COMMIT_SHA/README.md. Read the README. If the page does not open, say so. Do not invent what it says.
+1. Open https://github.com/heelago/Advolog/blob/aec5f067b8fdf463e0e1bbf52e5e1c03b2ef877c/README.md and https://raw.githubusercontent.com/heelago/Advolog/aec5f067b8fdf463e0e1bbf52e5e1c03b2ef877c/README.md. Read the README. If the page does not open, say so. Do not invent what it says.
 2. Explain in plain language what Advolog is, what it will do, and what it will not do: it does not diagnose, recommend treatment, handle emergencies, or send anything for me.
 3. Ask whether to download the public package only. Only a yes continues.
-4. After that, download package/ from https://github.com/heelago/Advolog/tree/COMMIT_SHA/package including https://github.com/heelago/Advolog/blob/COMMIT_SHA/package/core.md and https://raw.githubusercontent.com/heelago/Advolog/COMMIT_SHA/package/core.md. Do not change core.md. Say where the files actually landed: a real local folder, a downloadable file, or only a temporary tool sandbox. If it is not a local folder, give me a downloadable copy.
+4. After that, download package/ from https://github.com/heelago/Advolog/tree/aec5f067b8fdf463e0e1bbf52e5e1c03b2ef877c/package including https://github.com/heelago/Advolog/blob/aec5f067b8fdf463e0e1bbf52e5e1c03b2ef877c/package/core.md and https://raw.githubusercontent.com/heelago/Advolog/aec5f067b8fdf463e0e1bbf52e5e1c03b2ef877c/package/core.md. Do not change core.md. Say where the files actually landed: a real local folder, a downloadable file, or only a temporary tool sandbox. If it is not a local folder, give me a downloadable copy.
 5. Before any later chat, on the web: a private project. Paste package/web/instructions.md into the project Instructions, and offer me that exact text. Upload package/web/advolog-modules.md. Attach my-record.md if it already exists. Only then open a new chat inside the project. On a computer, in a folder: close and reopen package/ so CLAUDE.md or AGENTS.md is loaded. Without this step the instructions do not stay for the next chat.
 ```

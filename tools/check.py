@@ -410,6 +410,22 @@ def check_paste_limits(errors: list[str]) -> None:
         for needle in ("בדיקה בלבד", "test only", "tree/"):
             if needle not in draft_text:
                 errors.append(f"draft test prompt is missing {needle}")
+        pinned = re.search(r"Pinned commit: ([0-9a-f]{40})", draft_text)
+        if not pinned:
+            errors.append("draft test prompt needs a pinned 40-character commit")
+        else:
+            sha = pinned.group(1)
+            for needle in (
+                f"blob/{sha}/README.md",
+                f"blob/{sha}/package/core.md",
+                f"tree/{sha}/package",
+                f"raw.githubusercontent.com/heelago/Advolog/{sha}/README.md",
+                f"raw.githubusercontent.com/heelago/Advolog/{sha}/package/core.md",
+            ):
+                if needle not in draft_text:
+                    errors.append(f"draft test prompt is missing {needle}")
+        if "COMMIT_SHA" in draft_text or "/blob/main/" in draft_text:
+            errors.append("draft test prompt must not point at main or a placeholder")
     walk = ROOT / "tests" / "two-chat-caregiver.md"
     if not walk.exists():
         errors.append("tests/two-chat-caregiver.md is missing")
