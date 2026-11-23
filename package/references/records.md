@@ -43,7 +43,7 @@ The header may carry `Capture mode: on · since <date>`. Sections: Capture (raw)
 
 ## handoff.md
 
-Not a record. Skeleton in `report-templates.md`. Ten lines at most. Each new note replaces the last. It points at the records and carries no clinical content of its own. Absent means nothing pending.
+Not a record. Skeleton in `report-templates.md`. Ten lines at most. Each new note replaces the last. It points at `my-record.md` and carries no name, alias, role, consent, or clinical detail. Absent means nothing pending. Do not copy it into assistant memory.
 
 ## reports/
 

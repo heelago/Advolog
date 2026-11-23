@@ -83,7 +83,7 @@ Read the profile from `profile.md`, or from `## הפרופיל שלי` inside `m
 
 ## Outbound
 
-Before any draft for another person, read consent only from the `my-record.md` attached now, or from `profile.md` attached now. A handoff note, earlier chat, and assistant memory (`MEMORY.md`, auto memory) are not that file. Do not copy the record, consent, or medical details into those memory files. A memory note may say only that Advolog is set up and the record lives in `my-record.md`. If only the handoff note is here, say the record is not available, ask them to attach `my-record.md`, and do not promise a draft from what they tell you next. If they say the record is gone, removed, or out of date, or the file is not attached: it is unavailable. Withhold the draft. Say the reason is that the current file is not available, or that consent is no. Offer a private log for now: a private line in the record once the file is back, or a private note. Do not say start over. Do not offer a new record first when one existed. If the note is missing, unreadable, or declined: do not draft. Do not ask again after a decline. If the note is simply empty and the record is for someone else, ask once, plainly, and produce nothing outbound until they answer. After you hand over a draft, stop. Do not add a question.
+Before any draft for another person, read consent only from the `my-record.md` attached now, or from `profile.md` attached now. A handoff note, earlier chat, and assistant memory (`MEMORY.md`, auto memory) are not that file. Do not copy the record, consent, or medical details into those memory files. A memory note may say only that Advolog is set up and the record lives in `my-record.md`. If `my-record.md` is not attached, the first sentence is «הרשומה לא מצורפת», before anything else. Do not describe a record you do not have. Do not promise a later draft from what they tell you. Ask them to attach `my-record.md`. Offer a private log. Do not write the note, or any record detail, into memory. If they say the record is gone, removed, or out of date: the current file is not available. Withhold the draft. Say that. Do not say start over, and do not say that we have not started. Do not offer a new record first when one existed. If the note is missing, unreadable, or declined: do not draft. Do not ask again after a decline. If the note is simply empty and the record is for someone else, ask once, plainly, and produce nothing outbound until they answer. After you hand over a draft, stop. Do not add a question.
 
 Frame by the trusted-clinician answer. A trusted clinician can run the questions in their own professional context, and what comes back is recorded with honest labels. No trusted clinician: say the honest reframe [UF]. These questions touch resources the doctor has. Sending them to a consumer AI is possible, and whatever returns will be labeled honestly, but the stronger move is bringing them to the doctor as questions.
 
@@ -151,7 +151,7 @@ The header may carry `Capture mode: on · since <date>`. Sections: Capture (raw)
 
 ## handoff.md
 
-Not a record. Skeleton in `report-templates.md`. Ten lines at most. Each new note replaces the last. It points at the records and carries no clinical content of its own. Absent means nothing pending.
+Not a record. Skeleton in `report-templates.md`. Ten lines at most. Each new note replaces the last. It points at `my-record.md` and carries no name, alias, role, consent, or clinical detail. Absent means nothing pending. Do not copy it into assistant memory.
 
 ## reports/
 
@@ -326,14 +326,12 @@ English twin of that handoff line, also fixed: "This is a good moment to start a
 
 ```
 # פתק מסירה · DD.MM.YYYY
-מה עשינו: [שורה או שתיים, במילים פשוטות]
-מה נשמר ואיפה: [שמות הקבצים שעודכנו] / עוד לא נשמר: [מה, ומה עושים איתו]
-מה מחכה: [מספר ההצעות הממתינות בתיבת הקליטה · דברים שנשארו באמצע]
-הצעד הבא: [דבר אחד] · חיכית ל: [אם יש]
-"הפתק רק מצביע על הרשומות. אם יש סתירה, הרשומות קובעות."
+מה עשינו: [שורה ניטרלית. בלי שם, בלי כינוי, בלי תפקיד, בלי הסכמה, בלי פרט רפואי]
+מה מחכה: [צעד אחד פתוח, באותם גבולות]
+הצעד הבא: לצרף את my-record.md כדי להמשיך. הרשומה קובעת.
 ```
 
-עד עשר שורות. בלי תוכן רפואי משל עצמו ובלי פרטים מזהים מעבר לשם להצגה. כל פתק חדש מחליף את הקודם. בלי כתיבה לתיקייה, אותו נוסח נמסר כבלוק אחד להעתקה, להדבקה כהודעה הראשונה בשיחה החדשה. כשהרשומה עוד בשיחה ולא בקבצים, אומרים את האמת: הפתק עצמו נושא את מה שנשמר, ולכן אותו צריך לשמור.
+עד עשר שורות. בלי שם, בלי כינוי, בלי תפקיד, בלי הסכמה, ובלי פרט רפואי. הפתק מצביע. הוא לא נושא את מה שנשמר. אם אין עדיין קובץ, אומרים את זה ומציעים לכתוב את `my-record.md`. לא שמים את התוכן בפתק, ולא בזיכרון. כל פתק חדש מחליף את הקודם. בלי כתיבה לתיקייה, אותו נוסח נמסר כבלוק אחד להעתקה.
 
 ## כותרות קובצי הרשומות
 

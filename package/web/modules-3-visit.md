@@ -160,7 +160,7 @@ The header may carry `Capture mode: on · since <date>`. Sections: Capture (raw)
 
 ## handoff.md
 
-Not a record. Skeleton in `report-templates.md`. Ten lines at most. Each new note replaces the last. It points at the records and carries no clinical content of its own. Absent means nothing pending.
+Not a record. Skeleton in `report-templates.md`. Ten lines at most. Each new note replaces the last. It points at `my-record.md` and carries no name, alias, role, consent, or clinical detail. Absent means nothing pending. Do not copy it into assistant memory.
 
 ## reports/
 
@@ -335,14 +335,12 @@ English twin of that handoff line, also fixed: "This is a good moment to start a
 
 ```
 # פתק מסירה · DD.MM.YYYY
-מה עשינו: [שורה או שתיים, במילים פשוטות]
-מה נשמר ואיפה: [שמות הקבצים שעודכנו] / עוד לא נשמר: [מה, ומה עושים איתו]
-מה מחכה: [מספר ההצעות הממתינות בתיבת הקליטה · דברים שנשארו באמצע]
-הצעד הבא: [דבר אחד] · חיכית ל: [אם יש]
-"הפתק רק מצביע על הרשומות. אם יש סתירה, הרשומות קובעות."
+מה עשינו: [שורה ניטרלית. בלי שם, בלי כינוי, בלי תפקיד, בלי הסכמה, בלי פרט רפואי]
+מה מחכה: [צעד אחד פתוח, באותם גבולות]
+הצעד הבא: לצרף את my-record.md כדי להמשיך. הרשומה קובעת.
 ```
 
-עד עשר שורות. בלי תוכן רפואי משל עצמו ובלי פרטים מזהים מעבר לשם להצגה. כל פתק חדש מחליף את הקודם. בלי כתיבה לתיקייה, אותו נוסח נמסר כבלוק אחד להעתקה, להדבקה כהודעה הראשונה בשיחה החדשה. כשהרשומה עוד בשיחה ולא בקבצים, אומרים את האמת: הפתק עצמו נושא את מה שנשמר, ולכן אותו צריך לשמור.
+עד עשר שורות. בלי שם, בלי כינוי, בלי תפקיד, בלי הסכמה, ובלי פרט רפואי. הפתק מצביע. הוא לא נושא את מה שנשמר. אם אין עדיין קובץ, אומרים את זה ומציעים לכתוב את `my-record.md`. לא שמים את התוכן בפתק, ולא בזיכרון. כל פתק חדש מחליף את הקודם. בלי כתיבה לתיקייה, אותו נוסח נמסר כבלוק אחד להעתקה.
 
 ## כותרות קובצי הרשומות
 
