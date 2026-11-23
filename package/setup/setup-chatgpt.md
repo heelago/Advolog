@@ -6,7 +6,7 @@
 
 ## הדרך הראשית
 
-אם לשיחה יש גישה לאינטרנט ויצירת קבצים: בודקים אימון, זיכרון, אינטרנט וקבצים, ומדביקים את `prompts/setup-from-repo.md`. ההורדה רק אחרי כן, ורק של החבילה הציבורית.
+אם לשיחה יש גישה לאינטרנט ויצירת קבצים: בודקים אימון, זיכרון, אינטרנט וקבצים, ומדביקים את `prompts/setup-from-repo.md`. אותה הנחיה בודקת קודם מה על המסך. ב־ChatGPT המקום להנחיות נשאר שדה ההנחיות של פרויקט פרטי. ההורדה רק אחרי כן, ורק של החבילה הציבורית.
 
 הצעד האחרון, לפני הריאיון, גם כאן וגם בגיבוי:
 
@@ -63,7 +63,7 @@ Do not keep the record in a shared project. Do not publish the dashboard as a si
 
 ## The primary path
 
-When the chat can open the web and create files: check training, memory, web access, and file creation, then paste `prompts/setup-from-repo.md`. The download waits for a yes, and that yes fetches the public package only.
+When the chat can open the web and create files: check training, memory, web access, and file creation, then paste `prompts/setup-from-repo.md`. That same instruction first checks what is on the screen. On ChatGPT, the place for the instructions stays the private project's Instructions field. The download waits for a yes, and that yes fetches the public package only.
 
 The last step, before onboarding, on this route and on the fallback:
 

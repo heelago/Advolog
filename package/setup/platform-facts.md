@@ -18,6 +18,8 @@
 
 **Anthropic surface:** Claude is primary. This file has no product named "Claude Work". ChatGPT Work is a different company's product (G2, G10).
 
+**Claude Projects, read 23.11.2026, not live-tested on an account.** Anthropic's own pages (https://code.claude.com/docs/en/claude-projects and https://claude.com/resources/articles/projects-redesigned) describe a public beta: one coordinating conversation, and threads it starts. Instructions are under the gear, Project settings, Memory, Project instructions, and the docs say that text is sent to the coordinator and to each new thread, up to 16,000 characters. Files are added in Context or Add context. The docs say the beta is rolling out on Pro, Max, and Ultra, not on Team or Enterprise yet, and that existing classic projects keep working until the rollout reaches them. Heela, 23.11.2026: on her account the choice she sees is a session or this new Project. Do not write that as true for every account. Guides say "check whether you have it." If the screen differs, the screen wins. A direct send from a dashboard page into that main thread is not described on those pages.
+
 Decision 19 stands: Claude web uses project knowledge, not an account-level skill. Decision 20 stands: the upload is one skill folder. The twelve-skill zip is the repo tree and a folder install, not the documented upload.
 
 The tables below are the second-reader check, kept as written.

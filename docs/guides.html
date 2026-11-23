@@ -83,8 +83,11 @@
   <!-- ════════════════ CLAUDE ════════════════ -->
   <section class="guide" id="claude">
     <h2><span class="he">התקנה ב־Claude</span><span class="en">Setup in Claude</span></h2>
-    <p><span class="he">Claude הוא המשטח הראשי. לא מורידים zip ביד. קודם בודקים אימון, זיכרון, גישה לאינטרנט ויצירת קבצים. אחר כך מדביקים את הנחיית ההקמה מדף הבית. העוזרת קוראת את המאגר, מסבירה, ושואלת אם להוריד. רק כן ממשיך. אם אין אינטרנט או אין יצירת קבצים, אומרים את זה ועוברים לגיבוי.</span>
-    <span class="en">Claude is the primary surface. You do not download a zip by hand. First check training, memory, web access, and file creation. Then paste the setup instruction from the home page. The assistant reads the repository, explains, and asks whether to download. Only a yes continues. If there is no web access or no file creation, say so and use the fallback.</span></p>
+    <p><span class="he">Claude הוא המשטח הראשי. Advolog היא חבילה, לא אתר: שום דבר לא עובר דרכנו, ובכל דרך שפותחים אותה, העוזרת מכוונת אל ההקמה הכי מתאימה שיש. לא מורידים zip ביד. קודם בודקים אימון, זיכרון, גישה לאינטרנט ויצירת קבצים. אחר כך מדביקים את הנחיית ההקמה מדף הבית. העוזרת קוראת את המאגר, מסבירה, בודקת מה על המסך, וממתינה. רק כן ממשיך. אם אין אינטרנט או אין יצירת קבצים, אומרים את זה ועוברים לגיבוי.</span>
+    <span class="en">Claude is the primary surface. Advolog is a package, not a site: nothing passes through us, and whichever way you open it, your assistant guides you to the best available setup. You do not download a zip by hand. First check training, memory, web access, and file creation. Then paste the setup instruction from the home page. The assistant reads the repository, explains, checks what is on the screen, and waits. Only a yes continues. If there is no web access or no file creation, say so and use the fallback.</span></p>
+    <h3><span class="he">הדרך הראשית, אם יש פרויקט Claude</span><span class="en">The primary path, if you have a Claude Project</span></h3>
+    <p><span class="he">בודקים אם בתפריט יש פרויקט Claude. אם יש, זו הדרך. זו שיחה ראשית אחת, והיא מפעילה את העבודה בצד. לא צריך לפתוח את החוטים. שיחה ארוכה אחת נעשית כבדה. אחרי ההורדה שומרים את ההנחיות בגלגל השיניים, בהנחיות הפרויקט, ומוסיפים את הקובץ ב־Context. נשארים בשיחה הראשית. אם הפרויקט לא על המסך, לא מניחים שהוא קיים.</span>
+    <span class="en">Check whether the menu has a Claude Project. If it does, that is the path. It is one main conversation, and it starts the side work. You do not open the threads. One long session gets heavy. After the download, save the instructions under the gear, in Project instructions, and add the file in Context. Stay in the main conversation. If the Project is not on the screen, do not assume it exists.</span></p>
 
     <h3><span class="he">מסלול גיבוי בתיקייה</span><span class="en">Folder fallback</span></h3>
     <p><span class="he">רק אם אי אפשר לקרוא את המאגר או ליצור קבצים. אז מורידים את ה־zip ונותנים לעוזרת לחלץ. זו לא הדרך הראשית.</span>
@@ -106,7 +109,9 @@
     <p class="notice"><span class="he"><b>מעדיפים ידנית?</b> מורידים, מחלצים (לחיצה ימנית ← «חלץ הכול» בווינדוס, לחיצה כפולה במק), ופותחים ב־Claude את התיקייה שחולצה. העוזר קורא את המפה משם בעצמו.</span>
     <span class="en"><b>Prefer to do it by hand?</b> Download, extract (right-click ← "Extract All" on Windows, double-click on Mac), and open the extracted folder in Claude. The assistant reads the map itself from there.</span></p>
 
-    <h3><span class="he">מסלול גיבוי באתר, בלי יצירת קבצים</span><span class="en">Web fallback, with no file creation</span></h3>
+    <h3><span class="he">אם עדיין יש שדה הנחיות, או שאין יצירת קבצים</span><span class="en">If an Instructions field is still there, or there is no file creation</span></h3>
+    <p><span class="he">בודקים אם המסך עדיין מראה פרויקט עם שדה הנחיות. אם כן, זו הדרך בחשבון הזה. אם אין אינטרנט או אין יצירת קבצים, עושים את אותם צעדים בלי ההורדה מהמאגר.</span>
+    <span class="en">Check whether the screen still shows a project with an Instructions field. If it does, that is the path on this account. With no web access or no file creation, do these same steps without fetching the repository.</span></p>
     <ol>
       <li><span class="he">נכנסים ל־claude.ai ומתחברים לחשבון (חינמי מספיק להתחלה).</span><span class="en">Go to claude.ai and sign in (the free tier is fine to start).</span></li>
       <li><span class="he">בתפריט הצד: <b>Projects</b> ← <b>New project</b>. שם חופשי, למשל «התיק הרפואי שלי».</span><span class="en">In the side menu: <b>Projects</b> ← <b>New project</b>. Any name, "My medical file," for example.</span></li>
@@ -117,7 +122,7 @@
     </ol>
     <figure class="shot screen detail" style="border-style:solid">
       <img src="img/claude-create-project.png" alt="דיאלוג יצירת פרויקט ב־claude.ai: שדה שם, שדה תיאור, וכפתור Create project" width="530" loading="lazy">
-      <figcaption class="small"><span class="he">הדיאלוג של פרויקט חדש ב־claude.ai, שם חופשי, והשאר יכול להישאר ריק.</span><span class="en">The new-project dialog on claude.ai, any name, the rest can stay empty.</span></figcaption>
+      <figcaption class="small"><span class="he">כך נראה דיאלוג ישן של פרויקט ב־claude.ai. בודקים אם המסך עדיין נראה כך. אם רואים שיחה ראשית במקום זה, משתמשים בהנחיות הפרויקט.</span><span class="en">This is an older new-project dialog on claude.ai. Check whether your screen still looks like this. If you see a main conversation instead, use Project instructions.</span></figcaption>
     </figure>
     <p class="notice"><span class="he"><b>חלופה בלי שום התקנה:</b> שיחה רגילה + הדבקת <a href="index.html#starter">פרומפט הפתיחה</a>. גרסה קלה ושלמה, בלי קבצים.</span>
     <span class="en"><b>The no-install alternative:</b> a regular chat + pasting <a href="index.html#starter">the starter prompt</a>. A light, complete version, no files.</span></p>
@@ -150,10 +155,10 @@ The recommended default, where the plan offers it: Opus 5.5 at medium effort. Do
     <span class="en"><b>The document is private until you share it.</b> On the Free plan, sharing is by link, not by invitation. For the doctor, export a file. Before any sharing, the checklist.</span></p>
 
     <h3><span class="he">שיחה חדשה בתוך הפרויקט</span><span class="en">A new chat inside the project</span></h3>
-    <p><span class="he">אחרי רישום, או אחרי שתיים־שלוש משימות, העוזרת תציע לפתוח שיחה חדשה. הסיבה, בשורה אחת: שיחות ארוכות נעשות כבדות, ופרטים מוקדמים מתחילים להישמט. <b>שום דבר לא הולך לאיבוד רק אם השיחה הבאה פותחת את אותו קובץ רשומה, וההנחיות כבר בשדה של הפרויקט.</b> פתק המסירה לבדו אינו מספיק. אם הקובץ נשאר בארגז כלים זמני, מורידים עותק לפני המעבר.</span>
-    <span class="en">After a log entry, or after two or three tasks, the assistant will suggest starting a new chat. The reason, in one line: long chats get heavy, and early details start to slip. <b>Nothing is lost only if the next chat opens the same record file, and the project instructions are already saved.</b> The handoff note alone is not enough. If the file is only in a temporary sandbox, download a copy before you move.</span></p>
-    <p><span class="he">באתר: נכנסים לפרויקט ← <b>New chat</b> בתוכו, ומדביקים את פתק המסירה כהודעה הראשונה. במחשב: שיחה חדשה על אותה תיקייה, הפתק נשמר שם כקובץ <code dir="ltr">handoff.md</code>, והעוזרת קוראת אותו לבד. בשני המקרים מילה אחת מספיקה: «תתעדכני», והיא תספר איפה עמדנו.</span>
-    <span class="en">On the web: open the project ← <b>New chat</b> inside it, and paste the handoff note as the first message. On the desktop: a new chat on the same folder, the note is saved there as <code>handoff.md</code>, and the assistant reads it on her own. Either way one word is enough: "catch up", and she will say where things stood.</span></p>
+    <p><span class="he">אחרי רישום, או אחרי שתיים־שלוש משימות, העוזרת תציע לפתוח שיחה חדשה. בפרויקט Claude נשארים בשיחה הראשית, ולא פותחים חוט. הסיבה, בשורה אחת: שיחות ארוכות נעשות כבדות, ופרטים מוקדמים מתחילים להישמט. <b>שום דבר לא הולך לאיבוד רק אם ההמשך פותח את אותו קובץ רשומה, וההנחיות כבר שמורות.</b> פתק המסירה לבדו אינו מספיק. אם הקובץ נשאר בארגז כלים זמני, מורידים עותק לפני המעבר.</span>
+    <span class="en">After a log entry, or after two or three tasks, the assistant will suggest starting a new chat. On a Claude Project, stay in the main conversation, and do not open a thread. The reason, in one line: long chats get heavy, and early details start to slip. <b>Nothing is lost only if the continuation opens the same record file, and the instructions are already saved.</b> The handoff note alone is not enough. If the file is only in a temporary sandbox, download a copy before you move.</span></p>
+    <p><span class="he">בפרויקט Claude: נשארים בשיחה הראשית, מוודאים שהרשומה ב־Context, ומדביקים את הפתק שם. אם עדיין יש <b>New chat</b>: נכנסים לפרויקט, פותחים אותו, מצרפים את הקובץ, ומדביקים את הפתק. במחשב: שיחה חדשה על אותה תיקייה, הפתק נשמר שם כקובץ <code dir="ltr">handoff.md</code>. מילה אחת מספיקה: «תתעדכני».</span>
+    <span class="en">On a Claude Project: stay in the main conversation, check that the record is in Context, and paste the note there. If <b>New chat</b> is still there: open the project, open that chat, attach the file, and paste the note. On a computer: a new chat on the same folder, and the note is saved there as <code>handoff.md</code>. One word is enough: "catch up".</span></p>
 
     <h3><span class="he">הערה חשובה על «זיכרון» (Memory)</span><span class="en">An important note on Memory</span></h3>
     <p><span class="he">גם ל־Claude יש זיכרון חוצה־שיחות, והוא <b>פועל כברירת מחדל</b>, גם בתוכנית החינמית. לרשומה רפואית עדיף מקור אמת אחד: הקבצים שלכם.</span>

@@ -1,6 +1,8 @@
 # התקנה ב־Claude
 
-Claude הוא המשטח הראשי. העוזרת עונה בשפה שכותבים בה. שמות המודלים רק ב־`platform-facts.md` ובפסקאות שהוא מרנדר. אם המסך שונה, המסך קובע.
+Claude הוא המשטח הראשי. Advolog היא חבילה, לא אתר: שום דבר לא עובר דרכנו, ובכל דרך שפותחים אותה, העוזרת מכוונת אל ההקמה הכי מתאימה שיש. העוזרת עונה בשפה שכותבים בה. שמות המודלים רק ב־`platform-facts.md` ובפסקאות שהוא מרנדר. אם המסך שונה, המסך קובע.
+
+הדרך הראשית ב־Claude, אם היא על המסך: פרויקט Claude. זו שיחה ראשית אחת, והיא מפעילה את העבודה בצד. לא צריך לפתוח את החוטים. שיחה ארוכה אחת נעשית כבדה, ופרטים מוקדמים נשמטים. בודקים אם הפרויקט מופיע. אם לא, בודקים אם נשאר פרויקט עם שדה הנחיות. גם Duet, אם הוא על המסך, וגם Dot או Grok Bot, אם כבר נמצאים שם, הם אפשרויות שהעוזרת מציעה ושואלת לפני שהיא ממשיכה. לא מניחים שמוצר קיים.
 
 לא שומרים את הרשומה בפרויקט משותף או בתיקייה משותפת. לא שולחים דבר. ההורדה רק אחרי כן.
 
@@ -13,9 +15,15 @@ Claude הוא המשטח הראשי. העוזרת עונה בשפה שכותבי
 3. גישה לאינטרנט דלוקה, כדי שהעוזרת תוכל לקרוא את המאגר. אם היא כבויה, עוברים למסלול הגיבוי.
 4. יצירת קבצים דלוקה, כדי שהיא תוכל להוריד ולהקים. אם היא כבויה, עוברים למסלול הגיבוי.
 
-ואז מעתיקים את הבלוק העברי מ־`prompts/setup-from-repo.md` לשיחה חדשה. הבלוק האנגלי הוא הכפתור השני באתר. העוזרת קוראת את README, מסבירה מה Advolog ומה היא תעשה, ושואלת אם להוריד את החבילה הציבורית בלבד. רק כן ממשיך. כן הזה אינו הסכמה לשום דבר אחר.
+ואז מעתיקים את הבלוק העברי מ־`prompts/setup-from-repo.md` לשיחה חדשה. הבלוק האנגלי הוא הכפתור השני באתר. העוזרת קוראת את README, מסבירה מה Advolog ומה היא תעשה, בודקת מה באמת על המסך, וממתינה. רק כן מוריד את החבילה הציבורית. כן הזה אינו הסכמה לשום דבר אחר.
 
-הצעד האחרון, לפני הריאיון, גם אחרי ההורדה וגם במסלול הגיבוי: פרויקט פרטי. מדביקים את `web/instructions.md` בשדה ההנחיות (עד 7,000 תווים. הכפתור באתר נותן את הטקסט). מעלים את `web/advolog-modules.md`. מצרפים את `my-record.md` אם כבר יש. רק אז שיחה חדשה בתוך הפרויקט. בתיקייה במחשב: סוגרים ופותחים מחדש את `package/` כדי ש־`CLAUDE.md` ייטען. בלי הצעד הזה ההנחיות לא נשארות לשיחה הבאה.
+הצעד האחרון, לפני הריאיון, גם אחרי ההורדה וגם במסלול הגיבוי: שומרים את `web/instructions.md` (עד 7,000 תווים. הכפתור באתר נותן את הטקסט) במקום שההקמה שנבחרה שומרת אותו.
+
+- פרויקט Claude, אם הוא על המסך: גלגל השיניים, ואז הנחיות הפרויקט (Project settings, Memory, Project instructions). את `web/advolog-modules.md` ואת `my-record.md`, אם כבר יש, מוסיפים ב־Context או ב־Add context. נשארים בשיחה הראשית. לא פותחים חוטים.
+- פרויקט עם שדה הנחיות, אם הוא עדיין על המסך: מדביקים בשדה, מעלים את הקובץ, מצרפים את `my-record.md`, ורק אז שיחה חדשה בתוך הפרויקט.
+- תיקייה במחשב: סוגרים ופותחים מחדש את `package/` כדי ש־`CLAUDE.md` ייטען.
+
+בלי הצעד הזה ההנחיות לא נשארות. אם המסך שונה, המסך קובע.
 
 ## מסלול גיבוי, בלי אינטרנט או בלי יצירת קבצים
 
@@ -47,7 +55,7 @@ Claude הוא המשטח הראשי. העוזרת עונה בשפה שכותבי
 
 ## שיחה חדשה
 
-אחרי רישום, או אחרי שתיים־שלוש משימות, מוצעת שיחה חדשה, פעם אחת. שום דבר לא הולך לאיבוד רק אם בודקים שהשיחה הבאה באמת פותחת את אותו `my-record.md` (או את שבעת הקבצים), ושההנחיות הקבועות כבר בשדה של הפרויקט. אם הקובץ נשאר רק בארגז כלים זמני, מורידים עותק לפני המעבר. באתר: New chat בתוך הפרויקט, מצרפים את הקובץ, ומדביקים את פתק המסירה. פתק לבדו אינו מספיק. במחשב הפתק נשמר כ־`handoff.md` ליד הקבצים. מילת פתיחה: «תתעדכני». לפני טיוטה עבור אדם אחר, בודקים שהפרופיל נקרא. אם אין הסכמה, או שהיא לא נקראת, לא כותבים את הטיוטה, ואומרים למה. הרישום הפרטי נשאר.
+אחרי רישום, או אחרי שתיים־שלוש משימות, מוצעת שיחה חדשה, פעם אחת. בפרויקט Claude חדש לא פותחים שיחה חדשה: נשארים בשיחה הראשית, ומוודאים שהרשומה ב־Context ושההנחיות בהנחיות הפרויקט. שיחה חדשה היא לחשבון שעדיין יש בו שדה הנחיות, ול־ChatGPT. שום דבר לא הולך לאיבוד רק אם בודקים שההמשך באמת פותח את אותו `my-record.md` (או את שבעת הקבצים), ושההנחיות הקבועות כבר שמורות. אם הקובץ נשאר רק בארגז כלים זמני, מורידים עותק לפני המעבר. פתק לבדו אינו מספיק. במחשב הפתק נשמר כ־`handoff.md` ליד הקבצים. מילת פתיחה: «תתעדכני». לפני טיוטה עבור אדם אחר, בודקים שהפרופיל נקרא. אם אין הסכמה, או שהיא לא נקראת, לא כותבים את הטיוטה, ואומרים למה. הרישום הפרטי נשאר.
 
 ## זיכרון
 
@@ -65,7 +73,9 @@ Claude הוא המשטח הראשי. העוזרת עונה בשפה שכותבי
 
 # Setup in Claude
 
-Claude is the primary surface. The assistant answers in the language you write. Model names appear only in `platform-facts.md` and in the paragraphs it renders. If your screen differs, your screen wins.
+Claude is the primary surface. Advolog is a package, not a site: nothing passes through us, and whichever way you open it, your assistant guides you to the best available setup. The assistant answers in the language you write. Model names appear only in `platform-facts.md` and in the paragraphs it renders. If your screen differs, your screen wins.
+
+The primary Claude route, when it is on the screen: a Claude Project. That is one main conversation, and it starts the side work. You do not open the threads. One long session gets heavy, and early details slip. Check whether the Project is there. If it is not, check whether an older project with an Instructions field is still there. Duet, if it is on the screen, and Dot or Grok Bot, if you are already there, are options the assistant suggests and asks about before it continues. Do not assume a product is present.
 
 Do not keep the record in a shared project or a shared folder. Nothing is sent. A download waits for a yes.
 
@@ -78,9 +88,15 @@ Before pasting, check four things:
 3. Web access on, so the assistant can read the repository. If it is off, use the fallback.
 4. File creation on, so it can download and set up. If it is off, use the fallback.
 
-Then paste the Hebrew block from `prompts/setup-from-repo.md` into a new chat. The English block is the second button on the site. The assistant reads the README, explains what Advolog is and what it will do, and asks whether to download the public package only. Only a yes continues. That yes is not consent for anything else.
+Then paste the Hebrew block from `prompts/setup-from-repo.md` into a new chat. The English block is the second button on the site. The assistant reads the README, explains what Advolog is and what it will do, checks what is actually on the screen, and waits. Only a yes downloads the public package. That yes is not consent for anything else.
 
-The last step, before onboarding, on the web route and on the fallback: a private project. Paste `web/instructions.md` into Instructions (at most 7,000 characters; the site button gives that text). Upload `web/advolog-modules.md`. Attach `my-record.md` if it already exists. Only then open a new chat inside the project. For a folder install, close and reopen `package/` so `CLAUDE.md` or `AGENTS.md` is in scope. Without that step the instructions do not stay for the next chat.
+The last step, before onboarding, on the web route and on the fallback: save `web/instructions.md` (at most 7,000 characters; the site button gives that text) where the chosen setup keeps it.
+
+- A Claude Project, if it is on the screen: the gear, then Project instructions (Project settings, Memory, Project instructions). Add `web/advolog-modules.md` and `my-record.md`, if it already exists, in Context or Add context. Stay in the main conversation. Do not open the threads.
+- A project with an Instructions field, if it is still on the screen: paste into the field, upload the file, attach `my-record.md`, and only then open a new chat inside the project.
+- A folder on a computer: close and reopen `package/` so `CLAUDE.md` or `AGENTS.md` is in scope.
+
+Without that step the instructions do not stay. If the screen differs, the screen wins.
 
 ## Fallback, when there is no web access or no file creation
 
@@ -108,7 +124,7 @@ Checked 11.11.2026: an exportable document exists on every plan, including Free,
 
 ## A new chat
 
-After a log, or after two or three tasks, a new chat is offered once. Nothing is lost only if you check that the next chat actually reopens the same `my-record.md` (or the seven files), and that the project Instructions already hold `web/instructions.md`. If the file is only in a temporary sandbox, download a copy before you move. On the web: New chat inside the project, attach that file, and paste the handoff note. The note alone is not enough. On a computer the note is `handoff.md` beside the files. Opening word: "catch up". Before a draft for someone else, check that the profile can be read. If consent is missing, unreadable, or declined, do not write the draft, and say why. Private logging stays.
+After a log, or after two or three tasks, a new chat is offered once. On a new Claude Project, do not open a new chat: stay in the main conversation, and check that the record is in Context and the instructions are in Project instructions. A new chat is for an account that still has an Instructions field, and for ChatGPT. Nothing is lost only if you check that the continuation actually opens the same `my-record.md` (or the seven files), and that the standing instructions are already saved. If the file is only in a temporary sandbox, download a copy before you move. The note alone is not enough. On a computer the note is `handoff.md` beside the files. Opening word: "catch up". Before a draft for someone else, check that the profile can be read. If consent is missing, unreadable, or declined, do not write the draft, and say why. Private logging stays.
 
 ## Memory
 

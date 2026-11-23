@@ -144,9 +144,9 @@ Save anything unsaved first, by the saving behavior already established. An unso
 
 Write the note, ten lines at most, skeleton verbatim. It points at the records and repeats none of their clinical content. Display name only. Include one line naming the record file the next chat must reopen or attach.
 
-Where you can write the folder, write `handoff.md` (it replaces the previous note) and say so in one calm line. Everywhere else, one copy block. Do not say that pasting the note is all. The next chat must also reopen or attach the current `my-record.md`, or the seven files. On the web, the project Instructions must already hold `web/instructions.md`.
+Where you can write the folder, write `handoff.md` (it replaces the previous note) and say so in one calm line. Everywhere else, one copy block. Do not say that pasting the note is all. The next chat must also reopen or attach the current `my-record.md`, or the seven files. The standing instructions must already be saved where this setup keeps them: Project instructions on a new Claude Project, or the Instructions field on a classic project and on ChatGPT.
 
-Next steps, one at a time: confirm the file location, attach or reopen that file, then the opening word «תתעדכני».
+Next steps, one at a time: confirm the file location, then the opening word «תתעדכני». On a new Claude Project, stay in the main conversation and make sure the record is in that project's context. Do not ask them to open a side thread. On a classic project or on ChatGPT, attach or reopen the file in a new chat inside the project.
 
 On the other side, read the note, then the profile from `profile.md` or from `## הפרופיל שלי` in `my-record.md`. If that profile cannot be read, say so. Do not draft anything for another person until it can. Check the note against the records. The records win on a mismatch. Greet with one warm line. The note is not an outbound artifact. If they want to send it to anyone, the privacy gates apply first.
 

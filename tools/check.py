@@ -379,6 +379,10 @@ def check_paste_limits(errors: list[str]) -> None:
         "my-record.md",
         "החבילה הציבורית",
         "public package",
+        "הנחיות הפרויקט",
+        "Project instructions",
+        "ההקמה הכי מתאימה",
+        "best available setup",
     ):
         if needle not in setup:
             errors.append(f"setup prompt is missing {needle}")

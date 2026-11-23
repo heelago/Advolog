@@ -140,6 +140,17 @@
           <p class="sub">בלוק פתיחה לשיחה הבאה, מעודכן ממה שבאמת בקבצים.</p>
           <button class="ghost" id="ctxBtn">העתקת בלוק ההקשר</button>
         </div>
+        <div class="panel" data-anchor="message-panel">
+          <h3>הודעה לשיחה <button class="ph" data-for="h-msg" aria-label="הסבר">?</button></h3>
+          <div class="phelp" id="h-msg">הלוח לא נכנס לשיחה ולא שולח כלום. כותבים כאן, או בוחרים ניסוח מוכן, ולוחצים «העתקה». את ההדבקה עושים בשיחה הראשית של הפרויקט.</div>
+          <p class="sub">כותבים כאן. ההעתקה היא הדרך. מדביקים בשיחה הראשית של הפרויקט. שום דבר לא יוצא מהמכשיר.</p>
+          <div class="chk"><span>רישום תסמין</span><button class="ghost" type="button" data-msg="אני רוצה לרשום תסמין. שאלי אותי שאלה אחת, ושמרי רק אחרי שאומר כן.">הכנסה</button></div>
+          <div class="chk"><span>הכנה לתור</span><button class="ghost" type="button" data-msg="יש לי תור. הכיני דף קצר: מה קרה, מה נוסה, ומה חשוב לשאול. בלי אבחנה ובלי שינוי תרופה.">הכנסה</button></div>
+          <div class="chk"><span>טיוטת בקשה</span><button class="ghost" type="button" data-msg="אני רוצה טיוטה לבקשה. אל תשלחי אותה. אם אין הסכמה קריאה בפרופיל, אל תכתבי טיוטה לאדם אחר, ותגידי למה.">הכנסה</button></div>
+          <textarea id="msgOut" placeholder="או כותבים כאן חופשי."></textarea>
+          <div style="margin-top:8px"><button class="btn" id="msgCopy" type="button">העתקה</button></div>
+          <p class="note">אחרי ההעתקה פותחים את השיחה הראשית של הפרויקט ומדביקים. הלוח לא שולח את ההודעה בעצמו.</p>
+        </div>
         <div class="panel" data-anchor="inbox-panel">
           <h3>תיבת קליטה <span class="chip" id="c-inbox">0</span> <button class="ph" data-for="h-inbox" aria-label="הסבר">?</button></h3>
           <div class="phelp" id="h-inbox">כל מה שנקלט ועוד לא סודר, קליטות מרגעים עמוסים, הצעות שמחכות להחלטה. המיון עצמו קורה בשיחה, כשנוח; שום דבר לא נכנס לרשומות בלי אישור.</div>
@@ -225,7 +236,10 @@
       </ul>
 
       <h4>מעגל העבודה</h4>
-      <p>שיחה ← בלוק עדכון ← הדבקה בלוח ← החלה ← הקבצים מתעדכנים. ובחזרה: «העתקת בלוק ההקשר» נותנת לשיחה הבאה את נקודת הפתיחה. זה כל הסיפור, תנועה אחת פנימה, תנועה אחת החוצה.</p>
+      <p>שיחה ← בלוק עדכון ← הדבקה בלוח ← החלה ← הקבצים מתעדכנים. ובחזרה: «הודעה לשיחה» מכינה טקסט, «העתקה» שמה אותו בלוח, ומדביקים אותו בשיחה הראשית של הפרויקט. «העתקת בלוק ההקשר» נותנת לשיחה הבאה את נקודת הפתיחה. שום דבר לא יוצא מהמכשיר.</p>
+
+      <h4>הודעה לשיחה</h4>
+      <p>כותבים בתיבה, או בוחרים רישום תסמין, הכנה לתור, או טיוטת בקשה. לוחצים «העתקה», ופותחים את השיחה הראשית של הפרויקט כדי להדביק. הלוח לא יכול להכניס הודעה לשיחה בעצמו, ולכן ההעתקה היא הדרך. שום דבר לא נשלח.</p>
 
       <h4>הקבצים עצמם</h4>
       <ul>
@@ -313,6 +327,14 @@ document.querySelectorAll('.ph').forEach(function(b){ b.setAttribute('aria-expan
     t.classList.toggle('on',on); b.setAttribute('aria-expanded',on); };});
 
 /* @anchor: checkups, copy a plain request to paste into chat; the dashboard has no network, the chat runs it, output lands in the inbox */
+document.querySelectorAll('[data-msg]').forEach(function(b){
+  b.onclick=function(){ $('msgOut').value=b.getAttribute('data-msg'); $('msgOut').focus(); };
+});
+$('msgCopy').onclick=function(){
+  var text=($('msgOut').value||'').trim();
+  if(!text){ toast('קודם כותבים, או בוחרים ניסוח.'); return; }
+  navigator.clipboard.writeText(text).then(function(){toast('הועתק. מדביקים בשיחה הראשית של הפרויקט.')},function(){prompt('העתקה ידנית:',text)});
+};
 document.querySelectorAll('[data-chk]').forEach(function(b){
   b.onclick=function(){ var t=b.getAttribute('data-chk');
     navigator.clipboard.writeText(t).then(function(){toast('הועתק, להדביק בשיחה, והעוזרת תריץ')},function(){prompt('העתקה ידנית:',t)}); };

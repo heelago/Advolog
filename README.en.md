@@ -1,15 +1,15 @@
 # Advolog
 
-Advolog helps patients and caregivers walk into an appointment with one orderly page: what happened, what was tried, and which questions are worth asking. It runs inside the Claude, ChatGPT, or personal agent you already have, with no account and no server of its own. It does not diagnose, recommend treatment, or handle emergencies.
+Advolog helps patients and caregivers walk into an appointment with one orderly page: what happened, what was tried, and which questions are worth asking. It is a package, not a site and not a wrapper: nothing passes through us, and the same package opens wherever permissions are already given. Whichever way you open it, your assistant guides you to the best available setup. It runs inside the Claude, ChatGPT, or personal agent you already have, with no account and no server of its own. It does not diagnose, recommend treatment, or handle emergencies.
 
 You should not have to study engineering to arrive prepared.
 
 ## How to start
 
-Claude is the primary surface. You do not download a zip by hand.
+Claude is the primary surface. Check whether you have a Claude Project: one main conversation, and it starts the side work. One long session gets heavy. If the screen still shows a project with an Instructions field, that still works. You do not download a zip by hand.
 
 1. Check training, memory, web access, and file creation.
-2. Paste the Hebrew block in `package/prompts/setup-from-repo.md`. The assistant reads the README, explains, and asks whether to download. Only a yes continues. Then it reads `core.md`.
+2. Paste the Hebrew block in `package/prompts/setup-from-repo.md`. The assistant reads the README, explains, checks what the account actually has, and waits for a yes. Only a yes downloads the public package. Then the instructions are saved where the chosen setup keeps them.
 
 If there is no web access or no file creation: paste `package/core.md` (at most 7,000 characters) and upload `package/web/advolog-modules.md`. The zip remains a fallback for a folder you already download by hand.
 
