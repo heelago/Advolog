@@ -4,7 +4,7 @@
 
 Test only. This file is test only, not the release instruction. This prompt points at one draft commit, not at `main` and not at a tag. After release, use the button on the site, which points at tag `v1.2.0`. Create that tag only at release.
 
-Pinned commit: 7fcb409346f81601f78ebeed51000cf5076d61f8
+Pinned commit: cb8f733a6af4300d3842d94c983e516855054248
 
 ## עברית
 
@@ -16,10 +16,10 @@ Advolog היא חבילה, לא אתר ולא מעטפת. כך שום דבר ל�
 אם אין לך גישה לאינטרנט, או שאין לך אפשרות ליצור קבצים, עצרי בשורה אחת ואמרי את זה. אז לא מורידים. עוברים ישר לצעד 5.
 
 אם יש גישה:
-1. פתחי את https://github.com/heelago/Advolog/blob/7fcb409346f81601f78ebeed51000cf5076d61f8/README.md ואת https://raw.githubusercontent.com/heelago/Advolog/7fcb409346f81601f78ebeed51000cf5076d61f8/README.md. קראי את README. אם הדף לא נפתח, אמרי את זה. אל תמציאי מה כתוב בו.
+1. פתחי את https://github.com/heelago/Advolog/blob/cb8f733a6af4300d3842d94c983e516855054248/README.md ואת https://raw.githubusercontent.com/heelago/Advolog/cb8f733a6af4300d3842d94c983e516855054248/README.md. קראי את README. אם הדף לא נפתח, אמרי את זה. אל תמציאי מה כתוב בו.
 2. הסבירי לי בעברית פשוטה מה Advolog, מה היא תעשה, ומה היא לא תעשה: לא מאבחנת, לא ממליצה על טיפול, לא שירות חירום, ולא שולחת דבר בשבילי. אמרי שהיא חבילה ולא אתר: פרטיות, כי שום דבר לא נשמר אצלנו, וגמישות, כי אותה חבילה נפתחת איפה שכבר נתתי הרשאות. בכל דרך שפותחים אותה, את מכוונת אל ההקמה הכי מתאימה.
 3. בדקי מה באמת יש כאן, בלי להניח. בקשי ממני לבדוק אם יש: פרויקט Claude חדש, פרויקט ישן עם שדה הנחיות, Duet אם הוא מופיע על המסך, או עוזר נתמך אחר כמו Dot או Grok Bot. אם יש אפשרות מתאימה יותר משיחה ארוכה אחת, הציעי אותה באותה הודעה, והסבירי למה: שיחה אחת ארוכה נעשית כבדה. באותה הודעה שאלי כן אחד בלבד. אין שאלה שנייה. כן הזה מוריד רק את החבילה הציבורית וממשיך עם ההקמה שהצעת. אם באותה תשובה אבחר הקמה אחרת, לכי לפיה. אם המסך שונה, המסך קובע. אל תטעני שמוצר קיים אם הוא לא על המסך.
-4. אחרי כן הורידי את package/ מ־https://github.com/heelago/Advolog/tree/7fcb409346f81601f78ebeed51000cf5076d61f8/package כולל https://github.com/heelago/Advolog/blob/7fcb409346f81601f78ebeed51000cf5076d61f8/package/core.md ואת https://raw.githubusercontent.com/heelago/Advolog/7fcb409346f81601f78ebeed51000cf5076d61f8/package/core.md. אל תשני את core.md. אמרי איפה הקבצים באמת נחתו: תיקייה מקומית אמיתית, קובץ שאפשר להוריד, או רק ארגז כלים זמני. אם זו לא תיקייה מקומית, תני לי עותק להורדה. חוט צד יכול להיפתח לבד כדי להביא את הקבצים. אמרי שזה רגיל, ושאין צורך לפתוח אותו או לנהל אותו. אל תבטיחי שלא יופיע חוט.
+4. אחרי כן הורידי את package/ מ־https://github.com/heelago/Advolog/tree/cb8f733a6af4300d3842d94c983e516855054248/package כולל https://github.com/heelago/Advolog/blob/cb8f733a6af4300d3842d94c983e516855054248/package/core.md ואת https://raw.githubusercontent.com/heelago/Advolog/cb8f733a6af4300d3842d94c983e516855054248/package/core.md. אל תשני את core.md. אמרי איפה הקבצים באמת נחתו: תיקייה מקומית אמיתית, קובץ שאפשר להוריד, או רק ארגז כלים זמני. אם זו לא תיקייה מקומית, תני לי עותק להורדה. חוט צד יכול להיפתח לבד כדי להביא את הקבצים. אמרי שזה רגיל, ושאין צורך לפתוח אותו או לנהל אותו. אל תבטיחי שלא יופיע חוט.
 5. שמרי את ההנחיות הקבועות במקום שההקמה שנבחרה שומרת אותן, והציעי לי את הטקסט המדויק מ־package/web/instructions.md. בפרויקט Claude, הנתיב שנבדק ב־23.11.2026. כל שם באנגלית בשורה לבד:
 גלגל השיניים ליד שם הפרויקט.
 Project settings
@@ -38,7 +38,7 @@ New folder
 בדיאלוג של פרויקט חדש: שם, על מה רוצים לעבוד, והקשר. מתג דלוק כברירת מחדל. הבדיקה רצה כשהוא דלוק. המסך לא מסביר אותו. השם על המסך:
 Project coordinator - Beta
 נשארים בשיחה הראשית. בפרויקט עם שיחה אחת ממשיכים בה. פתק המסירה הוא למעבר למקום אחר: פרויקט חדש, עוזר אחר, או שיחה בלי הקובץ. לא קוראים לזה שיחה חדשה בתוך אותו פרויקט.
-אל תשני את הנחיות הפרויקט, ואל תשני את core.md, בלי כן. קבצי זיכרון שלך, למשל MEMORY.md, מותרים.
+אל תשני את הנחיות הפרויקט, ואל תשני את core.md, בלי כן. קובץ זיכרון, למשל MEMORY.md, יכול לומר רק שההקמה נעשתה ושהרשומה ב־my-record.md. אל תעתיקי לשם הסכמה, תוכן רפואי, או פרטים מזהים.
 שם קובץ הרשומה הוא בדיוק:
 my-record.md
 אם הפלטפורמה מוסיפה קידומת, משנים את השם.
@@ -57,12 +57,12 @@ Advolog is a package, not a site and not a wrapper. Nothing passes through us, a
 If you cannot open the web, or you cannot create files, stop in one line and say so. Then do not download. Go straight to step 5.
 
 If you can:
-1. Open https://github.com/heelago/Advolog/blob/7fcb409346f81601f78ebeed51000cf5076d61f8/README.md and https://raw.githubusercontent.com/heelago/Advolog/7fcb409346f81601f78ebeed51000cf5076d61f8/README.md. Read the README. If the page does not open, say so. Do not invent what it says.
+1. Open https://github.com/heelago/Advolog/blob/cb8f733a6af4300d3842d94c983e516855054248/README.md and https://raw.githubusercontent.com/heelago/Advolog/cb8f733a6af4300d3842d94c983e516855054248/README.md. Read the README. If the page does not open, say so. Do not invent what it says.
 2. Explain in plain language what Advolog is, what it will do, and what it will not do: it does not diagnose, recommend treatment, handle emergencies, or send anything for me. Say it is a package, not a site: privacy, because nothing is stored with us, and flexibility, because the same package opens wherever I have already given permissions. Whichever way you open it, you guide me to the best available setup.
 3. Check what this account actually has. Do not assume. Ask me to check whether I have: a new Claude Project, an older project with an Instructions field, Duet if it is on the screen, or another supported agent such as Dot or Grok Bot. If a better fit than one long session is on the screen, name it in the same message, and say why: one long session gets heavy. In that same message ask for one yes only. Do not ask a second question. That yes downloads the public package only and continues with the setup you just named. If I name a different setup in that same answer, follow that. If the screen differs, the screen wins. Do not claim a product is present when it is not on the screen.
-4. After that, download package/ from https://github.com/heelago/Advolog/tree/7fcb409346f81601f78ebeed51000cf5076d61f8/package including https://github.com/heelago/Advolog/blob/7fcb409346f81601f78ebeed51000cf5076d61f8/package/core.md and https://raw.githubusercontent.com/heelago/Advolog/7fcb409346f81601f78ebeed51000cf5076d61f8/package/core.md. Do not change core.md. Say where the files actually landed: a real local folder, a downloadable file, or only a temporary tool sandbox. If it is not a local folder, give me a downloadable copy. A side thread may start on its own to fetch the files. Say that this is normal, and that I do not need to open it or manage it. Do not promise that no thread will appear.
+4. After that, download package/ from https://github.com/heelago/Advolog/tree/cb8f733a6af4300d3842d94c983e516855054248/package including https://github.com/heelago/Advolog/blob/cb8f733a6af4300d3842d94c983e516855054248/package/core.md and https://raw.githubusercontent.com/heelago/Advolog/cb8f733a6af4300d3842d94c983e516855054248/package/core.md. Do not change core.md. Say where the files actually landed: a real local folder, a downloadable file, or only a temporary tool sandbox. If it is not a local folder, give me a downloadable copy. A side thread may start on its own to fetch the files. Say that this is normal, and that I do not need to open it or manage it. Do not promise that no thread will appear.
 5. Save the standing instructions where the chosen setup keeps them, and offer me the exact text from package/web/instructions.md. On a Claude Project, the path checked on 23.11.2026: the gear next to the project name, then Project settings, the Memory tab, the Project instructions field. The field shows a 16,000 character limit. The test saved 7,000. If the screen differs, the screen wins. Add files with Add context. The choices seen were Upload files, Upload folder, Drive, and New folder. A new project dialog has a name, what you want to work on, and context, plus a Project coordinator - Beta switch that is on by default. The test ran with it on. The screen does not explain the switch. Stay in the main conversation. On a project with one chat, continue in that chat. The handoff note is for a move to another place: a new project, another assistant, or a chat without the file. Do not call that a new chat inside the same project.
-Do not edit Project instructions, and do not edit core.md, without a yes. Your own memory files, such as MEMORY.md, may stay.
+Do not edit Project instructions, and do not edit core.md, without a yes. A memory file, such as MEMORY.md, may say only that setup is done and the record lives in my-record.md. Do not copy consent, medical details, or identifiers into it.
 The record file is named exactly my-record.md. If the platform prefixes the name, rename it.
 Downloading, checked 23.11.2026 on one account: the control was in a hidden menu. Check the screen. Removing a file from Context was a right-click. Check the screen.
 If I say the record is removed, or the file is not attached now, chat history is not the record.
