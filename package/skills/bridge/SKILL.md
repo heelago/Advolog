@@ -13,7 +13,7 @@ Read the profile from `profile.md`, or from `## הפרופיל שלי` inside `m
 
 ## Outbound
 
-Before any draft for another person, the profile section must be readable in this chat. If it is not, say so, keep private logging available, and withhold the draft. If the consent note is missing, unreadable, or declined: do not draft. Say why in one line. Do not ask again after a decline. If the note is simply empty and the record is for someone else, ask once, plainly, and produce nothing outbound until they answer.
+Before any draft for another person, the current record file must be attached now (`profile.md`, or `my-record.md` in Context or on this turn). Earlier messages are not that file. If they say the record is gone, removed, or out of date, or the file is not attached: it is unavailable. Say so, keep private logging available, and withhold the draft until the current file is reattached and the consent note in it is readable. If the note is missing, unreadable, or declined: do not draft. Say why in one line. Do not ask again after a decline. If the note is simply empty and the record is for someone else, ask once, plainly, and produce nothing outbound until they answer. After you hand over a draft, stop. Do not add a question.
 
 Frame by the trusted-clinician answer. A trusted clinician can run the questions in their own professional context, and what comes back is recorded with honest labels. No trusted clinician: say the honest reframe [UF]. These questions touch resources the doctor has. Sending them to a consumer AI is possible, and whatever returns will be labeled honestly, but the stronger move is bringing them to the doctor as questions.
 

@@ -43,7 +43,9 @@ Claude הוא המשטח הראשי. Advolog היא חבילה, לא אתר: ש�
 
 `New folder`
 
-נשארים בשיחה הראשית. חוט צד להבאת הקבצים הוא רגיל. Claude יכולה לכתוב קבצי זיכרון משלה, למשל `MEMORY.md` ו־`advolog-setup.md`, תחת זיכרון אוטומטי. זה בסדר. אלה הערות שלה, לא הרשומה הרפואית.
+נשארים בשיחה הראשית. בפרויקט עם שיחה אחת ממשיכים בה. פתק המסירה הוא למעבר למקום אחר, לא לשיחה חדשה בתוך אותו פרויקט. חוט צד להבאת הקבצים הוא רגיל. Claude יכולה לכתוב קבצי זיכרון משלה, למשל `MEMORY.md` ו־`advolog-setup.md`, תחת זיכרון אוטומטי. זה בסדר. אלה הערות שלה, לא הרשומה הרפואית. היא לא משנה את הנחיות הפרויקט, ולא את `core.md`, בלי כן.
+
+שם הקובץ הוא בדיוק `my-record.md`. אם ההעלאה קיבלה קידומת, משנים את השם. הורדה, נבדק 23.11.2026 בחשבון אחד: התפריט היה מוסתר. בודקים את המסך. הסרה מההקשר הייתה בלחיצה ימנית. בודקים את המסך. אם אומרים שהרשומה הוסרה, או שהקובץ לא בהקשר עכשיו, מה שנשאר בהיסטוריה אינו הרשומה.
 - פרויקט עם שדה הנחיות, אם הוא עדיין על המסך: מדביקים בשדה, מעלים את הקובץ, מצרפים את `my-record.md`, ורק אז שיחה חדשה בתוך הפרויקט.
 - תיקייה במחשב: סוגרים ופותחים מחדש את `package/` כדי ש־`CLAUDE.md` ייטען.
 
@@ -77,9 +79,9 @@ Claude הוא המשטח הראשי. Advolog היא חבילה, לא אתר: ש�
 נבדק 11.11.2026: מסמך לייצוא קיים בכל התוכניות, כולל החינמית, ופתוח כברירת מחדל. בתוכנית החינמית אפשר לשתף בקישור, לא בהזמנה. המסמך פרטי עד שמשתפים אותו. לרופא או לרופאה פשוט יותר לייצא קובץ. לפני שיתוף, רשימת הבדיקה. אם המסמך לא מופיע בשיחה, הדף נמסר כקובץ מלא אחד.
 <!-- /facts:uploads-claude -->
 
-## שיחה חדשה
+## המשך, ופתק למעבר
 
-אחרי רישום, או אחרי שתיים־שלוש משימות, מוצעת שיחה חדשה, פעם אחת. בפרויקט Claude חדש נשארים בשיחה הראשית, ומוודאים שהרשומה בהקשר ושההנחיות בלשונית הזיכרון. חוט צד יכול להופיע לבד. אין צורך לנהל אותו. שיחה חדשה היא לחשבון שעדיין יש בו שדה הנחיות, ול־ChatGPT. שום דבר לא הולך לאיבוד רק אם בודקים שההמשך באמת פותח את אותו `my-record.md` (או את שבעת הקבצים), ושההנחיות הקבועות כבר שמורות. אם הקובץ נשאר רק בארגז כלים זמני, מורידים עותק לפני המעבר. פתק לבדו אינו מספיק. במחשב הפתק נשמר כ־`handoff.md` ליד הקבצים. מילת פתיחה: «תתעדכני». לפני טיוטה עבור אדם אחר, בודקים שהפרופיל נקרא. אם אין הסכמה, או שהיא לא נקראת, לא כותבים את הטיוטה, ואומרים למה. הרישום הפרטי נשאר.
+אחרי רישום, או אחרי שתיים־שלוש משימות, אפשר פתק מסירה, פעם אחת. בפרויקט Claude עם שיחה ראשית אחת נשארים באותה שיחה. הפתק הוא למעבר: פרויקט חדש, עוזר אחר, או שיחה בלי הקובץ. לא אומרים «שיחה חדשה» בתוך הפרויקט הזה. שיחה חדשה נשארת לחשבון שעדיין יש בו שדה הנחיות, ול־ChatGPT. שום דבר לא הולך לאיבוד רק אם ההמשך באמת פותח את אותו `my-record.md` (או את שבעת הקבצים), ושההנחיות הקבועות כבר שמורות. אם הקובץ נשאר רק בארגז כלים זמני, מורידים עותק לפני המעבר. פתק לבדו אינו מספיק. מה שנשאר רק בהיסטוריית השיחה אינו הרשומה. במחשב הפתק נשמר כ־`handoff.md` ליד הקבצים. מילת פתיחה במקום החדש: «תתעדכני». לפני טיוטה עבור אדם אחר, בודקים שהקובץ מצורף עכשיו ושהפרופיל נקרא ממנו. אם אין הסכמה, או שהיא לא נקראת, לא כותבים את הטיוטה, ואומרים למה. הרישום הפרטי נשאר. אחרי טיוטה, עוצרים. לא מוסיפים שאלה.
 
 ## זיכרון
 
@@ -118,7 +120,9 @@ On the new-project dialog, checked 23.11.2026 on one account: a name, what you w
 
 The last step, before onboarding, on the web route and on the fallback: save `web/instructions.md` (at most 7,000 characters; the site button gives that text) where the chosen setup keeps it.
 
-- A Claude Project, if it is on the screen. The path was checked 23.11.2026. The gear next to the project name, then Project settings, the tab called Memory, and the Project instructions field. The field showed a 16,000 character limit, and 7,000 characters were saved. Add `web/advolog-modules.md` and `my-record.md`, if it already exists, with Add context. The choices seen were Upload files, Upload folder, Drive, and New folder. Stay in the main conversation. A side thread that fetches the files is normal. Claude may write its own memory files, such as `MEMORY.md` and `advolog-setup.md`, under Auto memory. That is fine. Those are its notes, not the medical record.
+- A Claude Project, if it is on the screen. The path was checked 23.11.2026. The gear next to the project name, then Project settings, the tab called Memory, and the Project instructions field. The field showed a 16,000 character limit, and 7,000 characters were saved. Add `web/advolog-modules.md` and `my-record.md`, if it already exists, with Add context. The choices seen were Upload files, Upload folder, Drive, and New folder. Stay in the main conversation. On a project with one chat, continue there. The handoff note is for a move to another place, not a new chat inside this project. A side thread that fetches the files is normal. Claude may write its own memory files, such as `MEMORY.md` and `advolog-setup.md`, under Auto memory. That is fine. Those are its notes, not the medical record. It does not change Project instructions, or `core.md`, without a yes.
+
+The record file is named exactly `my-record.md`. If an upload arrives with a prefix, rename it. Downloading, checked 23.11.2026 on one account: the control was in a hidden menu. Check the screen. Removing a file from Context was a right-click. Check the screen. If they say the record was removed, or the file is not in Context now, what remains in the chat history is not the record.
 - A project with an Instructions field, if it is still on the screen: paste into the field, upload the file, attach `my-record.md`, and only then open a new chat inside the project.
 - A folder on a computer: close and reopen `package/` so `CLAUDE.md` or `AGENTS.md` is in scope.
 
@@ -148,9 +152,9 @@ Crop or cover the ID number before every upload. If a file arrives empty, say so
 
 Checked 11.11.2026: an exportable document exists on every plan, including Free, and is on by default. On Free, sharing is by link, not by invitation. The document stays private until shared. For the doctor, export a file. The checklist comes first. If this session has no such document, the page is one complete file to save and print.
 
-## A new chat
+## Continuing, and a note for a move
 
-After a log, or after two or three tasks, a new chat is offered once. On a new Claude Project, stay in the main conversation, and check that the record is in Context and the instructions are on the Memory tab. A side thread may appear on its own. You do not need to manage it. A new chat is for an account that still has an Instructions field, and for ChatGPT. Nothing is lost only if you check that the continuation actually opens the same `my-record.md` (or the seven files), and that the standing instructions are already saved. If the file is only in a temporary sandbox, download a copy before you move. The note alone is not enough. On a computer the note is `handoff.md` beside the files. Opening word: "catch up". Before a draft for someone else, check that the profile can be read. If consent is missing, unreadable, or declined, do not write the draft, and say why. Private logging stays.
+After a log, or after two or three tasks, a handoff note may be offered once. On a Claude Project with one main chat, stay in that chat. The note is for a move: a new project, another assistant, or a chat without the file. Do not say "new chat" inside this project. A new chat remains for an account that still has an Instructions field, and for ChatGPT. Nothing is lost only if the continuation actually opens the same `my-record.md` (or the seven files), and the standing instructions are already saved. If the file is only in a temporary sandbox, download a copy before you move. The note alone is not enough. What remains only in the chat history is not the record. On a computer the note is `handoff.md` beside the files. Opening word in the new place: "catch up". Before a draft for someone else, check that the file is attached now and that the profile is read from it. If consent is missing, unreadable, or declined, do not write the draft, and say why. Private logging stays. After a draft, stop. Do not add a question.
 
 ## Memory
 

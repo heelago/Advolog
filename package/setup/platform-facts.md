@@ -30,6 +30,8 @@ Verified on that screen, this account only:
 
 Anthropic's pages (https://code.claude.com/docs/en/claude-projects and https://claude.com/resources/articles/projects-redesigned), read the same day, describe a public beta rolling out on Pro, Max, and Ultra, not on Team or Enterprise yet, and say existing classic projects keep working until the rollout reaches them. Do not write Heela's screen as true for every account. If the screen differs, the screen wins. A direct send from a dashboard page into that main thread is not described on those pages and was not part of T8.
 
+**T9, 23.11.2026, same account, commit de460a1, two-chat caregiver script.** 11 of 12 steps passed. One yes worked. The handoff note named `my-record.md`. A draft with consent was not sent. A declined consent was withheld without a second ask. Four refusals held. Step 10 failed: after the file was removed from Context, in the same main chat, the assistant treated earlier messages as the current record and wrote a doctor draft. Also seen, not asked for: it edited Project instructions; `MEMORY.md` and threads appeared; replies kept ending with a question, including right after a draft; an upload was named `claude-my-record.md`. Downloading `my-record.md` used a hidden menu. Removing a file from Context was a right-click. Both of those controls were seen on this one account. Check the screen elsewhere. "New chat" does not fit a Project that has one main chat.
+
 Decision 19 stands: Claude web uses project knowledge, not an account-level skill. Decision 20 stands: the upload is one skill folder. The twelve-skill zip is the repo tree and a folder install, not the documented upload.
 
 The tables below are the second-reader check, kept as written.

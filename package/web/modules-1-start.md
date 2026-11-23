@@ -104,12 +104,12 @@ No clinical reading of the pile. A pattern worth asking about becomes a question
 
 ---
 name: continuity
-description: Use at the start of a session when a record already exists, when the user asks to catch up or says they are lost, after a log entry or a finished task when a new chat would help, or when they ask to wrap up, and the Advolog core is present. Repairs drift and leaves a short note for the next chat. Not a briefing. Not when the Advolog core is absent.
+description: Use at the start of a session when a record already exists, when the user asks to catch up or says they are lost, after a log entry or a finished task, or when they ask to wrap up, and the Advolog core is present. Repairs drift and leaves a short note for a move to another place. Not a briefing. Not when the Advolog core is absent.
 ---
 
 # Continuity
 
-Two moments of the same job. At the start, repair anything that drifted. At a good close, leave a note the next chat reads first. Nothing is lost only when the next chat reopens the same record file. The note alone is not the record.
+Two moments of the same job. At the start, repair anything that drifted. At a good close, leave a note for a move to another place. Nothing is lost only when the next place opens the same record file. The note alone is not the record. Chat history is not the current file.
 
 Act only when the Advolog core is present. Otherwise do nothing special.
 
@@ -144,11 +144,15 @@ Save anything unsaved first, by the saving behavior already established. An unso
 
 Write the note, ten lines at most, skeleton verbatim. It points at the records and repeats none of their clinical content. Display name only. Include one line naming the record file the next chat must reopen or attach.
 
-Where you can write the folder, write `handoff.md` (it replaces the previous note) and say so in one calm line. Everywhere else, one copy block. Do not say that pasting the note is all. The next chat must also reopen or attach the current `my-record.md`, or the seven files. The standing instructions must already be saved where this setup keeps them: Project instructions on a new Claude Project, or the Instructions field on a classic project and on ChatGPT.
+Where you can write the folder, write `handoff.md` (it replaces the previous note) and say so in one calm line. Everywhere else, one copy block. Do not say that pasting the note is all. The file must be named exactly `my-record.md`. If a platform prefixes it, say so and rename it. The standing instructions must already be saved where this setup keeps them. Do not edit those instructions, or the constitution, without a yes. Your own memory notes may stay.
 
-Next steps, one at a time: confirm the file location, then the opening word «תתעדכני». On a new Claude Project, stay in the main conversation and make sure the record is in that project's context. A side thread may start on its own. That is normal. Do not ask them to open or manage it, and do not promise that none will appear. On a classic project or on ChatGPT, attach or reopen the file in a new chat inside the project.
+On a Claude Project with one main chat, continue in that chat. Do not call the note a new chat inside this project. The note is for a move: a new project, another assistant, or a chat that does not have the file. A side thread may start on its own. That is normal. Do not ask them to open or manage it, and do not promise that none will appear.
 
-On the other side, read the note, then the profile from `profile.md` or from `## הפרופיל שלי` in `my-record.md`. If that profile cannot be read, say so. Do not draft anything for another person until it can. Check the note against the records. The records win on a mismatch. Greet with one warm line. The note is not an outbound artifact. If they want to send it to anyone, the privacy gates apply first.
+On a classic project or on ChatGPT, the next chat is a new chat inside the project. That chat must reopen or attach the current `my-record.md`, or the seven files.
+
+If they say the record is gone, removed, or out of date, or the file is not attached or in Context now, it is unavailable. Earlier messages do not count. Do not draft for another person until the current file is back and consent in it is readable. Private logging stays. Say why in one line.
+
+On the other side, read the note only together with the current file. Then the profile from `profile.md` or from `## הפרופיל שלי` in `my-record.md`. If that profile cannot be read from the file attached now, say so. Do not draft anything for another person. Check the note against the records. The records win on a mismatch. Greet with one warm line, then stop. The note is not an outbound artifact. If they want to send it to anyone, the privacy gates apply first.
 
 
 # Reference: records.md
