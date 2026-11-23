@@ -5,11 +5,11 @@
 ## עברית
 
 1. פותחים שיחה חדשה. מדביקים את הנחיית ההקמה מהאתר (בבדיקת טיוטה: את ההנחיה המסומנת «בדיקה בלבד» ב־`tests/setup-prompt-draft.md`).
-2. מחכים. אם העוזרת מורידה קבצים לפני שאומרים כן, זו נפילה. אם היא בוחרת הקמה בלי לשאול מה באמת על המסך, זו נפילה.
-3. עונים מה שרואים. אם היא מציעה מקום אחר, אפשר לומר להישאר כאן. אחר כך אומרים כן רק לחבילה הציבורית.
+2. מחכים. אם העוזרת מורידה קבצים לפני שאומרים כן, זו נפילה. אם היא שואלת שני כן, אחד להקמה ואחד להורדה, זו נפילה. כן אחד בלבד, והוא רק לחבילה הציבורית.
+3. באותה הודעה היא אומרת מה היא רואה וממליצה. אם היא מציעה מקום אחר, אפשר לומר להישאר כאן, בתוך אותו כן. אם נפתח חוט צד לבד, זה רגיל. אין צורך לפתוח אותו.
 4. קוראים איפה הקבצים נחתו. אם זו לא תיקייה אצלכם, מורידים את העותק שהיא נותנת. בלי עותק, זו נפילה.
 5. שומרים את ההנחיות במקום שהיא אומרת, ובודקים שהטקסט תואם את `package/web/instructions.md`. מעלים את `advolog-modules.md`.
-   - ב־Claude, אם על המסך פרויקט עם שיחה ראשית: הנחיות הפרויקט, והקובץ ב־Context. נשארים בשיחה הראשית. לא פותחים חוט.
+   - ב־Claude, אם על המסך פרויקט עם שיחה ראשית: גלגל השיניים, לשונית Memory, שדה Project instructions. הקובץ דרך Add context. נשארים בשיחה הראשית. חוט צד לבד הוא בסדר.
    - ב־Claude, אם עדיין יש שדה הנחיות: מדביקים שם, ואחר כך שיחה חדשה.
    - ב־ChatGPT: שדה ההנחיות של פרויקט פרטי, ואחר כך שיחה חדשה.
 6. שומרים קובץ `my-record.md` עם הסעיפים מהסכימה. בפרופיל: דנה, מטפלת, הסכמה: כן, כינוי: מרים. בלי מספר זהות, בלי טלפון. מצרפים אותו למקום שההקמה שומרת קבצים.
@@ -25,11 +25,11 @@
 An invented person. Dana writes for her mother, Miriam. Nobody here is real. Do this once in ChatGPT and once in Claude. Do not send anything.
 
 1. Open a new chat. Paste the setup instruction from the site (for a draft check: the prompt marked "test only" in `tests/setup-prompt-draft.md`).
-2. Wait. If the assistant downloads files before you say yes, that is a fail. If it chooses a setup without asking what is actually on the screen, that is a fail.
-3. Answer with what you see. If it suggests another place, you can tell it to stay here. Then say yes only for the public package.
+2. Wait. If the assistant downloads files before you say yes, that is a fail. If it asks for two yeses, one for the setup and one for the download, that is a fail. One yes only, and it is only for the public package.
+3. In that same message it says what it sees and recommends a setup. If it suggests another place, you can say to stay here, inside that same yes. If a side thread opens on its own, that is normal. You do not need to open it.
 4. Read where the files landed. If it is not a folder you keep, download the copy it gives you. No copy is a fail.
 5. Save the instructions where it says, and check that the text matches `package/web/instructions.md`. Upload `advolog-modules.md`.
-   - On Claude, if the screen is a Project with one main conversation: Project instructions, and the file in Context. Stay in the main conversation. Do not open a thread.
+   - On Claude, if the screen is a Project with one main conversation: the gear, the Memory tab, the Project instructions field. The file goes through Add context. Stay in the main conversation. A side thread on its own is fine.
    - On Claude, if an Instructions field is still there: paste there, then a new chat.
    - On ChatGPT: the private project's Instructions field, then a new chat.
 6. Save `my-record.md` with the sections from the schema. In the profile: Dana, caregiver, consent: yes, alias: Miriam. No ID number, no phone. Attach it where this setup keeps files.

@@ -29,6 +29,24 @@
 
 תסריט: לחיצה כפולה על dashboard.html ← «בחירת התיקייה» (או גרירה) ← אישור הדפדפן ← הרשומות מופיעות ← הדבקת בלוק עדכון ← «בדיקת הבלוק» ← החלה ← הקובץ שהשתנה נפתח בעורך טקסט להצצה («זה כל הקסם — קובץ טקסט שלך»). שורת סיום: «שום דבר לא נכנס בלי האישור שלך.»
 
+## רשימת שוטים, פרויקט Claude
+
+נבדק 23.11.2026 בחשבון אחד. ארבעה רגעים, לא סרטון שלם. בלי פנים, בלי מידע רפואי אמיתי.
+
+1. מתג הבטא. בדיאלוג פרויקט חדש, המתג `Project coordinator - Beta` דלוק. שורה על המסך: זו השיחה הראשית, והיא יכולה להתחיל עבודה בצד. המסך עצמו לא מסביר את המתג.
+2. חוט צד לבד. אחרי כן להורדה, חוט נפתח בלי שלוחצים עליו. שורה: זה רגיל, אין צורך לפתוח או לנהל.
+3. הנחיות. גלגל השיניים ליד שם הפרויקט, `Project settings`, הלשונית `Memory`, השדה `Project instructions`. מראים ש־7,000 תווים נכנסים, והשדה אומר 16,000.
+4. הוספת קבצים. `Add context`, וארבע האפשרויות: `Upload files`, `Upload folder`, `Drive`, `New folder`.
+
+## English shot list, Claude Project
+
+Checked 23.11.2026 on one account. Four moments, not a full video. No faces, no real medical information.
+
+1. The beta switch. On the new-project dialog, `Project coordinator - Beta` is on. A line on screen: this is the main conversation, and it can start side work. The dialog itself does not explain the switch.
+2. A side thread on its own. After the yes to download, a thread opens without a click. A line: this is normal, no need to open or manage it.
+3. Instructions. The gear next to the project name, `Project settings`, the `Memory` tab, the `Project instructions` field. Show that 7,000 characters fit, and that the field says 16,000.
+4. Adding files. `Add context`, and the four choices: `Upload files`, `Upload folder`, `Drive`, `New folder`.
+
 ## תרגום לאנגלית
 
 אותם שלושה סרטונים, כתוביות אנגליות. ההפקה יכולה לעקוב אחרי הפרסום; החריצים באתר מסומנים «בקרוב» עד אז.

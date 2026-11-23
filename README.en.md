@@ -9,7 +9,7 @@ You should not have to study engineering to arrive prepared.
 Claude is the primary surface. Check whether you have a Claude Project: one main conversation, and it starts the side work. One long session gets heavy. If the screen still shows a project with an Instructions field, that still works. You do not download a zip by hand.
 
 1. Check training, memory, web access, and file creation.
-2. Paste the Hebrew block in `package/prompts/setup-from-repo.md`. The assistant reads the README, explains, checks what the account actually has, and waits for a yes. Only a yes downloads the public package. Then the instructions are saved where the chosen setup keeps them.
+2. Paste the Hebrew block in `package/prompts/setup-from-repo.md`. The assistant reads the README, explains, says what the account has, and asks for one yes. Only that yes downloads the public package. Then the instructions are saved where the chosen setup keeps them.
 
 If there is no web access or no file creation: paste `package/core.md` (at most 7,000 characters) and upload `package/web/advolog-modules.md`. The zip remains a fallback for a folder you already download by hand.
 

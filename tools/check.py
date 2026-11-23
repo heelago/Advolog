@@ -383,6 +383,10 @@ def check_paste_limits(errors: list[str]) -> None:
         "Project instructions",
         "ההקמה הכי מתאימה",
         "best available setup",
+        "יש רק כן אחד",
+        "There is only one yes",
+        "חוט צד",
+        "side thread",
     ):
         if needle not in setup:
             errors.append(f"setup prompt is missing {needle}")

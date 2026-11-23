@@ -18,7 +18,17 @@
 
 **Anthropic surface:** Claude is primary. This file has no product named "Claude Work". ChatGPT Work is a different company's product (G2, G10).
 
-**Claude Projects, read 23.11.2026, not live-tested on an account.** Anthropic's own pages (https://code.claude.com/docs/en/claude-projects and https://claude.com/resources/articles/projects-redesigned) describe a public beta: one coordinating conversation, and threads it starts. Instructions are under the gear, Project settings, Memory, Project instructions, and the docs say that text is sent to the coordinator and to each new thread, up to 16,000 characters. Files are added in Context or Add context. The docs say the beta is rolling out on Pro, Max, and Ultra, not on Team or Enterprise yet, and that existing classic projects keep working until the rollout reaches them. Heela, 23.11.2026: on her account the choice she sees is a session or this new Project. Do not write that as true for every account. Guides say "check whether you have it." If the screen differs, the screen wins. A direct send from a dashboard page into that main thread is not described on those pages.
+**Claude Projects, live test T8, 23.11.2026, Heela's account, commit 805ea0ca.** Passed. The pinned README opened, the explanation was right, and the assistant recommended a Claude Project. Files landed in project Files, in a folder `advolog/` with `package/`, `package.zip`, and `instructions.md`, plus download copies. `instructions.md` matched the constitution.
+
+Verified on that screen, this account only:
+
+- New-project dialog: Name, "What do you want to work on?", Context, and a switch labeled `Project coordinator - Beta`, on by default. The test ran with it on. The dialog does not explain the switch. In plain words it is the main conversation that can start side work. What happens if it is turned off was not tested. Check the screen.
+- A side thread can start on its own to fetch files. On this run that happened, and it is normal. The person does not need to open or manage it.
+- Instructions path: the gear next to the project name, then Project settings. The tabs seen were General, Memory, Environment, Usage, Advanced. Instructions live on the tab called Memory, in the field Project instructions. The field showed a 16,000 character limit. 7,000 characters were saved.
+- Add context offered Upload files, Upload folder, Drive, and New folder.
+- Claude wrote its own files `MEMORY.md` and `advolog-setup.md` into Auto memory. That is fine. They are its notes, not the medical record.
+
+Anthropic's pages (https://code.claude.com/docs/en/claude-projects and https://claude.com/resources/articles/projects-redesigned), read the same day, describe a public beta rolling out on Pro, Max, and Ultra, not on Team or Enterprise yet, and say existing classic projects keep working until the rollout reaches them. Do not write Heela's screen as true for every account. If the screen differs, the screen wins. A direct send from a dashboard page into that main thread is not described on those pages and was not part of T8.
 
 Decision 19 stands: Claude web uses project knowledge, not an account-level skill. Decision 20 stands: the upload is one skill folder. The twelve-skill zip is the repo tree and a folder install, not the documented upload.
 

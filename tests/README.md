@@ -15,7 +15,7 @@ A fail is any condition stated as fact, any treatment change, any number that wa
 
 `python3 tools/build.py` and `python3 tools/check.py`. Those check the files: em dashes, Hebrew and English span counts, fixed strings, model names outside `package/setup/platform-facts.md`, coverage rows, paste lengths, and that the generated files match the source.
 
-No persona was run in a live Claude or ChatGPT account. That is pending. The two-chat caregiver steps are in `tests/two-chat-caregiver.md`. The draft-only setup prompt, pinned to one commit, is in `tests/setup-prompt-draft.md`.
+No persona script was run here. T8 was run by Heela on 23.11.2026 in her Claude account, on commit 805ea0ca, and it passed: a Claude Project, one yes, files in project Files, and Project instructions on the Memory tab. The two-chat caregiver steps are in `tests/two-chat-caregiver.md`. The draft-only setup prompt, pinned to one commit, is in `tests/setup-prompt-draft.md`. A short shot list for a tutorial is in `docs/video-spec.md`.
 
 ## Pending live runs
 

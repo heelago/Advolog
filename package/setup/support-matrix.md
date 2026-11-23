@@ -14,7 +14,7 @@
 | **טקסט הפתיחה בלי הורדה, גרסה 1.0** | ריאיון, קליטה והכנה מהירה מתוך הטקסט לבדו | 2.8.2026 |
 | **הלוח המקומי** | חיבור תיקייה, הצגת הרשומות, אישור עדכונים, ייצוא גיבוי וכלי הפרטיות בדפדפן מחשב | 31.7.2026 |
 | **גרסה 1.1.0** | נבדקה מול דפי העזרה ב־1.10.2026. לא הורצה חיה מקצה לקצה | 1.10.2026 |
-| **גרסה 1.2.0** | נבנתה ונבדקה מקומית (`tools/build.py`, `tools/check.py`). **ריצה חיה בחשבונות אמיתיים: ממתינה.** רשימת התרחישים ב־`tests/README.md` | 11.11.2026 |
+| **גרסה 1.2.0** | נבנתה ונבדקה מקומית (`tools/build.py`, `tools/check.py`). T8, פרויקט Claude בחשבון אחד: עבר ב־23.11.2026 (קומיט 805ea0ca). שאר התרחישים עדיין ממתינים. הרשימה ב־`tests/README.md` | 23.11.2026 |
 
 ## עובדות פלטפורמה
 
@@ -36,7 +36,7 @@
 
 ## English
 
-**As of 11.11.2026, version 1.2.0.** The 1.0 live runs stand. Version 1.2 was built and checked locally. A live run on real Claude and ChatGPT accounts is pending. The scripts are in `tests/README.md`.
+**As of 23.11.2026, version 1.2.0.** The 1.0 live runs stand. Version 1.2 was built and checked locally. T8 passed on one Claude account on 23.11.2026 (commit 805ea0ca): a Claude Project, files in project Files, and Project instructions on the Memory tab. The other scripts are still pending, in `tests/README.md`.
 
 Claude is the primary surface. ChatGPT is supported when that is the account you have.
 
