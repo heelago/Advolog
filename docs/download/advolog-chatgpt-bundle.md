@@ -553,7 +553,7 @@ Write the note, ten lines at most, skeleton verbatim from `references/report-tem
 
 Where you can write the folder, write `handoff.md` (it replaces the previous note) and say so in one calm line. Everywhere else, one copy block. Do not say that pasting the note is all. The file must be named exactly `my-record.md`. If a platform prefixes it, say so and rename it. The standing instructions must already be saved where this setup keeps them. Do not edit those instructions, or the constitution, without a yes. A memory note may say only that Advolog is set up and the record lives in `my-record.md`. Never copy a handoff note, the record, consent, or medical details into `MEMORY.md` or auto memory. Do not write those files from a note.
 
-On a Claude Project with one main chat, continue in that chat. Do not call the note a new chat inside this project. The note is for a move: a new project, another assistant, or a chat that does not have the file. A side thread may start on its own. That is normal. Do not ask them to open or manage it, and do not promise that none will appear.
+On a Claude Project with one main chat, continue in that chat. Do not call the note a new chat inside this project. The note is for a move: a new project, another assistant, or a chat that does not have the file. A side thread may start on its own only if the coordinator switch is on. If it is off, do not expect one. Do not ask them to open or manage a thread.
 
 On a classic project or on ChatGPT, the next chat is a new chat inside the project. That chat must reopen or attach the current `my-record.md`, or the seven files.
 

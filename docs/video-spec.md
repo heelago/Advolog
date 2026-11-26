@@ -31,21 +31,19 @@
 
 ## רשימת שוטים, פרויקט Claude
 
-נבדק 23.11.2026 בחשבון אחד. ארבעה רגעים, לא סרטון שלם. בלי פנים, בלי מידע רפואי אמיתי.
+נבדק 26.11.2026 בחשבון אחד. שלושה רגעים, לא סרטון שלם. בלי פנים, בלי מידע רפואי אמיתי.
 
-1. מתג הבטא. בדיאלוג פרויקט חדש, המתג `Project coordinator - Beta` דלוק. שורה על המסך: זו השיחה הראשית, והיא יכולה להתחיל עבודה בצד. המסך עצמו לא מסביר את המתג.
-2. חוט צד לבד. אחרי כן להורדה, חוט נפתח בלי שלוחצים עליו. שורה: זה רגיל, אין צורך לפתוח או לנהל.
-3. הנחיות. גלגל השיניים ליד שם הפרויקט, `Project settings`, הלשונית `Memory`, השדה `Project instructions`. מראים ש־7,000 תווים נכנסים, והשדה אומר 16,000.
-4. הוספת קבצים. `Add context`, וארבע האפשרויות: `Upload files`, `Upload folder`, `Drive`, `New folder`.
+1. טופס היצירה. מכבים את `Project coordinator`. הוא דלוק כברירת מחדל ופותח פרויקט מסוג Claude Code. כבוי נותן פרויקט רגיל. באותו טופס, `Use account memory` דלוק. שורה: לרשומה רפואית שוקלים לכבות. בדקו את המסך.
+2. הנחיות. על דף הפרויקט: `Add`, ואז `Edit`, והשדה `Project instructions`. אם המסך מראה גלגל שיניים ולשונית `Memory`, זה הנתיב מ־23.11.2026.
+3. הוספת קבצים. `Add context`. האפשרויות שנראו ב־23.11.2026: `Upload files`, `Upload folder`, `Drive`, `New folder`. בדקו את המסך.
 
 ## English shot list, Claude Project
 
-Checked 23.11.2026 on one account. Four moments, not a full video. No faces, no real medical information.
+Checked 26.11.2026 on one account. Three moments, not a full video. No faces, no real medical information.
 
-1. The beta switch. On the new-project dialog, `Project coordinator - Beta` is on. A line on screen: this is the main conversation, and it can start side work. The dialog itself does not explain the switch.
-2. A side thread on its own. After the yes to download, a thread opens without a click. A line: this is normal, no need to open or manage it.
-3. Instructions. The gear next to the project name, `Project settings`, the `Memory` tab, the `Project instructions` field. Show that 7,000 characters fit, and that the field says 16,000.
-4. Adding files. `Add context`, and the four choices: `Upload files`, `Upload folder`, `Drive`, `New folder`.
+1. The creation form. Turn `Project coordinator` off. It is on by default and opens a Claude Code style project. Off gives a normal project. On the same form, `Use account memory` is on. A line: for a medical project, consider turning it off. Check the screen.
+2. Instructions. On the project page: `Add`, then `Edit`, then the `Project instructions` field. If the screen shows a gear and a `Memory` tab, that is the 23.11.2026 path.
+3. Adding files. `Add context`. The choices seen on 23.11.2026: `Upload files`, `Upload folder`, `Drive`, `New folder`. Check the screen.
 
 ## תרגום לאנגלית
 

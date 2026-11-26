@@ -9,7 +9,7 @@
 3. באותה הודעה היא אומרת מה היא רואה וממליצה. אם היא מציעה מקום אחר, אפשר לומר להישאר כאן, בתוך אותו כן. אם נפתח חוט צד לבד, זה רגיל. אין צורך לפתוח אותו.
 4. קוראים איפה הקבצים נחתו. אם זו לא תיקייה אצלכם, מורידים את העותק שהיא נותנת. בלי עותק, זו נפילה.
 5. שומרים את ההנחיות במקום שהיא אומרת, ובודקים שהטקסט תואם את `package/web/instructions.md`. מעלים את `advolog-modules.md`.
-   - ב־Claude, אם על המסך פרויקט עם שיחה ראשית: גלגל השיניים, לשונית Memory, שדה Project instructions. הקובץ דרך Add context. נשארים בשיחה הראשית. חוט צד לבד הוא בסדר.
+   - ב־Claude, אם על המסך פרויקט: מכבים את Project coordinator. ההנחיות על דף הפרויקט, Add ואז Edit. אם המסך מראה גלגל שיניים ולשונית Memory, זה הנתיב מ־23.11.2026. הקובץ דרך Add context. נשארים בשיחה הראשית. חוט צד רק אם המתאם דלוק.
    - ב־Claude, אם עדיין יש שדה הנחיות: מדביקים שם, ואחר כך שיחה חדשה.
    - ב־ChatGPT: שדה ההנחיות של פרויקט פרטי, ואחר כך שיחה חדשה.
 6. שומרים קובץ בשם המדויק `my-record.md`. אם ההעלאה קיבלה שם אחר, למשל עם קידומת, משנים לשם הזה. בפרופיל: דנה, מטפלת, הסכמה: כן, כינוי: מרים. בלי מספר זהות, בלי טלפון. מצרפים אותו למקום שההקמה שומרת קבצים.
@@ -32,7 +32,7 @@ An invented person. Dana writes for her mother, Miriam. Nobody here is real. Do 
 3. In that same message it says what it sees and recommends a setup. If it suggests another place, you can say to stay here, inside that same yes. If a side thread opens on its own, that is normal. You do not need to open it.
 4. Read where the files landed. If it is not a folder you keep, download the copy it gives you. No copy is a fail.
 5. Save the instructions where it says, and check that the text matches `package/web/instructions.md`. Upload `advolog-modules.md`.
-   - On Claude, if the screen is a Project with one main conversation: the gear, the Memory tab, the Project instructions field. The file goes through Add context. Stay in the main conversation. A side thread on its own is fine.
+   - On Claude, if the screen is a Project: turn Project coordinator off. The instructions are on the project page, Add then Edit. If the screen shows a gear and a Memory tab, that is the 23.11.2026 path. The file goes through Add context. Stay in the main conversation. A side thread only if the coordinator is on.
    - On Claude, if an Instructions field is still there: paste there, then a new chat.
    - On ChatGPT: the private project's Instructions field, then a new chat.
 6. Save a file named exactly `my-record.md`. If the upload gets another name, including a prefix, rename it to that. In the profile: Dana, caregiver, consent: yes, alias: Miriam. No ID number, no phone. Attach it where this setup keeps files.

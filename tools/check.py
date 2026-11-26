@@ -386,6 +386,8 @@ def check_paste_limits(errors: list[str]) -> None:
         "public package",
         "הנחיות הפרויקט",
         "Project instructions",
+        "Use account memory",
+        "26.11.2026",
         "ההקמה הכי מתאימה",
         "best available setup",
         "יש רק כן אחד",

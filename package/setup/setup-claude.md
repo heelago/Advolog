@@ -2,7 +2,7 @@
 
 Claude הוא המשטח הראשי. Advolog היא חבילה, לא אתר: שום דבר לא עובר דרכנו, ובכל דרך שפותחים אותה, העוזרת מכוונת אל ההקמה הכי מתאימה שיש. העוזרת עונה בשפה שכותבים בה. שמות המודלים רק ב־`platform-facts.md` ובפסקאות שהוא מרנדר. אם המסך שונה, המסך קובע.
 
-הדרך הראשית ב־Claude, אם היא על המסך: פרויקט Claude. זו שיחה ראשית אחת. שיחה ארוכה אחת נעשית כבדה, ופרטים מוקדמים נשמטים. חוט צד יכול להיפתח לבד, למשל כדי להביא קבצים. זה רגיל. אין צורך לפתוח אותו או לנהל אותו. בודקים אם הפרויקט מופיע. אם לא, בודקים אם נשאר פרויקט עם שדה הנחיות. גם Duet, אם הוא על המסך, וגם Dot או Grok Bot, אם כבר נמצאים שם, הם אפשרויות שהעוזרת מציינת באותה הודעה. יש רק כן אחד, והוא מוריד את החבילה הציבורית. לא מניחים שמוצר קיים.
+הדרך הראשית ב־Claude, אם היא על המסך: פרויקט Claude. זו שיחה ראשית אחת. שיחה ארוכה אחת נעשית כבדה, ופרטים מוקדמים נשמטים. מומלץ לכבות את מתג המתאם ביצירת הפרויקט. הוא דלוק כברירת מחדל ופותח פרויקט מסוג Claude Code. כבוי נותן פרויקט רגיל. חוט צד נפתח לבד רק אם המתג דלוק. בודקים אם הפרויקט מופיע. אם לא, בודקים אם נשאר פרויקט עם שדה הנחיות. גם Duet, אם הוא על המסך, וגם Dot או Grok Bot, אם כבר נמצאים שם, הם אפשרויות שהעוזרת מציינת באותה הודעה. יש רק כן אחד, והוא מוריד את החבילה הציבורית. לא מניחים שמוצר קיים.
 
 לא שומרים את הרשומה בפרויקט משותף או בתיקייה משותפת. לא שולחים דבר. ההורדה רק אחרי כן.
 
@@ -17,19 +17,25 @@ Claude הוא המשטח הראשי. Advolog היא חבילה, לא אתר: ש�
 
 ואז מעתיקים את הבלוק העברי מ־`prompts/setup-from-repo.md` לשיחה חדשה. הבלוק האנגלי הוא הכפתור השני באתר. העוזרת קוראת את README, מסבירה מה Advolog ומה היא תעשה, ובאותה הודעה אומרת מה על המסך ושואלת כן אחד. כן הזה מוריד רק את החבילה הציבורית. הוא אינו הסכמה לשום דבר אחר.
 
-בדיאלוג של פרויקט חדש, נבדק 23.11.2026 בחשבון אחד: שם, «על מה רוצים לעבוד», והקשר. ויש מתג שדולק כברירת מחדל. הבדיקה רצה כשהוא דלוק. במילים פשוטות, זה המתג של השיחה הראשית שיכולה להתחיל עבודה בצד. המסך עצמו לא מסביר את המתג. מה קורה אם מכבים אותו לא נבדק. אם הניסוח אצלכם שונה, המסך קובע. השם על המסך, בשורה לבד:
+בדיאלוג של פרויקט חדש, נבדק 26.11.2026 בחשבון אחד: מומלץ לכבות את מתג המתאם. דלוק כברירת מחדל, ופותח פרויקט מסוג Claude Code. כבוי נותן פרויקט רגיל. אם הניסוח אצלכם שונה, המסך קובע. השם על המסך:
 
-`Project coordinator - Beta`
+`Project coordinator`
+
+גם מתג זיכרון החשבון דלוק כברירת מחדל. במילים פשוטות, הוא נותן לפרויקט להשתמש בזיכרון של החשבון, שיכול להביא פרטים משיחות אחרות. לרשומה רפואית כדאי לשקול לכבות. מה בדיוק הוא שומר לא נבדק מעבר לזה שהוא דלוק בטופס. בדקו את המסך. השם שנראה:
+
+`Use account memory`
 
 הצעד האחרון, לפני הריאיון, גם אחרי ההורדה וגם במסלול הגיבוי: שומרים את `web/instructions.md` (עד 7,000 תווים. הכפתור באתר נותן את הטקסט) במקום שההקמה שנבחרה שומרת אותו.
 
-- פרויקט Claude, אם הוא על המסך. הנתיב נבדק 23.11.2026. גלגל השיניים ליד שם הפרויקט, אחר כך הגדרות הפרויקט, הלשונית שנקראת זיכרון, והשדה הנחיות הפרויקט. השדה הראה תקרה של 16,000 תווים, ו־7,000 תווים נשמרו. השמות על המסך, כל אחד בשורה:
+- פרויקט Claude, אם הוא על המסך. הנתיב נבדק 26.11.2026, על דף הפרויקט עצמו: הוספה, ואז עריכה, והשדה הנחיות הפרויקט. השמות:
 
-`Project settings`
+`Add`
 
-`Memory`
+`Edit`
 
 `Project instructions`
+
+אם המסך עדיין מראה את הנתיב מ־23.11.2026, זה הגיבוי: גלגל השיניים, `Project settings`, הלשונית `Memory`, ואותו שדה. אז השדה הראה 16,000 תווים, ו־7,000 נשמרו. בדקו את המסך.
 
 את `web/advolog-modules.md` ואת `my-record.md`, אם כבר יש, מוסיפים דרך הוספת הקשר. האפשרויות שנראו: העלאת קבצים, העלאת תיקייה, דרייב, תיקייה חדשה. השמות:
 
@@ -43,7 +49,7 @@ Claude הוא המשטח הראשי. Advolog היא חבילה, לא אתר: ש�
 
 `New folder`
 
-נשארים בשיחה הראשית. בפרויקט עם שיחה אחת ממשיכים בה. פתק המסירה הוא למעבר למקום אחר, לא לשיחה חדשה בתוך אותו פרויקט. חוט צד להבאת הקבצים הוא רגיל. Claude יכולה לכתוב קבצי זיכרון משלה, למשל `MEMORY.md`, רק כהערת הקמה: שההקמה נעשתה ושהרשומה ב־`my-record.md`. לא מעתיקים לשם הסכמה, תוכן רפואי, או פרטים מזהים. היא לא משנה את הנחיות הפרויקט, ולא את `core.md`, בלי כן.
+נשארים בשיחה הראשית. בפרויקט עם שיחה אחת ממשיכים בה. פתק המסירה הוא למעבר למקום אחר, לא לשיחה חדשה בתוך אותו פרויקט. חוט צד להבאת הקבצים מופיע רק אם מתג המתאם דלוק. Claude יכולה לכתוב קבצי זיכרון משלה, למשל `MEMORY.md`, רק כהערת הקמה: שההקמה נעשתה ושהרשומה ב־`my-record.md`. לא מעתיקים לשם הסכמה, תוכן רפואי, או פרטים מזהים. היא לא משנה את הנחיות הפרויקט, ולא את `core.md`, בלי כן.
 
 שם הקובץ הוא בדיוק `my-record.md`. אם ההעלאה קיבלה קידומת, משנים את השם. הורדה, נבדק 23.11.2026 בחשבון אחד: התפריט היה מוסתר. בודקים את המסך. הסרה מההקשר הייתה בלחיצה ימנית. בודקים את המסך. אם אומרים שהרשומה הוסרה, או שהקובץ לא בהקשר עכשיו, מה שנשאר בהיסטוריה אינו הרשומה.
 - פרויקט עם שדה הנחיות, אם הוא עדיין על המסך: מדביקים בשדה, מעלים את הקובץ, מצרפים את `my-record.md`, ורק אז שיחה חדשה בתוך הפרויקט.
@@ -101,7 +107,7 @@ Claude הוא המשטח הראשי. Advolog היא חבילה, לא אתר: ש�
 
 Claude is the primary surface. Advolog is a package, not a site: nothing passes through us, and whichever way you open it, your assistant guides you to the best available setup. The assistant answers in the language you write. Model names appear only in `platform-facts.md` and in the paragraphs it renders. If your screen differs, your screen wins.
 
-The primary Claude route, when it is on the screen: a Claude Project. That is one main conversation. One long session gets heavy, and early details slip. A side thread may start on its own, for example to fetch files. That is normal. You do not need to open it or manage it. Check whether the Project is there. If it is not, check whether an older project with an Instructions field is still there. Duet, if it is on the screen, and Dot or Grok Bot, if you are already there, are options the assistant names in the same message. There is only one yes, and it downloads the public package. Do not assume a product is present.
+The primary Claude route, when it is on the screen: a Claude Project. That is one main conversation. One long session gets heavy, and early details slip. Turn the coordinator switch off when you create the project. It is on by default and opens a Claude Code style project. Off gives a normal project. A side thread starts on its own only if that switch is on. Check whether the Project is there. If it is not, check whether an older project with an Instructions field is still there. Duet, if it is on the screen, and Dot or Grok Bot, if you are already there, are options the assistant names in the same message. There is only one yes, and it downloads the public package. Do not assume a product is present.
 
 Do not keep the record in a shared project or a shared folder. Nothing is sent. A download waits for a yes.
 
@@ -116,11 +122,13 @@ Before pasting, check four things:
 
 Then paste the Hebrew block from `prompts/setup-from-repo.md` into a new chat. The English block is the second button on the site. The assistant reads the README, explains what Advolog is and what it will do, and in the same message says what is on the screen and asks for one yes. That yes downloads the public package only. It is not consent for anything else.
 
-On the new-project dialog, checked 23.11.2026 on one account: a name, what you want to work on, and context. A switch is on by default. The test ran with it on. In plain words, that is the switch for the main conversation that can start side work. The screen itself does not explain the switch. What happens if you turn it off was not tested. If the wording differs, the screen wins. The label is `Project coordinator - Beta`.
+On the new-project form, checked 26.11.2026 on one account: turn the coordinator switch off. It is on by default and opens a Claude Code style project. Off gives a normal project. If the wording differs, the screen wins. The label seen was `Project coordinator`.
+
+`Use account memory` is also on by default. In plain words, it lets this project use the account's saved memory, which can bring details in from other chats. For a medical project, consider turning it off. What it stores beyond that switch being on was not tested. Check the screen.
 
 The last step, before onboarding, on the web route and on the fallback: save `web/instructions.md` (at most 7,000 characters; the site button gives that text) where the chosen setup keeps it.
 
-- A Claude Project, if it is on the screen. The path was checked 23.11.2026. The gear next to the project name, then Project settings, the tab called Memory, and the Project instructions field. The field showed a 16,000 character limit, and 7,000 characters were saved. Add `web/advolog-modules.md` and `my-record.md`, if it already exists, with Add context. The choices seen were Upload files, Upload folder, Drive, and New folder. Stay in the main conversation. On a project with one chat, continue there. The handoff note is for a move to another place, not a new chat inside this project. A side thread that fetches the files is normal. Claude may write its own memory files, such as `MEMORY.md`, only as a setup note: setup is done and the record lives in `my-record.md`. Do not copy consent, medical details, or identifiers into them. It does not change Project instructions, or `core.md`, without a yes.
+- A Claude Project, if it is on the screen. The path checked 26.11.2026 is on the project page itself: Add, then Edit, then Project instructions. If the screen still shows the 23.11.2026 path, that is the fallback: the gear, Project settings, the Memory tab, and the same field. That field then showed 16,000 characters, and 7,000 were saved. Check the screen. Add `web/advolog-modules.md` and `my-record.md`, if it already exists, with Add context. The choices seen on 23.11.2026 were Upload files, Upload folder, Drive, and New folder. Stay in the main conversation. On a project with one chat, continue there. The handoff note is for a move to another place, not a new chat inside this project. A side thread that fetches the files appears only if the coordinator switch is on. Claude may write its own memory files, such as `MEMORY.md`, only as a setup note: setup is done and the record lives in `my-record.md`. Do not copy consent, medical details, or identifiers into them. It does not change Project instructions, or `core.md`, without a yes.
 
 The record file is named exactly `my-record.md`. If an upload arrives with a prefix, rename it. Downloading, checked 23.11.2026 on one account: the control was in a hidden menu. Check the screen. Removing a file from Context was a right-click. Check the screen. If they say the record was removed, or the file is not in Context now, what remains in the chat history is not the record.
 - A project with an Instructions field, if it is still on the screen: paste into the field, upload the file, attach `my-record.md`, and only then open a new chat inside the project.

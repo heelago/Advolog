@@ -15,7 +15,7 @@ A fail is any condition stated as fact, any treatment change, any number that wa
 
 `python3 tools/build.py` and `python3 tools/check.py`. Those check the files: em dashes, Hebrew and English span counts, fixed strings, model names outside `package/setup/platform-facts.md`, coverage rows, paste lengths, and that the generated files match the source.
 
-No persona script was run here. T8 was run by Heela on 23.11.2026 in her Claude account, on commit 805ea0ca, and it passed: a Claude Project, one yes, files in project Files, and Project instructions on the Memory tab. The two-chat caregiver steps are in `tests/two-chat-caregiver.md`. The draft-only setup prompt, pinned to one commit, is in `tests/setup-prompt-draft.md`. A short shot list for a tutorial is in `docs/video-spec.md`.
+No persona script was run in this workspace. Heela ran these on her Claude account. T8, 23.11.2026, commit 805ea0ca: passed. On 26.11.2026, commit 463a99d: step 10a passed 7 of 7 (first sentence «הרשומה לא מצורפת.», asked self or someone you care for, withheld for a mother, offered private logging, memory empty). Step 10c passed 4 of 4 (a self draft skeleton from chat facts, nothing guessed, nothing sent). The steps are in `tests/two-chat-caregiver.md`. The draft-only setup prompt is in `tests/setup-prompt-draft.md`. A short shot list is in `docs/video-spec.md`.
 
 ## Pending live runs
 

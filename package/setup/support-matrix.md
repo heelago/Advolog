@@ -14,7 +14,7 @@
 | **טקסט הפתיחה בלי הורדה, גרסה 1.0** | ריאיון, קליטה והכנה מהירה מתוך הטקסט לבדו | 2.8.2026 |
 | **הלוח המקומי** | חיבור תיקייה, הצגת הרשומות, אישור עדכונים, ייצוא גיבוי וכלי הפרטיות בדפדפן מחשב | 31.7.2026 |
 | **גרסה 1.1.0** | נבדקה מול דפי העזרה ב־1.10.2026. לא הורצה חיה מקצה לקצה | 1.10.2026 |
-| **גרסה 1.2.0** | נבנתה ונבדקה מקומית (`tools/build.py`, `tools/check.py`). T8, פרויקט Claude בחשבון אחד: עבר ב־23.11.2026 (קומיט 805ea0ca). T9, שתי שיחות עם מטפלת מומצאת: 11 מתוך 12 ב־de460a1. שלב 10 נכשל כי היסטוריית השיחה נחשבה לרשומה. שאר התרחישים עדיין ממתינים. הרשימה ב־`tests/README.md` | 23.11.2026 |
+| **גרסה 1.2.0** | נבנתה ונבדקה מקומית (`tools/build.py`, `tools/check.py`). T8 עבר ב־23.11.2026 (805ea0ca). ב־26.11.2026, קומיט 463a99d: 10א עבר 7 מתוך 7, ו־10ג עבר 4 מתוך 4. הנחיות הפרויקט באותו יום: הוספה ואז עריכה על דף הפרויקט. שאר התרחישים ממתינים. הרשימה ב־`tests/README.md` | 26.11.2026 |
 
 ## עובדות פלטפורמה
 
@@ -36,7 +36,7 @@
 
 ## English
 
-**As of 23.11.2026, version 1.2.0.** The 1.0 live runs stand. Version 1.2 was built and checked locally. T8 passed on one Claude account on 23.11.2026 (commit 805ea0ca): a Claude Project, files in project Files, and Project instructions on the Memory tab. The other scripts are still pending, in `tests/README.md`.
+**As of 26.11.2026, version 1.2.0.** The 1.0 live runs stand. Version 1.2 was built and checked locally. T8 passed on 23.11.2026 (commit 805ea0ca). On 26.11.2026, commit 463a99d, step 10a passed 7 of 7 and step 10c passed 4 of 4. Project instructions that day were Add, then Edit, on the project page. The other scripts are still pending, in `tests/README.md`.
 
 Claude is the primary surface. ChatGPT is supported when that is the account you have.
 
