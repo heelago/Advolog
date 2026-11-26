@@ -20,7 +20,7 @@
 
 בלוח, אחרי מעבר לחיצות ב־26.11.2026: ביטול בחירת התיקייה, או כשל בה, אומרים משפט קצר. «הודעה לשיחה» כתובה בשער כצריכה תיקייה מחוברת. «הכנסה» מוסיפה מתחת לטקסט שכבר נכתב. ההודעה על ההעתקה אחידה, גדולה יותר, ונשארת כארבע שניות. frame-ancestors הוסר מתגית ה־CSP.
 
-נוסף עמוד «למה», עם תרשימים מהמספרים שנבדקו: המתנה למומחה, ניירת בביטוח הלאומי, מטפלים, ושימוש ב־AI בארצות הברית. אוריינות הבריאות (D18, D19) לא על העמוד: הדוח יושב באתר אישי. המספר של כל־זכות לא על העמוד. נוסף מדריך לעוזר אישי, באתר וב־`package/setup/agents.md`. בעמוד הפרטיות: הסיכום החודשי Reflect, וזיכרון משיחות Health. בתודות: F-Cancer. Patients Use AI לא בתודות: הדף הוא אתר אישי.
+נוסף עמוד «למה», עם תרשימים מהמספרים שנבדקו: המתנה למומחה, ניירת בביטוח הלאומי, מטפלים, ושימוש ב־AI בארצות הברית. אוריינות הבריאות (D18, D19) לא על העמוד: הדוח יושב באתר אישי. המספר של כל־זכות לא על העמוד. נוסף מדריך לעוזר אישי, באתר וב־`package/setup/agents.md`. בעמוד הפרטיות: הסיכום החודשי Reflect, וזיכרון משיחות Health. בתודות: F-Cancer, וגם Patients Use AI. כלל המקורות חל על מספרים, לא על תודות.
 
 ### English
 
@@ -36,7 +36,7 @@ Credits were added to the README and the gallery: what the package cites, and, s
 
 On the dashboard, after a click-through on 26.11.2026: cancelling the folder picker, or a real failure, says so in one short line. The gate says the message box needs a connected folder. Insert adds below text already typed. The copy notice is one wording, larger, and stays about four seconds. frame-ancestors was removed from the meta CSP.
 
-A Why page was added, with charts from the checked numbers: specialist waits, Bituach Leumi paperwork, caregivers, and AI use in the United States. Health literacy (D18, D19) is not on the page: the report is on a personal site. The Kol Zchut figure is not on the page. A personal-agent guide was added, on the site and in `package/setup/agents.md`. The privacy page notes the Reflect monthly recap, and memories from Health chats. Credits add F-Cancer. Patients Use AI is not in the credits: that page is a personal site.
+A Why page was added, with charts from the checked numbers: specialist waits, Bituach Leumi paperwork, caregivers, and AI use in the United States. Health literacy (D18, D19) is not on the page: the report is on a personal site. The Kol Zchut figure is not on the page. A personal-agent guide was added, on the site and in `package/setup/agents.md`. The privacy page notes the Reflect monthly recap, and memories from Health chats. Credits add F-Cancer, and Patients Use AI stays. The source rule covers cited numbers, not thank-you credits.
 
 ---
 

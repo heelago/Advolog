@@ -8,7 +8,7 @@
 
 # Advolog marketing statistics: second-reader check
 
-**Rule, Heela 26.11.2026:** use only official and semi-official sources. Never a personal website. A file on a person's own domain is excluded even when the numbers match. GitHub repositories may be credited. An organization's own site (a ministry, a fund, a research institute, a vendor help page) is allowed.
+**Rule, Heela 26.11.2026:** cited facts and figures use only official and semi-official sources. Never a personal website for a number. A file on a person's own domain is excluded even when the numbers match. Thank-you credits are not this rule: a credit may link to a personal site. GitHub repositories may be credited. An organization's own site (a ministry, a fund, a research institute, a vendor help page) is allowed.
 
 Checked 2026-11-11 (Asia/Jerusalem) by Grok Bot as the independent second reader (decision 46). Every High row in `MARKETING_DATA.md` (D1 to D32) was re-opened at its source today: PDFs and OECD StatLink workbooks were downloaded and searched, web pages were read in full. Nothing here is published or committed.
 

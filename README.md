@@ -44,6 +44,7 @@ Advolog לא נבנה בחלל ריק. אלה העבודות שהוא נשען �
 - [כל־זכות](https://www.kolzchut.org.il/he/): מאגר המידע החינמי על זכויות תושבי ישראל והדרך למימושן. העמודים שלו הם המקור לשכבה הישראלית של Advolog, למשל תרופות שאינן בסל וביטוח בריאות פרטי.
 - [Ask Me 3](https://www.ihi.org/resources/tools/ask-me-3-good-questions-your-good-health) של Institute for Healthcare Improvement: שלוש שאלות לכל ביקור. הן הרצפה של דף ההכנה כשאין עדיין כמעט רשומה.
 - [QuestionBuilder](https://www.ahrq.gov/questions/question-builder/index.html) של AHRQ: אפליקציה חינמית להכנת שאלות לפני ביקור, שהמידע בה נשאר במכשיר. הרעיון של שאלה שאפשר לתרגל מגיע משם.
+- [Patients Use AI](https://patientsuseai.substack.com/) של Dave deBronkart: כתיבה של מטופלים על שימוש ב־AI מול מערכת הבריאות. הרעיון של רשימת בקשות פשוטות ומוכחות בעמוד «מה אפשר לבקש» מגיע משם.
 - [Agent Skills](https://agentskills.io/specification): פורמט פתוח ליכולות של עוזרי AI. המיומנויות של Advolog כתובות בו.
 
 **עבודות דומות שכדאי להכיר**
