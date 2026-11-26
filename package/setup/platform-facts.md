@@ -14,7 +14,11 @@
 
 **Models, Heela 15.11.2026:** the recommended all-round default, where the plan offers it, is Opus 5.5 at medium effort (C9: default effort medium, do not turn thinking off). Fable is an optional step the assistant may offer once, never switch by itself, for a hard decision, conflicting information, or complex bureaucracy. Fable is on paid plans, not Free (C8). The facts file does not say whether Free includes Opus 5.5.
 
-**Agents, Heela 26.11.2026:** the name is Dot, singular, and Grok Bot. Duet is not yet available in Israel (C10, US only) and is not a supported path. This file has no separate product row for Dot. An earlier matrix used a plural spelling. That spelling is retired.
+**Agents, Heela 26.11.2026:** the name is Dot, singular, and Grok Bot. Duet is not yet available in Israel (C10, US only) and is not a supported path. This file has no separate product row for Dot. An earlier matrix used a plural spelling. That spelling is retired. Microsoft Copilot is not a path. Copilot Health is temporarily unavailable as of October 2026: https://support.microsoft.com/en-us/microsoft-copilot/copilot-health
+
+**Reflect, read 26.11.2026:** https://support.claude.com/en/articles/15672559-see-your-monthly-recap The monthly recap summarizes chat topics when memory is on. Stored reflections stay until "Delete stored reflections" on the Reflect page. Incognito chats and chats that use a health integration are left out. Heela, 24.11.2026: it left beta. The page text received on 26.11.2026 does not use the word beta. It says a recap saved before November 24 does not include sessions until it is regenerated.
+
+**ChatGPT Health memories, read 26.11.2026:** https://help.openai.com/en/articles/20001036-health-in-chatgpt When memory is on, conversations that use Health can create memories for later chats. Heela dates that change 19.11.2026. The same page says: for someone else's information, use a separate account or a separate project with project-only memory and uploaded files. Health remains US only (G13).
 
 **Anthropic surface, Heela 26.11.2026:** Claude chat is primary. Heela says the separate product she had called Claude work was Claude Cowork, and as far as she knows it is no longer a separate product. Treat a folder or project task as plain Claude chat unless the screen still shows something else. Check the screen. This file does not document a separate Cowork product. ChatGPT Work is a different company's product (G2, G10).
 

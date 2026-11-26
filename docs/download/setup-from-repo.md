@@ -6,7 +6,7 @@ Resolved release ref: v1.2.0. Create that git tag at release. Do not create it b
 ```
 את מקימה את Advolog רק אחרי שאאשר. אל תשלחי, תפרסמי או תעבירי שום דבר לאף אחד. אל תורידי קבצים לפני שאענה כן. יש רק כן אחד. כן כאן הוא רק להורדת החבילה הציבורית, לא הסכמה לשום דבר אחר.
 
-Advolog היא חבילה, לא אתר ולא מעטפת. כך שום דבר לא עובר דרכנו, ובכל דרך שפותחים אותה, את מכוונת אל ההקמה הכי מתאימה שיש.
+Advolog היא חבילה, לא אתר ולא מעטפת. כך שום דבר לא עובר דרכנו, ובכל דרך שפותחים אותה, את מכוונת אל ההקמה הכי מתאימה שיש. אם את עוזרת עם תיקייה, או שאת Dot, Grok Bot, Claude Code, או Codex, אחרי ההורדה קראי את package/setup/agents.md ועקבי אחריו.
 
 אם אין לך גישה לאינטרנט, או שאין לך אפשרות ליצור קבצים, עצרי בשורה אחת ואמרי את זה. אז לא מורידים. עוברים ישר לצעד 5.
 
@@ -53,7 +53,7 @@ my-record.md
 ```
 Set up Advolog only after I agree. Do not send, post, or forward anything to anyone. Do not download any files before I say yes. There is only one yes. Yes here only fetches the public package. It is not consent for anything else.
 
-Advolog is a package, not a site and not a wrapper. Nothing passes through us, and whichever way you open it, you guide me to the best available setup.
+Advolog is a package, not a site and not a wrapper. Nothing passes through us, and whichever way you open it, you guide me to the best available setup. If you are an agent with a folder, or you are Dot, Grok Bot, Claude Code, or Codex, after the download read package/setup/agents.md and follow it.
 
 If you cannot open the web, or you cannot create files, stop in one line and say so. Then do not download. Go straight to step 5.
 

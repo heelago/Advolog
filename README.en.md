@@ -57,6 +57,7 @@ Advolog was not built in a vacuum. These are the works it draws on, and a few mo
 - [Fight Health Insurance](https://fighthealthinsurance.com/) ([code](https://github.com/fighthealthinsurance/fighthealthinsurance)): a free tool that drafts appeals of US health insurance denials. The same principle: the AI drafts, you decide and send.
 - [Fasten](https://github.com/fastenhealth/fasten-onprem): an open-source, self-hosted personal and family medical record manager. The repository is archived. Advolog chose plain text files over system integrations.
 - [medical-appointment-advocate](https://github.com/mohitagw15856/pm-claude-skills/blob/main/skills/medical-appointment-advocate/SKILL.md): an open skill, in the same format, for preparing for a doctor's appointment, for yourself or someone you care for.
+- [F-Cancer](https://github.com/petergyang/fuck-cancer), Peter Yang: an open-source caregiver skill, MIT, for a one-page patient brief and appointment questions.
 
 Know of work that belongs here? Tell us on GitHub.
 

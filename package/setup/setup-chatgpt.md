@@ -25,7 +25,7 @@
 
 ## תיקייה במחשב, או Codex
 
-אם השיחה יכולה לקרוא את המאגר וליצור קבצים, משתמשים בהנחיית ההקמה, לא בהורדת zip ביד. Codex רשום כ«עובד לפי התיעוד הרשמי, לא הורץ אצלנו». הוא קורא את `AGENTS.md`.
+אם השיחה יכולה לקרוא את המאגר וליצור קבצים, משתמשים בהנחיית ההקמה, לא בהורדת zip ביד. Codex קורא את `AGENTS.md`. המסלול ב־`setup/agents.md`.
 
 ## מאמץ
 
@@ -52,6 +52,10 @@ Projects, הפרויקט, New chat. מצרפים את `my-record.md` (או את 
 ## פרטיות החשבון
 
 מבטלים שימוש בשיחות לאימון. המתג, נבדק 26.11.2026: Improve the model for everyone, תחת Settings ואז Data controls. בחשבון אישי הוא דלוק כברירת מחדל. הצעדים בעמוד הפרטיות באתר. המסך קובע.
+
+OpenAI כותבת, בדף Health in ChatGPT שנקרא ב־26.11.2026: למידע של מישהו אחר, חשבון נפרד או פרויקט נפרד עם זיכרון של הפרויקט בלבד וקבצים שהועלו. ולשיחות הבריאות, פרויקט נפרד עם אותו זיכרון. זה מתאים להקמה כאן, ולמסלול של מי שמתעדת עבור מישהו קרוב, רק בהסכמה. https://help.openai.com/en/articles/20001036-health-in-chatgpt
+
+מ־19.11.2026, שיחות Health יכולות ליצור זיכרון כללי כשהזיכרון דלוק. Health זמין בארצות הברית, לא בישראל.
 
 ---
 
@@ -82,7 +86,7 @@ On the phone and on the web, save one file at the end of a session: `my-record.m
 
 ## A folder, or Codex
 
-If the chat can read the repository and create files, use the setup text, not a zip downloaded by hand. Codex is "works per the official docs, not run here". It reads `AGENTS.md`.
+If the chat can read the repository and create files, use the setup text, not a zip downloaded by hand. Codex reads `AGENTS.md`. The path is in `setup/agents.md`.
 
 ## Effort
 
@@ -105,3 +109,7 @@ Prefer project-only memory, so the medical project neither draws from nor feeds 
 ## Account privacy
 
 Turn off training on chats. The toggle, checked 26.11.2026, is Improve the model for everyone, under Settings, then Data controls. On a personal account it is on by default. The steps are on the site privacy page. Your screen wins.
+
+OpenAI writes, on the Health in ChatGPT page read on 26.11.2026: for someone else's information, use a separate account or a separate project with project-only memory and uploaded files. For health chats, a separate project with that same memory. That matches this setup, and the path for keeping a record for someone close, only with consent. https://help.openai.com/en/articles/20001036-health-in-chatgpt
+
+From 19.11.2026, Health chats can create general memories when memory is on. Health is available in the United States, not in Israel.

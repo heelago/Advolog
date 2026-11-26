@@ -20,6 +20,8 @@
 
 בלוח, אחרי מעבר לחיצות ב־26.11.2026: ביטול בחירת התיקייה, או כשל בה, אומרים משפט קצר. «הודעה לשיחה» כתובה בשער כצריכה תיקייה מחוברת. «הכנסה» מוסיפה מתחת לטקסט שכבר נכתב. ההודעה על ההעתקה אחידה, גדולה יותר, ונשארת כארבע שניות. frame-ancestors הוסר מתגית ה־CSP.
 
+נוסף עמוד «למה», עם חמישה תרשימים מהמספרים שנבדקו: המתנה למומחה, אוריינות בריאות, ניירת בביטוח הלאומי, מטפלים, ושימוש ב־AI בארצות הברית. המספר של כל־זכות לא על העמוד. נוסף מדריך לעוזר אישי, באתר וב־`package/setup/agents.md`. בעמוד הפרטיות: הסיכום החודשי Reflect, וזיכרון משיחות Health. בתודות: F-Cancer.
+
 ### English
 
 The short instructions are always loaded. Sixteen units became twelve skills, read when the moment fits. One source generates the web files, the fallback file, and the zips. Existing records are not rewritten. An old header, including one with an em dash, stays valid. A single record file, `my-record.md`, is equivalent to the seven files, for the web and the phone.
@@ -33,6 +35,8 @@ Other model names live only in `package/setup/platform-facts.md`. Fable is also 
 Credits were added to the README and the gallery: what the package cites, and, separately, similar work worth knowing. The privacy page now has the training opt-out steps, checked 26.11.2026. In ChatGPT the toggle is Improve the model for everyone, under Data controls, and it is on by default on a personal account. Claude account memory was observed on, on one account. That is an observation, not an official statement of the default.
 
 On the dashboard, after a click-through on 26.11.2026: cancelling the folder picker, or a real failure, says so in one short line. The gate says the message box needs a connected folder. Insert adds below text already typed. The copy notice is one wording, larger, and stays about four seconds. frame-ancestors was removed from the meta CSP.
+
+A Why page was added, with five charts from the checked numbers: specialist waits, health literacy, Bituach Leumi paperwork, caregivers, and AI use in the United States. The Kol Zchut figure is not on the page. A personal-agent guide was added, on the site and in `package/setup/agents.md`. The privacy page notes the Reflect monthly recap, and memories from Health chats. Credits add F-Cancer.
 
 ---
 

@@ -57,6 +57,7 @@ Advolog לא נבנה בחלל ריק. אלה העבודות שהוא נשען �
 - [Fight Health Insurance](https://fighthealthinsurance.com/) ([קוד](https://github.com/fighthealthinsurance/fighthealthinsurance)): כלי חינמי שמנסח ערעור על דחייה של ביטוח בריאות בארצות הברית. אותו עיקרון: ה־AI מנסח, ואתם מחליטים ושולחים.
 - [Fasten](https://github.com/fastenhealth/fasten-onprem): מנהל רשומה רפואית אישית ומשפחתית בקוד פתוח, לאחסון עצמי. המאגר בארכיון. Advolog בחר בקבצי טקסט פשוטים במקום חיבור למערכות.
 - [medical-appointment-advocate](https://github.com/mohitagw15856/pm-claude-skills/blob/main/skills/medical-appointment-advocate/SKILL.md): מיומנות פתוחה, באותו פורמט, להכנה לתור אצל רופא, בשבילכם או בשביל מישהו קרוב.
+- [F-Cancer](https://github.com/petergyang/fuck-cancer) של Peter Yang: מיומנות פתוחה, ברישיון MIT, לדף קצר על המטופל ולשאלות לתור, למי שמטפלת במישהו קרוב.
 
 אם אתם מכירים עבודה שחסרה כאן, ספרו לנו דרך GitHub.
 

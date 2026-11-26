@@ -18,6 +18,7 @@
       <a href="index.html"><span class="he">דף הבית</span><span class="en">Home</span></a>
       <a href="start.html"><span class="he">עשר הדקות</span><span class="en">First ten minutes</span></a>
       <a href="gallery.html"><span class="he">מה אפשר לבקש</span><span class="en">What you can ask</span></a>
+      <a href="why.html"><span class="he">למה</span><span class="en">Why</span></a>
       <a href="privacy.html"><span class="he">פרטיות</span><span class="en">Privacy</span></a>
       <button id="langBtn" class="tbtn" type="button">English</button>
     </nav>
@@ -25,14 +26,52 @@
 </header>
 <main id="main" class="wrap">
 <h1><span class="he">עוזר אישי</span><span class="en">A personal agent</span></h1>
-<p><span class="he">עוזר שמחובר לדוא"ל או לדרייב רואה יותר ממה שמקלידים לו. המשפט «אותה חשיפה כמו בשיחה» לא נכון כאן. המדריך המלא, והיכולת שאומרת מה מותר בלי לשאול, אינם בגרסה 1.2.</span>
-<span class="en">An assistant connected to email or a drive sees more than you type. The sentence "the same exposure as a chat" is not true here. The full guide, and the rules for what may proceed unasked, are not in version 1.2.</span></p>
-<p><span class="he">העוזרים האישיים שהפרויקט מתעד הם Dot ו־Grok Bot. עוד לא הורצו כאן. Duet עדיין לא זמין בישראל, ואינו מסלול נתמך.</span>
-<span class="en">The personal agents this project documents are Dot and Grok Bot. They have not been run here yet. Duet is not yet available in Israel, and is not a supported path.</span></p>
-<p><span class="he">עד אז: לא מחברים תיבת דוא"ל לצורך הכלי הזה. הרשומה נשארת קבצים אצלכם. שום דבר לא נשלח בשבילכם.</span>
-<span class="en">Until then: do not connect a mailbox for this tool. The record stays in files you keep. Nothing is sent for you.</span></p>
-<p><a href="privacy.html"><span class="he">פרטיות</span><span class="en">Privacy</span></a></p>
+<p><span class="he">החבילה אחת. העוזרת מסתכלת מה באמת יש אצלכם, ומובילה אל ההקמה הכי מתאימה שאפשר באמת להשתמש בה. יש רק כן אחד, והוא מוריד את החבילה הציבורית. שום דבר לא נשלח. הרשומה היא קבצים אצלכם.</span>
+<span class="en">One package. The assistant looks at what you actually have, and guides you to the best setup you can use. There is only one yes, and it downloads the public package. Nothing is sent. The record is files you keep.</span></p>
+<p><span class="he">הסדר: תיקייה, אם יש גישה. אחרת פרויקט Claude, והמתאם כבוי. אחרת פרויקט ChatGPT, עם זיכרון של הפרויקט בלבד. אם כבר נמצאים ב־Dot או ב־Grok Bot, נשארים שם. בלי כל אלה, שיחה רגילה. Duet אינו מסלול: הוא זמין בארצות הברית בלבד, נבדק 11.11.2026. אם המסך שונה, המסך קובע.</span>
+<span class="en">The order: a folder, if one can be opened. Otherwise a Claude Project, with the coordinator off. Otherwise a ChatGPT project, with project-only memory. If you are already in Dot or Grok Bot, stay there. Without any of those, a plain chat. Duet is not a path: it is available in the United States only, checked 11.11.2026. If the screen differs, the screen wins.</span></p>
 
+<h2><span class="he">פרויקט Claude</span><span class="en">A Claude Project</span></h2>
+<p><span class="he">שיחה ראשית אחת. הקבצים מחזיקים את ההנחיות, את המודולים, ואת <bdi dir="ltr"><code>my-record.md</code></bdi>.</span>
+<span class="en">One main chat. The files hold the instructions, the modules, and <code>my-record.md</code>.</span></p>
+<ol>
+  <li><span class="he">ביצירה, נבדק 26.11.2026: מכבים את <bdi dir="ltr"><code>Project coordinator</code></bdi>. דלוק פותח פרויקט מסוג Claude Code. כבוי נותן פרויקט רגיל. חוט צד נפתח לבד רק אם המתג נשאר דלוק.</span><span class="en">When creating it, checked 26.11.2026: turn Project coordinator off. On opens a Claude Code style project. Off gives a normal project. A side thread starts on its own only if the switch is left on.</span></li>
+  <li><span class="he">ההנחיות, נבדק 26.11.2026: על דף הפרויקט, הוספה ואז עריכה. אם המסך מראה את הנתיב מ־23.11.2026, זה הגיבוי: גלגל השיניים, ואז הזיכרון.</span><span class="en">Instructions, checked 26.11.2026: on the project page, Add then Edit. If the screen shows the 23.11.2026 path, that is the fallback: the gear, then Memory.</span></li>
+  <li><span class="he">זיכרון: <bdi dir="ltr"><code>Use account memory</code></bdi> נצפה דלוק ב־26.11.2026 בחשבון אחד. לרשומה רפואית כדאי לשקול לכבות. נושאי בריאות לא נשמרים כברירת מחדל.</span><span class="en">Memory: Use account memory was observed on, on one account, on 26.11.2026. For a medical record, consider turning it off. Health topics are not saved by default.</span></li>
+  <li><span class="he">סיכום חודשי, Reflect: כשהזיכרון דלוק, Claude מסכם את נושאי השיחות. הסיכומים השמורים נשארים עד <bdi dir="ltr"><code>Delete stored reflections</code></bdi> בעמוד Reflect. שיחות בסתר, ושיחות עם חיבור בריאות, לא נכנסות. נקרא 26.11.2026.</span><span class="en">Monthly recap, Reflect: when memory is on, Claude summarizes chat topics. Stored reflections stay until Delete stored reflections on the Reflect page. Incognito chats, and chats that use a health integration, are left out. Read 26.11.2026.</span> <a href="https://support.claude.com/en/articles/15672559-see-your-monthly-recap" rel="noopener"><span class="he">המקור</span><span class="en">Source</span></a></li>
+  <li><span class="he">פרטיות: <bdi dir="ltr"><code>Settings</code></bdi>, <bdi dir="ltr"><code>Privacy</code></bdi>, מכבים את <bdi dir="ltr"><code>Help Improve our AI models</code></bdi>. נבדק 26.11.2026.</span><span class="en">Privacy: Settings, Privacy, turn off Help Improve our AI models. Checked 26.11.2026.</span></li>
+</ol>
+<p><span class="he">בדיקה תקופתית היא טקסט מתוך החבילה, איפה שהמסך מציע משימה מתוזמנת. אין חיבור לדוא"ל בשביל הרשומה.</span>
+<span class="en">A checkup is text from the package, where the screen offers a scheduled task. Do not connect email for the record.</span></p>
+
+<h2><span class="he">פרויקט ChatGPT</span><span class="en">A ChatGPT project</span></h2>
+<p><span class="he">פרויקט פרטי. מדביקים את ההנחיות, מעלים קובץ, מצרפים את הרשומה, ורק אז שיחה חדשה בתוך הפרויקט.</span>
+<span class="en">A private project. Paste the instructions, upload a file, attach the record, and only then open a new chat inside the project.</span></p>
+<p><span class="he">זיכרון של הפרויקט בלבד, נבדק 26.11.2026: שלוש הנקודות, <bdi dir="ltr"><code>Project settings</code></bdi>, תחת <bdi dir="ltr"><code>Memory</code></bdi>. זה יכול לקחת כמה שעות.</span>
+<span class="en">Project-only memory, checked 26.11.2026: the three dots, Project settings, under Memory. It may take a few hours.</span></p>
+<p><span class="he">OpenAI כותבת, בדף שנקרא ב־26.11.2026: למידע של מישהו אחר, חשבון נפרד או פרויקט נפרד עם זיכרון של הפרויקט בלבד. זה מתאים להקמה כאן, ולתיעוד עבור מישהו קרוב, רק בהסכמה. Health עצמו זמין בארצות הברית, לא בישראל. כשהזיכרון דלוק, שיחות Health יכולות ליצור זיכרונות לשיחות הבאות. הילה, 19.11.2026.</span>
+<span class="en">OpenAI writes, on the page read on 26.11.2026: for someone else's information, a separate account or a separate project with project-only memory. That matches this setup, and keeping a record for someone close, only with consent. Health itself is available in the United States, not in Israel. When memory is on, Health chats can create memories for later chats. Heela, 19.11.2026.</span>
+<a href="https://help.openai.com/en/articles/20001036-health-in-chatgpt" rel="noopener"><span class="he">המקור</span><span class="en">Source</span></a></p>
+<p><span class="he">פרטיות: מכבים את <bdi dir="ltr"><code>Improve the model for everyone</code></bdi>, תחת <bdi dir="ltr"><code>Data controls</code></bdi>. בחשבון אישי הוא דלוק כברירת מחדל. נבדק 26.11.2026.</span>
+<span class="en">Privacy: turn off Improve the model for everyone, under Data controls. On a personal account it is on by default. Checked 26.11.2026.</span></p>
+
+<h2><span class="he">Dot</span><span class="en">Dot</span></h2>
+<p><span class="he">אותו מתג של ChatGPT חל גם על השיחות, הפעולות, והאוטומציות. ל־dot זיכרון משלו שנשאר דלוק גם כשהזיכרון של ChatGPT כבוי, ואי אפשר למחוק ממנו פריט אחד. לא מספרים לו פרטי בריאות שלא היו רוצים שיישארו. לא מחברים דוא"ל בשביל הרשומה. נקרא 26.11.2026.</span>
+<span class="en">The same ChatGPT setting also covers conversations, actions, and automations. A dot has its own memory that stays on when ChatGPT's memory is off, and a single item cannot be deleted. Do not tell it health details you would not want kept. Do not connect email for the record. Read 26.11.2026.</span></p>
+
+<h2><span class="he">Grok Bot</span><span class="en">Grok Bot</span></h2>
+<p><span class="he">האימון נקבע לפי הגדרות הפרטיות של חשבון Cursor. לא נמצא דף רשמי שאומר בפשטות מה קורה בחשבון אישי, ולכן לא מכניסים פרטי בריאות עד תשובה ברורה מהתמיכה. אין מסך זיכרון: שואלים מה הוא זוכר, ומבקשים שישכח. איפוס שיחה לא מוחק את הזיכרון. מחיקת הבוט כן. כל הבוטים חולקים מחשב אחד. נקרא 26.11.2026.</span>
+<span class="en">Training follows the Cursor account's privacy settings. No official page says plainly what happens on a personal account, so keep health details out until support gives a clear answer. There is no memory screen: ask what it remembers, and ask it to forget. Resetting a conversation does not erase memory. Deleting the Bot does. All bots share one computer. Read 26.11.2026.</span>
+<a href="https://docs.x.ai/grok-bot/approvals-security-and-privacy" rel="noopener"><span class="he">המקור</span><span class="en">Source</span></a></p>
+
+<h2><span class="he">Claude Code, או סוכן עם תיקייה</span><span class="en">Claude Code, or a folder agent</span></h2>
+<p><span class="he">Claude Code קורא את <bdi dir="ltr"><code>CLAUDE.md</code></bdi>. Codex קורא את <bdi dir="ltr"><code>AGENTS.md</code></bdi>. שניהם שולחים אל <bdi dir="ltr"><code>core.md</code></bdi> קודם. התיקייה היא ההקמה, והרשומה יושבת לידה, לא בתיקייה משותפת. אחרי הורדה פותחים מחדש את <bdi dir="ltr"><code>package/</code></bdi>. בדיקה תקופתית היא קובץ מ־<bdi dir="ltr"><code>prompts/</code></bdi>, או משימה מתוזמנת אם המסך מציע אחת.</span>
+<span class="en">Claude Code reads CLAUDE.md. Codex reads AGENTS.md. Both send you to core.md first. The folder is the setup, and the record sits beside it, not in a shared folder. After a download, reopen package/. A checkup is a file from prompts/, or a scheduled task if the screen offers one.</span></p>
+
+<h2><span class="he">שיחה רגילה</span><span class="en">A plain chat</span></h2>
+<p><span class="he">בלי פרויקט ובלי תיקייה: מדביקים את ההנחיות, עד 7,000 תווים, ומעלים קובץ אחד. שומרים <bdi dir="ltr"><code>my-record.md</code></bdi> בסוף. פרטי בריאות מחוץ לזיכרון.</span>
+<span class="en">With no project and no folder: paste the instructions, at most 7,000 characters, and upload one file. Save my-record.md at the end. Keep health details out of memory.</span></p>
+<p><a href="privacy.html"><span class="he">שתי הדקות של ההגדרות</span><span class="en">The two minutes of settings</span></a> · <a href="start.html"><span class="he">עשר הדקות</span><span class="en">First ten minutes</span></a></p>
 </main>
 <footer>
   <div class="wrap">

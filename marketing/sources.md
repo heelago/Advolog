@@ -1,4 +1,4 @@
-<!-- Second-reader check, 2026-11-11. Graphics are not built in this version.
+<!-- Second-reader check, 2026-11-11. D33 re-checked 2026-11-26: the latest period is still April to June 2026, and the values match this file. The why page uses D18, D19, D20, D22, D24, D27, D28, and D33. Kol Zchut's own user count is held (D35) and is not on the page.
      D33 and D34 measure the wait for the doctor the patient chose.
      Heela checked the Ministry of Health dashboard on 11.11.2026.
      The face label is: זמן המתנה לרופא לפי בחירת המטופל.
@@ -87,3 +87,9 @@ Local copies of every opened source are in `marketing/_src/` (box only, not for 
 **2024 to 2025 specialist waits.** Closed by D33 and D34.
 
 **Still open, unchanged:** BTL approval and appeal rates; exceptions-committee data; the official 2025 ombudsman PDF (D25); the MoH burnout survey; a published-methods Israeli survey of AI use for health; Kessels recall; question-prompt-list effect sizes.
+
+## Held, not on the why page
+
+| ID | Value | Period | Place | Source | Confidence | Checked | Status | Note |
+|---|---|---|---|---|---|---|---|---|
+| D35 | Kol Zchut, about page, the organization's own count: about 13 million users in 2025; about 7,000 Hebrew information pages, about 6,100 Arabic, and about 3,600 Russian at the end of 2025 | 2025 | Israel | https://www.kolzchut.org.il/he/%D7%9B%D7%9C-%D7%96%D7%9B%D7%95%D7%AA:%D7%90%D7%95%D7%93%D7%95%D7%AA | Held | 2026-11-26 | not for the why page | Self-reported, no method, and the 2025 report linked from that page was not opened. Ask Kol Zchut before any graphic uses it. |

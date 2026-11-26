@@ -14,7 +14,7 @@ What is in this folder:
 - **`references/`**, record schemas, Hebrew voice, report templates, the Israeli health system. Fixed Hebrew strings there are verbatim. Older wording already in a person's file stays valid.
 - **`prompts/`**, paste-ready checks (sweep, freshness, capabilities, wrap-up, a weekly log) and the gallery of things a person might say.
 - **`starter/starter-prompt.md`**, the zero-download text.
-- **`setup/`**, guides for the person, and `platform-facts.md`, the only file that names a model. Every fact there is pending verification until its row says otherwise.
+- **`setup/`**, guides for the person, and `platform-facts.md`, the only file that names a model. Every fact there is pending verification until its row says otherwise. If this session is an agent with a folder, or it is Dot, Grok Bot, Claude Code, or Codex, read `setup/agents.md` and guide the person to the best setup they can actually use. The core still wins.
 - **`web/`**, generated files for a web project. Do not edit them by hand. Regenerate with `tools/build.py`.
 - **`dashboard.html`**, optional local dashboard.
 
