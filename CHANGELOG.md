@@ -16,6 +16,8 @@
 
 שמות המודלים האחרים רק ב־`package/setup/platform-facts.md`. Fable נקרא גם ביכולות של צעד הייעוץ. העובדות שם נבדקו ב־11.11.2026. שורות שדורשות ריצה בחשבון נשארו ממתינות. עמודי הבטיחות לא נחלשו. הריצה החיה של התרחישים ממתינה.
 
+נוספו תודות ב־README ובגלריה: מה שהחבילה מצטטת, ובנפרד עבודות דומות שכדאי להכיר. עמוד הפרטיות כולל את צעדי ביטול האימון, נבדקו 26.11.2026. ב־ChatGPT המתג הוא Improve the model for everyone, תחת Data controls, ודלוק כברירת מחדל בחשבון אישי. זיכרון החשבון ב־Claude נצפה דלוק בחשבון אחד. זו תצפית, לא ניסוח רשמי.
+
 ### English
 
 The short instructions are always loaded. Sixteen units became twelve skills, read when the moment fits. One source generates the web files, the fallback file, and the zips. Existing records are not rewritten. An old header, including one with an em dash, stays valid. A single record file, `my-record.md`, is equivalent to the seven files, for the web and the phone.
@@ -25,6 +27,8 @@ The primary setup is one instruction: the assistant reads the repository, explai
 On the web fallback: paste the instructions and upload one file. On ChatGPT Free that is the path, because there are 3 uploads a day. The instructions stay at or under 7,000 characters, Hebrew included. Heela approved that cap. OpenAI publishes no number, and live test T1 still confirms the field holds it. A chat paste over 10,000 characters becomes an attachment, so the starting text is one block, not the instructions as well.
 
 Other model names live only in `package/setup/platform-facts.md`. Fable is also named in the consult-step skills. Those facts were checked on 11.11.2026. Rows that need a run in an account stay pending. The safety walls were not weakened. A live run of the scripts is pending.
+
+Credits were added to the README and the gallery: what the package cites, and, separately, similar work worth knowing. The privacy page now has the training opt-out steps, checked 26.11.2026. In ChatGPT the toggle is Improve the model for everyone, under Data controls, and it is on by default on a personal account. Claude account memory was observed on, on one account. That is an observation, not an official statement of the default.
 
 ---
 

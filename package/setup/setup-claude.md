@@ -10,7 +10,7 @@ Claude הוא המשטח הראשי. Advolog היא חבילה, לא אתר: ש�
 
 לפני ההדבקה, בודקים ארבעה דברים בחשבון:
 
-1. ביטול שימוש בשיחות לאימון, אם המתג קיים. הניסוח המדויק לא נקרא מחדש בדפדפן. המסך קובע.
+1. ביטול שימוש בשיחות לאימון. ב־Claude: Help Improve our AI models. ב־ChatGPT: Improve the model for everyone, תחת Data controls. נבדק 26.11.2026. אם המסך נראה אחרת, המסך קובע.
 2. פרטי בריאות מחוץ לזיכרון.
 3. גישה לאינטרנט דלוקה, כדי שהעוזרת תוכל לקרוא את המאגר. אם היא כבויה, עוברים למסלול הגיבוי.
 4. יצירת קבצים דלוקה, כדי שהיא תוכל להוריד ולהקים. אם היא כבויה, עוברים למסלול הגיבוי.
@@ -21,7 +21,7 @@ Claude הוא המשטח הראשי. Advolog היא חבילה, לא אתר: ש�
 
 `Project coordinator`
 
-גם מתג זיכרון החשבון דלוק כברירת מחדל. במילים פשוטות, הוא נותן לפרויקט להשתמש בזיכרון של החשבון, שיכול להביא פרטים משיחות אחרות. לרשומה רפואית כדאי לשקול לכבות. מה בדיוק הוא שומר לא נבדק מעבר לזה שהוא דלוק בטופס. בדקו את המסך. השם שנראה:
+גם מתג זיכרון החשבון נצפה דלוק ב־26.11.2026 בחשבון אחד. זו תצפית, לא ניסוח רשמי של ברירת המחדל. במילים פשוטות, הוא נותן לפרויקט להשתמש בזיכרון של החשבון, שיכול להביא פרטים משיחות אחרות. לרשומה רפואית כדאי לשקול לכבות. מה בדיוק הוא שומר לא נבדק מעבר לזה שהוא דלוק בטופס. בדקו את המסך. השם שנראה:
 
 `Use account memory`
 
@@ -94,12 +94,12 @@ Claude הוא המשטח הראשי. Advolog היא חבילה, לא אתר: ש�
 בריאות לא שייכת לזיכרון ארוך הטווח. הרשומה היא הקבצים.
 
 <!-- facts:memory-claude -->
-איפה המתג יושב, ומה שמו, ממתין לאימות בקובץ העובדות. ההמלצה עד אז: להשאיר פרטי בריאות מחוץ לזיכרון, במיוחד כשמתעדים עבור אדם אחר. מה שמופיע אצלכם הוא הקובע.
+המתג: Settings, ואז Your Claude (במסך הישן Memory). נושאי בריאות לא נשמרים כברירת מחדל. משאירים כבוי את Include sensitive topics in memory. בפרויקט, Use account memory נצפה דלוק ב־26.11.2026 בחשבון אחד. זו תצפית, לא ניסוח רשמי של ברירת המחדל. לרשומה רפואית כדאי לשקול לכבות. המסך קובע.
 <!-- /facts:memory-claude -->
 
 ## פרטיות החשבון, שתי דקות
 
-מבטלים שימוש בשיחות לאימון, איפה שהתוכנית מאפשרת. הצעדים המדויקים ממתינים לאימות ב־`platform-facts.md` ובדף `privacy.html` באתר. המסך קובע.
+מבטלים שימוש בשיחות לאימון. הצעדים, נבדקו 26.11.2026, בשורה G14 ב־`platform-facts.md` ובעמוד הפרטיות באתר. המסך קובע.
 
 ---
 
@@ -115,7 +115,7 @@ Do not keep the record in a shared project or a shared folder. Nothing is sent. 
 
 Before pasting, check four things:
 
-1. Turn off training on chats if the switch exists. The exact wording was not re-read in a browser. Your screen wins.
+1. Turn off training on chats. In Claude the label is Help Improve our AI models. In ChatGPT it is Improve the model for everyone, under Data controls. Checked 26.11.2026. If the screen differs, the screen wins.
 2. Keep health details out of memory.
 3. Web access on, so the assistant can read the repository. If it is off, use the fallback.
 4. File creation on, so it can download and set up. If it is off, use the fallback.
@@ -124,7 +124,7 @@ Then paste the Hebrew block from `prompts/setup-from-repo.md` into a new chat. T
 
 On the new-project form, checked 26.11.2026 on one account: turn the coordinator switch off. It is on by default and opens a Claude Code style project. Off gives a normal project. If the wording differs, the screen wins. The label seen was `Project coordinator`.
 
-`Use account memory` is also on by default. In plain words, it lets this project use the account's saved memory, which can bring details in from other chats. For a medical project, consider turning it off. What it stores beyond that switch being on was not tested. Check the screen.
+`Use account memory` was also on. That was observed on one account on 26.11.2026, not an official statement of the default. In plain words, it lets this project use the account's saved memory, which can bring details in from other chats. For a medical project, consider turning it off. What it stores beyond that switch being on was not tested. Check the screen.
 
 The last step, before onboarding, on the web route and on the fallback: save `web/instructions.md` (at most 7,000 characters; the site button gives that text) where the chosen setup keeps it.
 

@@ -35,6 +35,31 @@ Claude הוא המשטח הראשי. בודקים אם יש פרויקט Claude:
 
 Advolog נבנה בידי ד״ר הילה גורן. במסגרת [h2eapps](https://h2eapps.com/about) היא מפתחת כלים פתוחים שעובדים בלי מומחיות טכנית ובלי להחליף שיקול דעת אנושי.
 
+## תודות ומקורות השראה
+
+Advolog לא נבנה בחלל ריק. אלה העבודות שהוא נשען עליהן, ועוד כמה שכדאי להכיר.
+
+**ש־Advolog נשען עליהן**
+
+- [כל־זכות](https://www.kolzchut.org.il/he/): מאגר המידע החינמי על זכויות תושבי ישראל והדרך למימושן. העמודים שלו הם המקור לשכבה הישראלית של Advolog, למשל תרופות שאינן בסל וביטוח בריאות פרטי.
+- [Ask Me 3](https://www.ihi.org/resources/tools/ask-me-3-good-questions-your-good-health) של Institute for Healthcare Improvement: שלוש שאלות לכל ביקור. הן הרצפה של דף ההכנה כשאין עדיין כמעט רשומה.
+- [QuestionBuilder](https://www.ahrq.gov/questions/question-builder/index.html) של AHRQ: אפליקציה חינמית להכנת שאלות לפני ביקור, שהמידע בה נשאר במכשיר. הרעיון של שאלה שאפשר לתרגל מגיע משם.
+- [Patients Use AI](https://patientsuseai.substack.com/) של Dave deBronkart: כתיבה של מטופלים על שימוש ב־AI מול מערכת הבריאות. הרעיון של רשימת בקשות פשוטות ומוכחות בעמוד «מה אפשר לבקש» מגיע משם.
+- [Agent Skills](https://agentskills.io/specification): פורמט פתוח ליכולות של עוזרי AI. המיומנויות של Advolog כתובות בו.
+
+**עבודות דומות שכדאי להכיר**
+
+- [האגודה לזכויות החולה בישראל](https://www.patients-rights.org/): עמותה שנותנת מידע על זכויות רפואיות ומקבלת פניות לסיוע. כשצריך אדם ולא כלי, זו כתובת.
+- [CareGivers Israel](https://www.caregivers.org.il/): הארגון לבני משפחה מטפלים, עם מידע, ייעוץ וליווי אישי. קשור למסלול של מי שמתעדת בשביל מישהו קרוב.
+- [Open Notes Labs](https://www.opennotes.org/): מעבדה אקדמית שחוקרת מה קורה כשמטופלים קוראים את הרשומות שלהם. אותה אמונה: מי שקורא את הרשומה שלו מבין יותר ומגלה טעויות.
+- [AI Rights for Patients](https://lightcollective.org/2024/04/08/advocacy-leaders-publish-first-of-its-kind-governance-framework-for-artificial-intelligence-ai-rights-for-patients/) של Light Collective: מסגרת עקרונות ל־AI בבריאות, שנכתבה בידי מטופלים.
+- [Society for Participatory Medicine](https://participatorymedicine.org/): קהילה שמקדמת שותפות של מטופלים, מטפלים ואנשי מקצוע ברפואה.
+- [Fight Health Insurance](https://fighthealthinsurance.com/) ([קוד](https://github.com/fighthealthinsurance/fighthealthinsurance)): כלי חינמי שמנסח ערעור על דחייה של ביטוח בריאות בארצות הברית. אותו עיקרון: ה־AI מנסח, ואתם מחליטים ושולחים.
+- [Fasten](https://github.com/fastenhealth/fasten-onprem): מנהל רשומה רפואית אישית ומשפחתית בקוד פתוח, לאחסון עצמי. המאגר בארכיון. Advolog בחר בקבצי טקסט פשוטים במקום חיבור למערכות.
+- [medical-appointment-advocate](https://github.com/mohitagw15856/pm-claude-skills/blob/main/skills/medical-appointment-advocate/SKILL.md): מיומנות פתוחה, באותו פורמט, להכנה לתור אצל רופא, בשבילכם או בשביל מישהו קרוב.
+
+אם אתם מכירים עבודה שחסרה כאן, ספרו לנו דרך GitHub.
+
 ## רישיון
 
 MIT (`LICENSE`). הכלי אינו ייעוץ רפואי.

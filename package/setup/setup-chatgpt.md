@@ -46,12 +46,12 @@ Projects, הפרויקט, New chat. מצרפים את `my-record.md` (או את 
 ## זיכרון
 
 <!-- facts:memory-chatgpt -->
-ההמלצה: זיכרון של הפרויקט בלבד, כדי שהתיק לא יישאב מהזיכרון הכללי ולא יזין אותו. איפה המתג, ומתי השינוי נכנס לתוקף, נבדק ב־1.10.2026 וממתין לבדיקה חוזרת. אפשר גם לכבות זיכרון לגמרי. המסך קובע.
+ההמלצה: זיכרון של הפרויקט בלבד (Project-only memory), כדי שהתיק לא יישאב מהזיכרון הכללי ולא יזין אותו. בפרויקט: שלוש הנקודות, Project settings, תחת Memory. נבדק 26.11.2026. זה יכול לקחת כמה שעות. אפשר גם לכבות זיכרון לגמרי. המסך קובע.
 <!-- /facts:memory-chatgpt -->
 
 ## פרטיות החשבון
 
-מבטלים שימוש בשיחות לאימון, איפה שהתוכנית מאפשרת. הצעדים המדויקים ממתינים לאימות בדף `privacy.html`.
+מבטלים שימוש בשיחות לאימון. המתג, נבדק 26.11.2026: Improve the model for everyone, תחת Settings ואז Data controls. בחשבון אישי הוא דלוק כברירת מחדל. הצעדים בעמוד הפרטיות באתר. המסך קובע.
 
 ---
 
@@ -100,8 +100,8 @@ New chat inside the project. Attach `my-record.md` (or the seven files), then pa
 
 ## Memory
 
-Prefer project-only memory, so the medical project neither draws from nor feeds general memory. Where the switch sits was checked on 1.10.2026 and is pending a fresh check. Or turn memory off. Your screen wins.
+Prefer project-only memory, so the medical project neither draws from nor feeds general memory. In the project: the three dots, Project settings, under Memory, choose Project-only memory. Checked 26.11.2026. It may take a few hours. Or turn memory off. Your screen wins.
 
 ## Account privacy
 
-Turn off training on chats where the plan allows it. Exact clicks are pending on `privacy.html`.
+Turn off training on chats. The toggle, checked 26.11.2026, is Improve the model for everyone, under Settings, then Data controls. On a personal account it is on by default. The steps are on the site privacy page. Your screen wins.

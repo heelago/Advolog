@@ -35,6 +35,31 @@ Three lines: nothing reaches us. Conversations stay with the company you already
 
 Advolog was built by Dr. Heela Goren. Through [h2eapps](https://h2eapps.com/about) she builds open tools that work without technical expertise and without replacing human judgment.
 
+## Credits
+
+Advolog was not built in a vacuum. These are the works it draws on, and a few more worth knowing.
+
+**Advolog draws on**
+
+- [Kol Zchut](https://www.kolzchut.org.il/en/Main_Page): the free database of the rights of Israeli residents and how to exercise them. Its pages are the source for Advolog's Israel layer, for example drugs outside the basket and private health insurance.
+- [Ask Me 3](https://www.ihi.org/resources/tools/ask-me-3-good-questions-your-good-health), Institute for Healthcare Improvement: three questions for every visit. They are the floor of the prep sheet when there is hardly any record yet.
+- [QuestionBuilder](https://www.ahrq.gov/questions/question-builder/index.html), AHRQ: a free app for preparing questions before a visit, where what you enter stays on your device. The idea of a question you can rehearse comes from there.
+- [Patients Use AI](https://patientsuseai.substack.com/), Dave deBronkart: patient-led writing on using AI with the health system. The idea of a list of plain, proven requests on the "What you can ask" page comes from there.
+- [Agent Skills](https://agentskills.io/specification): an open format for AI assistant capabilities. Advolog's skills are written in it.
+
+**Similar work worth knowing**
+
+- [Israel Patients' Rights Association](https://www.patients-rights.org/): a nonprofit that gives information on medical rights and takes requests for help. When you need a person, not a tool.
+- [CareGivers Israel](https://www.caregivers.org.il/): the organization for family caregivers, with information, counseling and personal guidance. Related to Advolog's path for keeping a record for someone close.
+- [Open Notes Labs](https://www.opennotes.org/): an academic lab studying what happens when patients read their own records. The same belief: people who read their record understand more and catch errors.
+- [AI Rights for Patients](https://lightcollective.org/2024/04/08/advocacy-leaders-publish-first-of-its-kind-governance-framework-for-artificial-intelligence-ai-rights-for-patients/), Light Collective: a governance framework for AI in health, written by patients.
+- [Society for Participatory Medicine](https://participatorymedicine.org/): a community promoting partnership between patients, caregivers and health professionals.
+- [Fight Health Insurance](https://fighthealthinsurance.com/) ([code](https://github.com/fighthealthinsurance/fighthealthinsurance)): a free tool that drafts appeals of US health insurance denials. The same principle: the AI drafts, you decide and send.
+- [Fasten](https://github.com/fastenhealth/fasten-onprem): an open-source, self-hosted personal and family medical record manager. The repository is archived. Advolog chose plain text files over system integrations.
+- [medical-appointment-advocate](https://github.com/mohitagw15856/pm-claude-skills/blob/main/skills/medical-appointment-advocate/SKILL.md): an open skill, in the same format, for preparing for a doctor's appointment, for yourself or someone you care for.
+
+Know of work that belongs here? Tell us on GitHub.
+
 ## License
 
 MIT (`LICENSE`). This tool is not medical advice.
