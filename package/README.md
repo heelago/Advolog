@@ -1,56 +1,29 @@
-# Advolog — the package
+# Advolog
 
-חבילה פתוחה וחינמית שעוזרת למטופלים ולמלווים להפוך ניסיון רפואי חי לחומר מסודר ואמין לרופא: שאלות עם נימוק, דף הכנה לתור, תיעוד ששייך לכם. הכול רץ בתוך חשבון ה־AI שכבר יש לכם. **זו לא אפליקציה ולא שירות** — זו תיקיית קבצים והנחיות. גרסה 1.1.0 · 1.10.2026.
+חבילה פתוחה וחינמית, לא אתר ולא מעטפת. עמוד אחד לרופא: מה קרה, מה נוסה, מה חשוב לשאול. שום דבר לא עובר דרכנו, ובכל דרך שפותחים אותה, העוזרת מכוונת אל ההקמה הכי מתאימה שיש. רצה בתוך החשבון שכבר יש לכם. לא אפליקציה ולא שירות. גרסה 1.2.0 · 11.11.2026.
 
-**הצעד הראשון, לפי הפלטפורמה:**
+**הצעד הראשון:** מדביקים את `prompts/setup-from-repo.md`. העוזרת קוראת את README, מסבירה, אומרת מה יש בחשבון, ושואלת כן אחד. רק כן הזה מוריד. אחר כך ההנחיות נשמרות במקום שההקמה שנבחרה שומרת אותן. בלי אינטרנט או בלי יצירת קבצים: מדביקים את `core.md` ומעלים את `web/advolog-modules.md`.
 
-- **Claude — תיקייה במחשב (Claude Code / Cowork):** פותחים את התיקייה הזאת ב־Claude. הוא קורא את `CLAUDE.md` לבד, ומשם את `prompts/core-map.md`, ומתחיל. פשוט כותבים שלום.
-- **Claude — פרויקט ב־claude.ai:** מדביקים את `prompts/core-map.md` בהנחיות הפרויקט, ומעלים את הקבצים מ־`prompts/skills/` ו־`he/`. המדריך המלא: `setup/setup-claude.md`.
-- **ChatGPT:** מעלים את הקובץ המשולב `advolog-chatgpt-bundle.md` (קובץ אחד) לפרויקט, או מדביקים את `prompts/core-map.md` בהנחיות. המדריך: `setup/setup-chatgpt.md`.
-- **בלי להוריד כלום:** מעתיקים את `starter/starter-prompt.md` לשיחה חדשה — גרסה קלה ובטוחה (ריאיון, קליטה, הכנה מהירה).
+**מה בתיקייה:** `core.md` · `skills/` · `references/` · `prompts/` · `web/` (נוצר) · `setup/` · `dashboard.html` · `starter/`.
 
-**מה בתיקייה:** `prompts/core-map.md` (המפה הקובעת) · `prompts/skills/` (שש־עשרה יחידות) · `prompts/twins/` (תאומים ידניים לאוטומציות) · `he/` (קול עברי, מערכת ישראלית, תבניות דוחות) · `setup/` (מדריכים, כולל הליכי פרטיות ומדריך הלוח) · `dashboard.html` (לוח מקומי אופציונלי) · `starter/` · `LICENSE`.
+**פרטיות:** אין שרת ואין חשבון שלנו. השיחות נשמרות אצל החברה שכבר יש לכם. לא מעלים מה שלא הייתם כותבים ממילא.
 
-**פרטיות, ביושר:** Advolog עצמו לא מקבל שום דבר — אין שרת, אין חשבון, אין מדידה. אבל השיחות והקבצים שאתם מעלים חיים בחשבון ה־AI שלכם (Claude/ChatGPT) ונשמרים לפי מדיניות הספק. אל תעלו שום דבר שלא הייתם כותבים ממילא לעוזר ה־AI שלכם. המדריכים מראים איך לבדוק את הגדרות הפרטיות ולבטל שימוש בשיחות לאימון המודל, לפי הפלטפורמה.
+**לא מתגמש:** בלי אבחנה, בלי המלצת טיפול, רובדי ראיות לא מעורבבים, בלי ציטוט מומצא, משאבי חירום אמיתיים, ואתם שולחים, לא הכלי.
 
-**העקרונות שלא מתגמשים:** שאלות ולא אבחנות · בלי המלצות טיפול · רובדי ראיות מסומנים ולא מעורבבים · בלי ציטוט מומצא · ברגעי מצוקה משאבים אמיתיים · אתם מחליטים מה נשמר ומשותף, והכלי לעולם לא שולח דבר בעצמו.
-
-רישיון: MIT (`LICENSE`). **הבהרה בריאותית:** הכלי אינו ייעוץ רפואי, אינו מאבחן ואינו מחליף רופא/ה או שיקול דעת קליני.
+רישיון: MIT.
 
 ---
 
-# Advolog — the package (English)
+# Advolog
 
-An open, free toolkit that helps patients and caregivers turn lived medical experience into
-organized, credible, doctor-readable material: questions with stated reasoning, an appointment
-prep sheet, a record you own. Everything runs inside the AI account you already have. **Not an
-app, not a service** — a folder of files and instructions. Version 1.1.0 · 1.10.2026.
+An open, free package, not a site and not a wrapper. One page for a doctor: what happened, what was tried, what to ask. Nothing passes through us, and whichever way you open it, your assistant guides you to the best available setup. It runs inside the account you already have. Not an app and not a service. Version 1.2.0, 11.11.2026.
 
-**Your first step, by platform:**
+**First step:** paste `prompts/setup-from-repo.md`. The assistant reads the README, explains, says what the account has, and asks for one yes. Only that yes downloads. Then the instructions are saved where the chosen setup keeps them. With no web access or no file creation: paste `core.md` and upload `web/advolog-modules.md`.
 
-- **Claude — folder on your computer (Claude Code / Cowork):** open this folder in Claude. It
-  reads `CLAUDE.md` on its own, then `prompts/core-map.md`, and begins. Just say hello.
-- **Claude — project on claude.ai:** paste `prompts/core-map.md` into the project instructions
-  and upload the files from `prompts/skills/` and `he/`. Full guide: `setup/setup-claude.md`.
-- **ChatGPT:** upload the single combined `advolog-chatgpt-bundle.md` to a project, or paste
-  `prompts/core-map.md` into the instructions. Guide: `setup/setup-chatgpt.md`.
-- **Zero download:** copy `starter/starter-prompt.md` into a new conversation — a light, safe
-  core (interview, capture, express prep).
+**In the folder:** `core.md`, `skills/`, `references/`, `prompts/`, `web/` (generated), `setup/`, `dashboard.html`, `starter/`.
 
-**What's in the folder:** `prompts/core-map.md` (the governing map) · `prompts/skills/` (sixteen
-units) · `prompts/twins/` (manual twins for the automations) · `he/` (Hebrew voice, Israeli
-system, report templates) · `setup/` (guides, including privacy walkthroughs and the dashboard
-guide) · `dashboard.html` (optional local dashboard) · `starter/` · `LICENSE`.
+**Privacy:** no server and no account of ours. Conversations stay with the company you already use.
 
-**Privacy, honestly:** Advolog itself receives nothing — no server, no account, no analytics.
-But the conversations and any files you upload live in your AI account (Claude/ChatGPT) and are
-retained under that provider's policy. Don't paste anything you wouldn't already type into your
-AI assistant. The guides show how to check your privacy settings and opt out of model training,
-per platform.
+**Does not bend:** no diagnosis, no treatment advice, evidence tiers never blended, no invented citation, real emergency resources, and you send, not the tool.
 
-**The principles that don't bend:** questions not diagnoses · no treatment advice · evidence
-tiers labeled and never blended · no invented citations · real resources in moments of distress
-· you decide what is kept and shared, and the tool never transmits anything itself.
-
-License: MIT (`LICENSE`). **Health disclaimer:** this tool is not medical advice, does not
-diagnose, and does not replace a clinician or clinical judgment.
+License: MIT.

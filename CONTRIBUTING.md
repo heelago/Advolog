@@ -20,16 +20,16 @@
 
 ## כללי עבודה על התוכן
 
-- **המפה מנצחת.** בכל סתירה בין `package/prompts/core-map.md` ליחידת מיומנות — המפה קובעת. שינוי התנהגות מתחיל במפה.
+- **המפה מנצחת.** בכל סתירה בין `package/core.md` ליחידת מיומנות, הליבה קובעת. שינוי התנהגות מתחיל בליבה.
 - **סכימות מתפתחות בהוספה בלבד.** שום שינוי שדורש לשכתב רשומות קיימות של משתמשים.
-- **מחרוזות עברית קבועות הן מילה־במילה.** תוויות הרובד, שורות המסגור ושלדי התבניות ב־`package/he/report-templates.md` אינם מנוסחים מחדש.
+- **מחרוזות עברית קבועות הן מילה־במילה.** תוויות הרובד, שורות המסגור ושלדי התבניות ב־`package/references/report-templates.md` אינם מנוסחים מחדש.
 - **דוגמאות — מומצאות בלבד.** שום תוכן שמתאר אדם אמיתי, גם לא בעילום שם. אם זה קרה למישהו — זה לא נכנס כדוגמה.
-- **עברית טבעית.** טקסט למשתמש נכתב עברית־קודם (לא תרגומית); הקול לפי `package/he/voice-canon.md`. שכבת הקבצים הפנימית — אנגלית.
+- **עברית טבעית.** טקסט למשתמש נכתב עברית־קודם (לא תרגומית); הקול לפי `package/references/voice-canon.md`. שכבת הקבצים הפנימית — אנגלית.
 - **בלי תלות בפלטפורמה בליבה.** התקנה פר־פלטפורמה חיה במדריכים בלבד.
 
 ## מה הכי שווה לתרום
 
-- **עדכוני המערכת הישראלית** — `package/he/israel-system.md` הוא הקובץ שהכי צפוי להתיישן, ויש לו מחזור בדיקה מוצהר. עדכון = טענה + מקור רשמי (קופות, משרד הבריאות, כל־זכות, נוסח חוק) + תאריך. בלי מקור רשמי — לא נכנס.
+- **עדכוני המערכת הישראלית** — `package/references/israel-system.md` הוא הקובץ שהכי צפוי להתיישן, ויש לו מחזור בדיקה מוצהר. עדכון = טענה + מקור רשמי (קופות, משרד הבריאות, כל־זכות, נוסח חוק) + תאריך. בלי מקור רשמי — לא נכנס.
 - **מתכוני האוטומציה** במדריכים — השכבה הכי תלוית־פלטפורמה; כל מתכון חייב תאום ידני (פרומפט להדבקה) לצידו.
 - תיקוני נגישות, RTL וניסוח באתר ובמדריכים.
 - דיווחי באגים מפורטים (ראו תבניות ב־`.github/ISSUE_TEMPLATE/`).
@@ -66,16 +66,16 @@ A PR that weakens any of these will be declined, even if it improves everything 
 
 ## Working rules for the content
 
-- **The map wins.** On any conflict between `package/prompts/core-map.md` and a skill unit, the map rules. Behavior changes start at the map.
+- **The map wins.** On any conflict between `package/core.md` and a skill, the core rules. Behavior changes start in the core.
 - **Schemas evolve additively only.** Nothing may require rewriting users' existing records.
-- **Fixed Hebrew strings are verbatim.** Tier labels, framing lines, and template skeletons in `package/he/report-templates.md` are never re-generated.
+- **Fixed Hebrew strings are verbatim.** Tier labels, framing lines, and template skeletons in `package/references/report-templates.md` are never re-generated.
 - **Examples are invented only.** Nothing that describes a real person, even anonymized.
-- **Natural Hebrew.** User-facing text is Hebrew-first (never translated-sounding); voice per `package/he/voice-canon.md`. The internal file layer is English.
+- **Natural Hebrew.** User-facing text is Hebrew-first (never translated-sounding); voice per `package/references/voice-canon.md`. The internal file layer is English.
 - **No platform dependence in the core.** Per-platform install lives in the guides only.
 
 ## What is most worth contributing
 
-- **Israeli-system updates** — `package/he/israel-system.md` is the file most likely to age, and it has a declared review cadence. An update = claim + official source (kupot, Ministry of Health, Kol Zchut, statute text) + date. No official source — no entry.
+- **Israeli-system updates** — `package/references/israel-system.md` is the file most likely to age, and it has a declared review cadence. An update = claim + official source (kupot, Ministry of Health, Kol Zchut, statute text) + date. No official source — no entry.
 - **Automation recipes** in the guides — the most platform-dependent layer; every recipe must ship with its manual twin (a paste-able prompt) beside it.
 - Accessibility, RTL, and wording fixes on the site and guides.
 - Detailed bug reports (see `.github/ISSUE_TEMPLATE/`).

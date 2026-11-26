@@ -1,6 +1,44 @@
 # יומן שינויים · Changelog
 
-כל גרסה: מה השתנה, במילים פשוטות. הרשומות שלך לא מושפעות משום עדכון — הסכימות רק מוסיפות, לעולם לא משכתבות.
+כל גרסה: מה השתנה, במילים פשוטות. הרשומות שלך לא מושפעות משום עדכון. הסכימות רק מוסיפות, לעולם לא משכתבות.
+
+---
+
+## 1.2.0, 11.11.2026
+
+### עברית
+
+ההנחיות הקצרות תמיד נטענות. שש־עשרה היחידות הפכו לשתים־עשרה יכולות שנקראות לפי הרגע. אותו מקור מייצר את קובצי האתר, את קובץ הגיבוי, ואת קובצי ה־zip. הרשומות הקיימות לא נכתבות מחדש. כותרת ישנה, גם עם מקף ארוך, נשארת תקינה. נוסף קובץ רשומה אחד, `my-record.md`, שקול לשבעה הקבצים, למי שעובד באתר או בטלפון.
+
+באתר: מעתיקים את ההנחיות ומעלים קובץ אחד. בתוכנית החינמית של ChatGPT זו הדרך, כי יש 3 העלאות ביום. ההנחיות נשמרות עד 7,000 תווים, כולל עברית. הילה אישרה את התקרה. OpenAI לא פרסמה מספר, ובדיקה חיה T1 עוד תאשר שהשדה מחזיק את כולם. הדבקה מעל 10,000 תווים בצ'אט הופכת לקובץ מצורף, ולכן טקסט ההתחלה הוא בלוק אחד, לא יחד עם ההנחיות.
+
+הדרך הראשית להקמה היא הנחיה אחת: העוזרת קוראת את המאגר, מסבירה, אומרת מה על המסך, ושואלת כן אחד. כן הוא רק לחבילה הציבורית. ב־Claude, אם יש פרויקט עם שיחה אחת, ממשיכים בה. הפתק הוא למעבר למקום אחר. פתק המסירה בלי שם ובלי הסכמה. אם הקובץ לא מצורף ומבקשים טיוטה לרופא, לקופה, או למרפאה, המשפט הראשון הוא «הרשומה לא מצורפת», ואז שאלה: עלייך או על מישהי שאת מלווה. עלייך: טיוטה מהצ'אט, בלי שליחה. על מישהי אחרת: אין טיוטה עד ש־`my-record.md` עם הסכמה קריאה מצורף, ויש רישום פרטי. הסכמה לטיוטה נקראת רק מ־`my-record.md` המצורף. פתק מסירה וקובץ זיכרון אינם הרשומה. כשטיוטה נמנעת, מציעים רישום פרטי, ולא «מתחילים מחדש». ההנחיות לא משתנות בלי כן. ההנחיות, נבדק 26.11.2026, על דף הפרויקט: הוספה ואז עריכה. הנתיב עם גלגל השיניים הוא הגיבוי מ־23.11.2026. מומלץ לכבות את מתג המתאם. זיכרון החשבון דלוק כברירת מחדל, ולרשומה רפואית כדאי לשקול לכבות. אם נשאר שדה הנחיות, מדביקים שם. בתיקייה פותחים מחדש את package/. לא מורידים zip ביד. בלי אינטרנט או בלי יצירת קבצים עושים את אותו צעד אחרון בלי ההורדה. Advolog היא חבילה, לא אתר: בכל דרך שפותחים אותה, העוזרת מכוונת אל ההקמה הכי מתאימה. התג v1.2.0 נוצר רק בשחרור. Claude הוא המשטח הראשי. העוזר האישי נקרא Dot, ביחיד, וגם Grok Bot. Duet עדיין לא זמין בישראל. ברירת המחדל המומלצת, איפה שהתוכנית מציעה אותה, היא מאמץ בינוני. צעד הייעוץ הרשות נקרא Fable, פעם אחת, והעוזרת לא מחליפה לבד. אם המסך לא מראה מוצר נפרד משיחת Claude, עובדים בשיחה.
+
+שמות המודלים האחרים רק ב־`package/setup/platform-facts.md`. Fable נקרא גם ביכולות של צעד הייעוץ. העובדות שם נבדקו ב־11.11.2026. שורות שדורשות ריצה בחשבון נשארו ממתינות. עמודי הבטיחות לא נחלשו. הריצה החיה של התרחישים ממתינה.
+
+נוספו תודות ב־README ובגלריה: מה שהחבילה מצטטת, ובנפרד עבודות דומות שכדאי להכיר. עמוד הפרטיות כולל את צעדי ביטול האימון, נבדקו 26.11.2026. ב־ChatGPT המתג הוא Improve the model for everyone, תחת Data controls, ודלוק כברירת מחדל בחשבון אישי. זיכרון החשבון ב־Claude נצפה דלוק בחשבון אחד. זו תצפית, לא ניסוח רשמי.
+
+בלוח, אחרי מעבר לחיצות ב־26.11.2026: ביטול בחירת התיקייה, או כשל בה, אומרים משפט קצר. «הודעה לשיחה» כתובה בשער כצריכה תיקייה מחוברת. «הכנסה» מוסיפה מתחת לטקסט שכבר נכתב. ההודעה על ההעתקה אחידה, גדולה יותר, ונשארת כארבע שניות. frame-ancestors הוסר מתגית ה־CSP.
+
+נוסף עמוד «למה», עם תרשימים מהמספרים שנבדקו: המתנה למומחה, ניירת בביטוח הלאומי, מטפלים, ושימוש ב־AI בארצות הברית. אוריינות הבריאות (D18, D19) לא על העמוד: הדוח יושב באתר אישי. המספר של כל־זכות לא על העמוד. נוסף מדריך לעוזר אישי, באתר וב־`package/setup/agents.md`. בעמוד הפרטיות: הסיכום החודשי Reflect, וזיכרון משיחות Health. בתודות: F-Cancer, וגם Patients Use AI. כלל המקורות חל על מספרים, לא על תודות.
+
+### English
+
+The short instructions are always loaded. Sixteen units became twelve skills, read when the moment fits. One source generates the web files, the fallback file, and the zips. Existing records are not rewritten. An old header, including one with an em dash, stays valid. A single record file, `my-record.md`, is equivalent to the seven files, for the web and the phone.
+
+The primary setup is one instruction: the assistant reads the repository, explains, says what is on the screen, and asks for one yes. Yes fetches the public package only. On Claude, if a Project has one chat, you continue in it. The note is for a move to another place. The handoff note has no name and no consent. If the file is not attached and they ask for a draft for a doctor, a clinic, or a fund, the first sentence says the record is not attached, then asks whether it is about them or someone they care for. About them: a draft from the chat, not sent. About someone else: no draft until `my-record.md` with readable consent is attached, and private logging is offered. Consent for a draft is read only from the attached `my-record.md`. A handoff note and a memory file are not the record. When a draft is withheld, private logging is offered, not "start over." The instructions are not changed without a yes. They are saved on the project page, Add then Edit, checked 26.11.2026. The gear path is the 23.11.2026 fallback. Turn the coordinator switch off. Account memory is on by default, and for a medical project consider turning it off. If an Instructions field is still there, paste into it. A folder install reopens package/. A zip by hand is not the primary path. Without web access or file creation, do that same last step without the download. Advolog is a package, not a site: whichever way you open it, your assistant guides you to the best available setup. The tag v1.2.0 is created only at release. Claude is the primary surface. The personal agent is named Dot, singular, and Grok Bot. Duet is not yet available in Israel. The recommended default, where the plan offers it, is medium effort. The optional consult step is named Fable, offered once, and the assistant does not switch it on by itself. If the screen does not show a product separate from Claude chat, use the chat.
+
+On the web fallback: paste the instructions and upload one file. On ChatGPT Free that is the path, because there are 3 uploads a day. The instructions stay at or under 7,000 characters, Hebrew included. Heela approved that cap. OpenAI publishes no number, and live test T1 still confirms the field holds it. A chat paste over 10,000 characters becomes an attachment, so the starting text is one block, not the instructions as well.
+
+Other model names live only in `package/setup/platform-facts.md`. Fable is also named in the consult-step skills. Those facts were checked on 11.11.2026. Rows that need a run in an account stay pending. The safety walls were not weakened. A live run of the scripts is pending.
+
+Credits were added to the README and the gallery: what the package cites, and, separately, similar work worth knowing. The privacy page now has the training opt-out steps, checked 26.11.2026. In ChatGPT the toggle is Improve the model for everyone, under Data controls, and it is on by default on a personal account. Claude account memory was observed on, on one account. That is an observation, not an official statement of the default.
+
+On the dashboard, after a click-through on 26.11.2026: cancelling the folder picker, or a real failure, says so in one short line. The gate says the message box needs a connected folder. Insert adds below text already typed. The copy notice is one wording, larger, and stays about four seconds. frame-ancestors was removed from the meta CSP.
+
+A Why page was added, with charts from the checked numbers: specialist waits, Bituach Leumi paperwork, caregivers, and AI use in the United States. Health literacy (D18, D19) is not on the page: the report is on a personal site. The Kol Zchut figure is not on the page. A personal-agent guide was added, on the site and in `package/setup/agents.md`. The privacy page notes the Reflect monthly recap, and memories from Health chats. Credits add F-Cancer, and Patients Use AI stays. The source rule covers cited numbers, not thank-you credits.
+
+---
 
 Each release: what changed, in plain words. No update touches your records — schemas only add, never rewrite.
 

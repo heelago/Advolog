@@ -1,92 +1,115 @@
-# התקנה ב־ChatGPT — מדריך מלא
+# התקנה ב־ChatGPT
 
-<!-- Canonical Hebrew; the site carries this content with an English toggle.
-     Screenshot slots are marked [צילום מסך: ...] and produced with the video batch. -->
+המשטח הראשי של Anthropic הוא Claude. כאן המסלול כשיש ChatGPT. שמות מודלים רק בקובץ העובדות. אם המסך שונה, המסך קובע.
 
-Advolog נבנה מודל־אגנוסטי: אותה חבילה, אותם קבצים, אותם כללים. אם אפליקציית ChatGPT שלך יודעת לעבוד עם תיקייה במחשב (או שאת/ה עובד/ת ב־Codex), הדרך הפשוטה ביותר היא שהעוזר יקים הכול משורה אחת. אחרת — פרויקט באתר, או פרומפט הפתיחה בלי כלום.
+לא שומרים את הרשומה בפרויקט משותף. לא הופכים את הלוח לאתר שאפשר לפרסם. לא שולחים דבר.
 
----
+## הדרך הראשית
 
-## דרך א — שהעוזר יקים בשבילך (אפליקציית ChatGPT עם גישה לתיקייה, או Codex)
+אם לשיחה יש גישה לאינטרנט ויצירת קבצים: בודקים אימון, זיכרון, אינטרנט וקבצים, ומדביקים את `prompts/setup-from-repo.md`. אותה הנחיה בודקת קודם מה על המסך. ב־ChatGPT המקום להנחיות נשאר שדה ההנחיות של פרויקט פרטי. ההורדה רק אחרי כן, ורק של החבילה הציבורית.
 
-אם ה־ChatGPT שלך יודע לעבוד עם תיקייה במחשב (אפליקציית המחשב), או שאת/ה ב־Codex — זו אותה שורה כמו ב־Claude, והעוזר עושה את השאר. הוא קורא את הקובץ `AGENTS.md` שבחבילה (תוכן זהה ל־`CLAUDE.md`).
-
-1. מורידים את חבילת ה־zip ומשאירים אותה בתיקיית ההורדות.
-2. פותחים שיחה באפליקציית ChatGPT שיכולה לפתוח תיקייה (או ב־Codex) ומדביקים:
-
-   > מצא/י את הקובץ advolog.zip בתיקיית ההורדות, חלץ/י אותו לתיקייה חדשה, ואז קרא/י את הקובץ AGENTS.md שבתוכה ופעל/י לפיו — הקם/י לי את הכלי ולווה/י אותי צעד־צעד בריאיון הפתיחה.
-
-העוזר מחלץ, קורא את המפה בעצמו, ומתחיל את הריאיון — ומהרגע הזה שומר את הרשומות ישירות בתיקייה.
-
-## דרך ב — פרויקט באתר (chatgpt.com)
+הצעד האחרון, לפני הריאיון, גם כאן וגם בגיבוי:
 
 1. נכנסים ל־chatgpt.com ומתחברים.
-2. בתפריט הצד: **Projects** ← פרויקט חדש. שם חופשי — למשל «התיק הרפואי שלי».
-3. מעלים לקובצי הפרויקט **קובץ אחד** בלבד: `package/advolog-chatgpt-bundle.md`. זה קובץ אחד שמאגד את כל החבילה — המפה, השכבה העברית, שש־עשרה היחידות והפרומפטים להדבקה — כדי שלא תיתקלו במגבלת מספר הקבצים (ChatGPT Free מתיר מעט קבצים לפרויקט; לכן קובץ אחד).
-4. בשדה ההנחיות של הפרויקט (Instructions) כותבים שורה אחת: «קראי את הקובץ advolog-chatgpt-bundle.md במלואו לפני כל תגובה ופעלי לפיו; החלק הראשון, המפה, קובע על כל סתירה».
-5. שיחה חדשה בתוך הפרויקט — ומתחילים לדבר. אין נוסח פתיחה נכון; מה שבא.
+2. Projects, פרויקט פרטי חדש. שם חופשי. לא פרויקט משותף.
+3. בשדה ההנחיות מדביקים את `web/instructions.md`. באתר יש כפתור «העתקת ההנחיות». זה החלק שחל בכל שיחה חדשה בפרויקט. תקרת 7,000 תווים. T1 עוד תאשר שהשדה מחזיק אותם.
+4. בתוכנית החינמית מעלים קובץ אחד: `web/advolog-modules.md` (3 העלאות ביום, 5 קבצים לפרויקט, נבדק 11.11.2026). אם יש יותר העלאות, אפשר את `modules-1` עד `modules-4`. אם הקובץ לא נקרא, `advolog-chatgpt-bundle.md`.
+5. מצרפים את `my-record.md` אם כבר יש. זיכרון ברמת הפרויקט, אם האפשרות מופיעה. זה מונע מ־ChatGPT Work לעבוד בתוך הפרויקט (נבדק 11.11.2026). הרשומה היא הקבצים, לא הזיכרון.
+6. רק אז שיחה חדשה בתוך הפרויקט, ומתחילים לדבר.
 
-*(מעדיפים להדביק במקום להעלות? אפשר להדביק את כל `package/prompts/core-map.md` בשדה ההנחיות ולהעלות את שאר הקבצים לפי מגבלת התוכנית שלכם — אבל הקובץ המאוחד הוא הדרך הפשוטה והבטוחה לכל התוכניות.)*
+## מסלול גיבוי, בלי אינטרנט או בלי יצירת קבצים
 
-**חלופה בלי שום התקנה:** שיחה רגילה + הדבקת פרומפט הפתיחה מ־`package/starter/starter-prompt.md` (או מכפתור ההעתקה באתר). גרסה קלה ושלמה, בלי קבצים.
+אומרים את זה במפורש, ומדלגים על ההורדה. עושים את הצעד האחרון למעלה. הדבקה מעל 10,000 תווים בצ'אט הופכת לקובץ מצורף. לא מדביקים את טקסט ההקמה ואת ההנחיות בהודעה אחת. אם הופיע קובץ מצורף, «Show in text field».
 
-**איפה הרשומות?** קובצי הרשומות אצלך במחשב, בתיקייה אחת. השיחה מלווה כל שמירה — קובץ שלם אחד בכל פעם, עם אימות קצר — או שהלוח (`dashboard.html`, מדריך ב־`dashboard-guide.md`) מכניס את העדכונים בלחיצה. גם דף ההכנה לביקור נמסר כך, כמו עד היום: קובץ מלא אחד, לשמירה בתיקיית `reports` ולהדפסה.
+בטלפון ובאתר שומרים בסוף השיחה קובץ אחד, `my-record.md`. שבעת הקבצים נשארים שווי ערך למי שכבר עובד איתם.
 
-**הלוח נשאר קובץ במחשב — לא ChatGPT Site.** אל תהפכו את הלוח ל־Site: Site אפשר לפרסם לכל מי שברשת («Anyone on the Internet»), ושיחות שבהן יוצרים או עורכים Site עשויות לשמש לאימון המודל כשההגדרה «Improve the model for everyone» דלוקה. הלוח נבנה לרוץ כקובץ מקומי, בלי רשת — וכך המידע הרפואי נשאר אצלך.
+## תיקייה במחשב, או Codex
 
-## איזה מודל, ובאיזה מצב חשיבה
+אם השיחה יכולה לקרוא את המאגר וליצור קבצים, משתמשים בהנחיית ההקמה, לא בהורדת zip ביד. Codex קורא את `AGENTS.md`. המסלול ב־`setup/agents.md`.
 
-שורה אחת לכל סוג עבודה:
+## מאמץ
 
-- **רישום יומיומי** (צ׳ק־אין, רישום אירוע, קליטה): **Instant** — ברירת המחדל. לא צריך לגעת בכלום.
-- **הכנה לביקור וסיכומים** (דף הכנה, טבלת תרופות, סיכום תקופה): בתוכנית החינמית וב־Go — לוחצים **Think** לפני ששולחים את הבקשה. ב־Plus וב־Pro — בוחרים **High** בבורר החשיבה.
+<!-- facts:effort -->
+לכל העבודה מספיקה ברירת המחדל, איפה שהתוכנית מציעה אותה. לא מעלים מאמץ רק כי זו הכנה לביקור. המודל החזק יותר מוצע פעם אחת, להחלטה קשה, למידע סותר, או לביורוקרטיה מסובכת, והעוזרת לא מחליפה אותו לבד. השם והבורר בפסקת המודל. אם המסך שונה, המסך קובע.
+<!-- /facts:effort -->
 
-חשוב למי שב־Plus או ב־Pro: Instant כבר לא עובר לבד למצב חשיבה כשהבקשה מורכבת. מי שרוצה יותר חשיבה בוחר בה ידנית, בכל פעם. (שמות המודלים והמצבים מתחלפים; נבדק מול דפי העזרה של OpenAI ב־1.10.2026.)
+## העלאות
 
-## העלאת מסמכים וצילומים
+לפני כל העלאה חותכים או מכסים את מספר הזהות. מכתב סרוק שעולה כ־PDF עלול להגיע ריק, כי בחלק מהתוכניות נקרא רק הטקסט הדיגיטלי. אם הקובץ ריק, מבקשים צילום של העמוד. בתוכנית החינמית: 3 העלאות ביום (נבדק 11.11.2026).
 
-- **לפני כל העלאה: חותכים או מכסים את מספר תעודת הזהות.** הכי פשוט — הצנזור החזותי שבלוח (`dashboard.html`), או פס נייר על המספר לפני שמצלמים.
-- **מכתב סרוק מעלים כתמונה, לא כ־PDF.** מקובץ PDF, ChatGPT קורא רק את הטקסט הדיגיטלי ומתעלם מהתמונות שבתוכו (בכל התוכניות חוץ מ־Enterprise). מכתב שחרור סרוק הוא בעצם תמונה בתוך PDF — ולכן, כשמעלים אותו כ־PDF, הוא פשוט בלתי נראה. מצלמים את העמוד או שומרים אותו כתמונה (JPG / PNG), ומעלים את התמונה.
-- **בתוכנית החינמית: 3 העלאות קבצים ביום.** כדאי לבחור מראש מה מעלים; מה שלא נכנס היום יחכה למחר, ואפשר גם פשוט להקליד את השורות החשובות.
+דף ההכנה נשאר קובץ מלא אחד, לשמירה ולהדפסה, אלא אם השיחה באמת מציעה מסמך אחר. לא מבטיחים פורמט שלא מופיע.
 
-## הערה חשובה על «זיכרון» (Memory)
+## שיחה חדשה
 
-ל־ChatGPT יש תכונת זיכרון חוצת־שיחות. לרשומה רפואית עדיף מקור אמת אחד — הקבצים שלך — ולא זיכרון סמוי: בבדיקות שלנו זוהה מקרה שבו ידע כללי «מהזיכרון» התערבב בטענות ממקורות. **ההמלצה שלנו לעבודה רגישה: זיכרון ברמת הפרויקט בלבד (Project-only memory).** במצב הזה הפרויקט לא מושך מהזיכרון הכללי של החשבון ולא מזין אליו, ומה שנאמר בתיק הרפואי נשאר בתיק. אפשר לבחור בו ברגע יצירת הפרויקט — וגם לשנות אחר כך, בפרויקט קיים שלא שותף עם אחרים: פותחים את הפרויקט ← תפריט שלוש הנקודות (•••) ← **Project settings** ← תחת **Memory** בוחרים **Project-only memory** ← **Save**. השינוי עשוי להיכנס לתוקף רק אחרי כמה שעות, ואז גם מידע מהפרויקט מוסר מהזיכרון שמשמש את שאר השיחות. אין צורך ליצור פרויקט חדש. (פרויקט משותף נמצא תמיד במצב הזה.) לחלופין אפשר לכבות זיכרון לגמרי לשיחות האלה (Settings ← Personalization ← Memory). ההנחיות של החבילה ממילא דורשות שכל מספר וסף יגיעו רק ממקור שנשמר באותה ריצה; העיקרון — הרשומה גוברת על הזיכרון. (שמות המסכים משתנים מדי פעם; אם לא מוצאים, מחפשים «memory» בהגדרות.)
+Projects, הפרויקט, New chat. מצרפים את `my-record.md` (או את שבעת הקבצים), ואז מדביקים את פתק המסירה. פתק לבדו אינו מספיק. אם הקובץ היה רק בארגז כלים זמני, מורידים עותק קודם. «תתעדכני». לפני טיוטה עבור אדם אחר, בודקים שפרופיל נקרא. בלי הסכמה קריאה, או אחרי סירוב, אין טיוטה. הרישום הפרטי נשאר.
 
-## שיחה חדשה בתוך הפרויקט
+## זיכרון
 
-אחרי רישום, או אחרי שתיים־שלוש משימות, העוזרת תציע לפתוח שיחה חדשה. הסיבה, בשורה אחת: שיחות ארוכות נעשות כבדות, ופרטים מוקדמים מתחילים להישמט. **שום דבר לא הולך לאיבוד: הרשומות שלך בקבצים, לא בשיחה.** לפני המעבר העוזרת כותבת פתק מסירה קצר, והשיחה הבאה קוראת אותו ראשון.
+<!-- facts:memory-chatgpt -->
+ההמלצה: זיכרון של הפרויקט בלבד (Project-only memory), כדי שהתיק לא יישאב מהזיכרון הכללי ולא יזין אותו. בפרויקט: שלוש הנקודות, Project settings, תחת Memory. נבדק 26.11.2026. זה יכול לקחת כמה שעות. אפשר גם לכבות זיכרון לגמרי. המסך קובע.
+<!-- /facts:memory-chatgpt -->
 
-- Projects ← הפרויקט שלך ← **New chat** בתוכו. ההנחיות והקבצים נשארים.
-- את פתק המסירה מקבלים כבלוק אחד להעתקה — ומדביקים אותו כהודעה הראשונה בשיחה החדשה. (בעבודה על תיקייה במחשב הוא נשמר שם כקובץ `handoff.md`, והעוזר קורא אותו לבד.)
-- מילת פתיחה: «תתעדכני» — והיא תספר איפה עמדנו, מהקבצים.
+## פרטיות החשבון
 
-## פרטיות בחשבון ChatGPT — הליך קצר
+מבטלים שימוש בשיחות לאימון. המתג, נבדק 26.11.2026: Improve the model for everyone, תחת Settings ואז Data controls. בחשבון אישי הוא דלוק כברירת מחדל. הצעדים בעמוד הפרטיות באתר. המסך קובע.
 
-ההצעה מגיעה בהתקנה וחוזרת פעם אחת לפני הייצוא הראשון:
+OpenAI כותבת, בדף Health in ChatGPT שנקרא ב־26.11.2026: למידע של מישהו אחר, חשבון נפרד או פרויקט נפרד עם זיכרון של הפרויקט בלבד וקבצים שהועלו. ולשיחות הבריאות, פרויקט נפרד עם אותו זיכרון. זה מתאים להקמה כאן, ולמסלול של מי שמתעדת עבור מישהו קרוב, רק בהסכמה. https://help.openai.com/en/articles/20001036-health-in-chatgpt
 
-1. תמונת הפרופיל ← **Settings** ← **Data Controls**.
-2. **«Improve the model for everyone»** (שיפור המודל): אם ההגדרה מופיעה בחשבון שלך — מחליטים בה במודע; מי שמעדיף שהשיחות לא ישמשו לאימון, מכבה. שמות המסכים משתנים מדי פעם; אם לא מוצאים — לחפש «data» בהגדרות. המדריך מנחה ולא מבטיח: הקובע הוא מה שמופיע אצלך בחשבון.
-3. שווה להכיר שם גם את ייצוא הנתונים ומחיקת שיחות.
-4. ובכל מקרה: הכלי לא מבקש מזהים, וכל ייצוא עובר את רשימת הבדיקה קודם.
-
-## עוד שלושה דברים, בשורה אחת
-
-- **Health ב־ChatGPT** (חיבור רשומות רפואיות ו־Apple Health) זמין רק למשתמשים בארצות הברית, ולכן אינו רלוונטי בישראל. Advolog לא נשען עליו: הרשומה היא הקבצים שלך.
-- **הכתבה קולית:** איננו מבטיחים הכתבה בעברית. אם היא לא מדייקת אצלך — מקלידים, והכול עובד.
-- **Custom GPTs יוצאים משימוש** (OpenAI מתכננת להפסיק אותם ב־11.12.2026). Advolog בנוי על Projects, לא על GPTs — שום דבר לא משתנה אצלך.
-
-## מתכוני אוטומציה (שכבה מתחלפת — לבדוק מדי פעם)
-
-> **תכונות תזמון הן החלק הכי פחות יציב בחבילה.** כל בדיקה כאן עומדת גם כפרומפט להדבקה שעושה את אותו הדבר בהדבקה אחת, בלי תלות בתכונה. ההדבקה היא המסלול המובטח.
-
-כל אוטומציה מוצעת בכרטיס ומופעלת רק בהסכמה; הפלט נוחת בתיבת הקליטה כהצעה, לעולם לא ישר לרשומות.
-
-- **סריקת מחקר וקהילות** — פרומפט להדבקה: `package/prompts/twins/sweep-twin.md`. תזמון: אם יש בחשבון תכונת Tasks (משימות מתוזמנות), יוצרים משימה חודשית עם אותו פרומפט. אין? הדבקה ידנית פעם בחודש.
-- **בדיקת טריות** — פרומפט להדבקה: `package/prompts/twins/freshness-twin.md`; לרוב מיותר לתזמן — «תתעדכני» עושה את זה.
-- **בדיקת יכולות ועדכוני הכלי** — פרומפט להדבקה: `package/prompts/twins/capabilities-twin.md`; מקורות רשמיים בלבד, ו«אין חדש» היא תשובה שלמה. אם יצאה גרסה חדשה של Advolog — סוקרת אותה, מסבירה מה כל שיפור יכול לתת לכם, נותנת לבחור מה לאמץ, ומחילה רק את הנבחר בליווי מלא, בלי לאבד רשומות (הסכימות מוסיפות בלבד).
-- **סיכום סשן / מסירה** — פרומפט להדבקה: `package/prompts/twins/wrapup-twin.md`; העוזרת מציעה את אותו הדבר מעצמה אחרי רישום או אחרי כמה משימות (יחידת המסירה).
+מ־19.11.2026, שיחות Health יכולות ליצור זיכרון כללי כשהזיכרון דלוק. Health זמין בארצות הברית, לא בישראל.
 
 ---
 
-*הקטע הבא במדריך המלא: חיבור הלוח — `dashboard-guide.md`.*
+# Setup in ChatGPT
+
+Claude is the primary Anthropic surface. This is the path when the chat is ChatGPT. Model names stay in the facts file. Your screen wins.
+
+Do not keep the record in a shared project. Do not publish the dashboard as a site. Nothing is sent.
+
+## The primary path
+
+When the chat can open the web and create files: check training, memory, web access, and file creation, then paste `prompts/setup-from-repo.md`. That same instruction first checks what is on the screen. On ChatGPT, the place for the instructions stays the private project's Instructions field. The download waits for a yes, and that yes fetches the public package only.
+
+The last step, before onboarding, on this route and on the fallback:
+
+1. Sign in at chatgpt.com.
+2. A new private project. Not a shared one.
+3. Paste `web/instructions.md` into Instructions. The site button says "copy the instructions". This part applies on every later chat in the project. The cap is 7,000 characters. T1 still confirms the field holds it.
+4. On Free, upload one file: `web/advolog-modules.md` (3 uploads a day, 5 files per project, checked 11.11.2026). Where more uploads are allowed, `modules-1` through `modules-4` are fine. If the file is not read, use `advolog-chatgpt-bundle.md`.
+5. Attach `my-record.md` if it already exists. Project-only memory, if you see it. That turns ChatGPT Work off inside the project (checked 11.11.2026). The files are the record, not the memory.
+6. Only then start a new chat inside the project.
+
+## Fallback, when there is no web access or no file creation
+
+Say so plainly, and skip the download. Do the last step above. A chat paste over 10,000 characters becomes an attachment. Do not paste the setup text and the instructions as one message. If an attachment appears, use "Show in text field".
+
+On the phone and on the web, save one file at the end of a session: `my-record.md`.
+
+## A folder, or Codex
+
+If the chat can read the repository and create files, use the setup text, not a zip downloaded by hand. Codex reads `AGENTS.md`. The path is in `setup/agents.md`.
+
+## Effort
+
+The ordinary default is enough for all of this work. Do not raise effort only because this is visit prep. The optional stronger model, and how to switch to it, is a Claude step. It is named in `platform-facts.md`.
+
+## Uploads
+
+Crop or cover the ID number. A scanned letter uploaded as a PDF may arrive empty. Ask for a photo of the page. On the Free plan: 3 uploads a day (checked 11.11.2026).
+
+The prep sheet is one complete file to save and print, unless the session really offers another document. Do not promise a format you cannot see.
+
+## A new chat
+
+New chat inside the project. Attach `my-record.md` (or the seven files), then paste the handoff note. The note alone is not enough. If the file was only in a temporary sandbox, download a copy first. "Catch up." Before a draft for someone else, check that the profile can be read. Without a readable consent note, or after a decline, there is no draft. Private logging stays.
+
+## Memory
+
+Prefer project-only memory, so the medical project neither draws from nor feeds general memory. In the project: the three dots, Project settings, under Memory, choose Project-only memory. Checked 26.11.2026. It may take a few hours. Or turn memory off. Your screen wins.
+
+## Account privacy
+
+Turn off training on chats. The toggle, checked 26.11.2026, is Improve the model for everyone, under Settings, then Data controls. On a personal account it is on by default. The steps are on the site privacy page. Your screen wins.
+
+OpenAI writes, on the Health in ChatGPT page read on 26.11.2026: for someone else's information, use a separate account or a separate project with project-only memory and uploaded files. For health chats, a separate project with that same memory. That matches this setup, and the path for keeping a record for someone close, only with consent. https://help.openai.com/en/articles/20001036-health-in-chatgpt
+
+From 19.11.2026, Health chats can create general memories when memory is on. Health is available in the United States, not in Israel.
