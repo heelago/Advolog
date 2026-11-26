@@ -18,6 +18,8 @@
 
 נוספו תודות ב־README ובגלריה: מה שהחבילה מצטטת, ובנפרד עבודות דומות שכדאי להכיר. עמוד הפרטיות כולל את צעדי ביטול האימון, נבדקו 26.11.2026. ב־ChatGPT המתג הוא Improve the model for everyone, תחת Data controls, ודלוק כברירת מחדל בחשבון אישי. זיכרון החשבון ב־Claude נצפה דלוק בחשבון אחד. זו תצפית, לא ניסוח רשמי.
 
+בלוח, אחרי מעבר לחיצות ב־26.11.2026: ביטול בחירת התיקייה, או כשל בה, אומרים משפט קצר. «הודעה לשיחה» כתובה בשער כצריכה תיקייה מחוברת. «הכנסה» מוסיפה מתחת לטקסט שכבר נכתב. ההודעה על ההעתקה אחידה, גדולה יותר, ונשארת כארבע שניות. frame-ancestors הוסר מתגית ה־CSP.
+
 ### English
 
 The short instructions are always loaded. Sixteen units became twelve skills, read when the moment fits. One source generates the web files, the fallback file, and the zips. Existing records are not rewritten. An old header, including one with an em dash, stays valid. A single record file, `my-record.md`, is equivalent to the seven files, for the web and the phone.
@@ -29,6 +31,8 @@ On the web fallback: paste the instructions and upload one file. On ChatGPT Free
 Other model names live only in `package/setup/platform-facts.md`. Fable is also named in the consult-step skills. Those facts were checked on 11.11.2026. Rows that need a run in an account stay pending. The safety walls were not weakened. A live run of the scripts is pending.
 
 Credits were added to the README and the gallery: what the package cites, and, separately, similar work worth knowing. The privacy page now has the training opt-out steps, checked 26.11.2026. In ChatGPT the toggle is Improve the model for everyone, under Data controls, and it is on by default on a personal account. Claude account memory was observed on, on one account. That is an observation, not an official statement of the default.
+
+On the dashboard, after a click-through on 26.11.2026: cancelling the folder picker, or a real failure, says so in one short line. The gate says the message box needs a connected folder. Insert adds below text already typed. The copy notice is one wording, larger, and stays about four seconds. frame-ancestors was removed from the meta CSP.
 
 ---
 

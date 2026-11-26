@@ -9,10 +9,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Defense-in-depth: this file never talks to the network. The CSP blocks any external
-     fetch/script/frame/beacon, so even if crafted text slipped past the textContent rendering
+     fetch/script/beacon, so even if crafted text slipped past the textContent rendering
      it could not exfiltrate the record folder. Inline script/style are self-contained here;
-     data:/blob: images are the censor tool's own local pixels. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; font-src data:; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
+     data:/blob: images are the censor tool's own local pixels.
+     frame-ancestors is omitted: a meta CSP ignores it, and the console warns. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; font-src data:; base-uri 'none'; form-action 'none'">
 <title>Advolog · הלוח</title>
 <style>
   :root{
@@ -69,8 +70,10 @@
   .gate{background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:22px; max-width:640px; margin:30px auto; font-size:16px;}
   .gate h2{margin:0 0 8px; font-size:18px;}
   .gate p{margin:8px 0}
-  #toast{position:fixed; bottom:18px; inset-inline-start:18px; background:var(--ink); color:var(--ground);
-    border-radius:8px; padding:9px 17px; font-size:14.5px; opacity:0; transition:opacity .25s; pointer-events:none; z-index:20;}
+  #toast{position:fixed; bottom:24px; left:50%; transform:translateX(-50%); background:var(--ink); color:var(--ground);
+    border:2px solid var(--accent); border-radius:12px; padding:16px 22px; font-size:18px; font-weight:600;
+    line-height:1.45; max-width:min(560px, calc(100% - 32px)); text-align:center;
+    box-shadow:0 10px 28px rgba(0,0,0,.35); opacity:0; transition:opacity .25s; pointer-events:none; z-index:20;}
   .ph{border:1px solid var(--line); background:transparent; color:var(--muted); border-radius:50%;
     width:22px; height:22px; font-size:13px; cursor:pointer; line-height:1; padding:0; margin-inline-start:6px; font-weight:600;}
   .phelp{display:none; color:var(--muted); font-size:14.5px; border-inline-start:3px solid var(--accent-soft); padding:4px 10px; margin:6px 0 8px;}
@@ -109,6 +112,7 @@
   <div id="gate" class="gate">
     <h2>חיבור לתיקייה</h2>
     <p>הלוח קורא וכותב ישירות בקובצי הרשומות שלך, באותה תיקייה שבה יושב הקובץ הזה. שום דבר לא נשלח לשום מקום: אין רשת, אין חשבון, אין שרת.</p>
+    <p>«הודעה לשיחה» צריכה תיקייה מחוברת. בלי החיבור, ממשיכים דרך השיחה עצמה.</p>
     <p id="gateMsg"></p>
     <button class="btn" id="connectBtn">בחירת התיקייה</button>
     <p class="note" id="dropHint">אפשר גם פשוט לגרור את התיקייה לתוך החלון הזה, זה אותו חיבור.</p>
@@ -141,8 +145,7 @@
           <button class="ghost" id="ctxBtn">העתקת בלוק ההקשר</button>
         </div>
         <div class="panel" data-anchor="message-panel">
-          <h3>הודעה לשיחה <button class="ph" data-for="h-msg" aria-label="הסבר">?</button></h3>
-          <div class="phelp" id="h-msg">הלוח לא נכנס לשיחה ולא שולח כלום. כותבים כאן, או בוחרים ניסוח מוכן, ולוחצים «העתקה». את ההדבקה עושים בשיחה הראשית של הפרויקט.</div>
+          <h3>הודעה לשיחה</h3>
           <p class="sub">כותבים כאן. ההעתקה היא הדרך. מדביקים בשיחה הראשית של הפרויקט. שום דבר לא יוצא מהמכשיר.</p>
           <div class="chk"><span>רישום תסמין</span><button class="ghost" type="button" data-msg="אני רוצה לרשום תסמין. שאלי אותי שאלה אחת, ושמרי רק אחרי שאומר כן.">הכנסה</button></div>
           <div class="chk"><span>הכנה לתור</span><button class="ghost" type="button" data-msg="יש לי תור. הכיני דף קצר: מה קרה, מה נוסה, ומה חשוב לשאול. בלי אבחנה ובלי שינוי תרופה.">הכנסה</button></div>
@@ -290,7 +293,7 @@
     </div>
   </section>
 </div>
-<div id="toast" role="status"></div>
+<div id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
 
 <script>
 /* @anchor: state */
@@ -304,7 +307,8 @@ var TEMPLATES={
  'professional-review.md':'# ממצאים מאנשי מקצוע\nרק מה שאנשי מקצוע אמיתיים אמרו, כלשונו. ריק כאן, מידע אמיתי, לא כישלון.\nעודכן לאחרונה: (עדיין לא) · חדש\n',
  'inbox.md':'# תיבת קליטה\nכל מה שעוד לא סודר: קליטות, הצעות, דברים לאחר כך. שום דבר לא נכנס לרשומות בלי אישור.\nעודכן לאחרונה: (עדיין לא) · חדש\n'};
 function $(id){return document.getElementById(id)}
-var t; function toast(m){var e=$('toast'); e.textContent=m; e.style.opacity=1; clearTimeout(t); t=setTimeout(function(){e.style.opacity=0},2000);}
+var t; function toast(m){var e=$('toast'); e.textContent=m; e.style.opacity=1; clearTimeout(t); t=setTimeout(function(){e.style.opacity=0},4000);}
+var COPY_TOAST='הועתק. מדביקים בשיחה הראשית של הפרויקט.';
 function today(){var d=new Date(); return d.getDate()+'.'+(d.getMonth()+1)+'.'+d.getFullYear();}
 
 /* @anchor: theme */
@@ -328,16 +332,24 @@ document.querySelectorAll('.ph').forEach(function(b){ b.setAttribute('aria-expan
 
 /* @anchor: checkups, copy a plain request to paste into chat; the dashboard has no network, the chat runs it, output lands in the inbox */
 document.querySelectorAll('[data-msg]').forEach(function(b){
-  b.onclick=function(){ $('msgOut').value=b.getAttribute('data-msg'); $('msgOut').focus(); };
+  b.onclick=function(){
+    var box=$('msgOut');
+    var typed=(box.value||'').replace(/\s+$/,'');
+    var phrase=b.getAttribute('data-msg');
+    if(!typed) box.value=phrase;
+    else if(typed.slice(-phrase.length)!==phrase) box.value=typed+'\n\n'+phrase;
+    box.focus();
+    if(box.setSelectionRange) box.setSelectionRange(box.value.length, box.value.length);
+  };
 });
 $('msgCopy').onclick=function(){
   var text=($('msgOut').value||'').trim();
   if(!text){ toast('קודם כותבים, או בוחרים ניסוח.'); return; }
-  navigator.clipboard.writeText(text).then(function(){toast('הועתק. מדביקים בשיחה הראשית של הפרויקט.')},function(){prompt('העתקה ידנית:',text)});
+  navigator.clipboard.writeText(text).then(function(){toast(COPY_TOAST)},function(){prompt('העתקה ידנית:',text)});
 };
 document.querySelectorAll('[data-chk]').forEach(function(b){
   b.onclick=function(){ var t=b.getAttribute('data-chk');
-    navigator.clipboard.writeText(t).then(function(){toast('הועתק, להדביק בשיחה, והעוזרת תריץ')},function(){prompt('העתקה ידנית:',t)}); };
+    navigator.clipboard.writeText(t).then(function(){toast(COPY_TOAST)},function(){prompt('העתקה ידנית:',t)}); };
 });
 
 /* @anchor: connect, the guided first step */
@@ -352,7 +364,11 @@ async function connectWith(handle){
 }
 $('connectBtn').onclick=async function(){
   var h; try{ h=await window.showDirectoryPicker({mode:'readwrite'}); }
-  catch(e){ return; }
+  catch(e){
+    if(e && e.name==='AbortError') $('gateMsg').textContent='הבחירה בוטלה. אפשר לנסות שוב.';
+    else $('gateMsg').textContent='לא הצלחנו לחבר את התיקייה. נסו כרום או אדג׳ על מחשב. אפשר להמשיך לעבוד דרך השיחה בלבד.';
+    return;
+  }
   await connectWith(h);
 };
 /* drop-to-connect: dropping the records folder is the same grant, one motion (§9.2 one-step care) */
