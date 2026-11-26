@@ -1,4 +1,4 @@
-<!-- Second-reader check, 2026-11-11. D33 re-checked 2026-11-26: the latest period is still April to June 2026, and the values match this file. The why page uses D20, D22, D24, D27, D28, and D33. D18 and D19 are excluded: personal-site host. Kol Zchut's own user count is held (D35) and is not on the page.
+<!-- Second-reader check, 2026-11-11. D33 re-checked 2026-11-26: the latest period is still April to June 2026, and the values match this file. The why page uses D20, D22, D24, D27, D28, D33, and D35. D18 and D19 are excluded: personal-site host. D35 is cited only as of the end of 2025.
 
      D33 and D34 measure the wait for the doctor the patient chose.
      Heela checked the Ministry of Health dashboard on 11.11.2026.
@@ -91,8 +91,8 @@ Local copies of every opened source are in `marketing/_src/` (box only, not for 
 
 **Still open, unchanged:** BTL approval and appeal rates; exceptions-committee data; the official 2025 ombudsman PDF (D25); the MoH burnout survey; a published-methods Israeli survey of AI use for health; Kessels recall; question-prompt-list effect sizes.
 
-## Held, not on the why page
+## Permission granted
 
 | ID | Value | Period | Place | Source | Confidence | Checked | Status | Note |
 |---|---|---|---|---|---|---|---|---|
-| D35 | Kol Zchut, about page, the organization's own count: about 13 million users in 2025; about 7,000 Hebrew information pages, about 6,100 Arabic, and about 3,600 Russian at the end of 2025 | 2025 | Israel | https://www.kolzchut.org.il/he/%D7%9B%D7%9C-%D7%96%D7%9B%D7%95%D7%AA:%D7%90%D7%95%D7%93%D7%95%D7%AA | Held | 2026-11-26 | not for the why page | Self-reported, no method, and the 2025 report linked from that page was not opened. Ask Kol Zchut before any graphic uses it. |
+| D35 | Kol Zchut, about page, the organization's own count: «בשנת 2025 שירתנו כ־13 מיליון גולשות וגולשים». About 13 million users, as of the end of 2025. Also on that page, as of the end of 2025: about 7,000 Hebrew information pages, about 6,100 Arabic, and about 3,600 Russian. The why page cites only the visitor figure. | 2025 | Israel | https://www.kolzchut.org.il/he/%D7%9B%D7%9C-%D7%96%D7%9B%D7%95%D7%AA:%D7%90%D7%95%D7%93%D7%95%D7%AA | Permission granted | 2026-11-26 | permission granted | Kol Zchut granted permission on 26.11.2026 to cite the visitor figure, on the condition that it is stated as correct as of the end of 2025 («נכון לסוף 2025», "as of the end of 2025"). Self-reported, no published method. Do not drop the qualifier. |

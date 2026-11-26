@@ -4,6 +4,18 @@
 
 ---
 
+## אחרי 1.2.0
+
+### עברית
+
+עמוד «למה» מצטט את מספר הגולשות והגולשים של כל־זכות: «בשנת 2025 שירתנו כ־13 מיליון גולשות וגולשים». נכון לסוף 2025. האישור נרשם ב־26.11.2026.
+
+### English
+
+The why page cites Kol Zchut's visitor figure: in 2025 they served about 13 million users. As of the end of 2025. Permission was recorded on 26.11.2026.
+
+---
+
 ## 1.2.0, 11.11.2026
 
 ### עברית
