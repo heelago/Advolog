@@ -208,6 +208,11 @@ def check_model_names(errors: list[str]) -> None:
         if path.resolve() == allowed.resolve():
             continue
         text = strip_html_comments(strip_fact_regions(path.read_text(encoding="utf-8")))
+        rel = path.relative_to(ROOT).as_posix()
+        # Heela 26.11.2026: the optional consult step names Fable.
+        # Opus and every other model name stay in platform-facts and fact blocks.
+        if rel.startswith(("package/skills/", "package/web/", "docs/download/")) or rel == "package/advolog-chatgpt-bundle.md":
+            text = re.sub(r"\bFable\b", "", text)
         if MODEL_RE.search(text):
             errors.append(f"model name outside platform-facts.md: {path.relative_to(ROOT)}")
 

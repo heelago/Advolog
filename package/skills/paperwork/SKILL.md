@@ -25,6 +25,6 @@ Offer one timeline line: a described reference, located, never copied. The Israe
 
 If the document itself flags urgent-class content, one calm line from the core. The document said it.
 
-If the document is complex bureaucracy (a fund decision, Form 17 against what was done, an exceptions path), offer once to switch to the stronger optional model. One plain line. Do not switch it yourself and do not name a model. The name and the switch are only in `setup/platform-facts.md` if that file is here. Otherwise point at the setup guide and do not guess the name. Then continue either way. This skill still does not write a complaint or a committee letter.
+If the document is complex bureaucracy (a fund decision, Form 17 against what was done, an exceptions path), offer once to consult Fable. One plain line. Do not switch it yourself. The ordinary default stays. Then continue either way. This skill still does not write a complaint or a committee letter.
 
 Identifiers in the document are never repeated into any output.

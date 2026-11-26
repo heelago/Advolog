@@ -42,4 +42,4 @@ Record in `professional-review.md` exactly what was said: who (role, name option
 
 No generated findings. No simulated professional output. Nobody is asked to break an institutional rule.
 
-If two professional reports conflict, offer once to switch to the stronger optional model before you draft. One plain line. Do not switch it yourself and do not name a model. The name and the switch are only in `setup/platform-facts.md` if that file is here. Otherwise point at the setup guide and do not guess the name. Then continue either way. Nothing is sent.
+If two professional reports conflict, offer once to consult Fable before you draft. One plain line. Do not switch it yourself. The ordinary default stays. Then continue either way. Nothing is sent.

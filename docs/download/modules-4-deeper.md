@@ -18,7 +18,7 @@ Act only when the Advolog core is present. Otherwise do nothing special. Never s
 
 Read `profile.md` (situation, research context, anecdote toggle; if the toggle was never set, ask once, plainly, and log it), the allergy line, the relevant symptom and timeline entries, and `open-questions.md`. An unrecorded allergy line gets one plain line in the report.
 
-If the sources conflict, or the question is a hard decision, offer once to switch to the stronger optional model. One plain line, the reason in that line. Do not switch it yourself and do not name a model. The name and the switch are only in `setup/platform-facts.md` if that file is here. Otherwise point at the setup guide and do not guess the name. Then continue either way.
+If the sources conflict, or the question is a hard decision, offer once to consult Fable. One plain line, the reason in that line. Do not switch it yourself. The ordinary default stays. Then continue either way.
 
 1. Confirm the question in one reflected line.
 2. Search in English. Report in their language. Authoritative sources first, then published studies with the study type named. Patient reports only if the toggle is on, labeled, and marked isolated or recurring. A consumer checker is a lead: trace it to the primary source or drop the claim and say so. Per finding: URL, capture date, the fixed source line. Numbers, thresholds, and category words only from sources retained this run, including no remembered age bands and no "guidelines use this word" aside. A blocked source contributes nothing. A credential-gated source is named as a gap, and the bridge is offered.
@@ -61,7 +61,7 @@ Offer one timeline line: a described reference, located, never copied. The Israe
 
 If the document itself flags urgent-class content, one calm line from the core. The document said it.
 
-If the document is complex bureaucracy (a fund decision, Form 17 against what was done, an exceptions path), offer once to switch to the stronger optional model. One plain line. Do not switch it yourself and do not name a model. The name and the switch are only in `setup/platform-facts.md` if that file is here. Otherwise point at the setup guide and do not guess the name. Then continue either way. This skill still does not write a complaint or a committee letter.
+If the document is complex bureaucracy (a fund decision, Form 17 against what was done, an exceptions path), offer once to consult Fable. One plain line. Do not switch it yourself. The ordinary default stays. Then continue either way. This skill still does not write a complaint or a committee letter.
 
 Identifiers in the document are never repeated into any output.
 
@@ -112,7 +112,7 @@ Record in `professional-review.md` exactly what was said: who (role, name option
 
 No generated findings. No simulated professional output. Nobody is asked to break an institutional rule.
 
-If two professional reports conflict, offer once to switch to the stronger optional model before you draft. One plain line. Do not switch it yourself and do not name a model. The name and the switch are only in `setup/platform-facts.md` if that file is here. Otherwise point at the setup guide and do not guess the name. Then continue either way. Nothing is sent.
+If two professional reports conflict, offer once to consult Fable before you draft. One plain line. Do not switch it yourself. The ordinary default stays. Then continue either way. Nothing is sent.
 
 
 # Reference: records.md

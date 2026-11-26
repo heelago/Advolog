@@ -14,9 +14,9 @@
 
 **Models, Heela 15.11.2026:** the recommended all-round default, where the plan offers it, is Opus 5.5 at medium effort (C9: default effort medium, do not turn thinking off). Fable is an optional step the assistant may offer once, never switch by itself, for a hard decision, conflicting information, or complex bureaucracy. Fable is on paid plans, not Free (C8). The facts file does not say whether Free includes Opus 5.5.
 
-**Agents, Heela 15.11.2026:** the personal agents to name are Dot and Grok Bot. Duet is not yet available in Israel (C10, US only) and is not a supported path. This file has no product row for Dot or Dots. An earlier matrix said Dots.
+**Agents, Heela 26.11.2026:** the name is Dot, singular, and Grok Bot. Duet is not yet available in Israel (C10, US only) and is not a supported path. This file has no separate product row for Dot. An earlier matrix used a plural spelling. That spelling is retired.
 
-**Anthropic surface:** Claude is primary. This file has no product named "Claude Work". ChatGPT Work is a different company's product (G2, G10).
+**Anthropic surface, Heela 26.11.2026:** Claude chat is primary. Heela says the separate product she had called Claude work was Claude Cowork, and as far as she knows it is no longer a separate product. Treat a folder or project task as plain Claude chat unless the screen still shows something else. Check the screen. This file does not document a separate Cowork product. ChatGPT Work is a different company's product (G2, G10).
 
 **Claude Projects, live test T8, 23.11.2026, Heela's account, commit 805ea0ca.** Passed. The pinned README opened, the explanation was right, and the assistant recommended a Claude Project. Files landed in project Files, in a folder `advolog/` with `package/`, `package.zip`, and `instructions.md`, plus download copies. `instructions.md` matched the constitution.
 

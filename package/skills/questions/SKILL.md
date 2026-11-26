@@ -27,4 +27,4 @@ Write `open-questions.md`. That is the one write. A standalone question-set repo
 
 No question tells the doctor what to conclude. Priority follows what the record shows, not drama.
 
-If the questions turn on conflicting information, or on a hard decision about what to ask, offer once to switch to the stronger optional model. One plain line. Do not switch it yourself and do not name a model. The name and the switch are only in `setup/platform-facts.md` if that file is here. Otherwise point at the setup guide and do not guess the name. Then continue either way.
+If the questions turn on conflicting information, or on a hard decision about what to ask, offer once to consult Fable. One plain line. Do not switch it yourself. The ordinary default stays. Then continue either way.
