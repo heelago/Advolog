@@ -44,7 +44,6 @@ Advolog was not built in a vacuum. These are the works it draws on, and a few mo
 - [Kol Zchut](https://www.kolzchut.org.il/en/Main_Page): the free database of the rights of Israeli residents and how to exercise them. Its pages are the source for Advolog's Israel layer, for example drugs outside the basket and private health insurance.
 - [Ask Me 3](https://www.ihi.org/resources/tools/ask-me-3-good-questions-your-good-health), Institute for Healthcare Improvement: three questions for every visit. They are the floor of the prep sheet when there is hardly any record yet.
 - [QuestionBuilder](https://www.ahrq.gov/questions/question-builder/index.html), AHRQ: a free app for preparing questions before a visit, where what you enter stays on your device. The idea of a question you can rehearse comes from there.
-- [Patients Use AI](https://patientsuseai.substack.com/), Dave deBronkart: patient-led writing on using AI with the health system. The idea of a list of plain, proven requests on the "What you can ask" page comes from there.
 - [Agent Skills](https://agentskills.io/specification): an open format for AI assistant capabilities. Advolog's skills are written in it.
 
 **Similar work worth knowing**
